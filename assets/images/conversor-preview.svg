@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Preview do Conversor de Unidades">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect x="24" y="24" width="592" height="312" rx="16" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.25)"/>
+  <text x="48" y="72" fill="#94a3b8" font-family="Inter, sans-serif" font-size="14">Conversor de Unidades</text>
+  <rect x="48" y="96" width="220" height="48" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(59,130,246,0.2)"/>
+  <text x="64" y="127" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="22" font-weight="600">100</text>
+  <rect x="48" y="156" width="220" height="36" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(59,130,246,0.15)"/>
+  <text x="64" y="179" fill="#0ea5e9" font-family="Inter, sans-serif" font-size="13">cm ’ m</text>
+  <circle cx="320" cy="150" r="22" fill="rgba(59,130,246,0.12)" stroke="url(#accent)"/>
+  <text x="320" y="156" text-anchor="middle" fill="#60a5fa" font-size="18">Å</text>
+  <rect x="372" y="96" width="220" height="48" rx="10" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.2)"/>
+  <text x="388" y="127" fill="#3b82f6" font-family="Inter, sans-serif" font-size="22" font-weight="600">1</text>
+  <rect x="372" y="156" width="220" height="36" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(59,130,246,0.15)"/>
+  <text x="388" y="179" fill="#0ea5e9" font-family="Inter, sans-serif" font-size="13">metro</text>
+  <text x="48" y="250" fill="#64748b" font-family="Inter, sans-serif" font-size="12">=Ï Comprimento · <! Temperatura · ¡ Corrente · +46 categorias</text>
+</svg>
