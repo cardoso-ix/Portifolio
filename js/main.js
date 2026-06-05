@@ -12,8 +12,9 @@
 
   const TYPING_PHRASES = [
     'Metrologista na Fluxo Metrologia',
+    'Desenvolvedor web — TypeScript & Supabase',
     'MBA em Controladoria e Finanças',
-    'Chapecó - SC | Metrologia & Logística'
+    'Chapecó - SC | Metrologia & Tecnologia'
   ];
 
   if (yearEl) {
