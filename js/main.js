@@ -21,6 +21,38 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
+  /* ===== Contact email ===== */
+  const contactEmail = document.getElementById('contact-email');
+
+  function showEmailCopiedToast() {
+    const existing = document.getElementById('email-toast');
+    if (existing) {
+      existing.remove();
+    }
+
+    const toast = document.createElement('p');
+    toast.id = 'email-toast';
+    toast.className = 'contact-toast';
+    toast.setAttribute('role', 'status');
+    toast.textContent = 'E-mail copiado para a área de transferência.';
+    document.body.appendChild(toast);
+
+    window.setTimeout(function () {
+      toast.remove();
+    }, 2600);
+  }
+
+  if (contactEmail) {
+    contactEmail.addEventListener('click', function () {
+      const email = contactEmail.getAttribute('data-email');
+      if (!email || !navigator.clipboard) {
+        return;
+      }
+
+      navigator.clipboard.writeText(email).then(showEmailCopiedToast).catch(function () {});
+    });
+  }
+
   /* ===== Menu ===== */
   function closeMenu() {
     navToggle.classList.remove('active');
