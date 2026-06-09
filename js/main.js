@@ -9,6 +9,8 @@
   const yearEl = document.getElementById('year');
   const typingEl = document.getElementById('typing-text');
   const canvas = document.getElementById('particles-canvas');
+  const themeToggle = document.getElementById('theme-toggle');
+  const THEME_KEY = 'portfolio-theme';
 
   const TYPING_PHRASES = [
     'Técnico de Laboratório de Calibração na Fluxo Metrologia',
@@ -19,6 +21,42 @@
 
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+
+  /* ===== Theme toggle ===== */
+  function getTheme() {
+    return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+  }
+
+  function updateThemeToggleState(theme) {
+    if (!themeToggle) {
+      return;
+    }
+
+    themeToggle.setAttribute(
+      'aria-label',
+      theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'
+    );
+    themeToggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch (e) {}
+
+    updateThemeToggleState(theme);
+    document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: theme } }));
+  }
+
+  if (themeToggle) {
+    updateThemeToggleState(getTheme());
+
+    themeToggle.addEventListener('click', function () {
+      setTheme(getTheme() === 'light' ? 'dark' : 'light');
+    });
   }
 
   /* ===== Contact email ===== */
@@ -248,7 +286,13 @@
       }
     }
 
+    function getParticleRgb() {
+      const rgb = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim();
+      return rgb || '45, 220, 255';
+    }
+
     function draw() {
+      const particleRgb = getParticleRgb();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach(function (p, i) {
@@ -260,7 +304,7 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(45, 220, 255, 0.75)';
+        ctx.fillStyle = 'rgba(' + particleRgb + ', 0.75)';
         ctx.fill();
 
         for (let j = i + 1; j < particles.length; j++) {
@@ -273,7 +317,7 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = 'rgba(45, 220, 255, ' + (0.22 * (1 - dist / 120)) + ')';
+            ctx.strokeStyle = 'rgba(' + particleRgb + ', ' + (0.22 * (1 - dist / 120)) + ')';
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
