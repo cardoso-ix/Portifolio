@@ -12,6 +12,10 @@
 
   <title>Eduardo Cardoso | Portfólio</title>
 
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +40,23 @@
 
     <div class="container header__inner">
 
-      <a href="#inicio" class="header__logo">&lt;EduCardoso /&gt;</a>
+      <a href="#inicio" class="header__logo" aria-label="Eduardo Cardoso — Portfólio">
+
+        <span class="header__logo-icon" aria-hidden="true">
+
+          <svg class="header__logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M8 3h8a2 2 0 0 1 2 2v15a1 1 0 0 1-1.447.894L12 19.118l-4.553 2.776A1 1 0 0 1 6 21V5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+
+            <path d="M9 8h6M9 11.5h6M9 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+
+          </svg>
+
+        </span>
+
+        <span class="header__logo-text">&lt;EduCardoso /&gt;</span>
+
+      </a>
 
       <button class="header__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
 
