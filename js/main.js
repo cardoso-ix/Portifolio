@@ -11,7 +11,7 @@
   const canvas = document.getElementById('particles-canvas');
 
   const TYPING_PHRASES = [
-    'Metrologista na Fluxo Metrologia',
+    'Técnico de Laboratório de Calibração na Fluxo Metrologia',
     'Desenvolvedor web — TypeScript & Supabase',
     'MBA em Controladoria e Finanças',
     'Chapecó - SC | Metrologia & Tecnologia'
