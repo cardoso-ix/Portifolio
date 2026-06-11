@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Preview do FitMind  app de personal trainer">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Preview do FitMind app de personal trainer">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#080808"/>
@@ -8,30 +9,29 @@
       <stop offset="0%" stop-color="#00C853"/>
       <stop offset="100%" stop-color="#00e676"/>
     </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="rgba(0,200,83,0.22)"/>
+      <stop offset="100%" stop-color="rgba(0,200,83,0)"/>
+    </radialGradient>
   </defs>
   <rect width="640" height="360" fill="url(#bg)"/>
-  <rect x="200" y="20" width="240" height="320" rx="28" fill="#0d0d0d" stroke="rgba(0,200,83,0.35)" stroke-width="2"/>
+  <rect width="640" height="360" fill="url(#glow)"/>
+  <rect x="200" y="20" width="240" height="320" rx="28" fill="#0d0d0d" stroke="rgba(0,200,83,0.45)" stroke-width="2"/>
   <rect x="212" y="36" width="216" height="24" rx="12" fill="rgba(255,255,255,0.04)"/>
   <circle cx="320" cy="48" r="4" fill="#00C853"/>
-  <text x="248" y="88" fill="#f1f5f9" font-family="system-ui,sans-serif" font-size="18" font-weight="700">FitMind</text>
-  <text x="248" y="108" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">Personal trainer com IA</text>
-  <rect x="224" y="124" width="192" height="56" rx="12" fill="rgba(0,200,83,0.08)" stroke="rgba(0,200,83,0.25)"/>
-  <text x="240" y="148" fill="#00C853" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Treino guiado</text>
-  <text x="240" y="166" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="10">Séries · descanso · log</text>
-  <rect x="224" y="190" width="92" height="48" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.15)"/>
-  <text x="236" y="212" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="10">Alimentação</text>
-  <text x="236" y="228" fill="#64748b" font-family="system-ui,sans-serif" font-size="9">200+ alimentos</text>
-  <rect x="324" y="190" width="92" height="48" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.15)"/>
-  <text x="336" y="212" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="10">Conquistas</text>
-  <text x="336" y="228" fill="#64748b" font-family="system-ui,sans-serif" font-size="9">50 troféus</text>
-  <rect x="224" y="250" width="192" height="36" rx="18" fill="url(#accent)"/>
-  <text x="268" y="272" fill="#080808" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Baixar APK Android</text>
-  <rect x="48" y="280" width="88" height="24" rx="6" fill="rgba(0,200,83,0.08)" stroke="rgba(0,200,83,0.2)"/>
-  <text x="58" y="296" fill="#00C853" font-family="system-ui,sans-serif" font-size="11">Expo</text>
-  <rect x="144" y="280" width="110" height="24" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.12)"/>
-  <text x="154" y="296" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">React Native</text>
-  <rect x="262" y="280" width="90" height="24" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.12)"/>
-  <text x="272" y="296" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">Supabase</text>
-  <rect x="360" y="280" width="72" height="24" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.12)"/>
-  <text x="370" y="296" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">Gemini</text>
+  <rect x="268" y="72" width="104" height="104" rx="22" fill="#080808" stroke="rgba(0,200,83,0.35)" stroke-width="2"/>
+  <text x="320" y="138" fill="#00C853" text-anchor="middle" font-family="system-ui,sans-serif" font-size="56" font-weight="800">F</text>
+  <text x="320" y="196" fill="#f1f5f9" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700">FitMind</text>
+  <text x="320" y="218" fill="#64748b" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12">Personal trainer com IA</text>
+  <rect x="224" y="236" width="192" height="44" rx="12" fill="rgba(0,200,83,0.08)" stroke="rgba(0,200,83,0.25)"/>
+  <text x="320" y="258" fill="#00C853" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Treino guiado</text>
+  <text x="320" y="274" fill="#94a3b8" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10">Series, descanso e log</text>
+  <rect x="224" y="290" width="192" height="34" rx="17" fill="url(#accent)"/>
+  <text x="320" y="311" fill="#080808" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700">Baixar APK Android</text>
+  <rect x="48" y="300" width="88" height="24" rx="6" fill="rgba(0,200,83,0.08)" stroke="rgba(0,200,83,0.2)"/>
+  <text x="58" y="316" fill="#00C853" font-family="system-ui,sans-serif" font-size="11">Expo</text>
+  <rect x="144" y="300" width="110" height="24" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.12)"/>
+  <text x="154" y="316" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">React Native</text>
+  <rect x="488" y="300" width="90" height="24" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(0,200,83,0.12)"/>
+  <text x="498" y="316" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">Supabase</text>
 </svg>
