@@ -197,6 +197,14 @@ ul {
   margin-left: 0.5rem;
 }
 
+.section__intro {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  margin: -1.5rem 0 2rem;
+  max-width: 40rem;
+  line-height: 1.6;
+}
+
 .text-accent {
   color: var(--color-accent);
 }
@@ -1089,6 +1097,23 @@ ul {
   border: 1px solid rgba(0, 212, 255, 0.3);
 }
 
+.timeline__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-accent);
+  transition: color var(--transition);
+}
+
+.timeline__link::before {
+  content: '→ ';
+}
+
+.timeline__link:hover {
+  color: var(--color-accent-hover);
+}
+
 .timeline__title {
   font-size: 1.125rem;
   font-weight: 600;
@@ -1125,6 +1150,21 @@ ul {
 .skills__group:hover {
   border-color: rgba(45, 220, 255, 0.38);
   box-shadow: 0 0 24px rgba(45, 220, 255, 0.12);
+}
+
+.skills__group--primary {
+  border-color: rgba(45, 220, 255, 0.35);
+  background: rgba(45, 220, 255, 0.04);
+}
+
+.skills__group--primary .skills__category {
+  color: var(--color-accent);
+}
+
+.skill-tag--primary {
+  border-color: rgba(45, 220, 255, 0.35);
+  color: var(--color-accent);
+  background: rgba(45, 220, 255, 0.08);
 }
 
 .skills__category {
@@ -1215,6 +1255,14 @@ ul {
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 44px rgba(45, 220, 255, 0.2);
+}
+
+.project-card--hobby {
+  opacity: 0.88;
+}
+
+.project-card--hobby:hover {
+  opacity: 1;
 }
 
 .project-card:hover::before {
