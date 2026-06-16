@@ -13,10 +13,10 @@
   const THEME_KEY = 'portfolio-theme';
 
   const TYPING_PHRASES = [
-    'Migrando: Automação Industrial → Agentes de IA',
     'Pós Tech Agentes de IA — FIAP + Alura',
-    'Da metrologia industrial à arquitetura de agentes inteligentes',
-    'Técnico de Calibração na Fluxo Metrologia',
+    'Inteligência Artificial & Agentes Autônomos',
+    'LLMs · RAG · Orquestração de Agentes',
+    'Técnico de Laboratório de Calibração na Fluxo Metrologia',
     'Desenvolvedor web — TypeScript & Supabase'
   ];
 
@@ -229,25 +229,6 @@
 
       requestAnimationFrame(update);
     });
-  }
-
-  /* ===== Migration progress bar ===== */
-  const migrationProgress = document.getElementById('migration-progress');
-
-  if (migrationProgress && 'IntersectionObserver' in window) {
-    const progressObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            migrationProgress.style.width = '42%';
-            progressObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    progressObserver.observe(migrationProgress.closest('.migration__progress') || migrationProgress);
   }
 
   /* ===== Intersection Observer ===== */
