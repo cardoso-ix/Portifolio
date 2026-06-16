@@ -13,10 +13,11 @@
   const THEME_KEY = 'portfolio-theme';
 
   const TYPING_PHRASES = [
+    'Pós Tech Agentes de IA — FIAP + Alura',
+    'Em transição: Automação Industrial → Inteligência Artificial',
     'Técnico de Laboratório de Calibração na Fluxo Metrologia',
     'Desenvolvedor web — TypeScript & Supabase',
-    'MBA em Controladoria e Finanças',
-    'Chapecó - SC | Metrologia & Tecnologia'
+    'MBA em Controladoria e Finanças'
   ];
 
   if (yearEl) {
@@ -272,7 +273,10 @@
     }
 
     function createParticles() {
-      const count = Math.min(Math.floor(window.innerWidth / 15), 80);
+      const isMobile = window.innerWidth < 768;
+      const maxCount = isMobile ? 32 : 80;
+      const divisor = isMobile ? 22 : 15;
+      const count = Math.min(Math.floor(window.innerWidth / divisor), maxCount);
       particles = [];
 
       for (let i = 0; i < count; i++) {
