@@ -14,12 +14,13 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Frame, Paragraph
 
 FONT_DIR = Path(r"C:\Windows\Fonts")
-PHOTO_PATH = Path(__file__).resolve().parent.parent / "assets" / "images" / "foto-cv.png"
+ROOT = Path(__file__).resolve().parent.parent
+PHOTO_PATH = ROOT / "assets" / "images" / "foto-cv.png"
 
 OUTPUT_PATHS = [
-    Path(r"C:\Users\eduar\OneDrive\Área de Trabalho\Portifolio-EDU\assets\Eduardo Cardoso.pdf"),
-    Path(r"C:\Users\eduar\OneDrive\Área de Trabalho\Portifolio-EDU\assets\cv_eduardo_cardoso.pdf"),
-    Path(r"C:\Users\eduar\OneDrive\Área de Trabalho\Eduardo Cardoso.pdf"),
+    ROOT / "assets" / "Eduardo Cardoso.pdf",
+    ROOT / "assets" / "cv_eduardo_cardoso.pdf",
+    Path.home() / "OneDrive" / "Área de Trabalho" / "Eduardo Cardoso.pdf",
 ]
 
 PAGE_W, PAGE_H = A4
@@ -59,9 +60,9 @@ SKILLS = [
 
 SUMMARY = (
     "Profissional com experiência em metrologia, calibração de instrumentos, "
-    "logística e suporte técnico. Combina sólida base técnica com formação em "
-    "Administração e visão orientada a resultados, buscando contribuir com "
-    "eficiência e qualidade em ambientes industriais e técnicos."
+    "logística e suporte técnico. Cursando Pós Tech em Agentes de IA (FIAP + Alura). "
+    "Combina sólida base técnica com formação em Administração e visão orientada a "
+    "resultados, buscando oportunidades em Inteligência Artificial e ambientes industriais."
 )
 
 EXPERIENCE = [
@@ -119,6 +120,11 @@ EXPERIENCE = [
 ]
 
 EDUCATION = [
+    {
+        "title": "Pós Tech em Agentes de IA",
+        "institution": "FIAP + Alura",
+        "period": "Jun 2025 — Em andamento",
+    },
     {
         "title": "MBA Controladoria e Finanças",
         "institution": "Cruzeiro do Sul",
