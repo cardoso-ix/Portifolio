@@ -14,10 +14,10 @@
 
   const TYPING_PHRASES = [
     'Pós Tech Agentes de IA — FIAP + Alura',
-    'Técnico de Laboratório de Calibração na Fluxo Metrologia',
+    'Técnico de Calibração na Fluxo Metrologia',
     'Desenvolvedor web — TypeScript & Supabase',
     'MBA em Controladoria e Finanças',
-    'Chapecó - SC | Metrologia & Tecnologia'
+    'Chapecó - SC'
   ];
 
   if (yearEl) {
@@ -149,28 +149,40 @@
   /* ===== Scroll effects ===== */
   const sections = document.querySelectorAll('section[id]');
 
+  let scrollTicking = false;
+
   function onScroll() {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    if (scrollTicking) {
+      return;
     }
 
-    const scrollPos = window.scrollY + 100;
+    scrollTicking = true;
 
-    sections.forEach(function (section) {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute('id');
-
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.forEach(function (link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + id) {
-            link.classList.add('active');
-          }
-        });
+    requestAnimationFrame(function () {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
       }
+
+      const scrollPos = window.scrollY + 100;
+
+      sections.forEach(function (section) {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+
+        if (scrollPos >= top && scrollPos < top + height) {
+          navLinks.forEach(function (link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+
+      scrollTicking = false;
     });
   }
 
@@ -211,26 +223,6 @@
     type();
   }
 
-  /* ===== Counter animation ===== */
-  function animateCounters() {
-    document.querySelectorAll('.hero__stat-value[data-count]').forEach(function (el) {
-      const target = parseInt(el.getAttribute('data-count'), 10);
-      const duration = 1500;
-      const start = performance.now();
-
-      function update(now) {
-        const progress = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.floor(eased * target);
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        }
-      }
-
-      requestAnimationFrame(update);
-    });
-  }
-
   /* ===== Intersection Observer ===== */
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
@@ -238,11 +230,6 @@
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-
-            if (entry.target.classList.contains('hero__content')) {
-              animateCounters();
-            }
-
             observer.unobserve(entry.target);
           }
         });
@@ -251,38 +238,47 @@
     );
 
     fadeElements.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 5) * 0.08 + 's';
+      el.style.transitionDelay = (i % 5) * 0.06 + 's';
       observer.observe(el);
     });
   } else {
     fadeElements.forEach(function (el) {
       el.classList.add('visible');
     });
-    animateCounters();
   }
 
-  /* ===== Particle network ===== */
-  if (canvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  /* ===== Particle network (lightweight) ===== */
+  function initParticles() {
+    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
     const ctx = canvas.getContext('2d');
     let particles = [];
     let animationId;
+    let isMobile = window.innerWidth < 768;
+    let drawLines = !isMobile;
 
     function resize() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      isMobile = window.innerWidth < 768;
+      drawLines = !isMobile;
     }
 
     function createParticles() {
-      const count = Math.min(Math.floor(window.innerWidth / 15), 80);
+      const maxCount = isMobile ? 14 : 36;
+      const divisor = isMobile ? 32 : 24;
+      const count = Math.min(Math.floor(window.innerWidth / divisor), maxCount);
       particles = [];
 
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.4,
-          vy: (Math.random() - 0.5) * 0.4,
-          radius: Math.random() * 1.5 + 0.5
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          radius: Math.random() * 1.2 + 0.4
         });
       }
     }
@@ -305,22 +301,25 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(' + particleRgb + ', 0.75)';
+        ctx.fillStyle = 'rgba(' + particleRgb + ', 0.55)';
         ctx.fill();
 
-        for (let j = i + 1; j < particles.length; j++) {
-          const p2 = particles[j];
-          const dx = p.x - p2.x;
-          const dy = p.y - p2.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
+        if (drawLines) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const p2 = particles[j];
+            const dx = p.x - p2.x;
+            const dy = p.y - p2.y;
+            const dist = dx * dx + dy * dy;
 
-          if (dist < 120) {
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = 'rgba(' + particleRgb + ', ' + (0.22 * (1 - dist / 120)) + ')';
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
+            if (dist < 8100) {
+              const d = Math.sqrt(dist);
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p2.x, p2.y);
+              ctx.strokeStyle = 'rgba(' + particleRgb + ', ' + (0.14 * (1 - d / 90)) + ')';
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
           }
         }
       });
@@ -344,5 +343,11 @@
         draw();
       }
     });
+  }
+
+  if (window.requestIdleCallback) {
+    window.requestIdleCallback(initParticles, { timeout: 1500 });
+  } else {
+    window.setTimeout(initParticles, 200);
   }
 })();
