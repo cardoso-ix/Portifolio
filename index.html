@@ -28,7 +28,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=10">
 
   <script>
     (function () {
@@ -93,6 +93,8 @@
 
           <li><a href="#inicio" class="header__link">Início</a></li>
 
+          <li><a href="#transicao" class="header__link header__link--highlight">Transição</a></li>
+
           <li><a href="#sobre" class="header__link">Sobre</a></li>
 
           <li><a href="#formacao" class="header__link">Formação</a></li>
@@ -118,6 +120,32 @@
 
 
   <main>
+
+    <div class="announcement-bar fade-in">
+
+      <div class="container announcement-bar__inner">
+
+        <span class="announcement-bar__dot" aria-hidden="true"></span>
+
+        <p class="announcement-bar__text">
+
+          <strong>Em transição de carreira:</strong>
+
+          Automação Industrial &amp; Metrologia
+
+          <span class="announcement-bar__arrow" aria-hidden="true">→</span>
+
+          <strong class="announcement-bar__highlight">Agentes de IA</strong>
+
+          · Pós Tech FIAP + Alura
+
+        </p>
+
+        <a href="#transicao" class="announcement-bar__cta">Ver transição</a>
+
+      </div>
+
+    </div>
 
     <section class="hero section" id="inicio">
 
@@ -165,6 +193,14 @@
 
           </div>
 
+          <p class="hero__migration-tag fade-in">
+
+            <span class="hero__migration-tag-icon" aria-hidden="true">↗</span>
+
+            Migrando para a área de <strong>Agentes de IA</strong>
+
+          </p>
+
           <p class="hero__greeting"><span class="prompt">&gt;</span> Olá, eu sou</p>
 
           <h1 class="hero__title glitch" data-text="Eduardo Cardoso">Eduardo Cardoso</h1>
@@ -179,11 +215,13 @@
 
           <p class="hero__description">
 
-            Administrador, MBA em Controladoria e Finanças, com formação em Automação Industrial e experiência
+            Venho da <strong>automação industrial e metrologia</strong> — Técnico em Automação Industrial (Senai),
 
-            em metrologia, logística e suporte técnico. Atualmente Técnico de Laboratório de Calibração na Fluxo Metrologia
+            hoje Técnico de Calibração na Fluxo Metrologia. Estou em transição para
 
-            e em transição para Inteligência Artificial — cursando a Pós Tech em Agentes de IA (FIAP + Alura).
+            <strong>Inteligência Artificial</strong>, cursando a <strong>Pós Tech em Agentes de IA</strong> (FIAP + Alura),
+
+            unindo visão operacional de chão de fábrica com arquitetura de agentes inteligentes.
 
           </p>
 
@@ -239,7 +277,9 @@
 
           <div class="hero__actions">
 
-            <a href="#projetos" class="btn btn--primary"><span>Ver projetos</span></a>
+            <a href="#transicao" class="btn btn--primary btn--glow"><span>Minha transição para IA</span></a>
+
+            <a href="#projetos" class="btn btn--outline"><span>Ver projetos</span></a>
 
             <a href="#contato" class="btn btn--outline"><span>Contato</span></a>
 
@@ -335,6 +375,212 @@
 
 
 
+    <section class="section section--migration" id="transicao">
+
+      <div class="container">
+
+        <header class="migration__header fade-in">
+
+          <span class="migration__eyebrow">Transição de carreira</span>
+
+          <h2 class="migration__title">
+
+            De <span class="migration__from">Automação &amp; Indústria</span>
+
+            para <span class="migration__to">Agentes de IA</span>
+
+          </h2>
+
+          <p class="migration__lead">
+
+            Mais de uma década em ambientes industriais, processos e calibração —
+
+            agora aplicando essa base na construção de agentes autônomos de inteligência artificial.
+
+          </p>
+
+        </header>
+
+
+
+        <div class="migration__grid fade-in">
+
+          <article class="migration-card migration-card--from">
+
+            <div class="migration-card__head">
+
+              <span class="migration-card__icon" aria-hidden="true">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/><path d="m8 8 2 2m4 4 2 2m0-6-2 2m-4 4-2 2"/></svg>
+
+              </span>
+
+              <span class="migration-card__label">Onde atuo hoje</span>
+
+            </div>
+
+            <h3 class="migration-card__title">Indústria &amp; Automação</h3>
+
+            <ul class="migration-card__list">
+
+              <li>Técnico de Calibração — Fluxo Metrologia</li>
+
+              <li>Técnico em Automação Industrial — Senai</li>
+
+              <li>Metrologia, INMETRO e processos industriais</li>
+
+              <li>Logística, suporte técnico e operação</li>
+
+            </ul>
+
+          </article>
+
+
+
+          <div class="migration__connector" aria-hidden="true">
+
+            <div class="migration__line"></div>
+
+            <span class="migration__arrow">→</span>
+
+            <div class="migration__progress">
+
+              <div class="migration__progress-track">
+
+                <div class="migration__progress-fill" id="migration-progress"></div>
+
+              </div>
+
+              <span class="migration__progress-label">Transição em andamento</span>
+
+            </div>
+
+          </div>
+
+
+
+          <article class="migration-card migration-card--to">
+
+            <div class="migration-card__head">
+
+              <span class="migration-card__icon" aria-hidden="true">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a4 4 0 0 1 4 4v1h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1l-1 7a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2l-1-7H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4Z"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/><path d="M9 15h6"/></svg>
+
+              </span>
+
+              <span class="migration-card__label">Para onde vou</span>
+
+            </div>
+
+            <h3 class="migration-card__title">Agentes de IA</h3>
+
+            <ul class="migration-card__list">
+
+              <li>LLMs &amp; Prompt Engineering</li>
+
+              <li>RAG — contexto e memória</li>
+
+              <li>Orquestração de múltiplos agentes</li>
+
+              <li>Integração via APIs &amp; low-code</li>
+
+            </ul>
+
+          </article>
+
+        </div>
+
+
+
+        <article class="course-spotlight fade-in">
+
+          <div class="course-spotlight__badge-row">
+
+            <span class="course-spotlight__status">Em andamento</span>
+
+            <span class="course-spotlight__provider">FIAP + Alura · Pós Tech</span>
+
+          </div>
+
+          <div class="course-spotlight__body">
+
+            <div class="course-spotlight__main">
+
+              <h3 class="course-spotlight__title">Pós Tech em Agentes de IA</h3>
+
+              <p class="course-spotlight__desc">
+
+                Pós-graduação 100% digital e hands-on de <strong>360 horas</strong> (10 meses) para criar,
+
+                configurar e implementar agentes autônomos de IA que transformam operações reais —
+
+                saindo do papel de usuário de chat para arquiteto de soluções com agentes inteligentes.
+
+              </p>
+
+              <ul class="course-spotlight__topics">
+
+                <li class="skill-tag skill-tag--featured">LLMs</li>
+
+                <li class="skill-tag skill-tag--featured">Agentic AI</li>
+
+                <li class="skill-tag skill-tag--featured">RAG</li>
+
+                <li class="skill-tag">n8n</li>
+
+                <li class="skill-tag">APIs</li>
+
+                <li class="skill-tag">Orquestração</li>
+
+                <li class="skill-tag">Governança de IA</li>
+
+              </ul>
+
+            </div>
+
+            <div class="course-spotlight__aside">
+
+              <div class="course-spotlight__stat">
+
+                <span class="course-spotlight__stat-value">360h</span>
+
+                <span class="course-spotlight__stat-label">Carga horária</span>
+
+              </div>
+
+              <div class="course-spotlight__stat">
+
+                <span class="course-spotlight__stat-value">10</span>
+
+                <span class="course-spotlight__stat-label">Meses</span>
+
+              </div>
+
+              <div class="course-spotlight__stat">
+
+                <span class="course-spotlight__stat-value">5</span>
+
+                <span class="course-spotlight__stat-label">Fases + certificações</span>
+
+              </div>
+
+              <a href="https://postech.fiap.com.br/curso/agentes-de-ia/" class="btn btn--primary btn--glow course-spotlight__cta" target="_blank" rel="noopener noreferrer"><span>Ver curso na FIAP</span></a>
+
+              <p class="course-spotlight__period">Turma Jun/2025 — em andamento</p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
     <section class="section" id="sobre">
 
       <div class="container">
@@ -402,44 +648,6 @@
       <div class="container">
 
         <h2 class="section__title fade-in"><span class="section__number">02.</span> Formação</h2>
-
-        <div class="journey-callout fade-in">
-
-          <div class="journey-callout__path">
-
-            <span class="journey-callout__step journey-callout__step--from">
-
-              <span class="journey-callout__label">Origem</span>
-
-              <span class="journey-callout__title">Automação Industrial</span>
-
-              <span class="journey-callout__meta">Senai · 2010 — 2012</span>
-
-            </span>
-
-            <span class="journey-callout__arrow" aria-hidden="true">→</span>
-
-            <span class="journey-callout__step journey-callout__step--to">
-
-              <span class="journey-callout__label">Em transição</span>
-
-              <span class="journey-callout__title">Inteligência Artificial</span>
-
-              <span class="journey-callout__meta">Pós Tech Agentes de IA · FIAP + Alura</span>
-
-            </span>
-
-          </div>
-
-          <p class="journey-callout__text">
-
-            Da automação de processos industriais à arquitetura de agentes autônomos de IA —
-
-            aplicando experiência em sistemas, integração e operação para construir soluções inteligentes.
-
-          </p>
-
-        </div>
 
         <div class="timeline">
 
@@ -1048,7 +1256,7 @@
 
 
 
-  <script src="js/main.js?v=5"></script>
+  <script src="js/main.js?v=6"></script>
 
 </body>
 
