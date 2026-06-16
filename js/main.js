@@ -13,10 +13,10 @@
   const THEME_KEY = 'portfolio-theme';
 
   const TYPING_PHRASES = [
-    'Estudante de Agentes de IA — FIAP + Alura',
-    'LLMs · RAG · Orquestração de Agentes',
-    'Pós Tech · Certificação em formação',
-    'Aplicando IA em contextos reais',
+    'Pós Tech Agentes de IA — FIAP + Alura',
+    'Técnico de Calibração na Fluxo Metrologia',
+    'Metrologia · TypeScript · React',
+    'MBA em Controladoria e Finanças',
     'Chapecó - SC'
   ];
 
