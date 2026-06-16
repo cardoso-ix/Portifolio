@@ -6,7 +6,7 @@
   --header-height: 4rem;
   --container-width: 100%;
   --container-padding: clamp(0.875rem, 1.25vw, 1.5rem);
-  --section-padding: 5.5rem 0;
+  --section-padding: 4rem 0;
   --radius: 0.5rem;
   --radius-lg: 0.75rem;
   --transition: 0.25s ease;
@@ -647,23 +647,23 @@ ul {
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding-top: calc(var(--header-height) + 1.5rem);
-  padding-bottom: 4rem;
+  padding-top: calc(var(--header-height) + 2rem);
+  padding-bottom: 3rem;
 }
 
 .hero__inner {
   display: grid;
-  gap: 3.5rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .hero__content {
   border: 1px solid var(--color-border);
   border-radius: 1rem;
-  padding: 0 0 2.25rem;
+  padding: 0 0 1.75rem;
   background:
     linear-gradient(145deg, rgba(27, 43, 71, 0.82), rgba(16, 26, 44, 0.65)),
     var(--glass-surface-soft);
@@ -680,15 +680,13 @@ ul {
 .hero__content .hero__title,
 .hero__content .hero__subtitle,
 .hero__content .hero__description,
-.hero__content .hero__highlights,
-.hero__content .hero__stats,
 .hero__content .hero__actions {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .hero__terminal {
-  padding: 1rem 1.75rem 1.25rem;
+  padding: 0.875rem 1.5rem 1rem;
   border-bottom: 1px solid var(--color-border);
   background: var(--terminal-bg);
   font-family: var(--font-mono);
@@ -710,38 +708,12 @@ ul {
   margin-bottom: 0;
 }
 
-.hero__terminal-output--course {
-  color: var(--color-magenta);
-}
-
-.hero__badge--course {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--color-magenta);
-  border-color: rgba(200, 92, 255, 0.35);
-  background: rgba(200, 92, 255, 0.1);
-}
-
-.hero__badge--course .hero__badge-dot {
-  background: var(--color-magenta);
-  box-shadow: 0 0 10px rgba(200, 92, 255, 0.8);
-}
-
-.hero__float--course {
-  border-color: rgba(200, 92, 255, 0.35);
-}
-
-.hero__float--course .hero__float-value {
-  color: var(--color-magenta);
-}
-
 .hero__badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.625rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.25rem;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .hero__badge {
@@ -806,9 +778,9 @@ ul {
 .hero__description {
   color: var(--color-text-muted);
   max-width: 44rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.0625rem;
-  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .hero__highlights {
@@ -866,8 +838,8 @@ ul {
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding-bottom: 0.25rem;
+  gap: 0.75rem;
+  padding-bottom: 0;
 }
 
 .hero__visual {
@@ -1127,43 +1099,6 @@ ul {
   background: rgba(0, 212, 255, 0.1);
   color: var(--color-accent);
   border: 1px solid rgba(0, 212, 255, 0.3);
-}
-
-.timeline__status--course {
-  background: rgba(200, 92, 255, 0.12);
-  color: var(--color-magenta);
-  border: 1px solid rgba(200, 92, 255, 0.35);
-}
-
-.timeline__marker--course {
-  background: var(--color-magenta);
-  box-shadow: 0 0 10px rgba(200, 92, 255, 0.6);
-}
-
-.timeline__content--course {
-  border-color: rgba(200, 92, 255, 0.35);
-}
-
-.timeline__content--course:hover {
-  border-color: rgba(200, 92, 255, 0.55);
-  box-shadow: 0 0 28px rgba(200, 92, 255, 0.14);
-}
-
-.timeline__link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  color: var(--color-magenta);
-  transition: color var(--transition);
-}
-
-.timeline__link::before {
-  content: '→ ';
-}
-
-.timeline__link:hover {
-  color: var(--color-accent-hover);
 }
 
 .timeline__title {
