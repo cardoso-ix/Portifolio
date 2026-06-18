@@ -123,7 +123,7 @@ EDUCATION = [
     {
         "title": "Pós Tech em Agentes de IA",
         "institution": "FIAP + Alura",
-        "period": "Jun 2025 — Em andamento",
+        "period": "Jun 2026 — Em andamento",
     },
     {
         "title": "MBA Controladoria e Finanças",
