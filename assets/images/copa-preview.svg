@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Preview da loja Copa Figurinhas">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1a0f"/>
+      <stop offset="50%" stop-color="#102818"/>
+      <stop offset="100%" stop-color="#0a1410"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5c518"/>
+      <stop offset="100%" stop-color="#ffe566"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <circle cx="520" cy="80" r="120" fill="rgba(245,197,24,0.06)"/>
+  <circle cx="80" cy="300" r="90" fill="rgba(26,122,58,0.12)"/>
+  <rect x="24" y="24" width="592" height="312" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(245,197,24,0.25)"/>
+  <text x="48" y="58" fill="#f5c518" font-family="system-ui,sans-serif" font-size="12" letter-spacing="3">COPA 2026</text>
+  <text x="48" y="96" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="28" font-weight="700">Figurinhas Digitais</text>
+  <text x="48" y="122" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="13">Álbum PDF · PIX · entrega automática</text>
+  <rect x="48" y="140" width="88" height="28" rx="6" fill="rgba(26,122,58,0.25)" stroke="rgba(34,197,94,0.4)"/>
+  <text x="62" y="159" fill="#86efac" font-family="system-ui,sans-serif" font-size="11">PIX R$ 14,90</text>
+  <rect x="144" y="140" width="96" height="28" rx="6" fill="rgba(245,197,24,0.1)" stroke="rgba(245,197,24,0.3)"/>
+  <text x="158" y="159" fill="#fde047" font-family="system-ui,sans-serif" font-size="11">Google Drive</text>
+  <rect x="248" y="140" width="72" height="28" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="262" y="159" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">E-mail</text>
+  <rect x="48" y="184" width="280" height="132" rx="12" fill="rgba(0,0,0,0.35)" stroke="rgba(245,197,24,0.2)"/>
+  <text x="64" y="212" fill="#f5c518" font-family="system-ui,sans-serif" font-size="12">Checkout PIX</text>
+  <rect x="64" y="224" width="120" height="72" rx="8" fill="#fff"/>
+  <rect x="72" y="232" width="8" height="8" fill="#111"/>
+  <rect x="84" y="232" width="8" height="8" fill="#111"/>
+  <rect x="96" y="232" width="8" height="8" fill="#111"/>
+  <rect x="108" y="232" width="8" height="8" fill="#111"/>
+  <rect x="72" y="244" width="8" height="8" fill="#111"/>
+  <rect x="96" y="244" width="8" height="8" fill="#111"/>
+  <rect x="120" y="244" width="8" height="8" fill="#111"/>
+  <text x="200" y="252" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="11">Pagamento instantâneo</text>
+  <text x="200" y="272" fill="#64748b" font-family="system-ui,sans-serif" font-size="10">Link Drive + e-mail após confirmação</text>
+  <rect x="344" y="184" width="248" height="132" rx="12" fill="rgba(0,0,0,0.35)" stroke="rgba(26,122,58,0.35)"/>
+  <text x="360" y="212" fill="#86efac" font-family="system-ui,sans-serif" font-size="12">Stack</text>
+  <text x="360" y="240" fill="#94a3b8" font-family="monospace" font-size="11">Next.js · TypeScript</text>
+  <text x="360" y="262" fill="#94a3b8" font-family="monospace" font-size="11">Supabase · Mercado Pago</text>
+  <text x="360" y="284" fill="#94a3b8" font-family="monospace" font-size="11">Drive API · Resend · Vercel</text>
+</svg>
