@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# CV duplicado gerado localmente (canonical: assets/cv_eduardo_cardoso.pdf)
+assets/Eduardo Cardoso.pdf

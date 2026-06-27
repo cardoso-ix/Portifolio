@@ -73,9 +73,6 @@ def main():
     )
     print(f"Gerado: {ico_path}")
 
-    icons[1].save(ASSETS / "favicon.ico", format="ICO", sizes=[(16, 16), (32, 32), (48, 48)], append_images=[icons[0], icons[2]])
-    print(f"Gerado: {ASSETS / 'favicon.ico'}")
-
 
 if __name__ == "__main__":
     main()
