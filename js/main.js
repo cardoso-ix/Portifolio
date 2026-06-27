@@ -350,4 +350,19 @@
   } else {
     window.setTimeout(initParticles, 200);
   }
+
+  /* ===== Experience archive toggle ===== */
+  const timelineToggle = document.getElementById('timeline-toggle');
+  const timelineArchive = document.getElementById('timeline-archive');
+
+  if (timelineToggle && timelineArchive) {
+    timelineToggle.addEventListener('click', function () {
+      const expanded = timelineToggle.getAttribute('aria-expanded') === 'true';
+      const nextExpanded = !expanded;
+
+      timelineToggle.setAttribute('aria-expanded', nextExpanded ? 'true' : 'false');
+      timelineArchive.hidden = !nextExpanded;
+      timelineToggle.textContent = nextExpanded ? 'Ocultar histórico' : 'Ver histórico completo';
+    });
+  }
 })();
