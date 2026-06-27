@@ -2,9 +2,11 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+from font_utils import resolve_font
+
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
-FONT = Path(r"C:\Windows\Fonts\arialbd.ttf")
+FONT = resolve_font("bold")
 BG = (5, 8, 16, 255)
 BG_INNER = (13, 21, 37, 255)
 CYAN = (0, 212, 255, 255)
