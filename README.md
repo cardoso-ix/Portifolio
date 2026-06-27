@@ -12,26 +12,37 @@ Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, respo
 | Fontes | Inter + JetBrains Mono (Google Fonts) |
 | Subprojeto embarcado | React + Vite (build em `conversor-unidades/`) |
 | Scripts auxiliares | Python 3 — Pillow, ReportLab |
+| CI | GitHub Actions — verificação de links (Lychee) |
 | Deploy | GitHub Pages (`main` → `/`) |
 
 ## Estrutura
 
 ```
 Portifolio-EDU/
-├── index.html                 # Página principal
-├── css/style.css              # Estilos (variáveis CSS, BEM-like)
-├── js/main.js                 # Menu, tema, animações, partículas
+├── index.html
+├── css/style.css
+├── js/main.js
 ├── assets/
 │   ├── cv_eduardo_cardoso.pdf
-│   ├── images/                # Fotos e previews de projetos
-│   └── favicon-*              # Ícones gerados
-├── conversor-unidades/        # Build estático do Conversor (Vite)
+│   └── images/
+├── conversor-unidades/
 ├── scripts/
-│   ├── generate_cv.py         # Gera o PDF do currículo
-│   ├── generate_favicon.py    # Gera favicons PNG/ICO
+│   ├── generate_cv.py
+│   ├── generate_favicon.py
+│   ├── font_utils.py
 │   └── requirements.txt
+├── .github/workflows/check-links.yml
 └── .cursor/                   # MCP e regras do Cursor (opcional)
 ```
+
+## Projetos em destaque no site
+
+| Projeto | Demo |
+|---------|------|
+| Copa Figurinhas | [copa-figurinhas-plum.vercel.app](https://copa-figurinhas-plum.vercel.app) |
+| Conversor de Unidades | [cardoso-ix.github.io/Portifolio/conversor-unidades](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) |
+| FitMind | [Releases / APK](https://github.com/cardoso-ix/fitmind/releases/latest) |
+| DigiWorld Chronicles | [cardoso-ix.github.io/digimon](https://cardoso-ix.github.io/digimon/) |
 
 ## Visualizar localmente
 
@@ -43,41 +54,31 @@ Acesse `http://localhost:8000`. O conversor embarcado funciona em `http://localh
 
 ## Scripts Python
 
-Instale as dependências:
-
 ```bash
 pip install -r scripts/requirements.txt
-```
-
-Gerar currículo PDF:
-
-```bash
-python scripts/generate_cv.py
-```
-
-Saídas: `assets/cv_eduardo_cardoso.pdf` e cópia na Área de Trabalho.
-
-Gerar favicons:
-
-```bash
-python scripts/generate_favicon.py
+python scripts/generate_cv.py      # gera assets/cv_eduardo_cardoso.pdf
+python scripts/generate_favicon.py # gera favicons na raiz e em assets/
 ```
 
 ## Publicar
 
-O repositório remoto é [`cardoso-ix/Portifolio`](https://github.com/cardoso-ix/Portifolio). Push na branch `main` atualiza o GitHub Pages automaticamente.
+Repositório remoto: [`cardoso-ix/Portifolio`](https://github.com/cardoso-ix/Portifolio). Push na branch `main` atualiza o GitHub Pages e dispara a verificação de links.
 
 Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.html` para evitar cache.
 
 ## Seções do site
 
-1. **Início** — hero, terminal, badges, currículo PDF  
-2. **Sobre** — trajetória profissional + Pós Tech Agentes de IA  
+1. **Início** — hero, terminal, currículo PDF  
+2. **Sobre** — trajetória + Pós Tech Agentes de IA  
 3. **Formação** — timeline acadêmica  
-4. **Skills** — IA, tecnologia, técnicas, soft skills  
-5. **Experiência** — histórico profissional  
-6. **Projetos** — portfólio, conversor, FitMind, DigiWorld, etc.  
-7. **Contato** — e-mail, GitHub, LinkedIn  
+4. **Experiência** — histórico profissional (histórico antigo colapsável)  
+5. **Skills** — IA, tecnologia, técnicas, soft skills  
+6. **Projetos** — Copa Figurinhas, portfólio, conversor, FitMind, DigiWorld  
+7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub  
+
+## Cursor MCP (opcional)
+
+Copie `.cursor/mcp.json.example` para `.cursor/mcp.json` e substitua o token do GitHub. Reinicie o Cursor e ative em **Settings → Tools & MCP**.
 
 ## Licença
 

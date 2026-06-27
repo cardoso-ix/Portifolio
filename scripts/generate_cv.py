@@ -1,4 +1,5 @@
 from io import BytesIO
+import platform
 from pathlib import Path
 
 from PIL import Image
@@ -13,13 +14,24 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Frame, Paragraph
 
-FONT_DIR = Path(r"C:\Windows\Fonts")
+from font_utils import resolve_font
+
 ROOT = Path(__file__).resolve().parent.parent
 PHOTO_PATH = ROOT / "assets" / "images" / "foto-cv.png"
 
+
+def _desktop_cv_path() -> Path:
+    if platform.system() == "Windows":
+        for folder in ("OneDrive/Área de Trabalho", "Desktop"):
+            target = Path.home() / folder / "Eduardo Cardoso.pdf"
+            if target.parent.is_dir():
+                return target
+    return Path.home() / "Desktop" / "Eduardo Cardoso.pdf"
+
+
 OUTPUT_PATHS = [
     ROOT / "assets" / "cv_eduardo_cardoso.pdf",
-    Path.home() / "OneDrive" / "Área de Trabalho" / "Eduardo Cardoso.pdf",
+    _desktop_cv_path(),
 ]
 
 PAGE_W, PAGE_H = A4
@@ -148,8 +160,8 @@ EDUCATION = [
 
 
 def register_fonts():
-    pdfmetrics.registerFont(TTFont("CV-Regular", str(FONT_DIR / "arial.ttf")))
-    pdfmetrics.registerFont(TTFont("CV-Bold", str(FONT_DIR / "arialbd.ttf")))
+    pdfmetrics.registerFont(TTFont("CV-Regular", str(resolve_font("regular"))))
+    pdfmetrics.registerFont(TTFont("CV-Bold", str(resolve_font("bold"))))
     pdfmetrics.registerFontFamily("CV", normal="CV-Regular", bold="CV-Bold")
 
 
