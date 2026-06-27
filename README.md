@@ -29,8 +29,14 @@ Portifolio-EDU/
 ├── scripts/
 │   ├── generate_cv.py
 │   ├── generate_favicon.py
+│   ├── generate_og_image.py
 │   ├── font_utils.py
+│   ├── format_html.py
 │   └── requirements.txt
+├── robots.txt
+├── sitemap.xml
+├── site.webmanifest
+├── 404.html
 ├── .github/workflows/check-links.yml
 └── .cursor/                   # MCP e regras do Cursor (opcional)
 ```
@@ -55,9 +61,20 @@ Acesse `http://localhost:8000`. O conversor embarcado funciona em `http://localh
 
 ```bash
 pip install -r scripts/requirements.txt
-python scripts/generate_cv.py      # gera assets/cv_eduardo_cardoso.pdf
-python scripts/generate_favicon.py # gera favicons na raiz e em assets/
+python scripts/generate_cv.py
+python scripts/generate_favicon.py
+python scripts/generate_og_image.py
+python scripts/format_html.py
 ```
+
+## SEO e qualidade
+
+- **Open Graph** — `assets/images/og-image.png` (1200×630, gerado por script)
+- **JSON-LD** — schema `Person` em `index.html`
+- **robots.txt** + **sitemap.xml** — indexação
+- **404.html** — erro personalizado no GitHub Pages
+- **site.webmanifest** — metadados PWA básicos
+- **CI** — links (Lychee) + validação HTML
 
 ## Publicar
 

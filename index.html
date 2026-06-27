@@ -3,11 +3,8 @@
 <html lang="pt-BR">
 
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="Eduardo Cardoso — Técnico de Calibração, Pós Tech Agentes de IA (FIAP + Alura). Metrologia, MBA, TypeScript & React. Chapecó - SC.">
   <meta name="author" content="Eduardo Cardoso">
   <meta name="theme-color" content="#0a0f18">
@@ -18,30 +15,54 @@
   <meta property="og:title" content="Eduardo Cardoso | Portfólio">
   <meta property="og:description" content="Técnico de Calibração cursando Pós Tech em Agentes de IA (FIAP + Alura). Projetos em TypeScript, React, Supabase e metrologia.">
   <meta property="og:url" content="https://cardoso-ix.github.io/Portifolio/">
-  <meta property="og:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/foto.png">
+  <meta property="og:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Eduardo Cardoso — Técnico de Calibração · Pós Tech Agentes de IA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Eduardo Cardoso | Portfólio">
   <meta name="twitter:description" content="Técnico de Calibração · Pós Tech Agentes de IA · TypeScript · React · Supabase">
-  <meta name="twitter:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/foto.png">
+  <meta name="twitter:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
   <title>Eduardo Cardoso | Portfólio</title>
-
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="css/style.css?v=16" as="style">
   <link rel="icon" href="favicon.ico" sizes="any">
-
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=16">
 
-  <link rel="stylesheet" href="css/style.css?v=15">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eduardo Cardoso",
+    "url": "https://cardoso-ix.github.io/Portifolio/",
+    "image": "https://cardoso-ix.github.io/Portifolio/assets/images/foto.png",
+    "jobTitle": "Técnico de Calibração",
+    "worksFor": { "@type": "Organization", "name": "Fluxo Metrologia" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "FIAP + Alura" },
+      { "@type": "CollegeOrUniversity", "name": "Universidade Cruzeiro do Sul" }
+    ],
+    "knowsAbout": ["Agentes de IA", "Metrologia", "TypeScript", "React", "Supabase"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chapecó",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://github.com/cardoso-ix",
+      "https://www.linkedin.com/in/eduardo-cardoso-213a02267"
+    ]
+  }
+
+  </script>
 
   <script>
     (function () {
@@ -52,857 +73,452 @@
         }
       } catch (e) {}
     })();
+
   </script>
 
 </head>
 
 <body>
-
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
   <canvas id="particles-canvas" aria-hidden="true"></canvas>
-
   <div class="bg-grid" aria-hidden="true"></div>
 
-  <div class="scanlines" aria-hidden="true"></div>
-
   <header class="header" id="header">
-
     <div class="container header__inner">
-
       <a href="#inicio" class="header__logo" aria-label="Eduardo Cardoso — Portfólio">
-
         <span class="header__logo-icon" aria-hidden="true">
-
           <svg class="header__logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
             <path d="M8 3h8a2 2 0 0 1 2 2v15a1 1 0 0 1-1.447.894L12 19.118l-4.553 2.776A1 1 0 0 1 6 21V5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-
             <path d="M9 8h6M9 11.5h6M9 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-
           </svg>
-
         </span>
-
         <span class="header__logo-text">&lt;EduCardoso /&gt;</span>
-
       </a>
-
       <div class="header__controls">
-
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" aria-pressed="false">
-
           <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-
             <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/>
-
             <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
-
           </svg>
-
           <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-
             <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
-
           </svg>
-
           <span class="theme-toggle__label theme-toggle__label--light">Modo claro</span>
-
           <span class="theme-toggle__label theme-toggle__label--dark">Modo escuro</span>
-
         </button>
-
-        <button class="header__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-
+        <button class="header__toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
           <span></span>
-
           <span></span>
-
           <span></span>
-
         </button>
-
         <nav class="header__nav" id="nav-menu" aria-label="Navegação principal">
-
         <ul class="header__list">
-
           <li><a href="#inicio" class="header__link">Início</a></li>
-
           <li><a href="#sobre" class="header__link">Sobre</a></li>
-
           <li><a href="#formacao" class="header__link">Formação</a></li>
-
           <li><a href="#experiencia" class="header__link">Experiência</a></li>
-
           <li><a href="#skills" class="header__link">Skills</a></li>
-
           <li><a href="#projetos" class="header__link">Projetos</a></li>
-
           <li><a href="#contato" class="header__link">Contato</a></li>
-
         </ul>
-
         </nav>
-
       </div>
-
     </div>
 
   </header>
 
-  <main>
+  <main id="conteudo-principal">
 
     <section class="hero section" id="inicio">
-
       <div class="container hero__inner">
-
         <div class="hero__content fade-in">
-
           <div class="terminal-bar">
-
             <span class="terminal-dot terminal-dot--red"></span>
-
             <span class="terminal-dot terminal-dot--yellow"></span>
-
             <span class="terminal-dot terminal-dot--green"></span>
-
             <span class="terminal-bar__title">~/eduardo-cardoso — perfil.md</span>
-
           </div>
-
           <div class="hero__terminal" aria-hidden="true">
-
             <p class="hero__terminal-line"><span class="prompt">$</span> cat cargo-atual.txt</p>
-
             <p class="hero__terminal-output">Técnico de Calibração @ Fluxo Metrologia</p>
-
             <p class="hero__terminal-line"><span class="prompt">$</span> cat estudo-atual.txt</p>
-
             <p class="hero__terminal-output">Pós Tech Agentes de IA @ FIAP + Alura</p>
-
           </div>
-
           <div class="hero__badges">
-
             <span class="hero__badge hero__badge--live"><span class="hero__badge-dot" aria-hidden="true"></span> Disponível para oportunidades</span>
-
             <span class="hero__badge">Chapecó, SC</span>
-
           </div>
-
           <p class="hero__greeting"><span class="prompt">&gt;</span> Olá, eu sou</p>
-
           <h1 class="hero__title glitch" data-text="Eduardo Cardoso">Eduardo Cardoso</h1>
-
           <p class="hero__subtitle">
-
             <span class="prompt">&gt;</span>
-
             <span id="typing-text"></span><span class="cursor-blink" aria-hidden="true">|</span>
-
           </p>
-
           <p class="hero__description">
-
             Administrador e MBA, com experiência em metrologia e logística. Atualmente
-
             <strong>Técnico de Calibração</strong> na Fluxo Metrologia, cursando
-
             <strong>Pós Tech em Agentes de IA</strong> (FIAP + Alura).
-
           </p>
-
           <div class="hero__actions">
-
             <a href="#projetos" class="btn btn--primary"><span>Ver projetos</span></a>
-
             <a href="#contato" class="btn btn--outline"><span>Contato</span></a>
-
             <a href="assets/cv_eduardo_cardoso.pdf?v=5" class="btn btn--outline" target="_blank" rel="noopener noreferrer"><span>Currículo PDF</span></a>
-
           </div>
-
         </div>
-
         <div class="hero__visual fade-in">
-
           <div class="hero__avatar-wrap">
-
             <div class="hero__ring hero__ring--1" aria-hidden="true"></div>
-
             <div class="hero__ring hero__ring--2" aria-hidden="true"></div>
-
             <div class="hero__ring hero__ring--3" aria-hidden="true"></div>
-
             <div class="hero__avatar">
-
               <img src="assets/images/foto.png?v=2" alt="Foto de Eduardo Cardoso" class="hero__photo" width="400" height="400" fetchpriority="high" decoding="async">
-
             </div>
-
           </div>
-
           <div class="hero__profile-card">
-
             <div class="hero__profile-row">
-
               <span class="hero__profile-key">cargo</span>
-
               <span class="hero__profile-val">Téc. Calibração</span>
-
             </div>
-
             <div class="hero__profile-row">
-
               <span class="hero__profile-key">estudo</span>
-
               <span class="hero__profile-val hero__profile-val--study">Agentes de IA · FIAP</span>
-
             </div>
-
             <div class="hero__profile-row">
-
               <span class="hero__profile-key">local</span>
-
               <span class="hero__profile-val">Chapecó — SC</span>
-
             </div>
-
             <div class="hero__profile-row">
-
               <span class="hero__profile-key">stack</span>
-
               <span class="hero__profile-val">LLMs · TS · React</span>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
 
     </section>
 
     <section class="section" id="sobre">
-
       <div class="container">
-
         <h2 class="section__title fade-in"><span class="section__number">01.</span> Sobre mim</h2>
-
         <div class="about terminal-window fade-in">
-
           <div class="terminal-bar terminal-bar--sm">
-
             <span class="terminal-dot terminal-dot--red"></span>
-
             <span class="terminal-dot terminal-dot--yellow"></span>
-
             <span class="terminal-dot terminal-dot--green"></span>
-
             <span class="terminal-bar__title">about.md</span>
-
           </div>
-
           <div class="about__body">
-
             <p>
-
               Sou de Chapecó — SC, formado em Administração (UNIFRAN), MBA em Controladoria e Finanças,
-
               e Técnico em Automação Industrial (Senai). Atuo como Técnico de Laboratório de Calibração
-
               na Fluxo Metrologia, com trajetória em metrologia (JBS), logística (Sandimas), suporte
-
               técnico (Crescer Sistemas) e processos industriais.
-
             </p>
-
             <p>
-
               Desenvolvo projetos com TypeScript, React, Next.js e Supabase — e-commerce,
-
               portfólio, conversor de unidades, apps mobile e aplicações publicadas no GitHub —
-
               como prática em tecnologia e complemento à minha formação profissional.
-
             </p>
-
             <p class="about__highlight">
-
               Cursando a
-
               <a href="https://postech.fiap.com.br/curso/agentes-de-ia/" class="about__link" target="_blank" rel="noopener noreferrer">Pós Tech em Agentes de IA</a>
-
               (FIAP + Alura): 360 horas em LLMs, RAG, orquestração de agentes e integração de sistemas,
-
               com micro-certificações por fase e certificado ao concluir — direcionando minha carreira
-
               para oportunidades em Inteligência Artificial, aplicando o que já vivencio na indústria.
-
             </p>
-
           </div>
-
         </div>
-
       </div>
 
     </section>
 
     <section class="section section--alt" id="formacao">
-
       <div class="container">
-
         <h2 class="section__title fade-in"><span class="section__number">02.</span> Formação</h2>
-
         <div class="timeline">
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--active">Em andamento</span>
-
               <h3 class="timeline__title">Pós Tech em Agentes de IA</h3>
-
               <p class="timeline__institution">FIAP + Alura — 360h · 10 meses</p>
-
               <p class="timeline__period">Jun, 2026 — Em andamento</p>
-
               <p class="timeline__description">Pós-graduação em agentes autônomos de IA: LLMs, RAG, orquestração, APIs e governança. Certificado ao concluir + micro-certificações por fase.</p>
-
               <a href="https://postech.fiap.com.br/curso/agentes-de-ia/" class="timeline__link" target="_blank" rel="noopener noreferrer">Ver curso na FIAP</a>
-
             </div>
-
           </article>
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--done">Concluído</span>
-
               <h3 class="timeline__title">MBA em Controladoria e Finanças</h3>
-
               <p class="timeline__institution">Universidade Cruzeiro do Sul</p>
-
               <p class="timeline__period">2022</p>
-
             </div>
-
           </article>
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--done">Concluído</span>
-
               <h3 class="timeline__title">Graduação em Administração</h3>
-
               <p class="timeline__institution">Universidade de Franca (UNIFRAN)</p>
-
               <p class="timeline__period">2016 — 2020</p>
-
             </div>
-
           </article>
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--done">Concluído</span>
-
               <h3 class="timeline__title">Especialização em Indicadores de Pesagem e Normalização INMETRO</h3>
-
               <p class="timeline__institution">Libratek Balanças e Serviços</p>
-
               <p class="timeline__period">2014</p>
-
             </div>
-
           </article>
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--done">Concluído</span>
-
               <h3 class="timeline__title">Técnico em Automação Industrial</h3>
-
               <p class="timeline__institution">Senai — Santo Antônio da Platina</p>
-
               <p class="timeline__period">2010 — 2012</p>
-
             </div>
-
           </article>
-
         </div>
-
       </div>
 
     </section>
 
     <section class="section" id="experiencia">
-
       <div class="container">
-
         <h2 class="section__title fade-in"><span class="section__number">03.</span> Experiência</h2>
-
         <div class="timeline">
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--active">Atual</span>
-
               <h3 class="timeline__title">Técnico de Laboratório de Calibração</h3>
-
               <p class="timeline__institution">Fluxo Metrologia</p>
-
               <p class="timeline__period">Jul, 2025 — Presente</p>
-
               <p class="timeline__description">Calibração de instrumentos de medição, emissão de certificados, gestão de padrões de referência e conformidade documental conforme normas de qualidade.</p>
-
             </div>
-
           </article>
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--done">Concluído</span>
-
               <h3 class="timeline__title">Coordenador de Logística</h3>
-
               <p class="timeline__institution">Sandimas — Chapecó, SC</p>
-
               <p class="timeline__period">Mai, 2023 — Fev, 2025</p>
-
               <p class="timeline__description">Supervisão da equipe de expedição, emissão de documentos fiscais e operacionais, notas fiscais, controle de recebimentos e conferência de cargas.</p>
-
             </div>
-
           </article>
-
           <article class="timeline__item fade-in">
-
             <div class="timeline__marker"></div>
-
             <div class="timeline__content">
-
               <span class="timeline__status timeline__status--done">Concluído</span>
-
               <h3 class="timeline__title">Suporte Técnico Help Desk</h3>
-
               <p class="timeline__institution">Crescer Sistemas — Chapecó, SC</p>
-
               <p class="timeline__period">Fev, 2022 — Mai, 2023</p>
-
               <p class="timeline__description">Suporte técnico aos clientes, esclarecimento de dúvidas e auxílio na resolução de problemas.</p>
-
             </div>
-
           </article>
-
           <div class="timeline__archive" id="timeline-archive" hidden>
-
             <article class="timeline__item fade-in visible">
-
               <div class="timeline__marker"></div>
-
               <div class="timeline__content">
-
                 <span class="timeline__status timeline__status--done">Concluído</span>
-
                 <h3 class="timeline__title">Orçamentista</h3>
-
                 <p class="timeline__institution">MR Indústria Gráfica — Concórdia, SC</p>
-
                 <p class="timeline__period">Out, 2020 — Jun, 2021</p>
-
                 <p class="timeline__description">Elaboração de orçamentos e tratativas comerciais com vendedores.</p>
-
               </div>
-
             </article>
-
             <article class="timeline__item fade-in visible">
-
               <div class="timeline__marker"></div>
-
               <div class="timeline__content">
-
                 <span class="timeline__status timeline__status--done">Concluído</span>
-
                 <h3 class="timeline__title">Metrologista</h3>
-
                 <p class="timeline__institution">JBS Foods — Jacarezinho, PR</p>
-
                 <p class="timeline__period">Dez, 2014 — Dez, 2019</p>
-
                 <p class="timeline__description">Calibração de equipamentos, relatórios de não conformidade, cadastro de instrumentos de medição e controle de calibração conforme padrões de qualidade.</p>
-
               </div>
-
             </article>
-
           </div>
-
         </div>
-
         <button class="timeline__toggle btn btn--outline fade-in" id="timeline-toggle" type="button" aria-expanded="false" aria-controls="timeline-archive">Ver histórico completo</button>
-
       </div>
 
     </section>
 
     <section class="section section--alt" id="skills">
-
       <div class="container">
-
         <h2 class="section__title fade-in"><span class="section__number">04.</span> Skills</h2>
-
         <p class="section__intro fade-in">Competências em formação em IA e experiência técnica acumulada.</p>
-
         <div class="skills">
-
           <div class="skills__group skills__group--primary fade-in">
-
             <h3 class="skills__category">Agentes de IA</h3>
-
             <ul class="skills__list">
-
               <li class="skill-tag skill-tag--primary">LLMs</li>
-
               <li class="skill-tag skill-tag--primary">RAG</li>
-
               <li class="skill-tag skill-tag--primary">Prompt Engineering</li>
-
               <li class="skill-tag">Orquestração de Agentes</li>
-
               <li class="skill-tag">Integração via APIs</li>
-
               <li class="skill-tag">Governança de IA</li>
-
             </ul>
-
           </div>
-
           <div class="skills__group fade-in">
-
             <h3 class="skills__category">Tecnologia</h3>
-
             <ul class="skills__list">
-
               <li class="skill-tag">TypeScript</li>
-
               <li class="skill-tag">Next.js</li>
-
               <li class="skill-tag">React</li>
-
               <li class="skill-tag">React Native</li>
-
               <li class="skill-tag">Supabase</li>
-
               <li class="skill-tag">Mercado Pago</li>
-
               <li class="skill-tag">HTML</li>
-
               <li class="skill-tag">CSS</li>
-
               <li class="skill-tag">Git</li>
-
             </ul>
-
           </div>
-
           <div class="skills__group fade-in">
-
             <h3 class="skills__category">Técnicas</h3>
-
             <ul class="skills__list">
-
               <li class="skill-tag">Metrologia</li>
-
               <li class="skill-tag">Calibração</li>
-
               <li class="skill-tag">INMETRO</li>
-
               <li class="skill-tag">Logística</li>
-
               <li class="skill-tag">Automação Industrial</li>
-
             </ul>
-
           </div>
-
           <div class="skills__group fade-in">
-
             <h3 class="skills__category">Soft Skills</h3>
-
             <ul class="skills__list">
-
               <li class="skill-tag">Comunicação</li>
-
               <li class="skill-tag">Trabalho em equipe</li>
-
               <li class="skill-tag">Proatividade</li>
-
               <li class="skill-tag">Aprendizado contínuo</li>
-
             </ul>
-
           </div>
-
         </div>
-
       </div>
 
     </section>
 
     <section class="section section--alt" id="projetos">
-
       <div class="container">
-
         <h2 class="section__title fade-in"><span class="section__number">05.</span> Projetos</h2>
-
         <p class="section__intro fade-in">Projetos pessoais, comerciais e de estudo em desenvolvimento web e mobile.</p>
-
         <div class="projects">
-
           <article class="project-card fade-in">
-
             <div class="project-card__image">
-
               <img src="assets/images/copa-preview.png?v=2" alt="Preview da loja Copa Figurinhas — checkout mobile com PIX e entrega no Google Drive" class="project-card__thumb" width="640" height="360" loading="lazy">
-
             </div>
-
             <div class="project-card__body">
-
               <h3 class="project-card__title">Copa Figurinhas</h3>
-
               <p class="project-card__description">
-
                 E-commerce full-stack para venda de álbum digital da Copa: landing com galeria de
-
                 prévias, checkout responsivo com PIX (Mercado Pago), webhook de confirmação,
-
                 entrega automática via Google Drive + e-mail (Resend), painel admin e deploy na Vercel.
-
               </p>
-
               <ul class="project-card__tags">
-
                 <li class="skill-tag">Next.js</li>
-
                 <li class="skill-tag">TypeScript</li>
-
                 <li class="skill-tag">Supabase</li>
-
                 <li class="skill-tag">Mercado Pago</li>
-
                 <li class="skill-tag">Google Drive</li>
-
                 <li class="skill-tag">Resend</li>
-
               </ul>
-
               <div class="project-card__links">
-
                 <a href="https://copa-figurinhas-plum.vercel.app" class="project-card__link" target="_blank" rel="noopener noreferrer">Ver demo</a>
-
                 <a href="https://github.com/cardoso-ix/copa-figurinhas" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
-
               </div>
-
             </div>
-
           </article>
-
           <article class="project-card fade-in">
-
             <div class="project-card__image">
-
               <img src="assets/images/portfolio-preview.svg" alt="Preview do portfólio — hero com terminal, nome e painel de perfil" class="project-card__thumb" width="640" height="360" loading="lazy">
-
             </div>
-
             <div class="project-card__body">
-
               <h3 class="project-card__title">Portfólio Pessoal</h3>
-
               <p class="project-card__description">
-
                 Site de portfólio desenvolvido com HTML, CSS e JavaScript, com design
-
                 responsivo, animações e identidade visual tecnológica.
-
               </p>
-
               <ul class="project-card__tags">
-
                 <li class="skill-tag">HTML</li>
-
                 <li class="skill-tag">CSS</li>
-
                 <li class="skill-tag">JavaScript</li>
-
               </ul>
-
               <div class="project-card__links">
-
                 <a href="#inicio" class="project-card__link">Ver site</a>
-
               </div>
-
             </div>
-
           </article>
-
           <article class="project-card fade-in">
-
             <div class="project-card__image">
-
               <img src="assets/images/conversor-preview.svg" alt="Preview do Conversor de Unidades" class="project-card__thumb" width="640" height="360" loading="lazy">
-
             </div>
-
             <div class="project-card__body">
-
               <h3 class="project-card__title">Conversor de Unidades</h3>
-
               <p class="project-card__description">
-
                 Aplicação web completa com 49 categorias de grandezas físicas e de medição,
-
                 histórico de conversões, busca global, tema claro/escuro e layout responsivo.
-
                 Desenvolvida com React, TypeScript e Vite.
-
               </p>
-
               <ul class="project-card__tags">
-
                 <li class="skill-tag">React</li>
                 <li class="skill-tag">TypeScript</li>
                 <li class="skill-tag">Vite</li>
                 <li class="skill-tag">CSS</li>
-
               </ul>
-
               <div class="project-card__links">
-
                 <a href="conversor-unidades/" class="project-card__link">Ver demo</a>
-
                 <a href="https://github.com/cardoso-ix/conversor-unidades" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
-
               </div>
-
             </div>
-
           </article>
-
           <article class="project-card fade-in">
-
             <div class="project-card__image">
-
               <img src="assets/images/fitmind-preview.png" alt="Preview do FitMind — app mobile de personal trainer com treino guiado e alimentação" class="project-card__thumb" width="640" height="360" loading="lazy">
-
             </div>
-
             <div class="project-card__body">
-
               <h3 class="project-card__title">FitMind</h3>
-
               <p class="project-card__description">
-
                 App mobile de personal trainer com IA: onboarding completo, planos de treino
-
                 (Wger + Gemini), sessão guiada com log de execução, alimentação com catálogo
-
                 de 200+ itens, conquistas, foto de perfil e progresso. APK Android disponível
-
                 para testes.
-
               </p>
-
               <ul class="project-card__tags">
-
                 <li class="skill-tag">React Native</li>
-
                 <li class="skill-tag">Expo</li>
-
                 <li class="skill-tag">TypeScript</li>
-
                 <li class="skill-tag">Supabase</li>
-
                 <li class="skill-tag">Gemini AI</li>
-
               </ul>
-
               <div class="project-card__links">
-
                 <a href="https://github.com/cardoso-ix/fitmind/releases/latest/download/fitmind.apk" class="project-card__link" target="_blank" rel="noopener noreferrer">Baixar APK</a>
-
                 <a href="https://github.com/cardoso-ix/fitmind" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
-
                 <a href="https://github.com/cardoso-ix/fitmind/releases/latest" class="project-card__link" target="_blank" rel="noopener noreferrer">Releases</a>
-
               </div>
-
             </div>
-
           </article>
-
         </div>
-
       </div>
 
     </section>
 
     <section class="section section--alt section--compact" id="contato">
-
       <div class="container container--narrow">
-
         <h2 class="section__title fade-in"><span class="section__number">06.</span> Contato</h2>
-
         <p class="contact__intro fade-in">Chapecó, SC — clique para entrar em contato:</p>
-
         <div class="contact__links fade-in">
-
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eduardoocardosoo@gmail.com" class="contact__chip" id="contact-email" data-email="eduardoocardosoo@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar e-mail para eduardoocardosoo@gmail.com">Email</a>
-
           <a href="https://wa.me/5549998095955" class="contact__chip" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-
           <a href="https://www.linkedin.com/in/eduardo-cardoso-213a02267" class="contact__chip" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
           <a href="https://github.com/cardoso-ix" class="contact__chip" target="_blank" rel="noopener noreferrer">GitHub</a>
-
           <a href="assets/cv_eduardo_cardoso.pdf?v=5" class="contact__chip" target="_blank" rel="noopener noreferrer">Currículo</a>
-
         </div>
-
       </div>
 
     </section>
@@ -910,18 +526,13 @@
   </main>
 
   <footer class="footer">
-
     <div class="container">
-
       <p>&copy; <span id="year"></span> Eduardo Cardoso. Todos os direitos reservados.</p>
-
     </div>
 
   </footer>
 
-  <script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=11"></script>
 
 </body>
-
 </html>
-

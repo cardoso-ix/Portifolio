@@ -11,6 +11,8 @@
   const canvas = document.getElementById('particles-canvas');
   const themeToggle = document.getElementById('theme-toggle');
   const THEME_KEY = 'portfolio-theme';
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const THEME_COLORS = { dark: '#0a0f18', light: '#eef4fb' };
 
   const TYPING_PHRASES = [
     'Pós Tech Agentes de IA — FIAP + Alura',
@@ -44,6 +46,10 @@
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
 
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', THEME_COLORS[theme] || THEME_COLORS.dark);
+    }
+
     try {
       localStorage.setItem(THEME_KEY, theme);
     } catch (e) {}
@@ -54,6 +60,10 @@
 
   if (themeToggle) {
     updateThemeToggleState(getTheme());
+
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', THEME_COLORS[getTheme()] || THEME_COLORS.dark);
+    }
 
     themeToggle.addEventListener('click', function () {
       setTheme(getTheme() === 'light' ? 'dark' : 'light');

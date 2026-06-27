@@ -23,5 +23,9 @@ jobs:
             --accept 200,403,429
             './**/*.html'
             './**/*.md'
+            './**/*.xml'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validar HTML principal
+        run: npx --yes html-validate index.html 404.html

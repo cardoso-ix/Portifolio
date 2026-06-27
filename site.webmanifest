@@ -1,0 +1,23 @@
+{
+  "name": "Eduardo Cardoso — Portfólio",
+  "short_name": "EduCardoso",
+  "description": "Portfólio de Eduardo Cardoso — Técnico de Calibração e Pós Tech em Agentes de IA.",
+  "start_url": "/Portifolio/",
+  "scope": "/Portifolio/",
+  "display": "standalone",
+  "background_color": "#0a1020",
+  "theme_color": "#0a0f18",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/Portifolio/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portifolio/assets/favicon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ]
+}
