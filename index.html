@@ -28,7 +28,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/style.css?v=14">
 
   <script>
     (function () {
@@ -77,6 +77,28 @@
 
       <div class="header__controls">
 
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" aria-pressed="false">
+
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/>
+
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+
+          </svg>
+
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+
+            <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+
+          </svg>
+
+          <span class="theme-toggle__label theme-toggle__label--light">Modo claro</span>
+
+          <span class="theme-toggle__label theme-toggle__label--dark">Modo escuro</span>
+
+        </button>
+
         <button class="header__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
 
           <span></span>
@@ -97,9 +119,9 @@
 
           <li><a href="#formacao" class="header__link">Formação</a></li>
 
-          <li><a href="#skills" class="header__link">Skills</a></li>
-
           <li><a href="#experiencia" class="header__link">Experiência</a></li>
+
+          <li><a href="#skills" class="header__link">Skills</a></li>
 
           <li><a href="#projetos" class="header__link">Projetos</a></li>
 
@@ -151,8 +173,6 @@
 
           <div class="hero__badges">
 
-            <span class="hero__badge">Estudando Agentes de IA · FIAP + Alura</span>
-
             <span class="hero__badge hero__badge--live"><span class="hero__badge-dot" aria-hidden="true"></span> Disponível para oportunidades</span>
 
             <span class="hero__badge">Chapecó, SC</span>
@@ -173,13 +193,11 @@
 
           <p class="hero__description">
 
-            Administrador, MBA em Controladoria e Finanças, com experiência em metrologia e
+            Administrador e MBA, com experiência em metrologia e logística. Atualmente
 
-            logística. Atualmente <strong>Técnico de Calibração</strong> na Fluxo Metrologia.
+            <strong>Técnico de Calibração</strong> na Fluxo Metrologia, cursando
 
-            Paralelamente, cursando <strong>Pós Tech em Agentes de IA</strong> (FIAP + Alura),
-
-            buscando unir minha base industrial com soluções de inteligência artificial.
+            <strong>Pós Tech em Agentes de IA</strong> (FIAP + Alura).
 
           </p>
 
@@ -208,22 +226,6 @@
             <div class="hero__avatar">
 
               <img src="assets/images/foto.png?v=2" alt="Foto de Eduardo Cardoso" class="hero__photo" width="400" height="400" fetchpriority="high" decoding="async">
-
-            </div>
-
-            <div class="hero__float hero__float--top" aria-hidden="true">
-
-              <span class="hero__float-label">Cargo atual</span>
-
-              <span class="hero__float-value">Téc. Calibração</span>
-
-            </div>
-
-            <div class="hero__float hero__float--bottom" aria-hidden="true">
-
-              <span class="hero__float-label">Estudando</span>
-
-              <span class="hero__float-value">Agentes de IA</span>
 
             </div>
 
@@ -451,11 +453,133 @@
 
 
 
-    <section class="section" id="skills">
+    <section class="section" id="experiencia">
 
       <div class="container">
 
-        <h2 class="section__title fade-in"><span class="section__number">03.</span> Skills</h2>
+        <h2 class="section__title fade-in"><span class="section__number">03.</span> Experiência</h2>
+
+        <div class="timeline">
+
+          <article class="timeline__item fade-in">
+
+            <div class="timeline__marker"></div>
+
+            <div class="timeline__content">
+
+              <span class="timeline__status timeline__status--active">Atual</span>
+
+              <h3 class="timeline__title">Técnico de Laboratório de Calibração</h3>
+
+              <p class="timeline__institution">Fluxo Metrologia</p>
+
+              <p class="timeline__period">Jul, 2025 — Presente</p>
+
+              <p class="timeline__description">Calibração de instrumentos de medição, emissão de certificados, gestão de padrões de referência e conformidade documental conforme normas de qualidade.</p>
+
+            </div>
+
+          </article>
+
+          <article class="timeline__item fade-in">
+
+            <div class="timeline__marker"></div>
+
+            <div class="timeline__content">
+
+              <span class="timeline__status timeline__status--done">Concluído</span>
+
+              <h3 class="timeline__title">Coordenador de Logística</h3>
+
+              <p class="timeline__institution">Sandimas — Chapecó, SC</p>
+
+              <p class="timeline__period">Mai, 2023 — Fev, 2025</p>
+
+              <p class="timeline__description">Supervisão da equipe de expedição, emissão de documentos fiscais e operacionais, notas fiscais, controle de recebimentos e conferência de cargas.</p>
+
+            </div>
+
+          </article>
+
+          <article class="timeline__item fade-in">
+
+            <div class="timeline__marker"></div>
+
+            <div class="timeline__content">
+
+              <span class="timeline__status timeline__status--done">Concluído</span>
+
+              <h3 class="timeline__title">Suporte Técnico Help Desk</h3>
+
+              <p class="timeline__institution">Crescer Sistemas — Chapecó, SC</p>
+
+              <p class="timeline__period">Fev, 2022 — Mai, 2023</p>
+
+              <p class="timeline__description">Suporte técnico aos clientes, esclarecimento de dúvidas e auxílio na resolução de problemas.</p>
+
+            </div>
+
+          </article>
+
+          <div class="timeline__archive" id="timeline-archive" hidden>
+
+            <article class="timeline__item fade-in visible">
+
+              <div class="timeline__marker"></div>
+
+              <div class="timeline__content">
+
+                <span class="timeline__status timeline__status--done">Concluído</span>
+
+                <h3 class="timeline__title">Orçamentista</h3>
+
+                <p class="timeline__institution">MR Indústria Gráfica — Concórdia, SC</p>
+
+                <p class="timeline__period">Out, 2020 — Jun, 2021</p>
+
+                <p class="timeline__description">Elaboração de orçamentos e tratativas comerciais com vendedores.</p>
+
+              </div>
+
+            </article>
+
+            <article class="timeline__item fade-in visible">
+
+              <div class="timeline__marker"></div>
+
+              <div class="timeline__content">
+
+                <span class="timeline__status timeline__status--done">Concluído</span>
+
+                <h3 class="timeline__title">Metrologista</h3>
+
+                <p class="timeline__institution">JBS Foods — Jacarezinho, PR</p>
+
+                <p class="timeline__period">Dez, 2014 — Dez, 2019</p>
+
+                <p class="timeline__description">Calibração de equipamentos, relatórios de não conformidade, cadastro de instrumentos de medição e controle de calibração conforme padrões de qualidade.</p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+        <button class="timeline__toggle btn btn--outline fade-in" id="timeline-toggle" type="button" aria-expanded="false" aria-controls="timeline-archive">Ver histórico completo</button>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section section--alt" id="skills">
+
+      <div class="container">
+
+        <h2 class="section__title fade-in"><span class="section__number">04.</span> Skills</h2>
 
         <p class="section__intro fade-in">Competências em formação em IA e experiência técnica acumulada.</p>
 
@@ -548,122 +672,6 @@
             </ul>
 
           </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section class="section section--alt" id="experiencia">
-
-      <div class="container">
-
-        <h2 class="section__title fade-in"><span class="section__number">04.</span> Experiência</h2>
-
-        <div class="timeline">
-
-          <article class="timeline__item fade-in">
-
-            <div class="timeline__marker"></div>
-
-            <div class="timeline__content">
-
-              <span class="timeline__status timeline__status--active">Atual</span>
-
-              <h3 class="timeline__title">Técnico de Laboratório de Calibração</h3>
-
-              <p class="timeline__institution">Fluxo Metrologia</p>
-
-              <p class="timeline__period">Jul, 2025 — Presente</p>
-
-              <p class="timeline__description">Calibração de instrumentos de medição, emissão de certificados, gestão de padrões de referência e conformidade documental conforme normas de qualidade.</p>
-
-            </div>
-
-          </article>
-
-          <article class="timeline__item fade-in">
-
-            <div class="timeline__marker"></div>
-
-            <div class="timeline__content">
-
-              <span class="timeline__status timeline__status--done">Concluído</span>
-
-              <h3 class="timeline__title">Coordenador de Logística</h3>
-
-              <p class="timeline__institution">Sandimas — Chapecó, SC</p>
-
-              <p class="timeline__period">Mai, 2023 — Fev, 2025</p>
-
-              <p class="timeline__description">Supervisão da equipe de expedição, emissão de documentos fiscais e operacionais, notas fiscais, controle de recebimentos e conferência de cargas.</p>
-
-            </div>
-
-          </article>
-
-          <article class="timeline__item fade-in">
-
-            <div class="timeline__marker"></div>
-
-            <div class="timeline__content">
-
-              <span class="timeline__status timeline__status--done">Concluído</span>
-
-              <h3 class="timeline__title">Suporte Técnico Help Desk</h3>
-
-              <p class="timeline__institution">Crescer Sistemas — Chapecó, SC</p>
-
-              <p class="timeline__period">Fev, 2022 — Mai, 2023</p>
-
-              <p class="timeline__description">Suporte técnico aos clientes, esclarecimento de dúvidas e auxílio na resolução de problemas.</p>
-
-            </div>
-
-          </article>
-
-          <article class="timeline__item fade-in">
-
-            <div class="timeline__marker"></div>
-
-            <div class="timeline__content">
-
-              <span class="timeline__status timeline__status--done">Concluído</span>
-
-              <h3 class="timeline__title">Orçamentista</h3>
-
-              <p class="timeline__institution">MR Indústria Gráfica — Concórdia, SC</p>
-
-              <p class="timeline__period">Out, 2020 — Jun, 2021</p>
-
-              <p class="timeline__description">Elaboração de orçamentos e tratativas comerciais com vendedores.</p>
-
-            </div>
-
-          </article>
-
-          <article class="timeline__item fade-in">
-
-            <div class="timeline__marker"></div>
-
-            <div class="timeline__content">
-
-              <span class="timeline__status timeline__status--done">Concluído</span>
-
-              <h3 class="timeline__title">Metrologista</h3>
-
-              <p class="timeline__institution">JBS Foods — Jacarezinho, PR</p>
-
-              <p class="timeline__period">Dez, 2014 — Dez, 2019</p>
-
-              <p class="timeline__description">Calibração de equipamentos, relatórios de não conformidade, cadastro de instrumentos de medição e controle de calibração conforme padrões de qualidade.</p>
-
-            </div>
-
-          </article>
 
         </div>
 
@@ -924,31 +932,7 @@
 
 
 
-  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" aria-pressed="false">
-
-    <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-
-      <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/>
-
-      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
-
-    </svg>
-
-    <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-
-      <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
-
-    </svg>
-
-    <span class="theme-toggle__label theme-toggle__label--light">Modo claro</span>
-
-    <span class="theme-toggle__label theme-toggle__label--dark">Modo escuro</span>
-
-  </button>
-
-
-
-  <script src="js/main.js?v=8"></script>
+  <script src="js/main.js?v=9"></script>
 
 </body>
 
