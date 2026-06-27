@@ -143,6 +143,26 @@ ul {
   mask-image: radial-gradient(ellipse 90% 70% at 50% 25%, black 25%, transparent 78%);
 }
 
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  z-index: 200;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  background: var(--color-accent);
+  color: #041018;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top var(--transition);
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
 .scanlines {
   display: none;
 }
