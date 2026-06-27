@@ -18,7 +18,6 @@ ROOT = Path(__file__).resolve().parent.parent
 PHOTO_PATH = ROOT / "assets" / "images" / "foto-cv.png"
 
 OUTPUT_PATHS = [
-    ROOT / "assets" / "Eduardo Cardoso.pdf",
     ROOT / "assets" / "cv_eduardo_cardoso.pdf",
     Path.home() / "OneDrive" / "Área de Trabalho" / "Eduardo Cardoso.pdf",
 ]

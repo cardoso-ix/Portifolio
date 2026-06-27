@@ -1,0 +1,34 @@
+---
+description: Conventions for Eduardo Cardoso portfolio (static site + Python scripts)
+globs: index.html, css/**, js/**, scripts/**, assets/**
+alwaysApply: false
+---
+
+# Portfólio EDU — project conventions
+
+## Stack
+- Main site: vanilla HTML/CSS/JS (no bundler). Deploy via GitHub Pages at `cardoso-ix.github.io/Portifolio/`.
+- Scripts: Python 3 (`Pillow`, `ReportLab`) in `scripts/`.
+- Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
+
+## Content tone
+- Portuguese (pt-BR). Balance professional background (metrologia, calibração) with Pós Tech Agentes de IA (FIAP + Alura).
+- Avoid heavy "career migration" narrative; industrial experience stays in experience/formation sections.
+
+## CSS
+- Use existing CSS custom properties in `:root` / `[data-theme="light"]`.
+- BEM-like naming: `.section__element`, `.block__element--modifier`.
+- Respect `prefers-reduced-motion: reduce` for animations.
+
+## JS
+- Keep `main.js` as a single IIFE with `'use strict'`.
+- Use passive scroll listeners and `requestAnimationFrame` throttling.
+- Bump `?v=` query on `css/style.css`, `js/main.js`, and PDF links when shipping cache-sensitive assets.
+
+## CV generator
+- `scripts/generate_cv.py` writes to paths relative to `ROOT` (project folder).
+- After editing CV data, run `python scripts/generate_cv.py` and commit `assets/cv_eduardo_cardoso.pdf`.
+
+## Paths
+- GitHub Pages base path is `/Portifolio/` — subproject links must account for this.
+- Repo remote: `cardoso-ix/Portifolio` (local folder may be `Portifolio-EDU`).
