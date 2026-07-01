@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Preview do Mentor de Gestão Industrial">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a2f1a"/>
+      <stop offset="100%" stop-color="#7a4520"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eb8f3a"/>
+      <stop offset="100%" stop-color="#e67e22"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect x="24" y="24" width="592" height="312" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(230,126,34,0.22)"/>
+  <rect x="48" y="48" width="544" height="72" rx="12" fill="url(#hero)"/>
+  <text x="64" y="72" fill="#fff3e8" font-family="system-ui,sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">FERRAMENTA DE APOIO · MANUTENÇÃO INDUSTRIAL</text>
+  <text x="64" y="98" fill="#ffffff" font-family="system-ui,sans-serif" font-size="20" font-weight="700">Mentor de Gestão Industrial</text>
+  <rect x="48" y="136" width="544" height="148" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(216,224,232,0.15)"/>
+  <rect x="64" y="152" width="120" height="28" rx="8" fill="rgba(230,126,34,0.15)" stroke="rgba(230,126,34,0.45)"/>
+  <text x="78" y="171" fill="#f5e6d8" font-family="system-ui,sans-serif" font-size="11" font-weight="600">1 Tipo</text>
+  <rect x="192" y="152" width="120" height="28" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(216,224,232,0.12)"/>
+  <text x="206" y="171" fill="#8a9baa" font-family="system-ui,sans-serif" font-size="11">2 Detalhes</text>
+  <rect x="320" y="152" width="120" height="28" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(216,224,232,0.12)"/>
+  <text x="334" y="171" fill="#8a9baa" font-family="system-ui,sans-serif" font-size="11">3 Contexto</text>
+  <rect x="64" y="196" width="160" height="32" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(216,224,232,0.12)"/>
+  <text x="78" y="216" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">Liderança</text>
+  <rect x="236" y="196" width="160" height="32" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(216,224,232,0.12)"/>
+  <text x="250" y="216" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">Comunicação</text>
+  <rect x="408" y="196" width="160" height="32" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(216,224,232,0.12)"/>
+  <text x="422" y="216" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">Segurança</text>
+  <rect x="64" y="248" width="180" height="28" rx="8" fill="url(#cta)"/>
+  <text x="118" y="267" fill="#ffffff" font-family="system-ui,sans-serif" font-size="12" font-weight="600" text-anchor="middle">Gerar orientação</text>
+  <text x="48" y="320" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">CrewAI · Groq · RAG · Streamlit · multi-agente</text>
+</svg>
