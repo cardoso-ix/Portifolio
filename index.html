@@ -25,7 +25,7 @@
   <meta name="twitter:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
   <title>Eduardo Cardoso | Portfólio</title>
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="css/style.css?v=16" as="style">
+  <link rel="preload" href="css/style.css?v=19" as="style">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=19">
 
   <script type="application/ld+json">
   {
@@ -129,43 +129,45 @@
 
   <main id="conteudo-principal">
 
-    <section class="hero section" id="inicio">
+    <section class="hero section" id="inicio" aria-labelledby="hero-title">
       <div class="container hero__inner">
-        <div class="hero__content fade-in">
-          <div class="terminal-bar">
+        <div class="hero__content">
+          <div class="terminal-bar terminal-bar--sm hero__terminal-bar">
             <span class="terminal-dot terminal-dot--red"></span>
             <span class="terminal-dot terminal-dot--yellow"></span>
             <span class="terminal-dot terminal-dot--green"></span>
             <span class="terminal-bar__title">~/eduardo-cardoso — perfil.md</span>
           </div>
-          <div class="hero__terminal" aria-hidden="true">
-            <p class="hero__terminal-line"><span class="prompt">$</span> cat cargo-atual.txt</p>
-            <p class="hero__terminal-output">Técnico de Calibração @ Fluxo Metrologia</p>
-            <p class="hero__terminal-line"><span class="prompt">$</span> cat estudo-atual.txt</p>
-            <p class="hero__terminal-output">Pós Tech Agentes de IA @ FIAP + Alura</p>
-          </div>
-          <div class="hero__badges">
-            <span class="hero__badge hero__badge--live"><span class="hero__badge-dot" aria-hidden="true"></span> Disponível para oportunidades</span>
-            <span class="hero__badge">Chapecó, SC</span>
-          </div>
-          <p class="hero__greeting"><span class="prompt">&gt;</span> Olá, eu sou</p>
-          <h1 class="hero__title glitch" data-text="Eduardo Cardoso">Eduardo Cardoso</h1>
-          <p class="hero__subtitle">
-            <span class="prompt">&gt;</span>
-            <span id="typing-text"></span><span class="cursor-blink" aria-hidden="true">|</span>
-          </p>
-          <p class="hero__description">
-            Administrador e MBA, com experiência em metrologia e logística. Atualmente
-            <strong>Técnico de Calibração</strong> na Fluxo Metrologia, cursando
-            <strong>Pós Tech em Agentes de IA</strong> (FIAP + Alura).
-          </p>
-          <div class="hero__actions">
-            <a href="#projetos" class="btn btn--primary"><span>Ver projetos</span></a>
-            <a href="#contato" class="btn btn--outline"><span>Contato</span></a>
-            <a href="assets/cv_eduardo_cardoso.pdf?v=5" class="btn btn--outline" target="_blank" rel="noopener noreferrer"><span>Currículo PDF</span></a>
+          <div class="hero__content-body">
+            <div class="hero__badges">
+              <span class="hero__badge hero__badge--live"><span class="hero__badge-dot" aria-hidden="true"></span> Disponível para oportunidades</span>
+              <span class="hero__badge">Chapecó, SC</span>
+            </div>
+            <p class="hero__greeting"><span class="prompt" aria-hidden="true">&gt;</span> Olá, eu sou</p>
+            <h1 class="hero__title" id="hero-title">Eduardo Cardoso</h1>
+            <p class="hero__role">Técnico de Calibração na indústria · Pós Tech em Agentes de IA</p>
+            <p class="hero__subtitle" aria-live="polite">
+              <span class="visually-hidden">Destaque: </span>
+              <span class="prompt" aria-hidden="true">&gt;</span>
+              <span id="typing-text"></span><span class="cursor-blink" aria-hidden="true">|</span>
+            </p>
+            <ul class="hero__facts">
+              <li class="hero__fact"><span class="hero__fact-label">Atual</span> Fluxo Metrologia — calibração e certificados</li>
+              <li class="hero__fact"><span class="hero__fact-label">Formação</span> FIAP + Alura — LLMs, RAG e agentes</li>
+              <li class="hero__fact"><span class="hero__fact-label">Projetos</span> TypeScript, React, Python e CrewAI</li>
+            </ul>
+            <p class="hero__description">
+              Mais de uma década na indústria (metrologia, logística e processos).
+              Busco oportunidades onde experiência técnica de chão de fábrica encontra IA aplicada.
+            </p>
+            <div class="hero__actions">
+              <a href="#projetos" class="btn btn--primary btn--lg"><span>Ver projetos</span></a>
+              <a href="assets/cv_eduardo_cardoso.pdf?v=5" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer"><span>Currículo PDF</span></a>
+              <a href="#contato" class="btn btn--outline"><span>Contato</span></a>
+            </div>
           </div>
         </div>
-        <div class="hero__visual fade-in">
+        <div class="hero__visual">
           <div class="hero__avatar-wrap">
             <div class="hero__ring hero__ring--1" aria-hidden="true"></div>
             <div class="hero__ring hero__ring--2" aria-hidden="true"></div>
@@ -175,17 +177,14 @@
             </div>
           </div>
           <div class="hero__profile-card">
+            <p class="hero__profile-header">status.json</p>
             <div class="hero__profile-row">
               <span class="hero__profile-key">cargo</span>
               <span class="hero__profile-val">Téc. Calibração</span>
             </div>
             <div class="hero__profile-row">
               <span class="hero__profile-key">estudo</span>
-              <span class="hero__profile-val hero__profile-val--study">Agentes de IA · FIAP</span>
-            </div>
-            <div class="hero__profile-row">
-              <span class="hero__profile-key">local</span>
-              <span class="hero__profile-val">Chapecó — SC</span>
+              <span class="hero__profile-val hero__profile-val--study">Agentes de IA</span>
             </div>
             <div class="hero__profile-row">
               <span class="hero__profile-key">stack</span>
@@ -322,7 +321,8 @@
               <p class="timeline__description">Suporte técnico aos clientes, esclarecimento de dúvidas e auxílio na resolução de problemas.</p>
             </div>
           </article>
-          <div class="timeline__archive" id="timeline-archive" hidden>
+          <div class="timeline__archive" id="timeline-archive" aria-hidden="true">
+            <div class="timeline__archive-inner">
             <article class="timeline__item fade-in visible">
               <div class="timeline__marker"></div>
               <div class="timeline__content">
@@ -343,9 +343,10 @@
                 <p class="timeline__description">Calibração de equipamentos, relatórios de não conformidade, cadastro de instrumentos de medição e controle de calibração conforme padrões de qualidade.</p>
               </div>
             </article>
+            </div>
           </div>
         </div>
-        <button class="timeline__toggle btn btn--outline fade-in" id="timeline-toggle" type="button" aria-expanded="false" aria-controls="timeline-archive">Ver histórico completo</button>
+        <button class="timeline__toggle btn btn--outline" id="timeline-toggle" type="button" aria-expanded="false" aria-controls="timeline-archive"><span class="timeline__toggle-label">Ver histórico completo</span></button>
       </div>
 
     </section>
@@ -409,7 +410,7 @@
         <h2 class="section__title fade-in"><span class="section__number">05.</span> Projetos</h2>
         <p class="section__intro fade-in">Projetos pessoais, comerciais e de estudo em desenvolvimento web, mobile e agentes de IA.</p>
         <div class="projects">
-          <article class="project-card fade-in">
+          <article class="project-card">
             <div class="project-card__image">
               <img src="assets/images/gestor-preview.png" alt="Preview do Mentor de Gestão Industrial — wizard, hero bronze e geração de orientação com IA" class="project-card__thumb" width="640" height="360" loading="lazy">
             </div>
@@ -435,7 +436,7 @@
               </div>
             </div>
           </article>
-          <article class="project-card fade-in">
+          <article class="project-card">
             <div class="project-card__image">
               <img src="assets/images/portfolio-preview.svg" alt="Preview do portfólio — hero com terminal, nome e painel de perfil" class="project-card__thumb" width="640" height="360" loading="lazy">
             </div>
@@ -455,7 +456,7 @@
               </div>
             </div>
           </article>
-          <article class="project-card fade-in">
+          <article class="project-card">
             <div class="project-card__image">
               <img src="assets/images/conversor-preview.svg" alt="Preview do Conversor de Unidades" class="project-card__thumb" width="640" height="360" loading="lazy">
             </div>
@@ -507,7 +508,7 @@
 
   </footer>
 
-  <script src="js/main.js?v=11"></script>
+  <script src="js/main.js?v=14"></script>
 
 </body>
 </html>

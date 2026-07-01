@@ -15,12 +15,18 @@
   const THEME_COLORS = { dark: '#0a0f18', light: '#eef4fb' };
 
   const TYPING_PHRASES = [
-    'Pós Tech Agentes de IA — FIAP + Alura',
-    'Técnico de Calibração na Fluxo Metrologia',
-    'Metrologia · TypeScript · React',
-    'MBA em Controladoria e Finanças',
-    'Chapecó - SC'
+    'Metrologia industrial + Agentes de IA',
+    'Projetos publicados no GitHub',
+    'Técnico de Calibração · Fluxo Metrologia',
+    'Pós Tech FIAP + Alura',
+    'Chapecó, SC — disponível'
   ];
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const heroSection = document.getElementById('inicio');
+  const heroFacts = document.querySelectorAll('.hero__fact');
+  const projectsGrid = document.querySelector('.projects');
+  const projectCards = document.querySelectorAll('.project-card');
 
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
@@ -86,8 +92,24 @@
     toast.textContent = 'E-mail copiado para a área de transferência.';
     document.body.appendChild(toast);
 
+    if (!prefersReducedMotion) {
+      requestAnimationFrame(function () {
+        toast.classList.add('is-visible');
+      });
+    } else {
+      toast.classList.add('is-visible');
+    }
+
     window.setTimeout(function () {
-      toast.remove();
+      if (prefersReducedMotion) {
+        toast.remove();
+        return;
+      }
+
+      toast.classList.remove('is-visible');
+      window.setTimeout(function () {
+        toast.remove();
+      }, 260);
     }, 2600);
   }
 
@@ -201,39 +223,68 @@
 
   /* ===== Typing effect ===== */
   if (typingEl) {
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+    if (prefersReducedMotion) {
+      typingEl.textContent = TYPING_PHRASES[0];
+    } else {
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
 
-    function type() {
-      const current = TYPING_PHRASES[phraseIndex];
+      function type() {
+        const current = TYPING_PHRASES[phraseIndex];
 
-      if (isDeleting) {
-        typingEl.textContent = current.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        typingEl.textContent = current.substring(0, charIndex + 1);
-        charIndex++;
+        if (isDeleting) {
+          typingEl.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typingEl.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let delay = isDeleting ? 40 : 80;
+
+        if (!isDeleting && charIndex === current.length) {
+          delay = 2000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % TYPING_PHRASES.length;
+          delay = 500;
+        }
+
+        setTimeout(type, delay);
       }
 
-      let delay = isDeleting ? 40 : 80;
-
-      if (!isDeleting && charIndex === current.length) {
-        delay = 2000;
-        isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % TYPING_PHRASES.length;
-        delay = 500;
-      }
-
-      setTimeout(type, delay);
+      type();
     }
+  }
 
-    type();
+  /* ===== Hero entrance ===== */
+  heroFacts.forEach(function (fact, index) {
+    fact.style.setProperty('--fact-i', index);
+  });
+
+  if (heroSection && !prefersReducedMotion) {
+    requestAnimationFrame(function () {
+      heroSection.classList.add('hero--ready');
+    });
+  } else if (heroSection) {
+    heroSection.classList.add('hero--ready');
   }
 
   /* ===== Intersection Observer ===== */
+  function revealIfVisible(element) {
+    const rect = element.getBoundingClientRect();
+    const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top < viewHeight * 0.92 && rect.bottom > 0) {
+      element.classList.add('visible');
+      return true;
+    }
+
+    return false;
+  }
+
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
       function (entries) {
@@ -244,13 +295,34 @@
           }
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -6% 0px' }
     );
 
-    fadeElements.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 5) * 0.06 + 's';
-      observer.observe(el);
+    fadeElements.forEach(function (el) {
+      if (!revealIfVisible(el)) {
+        observer.observe(el);
+      }
     });
+
+    if (projectsGrid && projectCards.length) {
+      projectCards.forEach(function (card, index) {
+        card.style.setProperty('--card-i', index);
+      });
+
+      const projectsObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('projects--visible');
+              projectsObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2, rootMargin: '0px 0px -10% 0px' }
+      );
+
+      projectsObserver.observe(projectsGrid);
+    }
   } else {
     fadeElements.forEach(function (el) {
       el.classList.add('visible');
@@ -259,7 +331,7 @@
 
   /* ===== Particle network (lightweight) ===== */
   function initParticles() {
-    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (!canvas || prefersReducedMotion) {
       return;
     }
 
@@ -366,13 +438,19 @@
   const timelineArchive = document.getElementById('timeline-archive');
 
   if (timelineToggle && timelineArchive) {
+    const timelineToggleLabel = timelineToggle.querySelector('.timeline__toggle-label');
+
     timelineToggle.addEventListener('click', function () {
       const expanded = timelineToggle.getAttribute('aria-expanded') === 'true';
       const nextExpanded = !expanded;
 
       timelineToggle.setAttribute('aria-expanded', nextExpanded ? 'true' : 'false');
-      timelineArchive.hidden = !nextExpanded;
-      timelineToggle.textContent = nextExpanded ? 'Ocultar histórico' : 'Ver histórico completo';
+      timelineArchive.setAttribute('aria-hidden', nextExpanded ? 'false' : 'true');
+      timelineArchive.classList.toggle('is-open', nextExpanded);
+
+      if (timelineToggleLabel) {
+        timelineToggleLabel.textContent = nextExpanded ? 'Ocultar histórico' : 'Ver histórico completo';
+      }
     });
   }
 })();
