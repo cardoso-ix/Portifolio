@@ -45,9 +45,9 @@ Portifolio-EDU/
 
 | Projeto | Demo |
 |---------|------|
-| Copa Figurinhas | [copa-figurinhas-plum.vercel.app](https://copa-figurinhas-plum.vercel.app) |
+| Mentor de Gestão Industrial | [mentor-gestao-industrial.streamlit.app](https://mentor-gestao-industrial.streamlit.app/) |
 | Conversor de Unidades | [cardoso-ix.github.io/Portifolio/conversor-unidades](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) |
-| FitMind | [Releases / APK](https://github.com/cardoso-ix/fitmind/releases/latest) |
+| Portfólio Pessoal | [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/) |
 
 ## Visualizar localmente
 
@@ -89,7 +89,7 @@ Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.
 3. **Formação** — timeline acadêmica  
 4. **Experiência** — histórico profissional (histórico antigo colapsável)  
 5. **Skills** — IA, tecnologia, técnicas, soft skills  
-6. **Projetos** — Copa Figurinhas, portfólio, conversor, FitMind  
+6. **Projetos** — Mentor de Gestão Industrial, portfólio, conversor  
 7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub  
 
 ## Cursor MCP (opcional)

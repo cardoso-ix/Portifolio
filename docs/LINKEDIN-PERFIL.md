@@ -2,7 +2,7 @@
 
 **Eduardo Cardoso** · Chapecó — SC  
 **Tempo estimado:** 25–35 minutos  
-**Links:** [Portfólio](https://cardoso-ix.github.io/Portifolio/) · [GitHub](https://github.com/cardoso-ix) · [Copa Figurinhas demo](https://copa-figurinhas-plum.vercel.app)
+**Links:** [Portfólio](https://cardoso-ix.github.io/Portifolio/) · [GitHub](https://github.com/cardoso-ix) · [Mentor de Gestão Industrial](https://mentor-gestao-industrial.streamlit.app/)
 
 > O assistente **não pode** entrar na sua conta LinkedIn. Siga este guia seção por seção.
 
@@ -60,8 +60,7 @@ Atualmente atuo como Metrologista na Fluxo Metrologia, com foco em calibração,
 
 Paralelamente, desenvolvo habilidades em desenvolvimento web por meio de projetos práticos publicados:
 
-• Copa Figurinhas — e-commerce full-stack (Next.js, TypeScript, Supabase, Mercado Pago, Google Drive, Resend) com checkout PIX e entrega automática
-• FitMind — app mobile (React Native, Expo, Supabase, Gemini AI) com treinos, alimentação e APK para testes
+• Mentor de Gestão Industrial — multi-agente com CrewAI, Groq, RAG e Streamlit para supervisores de manutenção
 • Conversor de Unidades — React + TypeScript + Vite (49 categorias de conversão)
 • Portfólio pessoal — HTML, CSS e JavaScript responsivo
 
@@ -177,40 +176,26 @@ Marque até 50 (priorize as primeiras 3):
 
 **Perfil → Adicionar seção do perfil → Projetos**
 
-### Projeto 1 — Copa Figurinhas
+### Projeto 1 — Mentor de Gestão Industrial
 | Campo | Valor |
 |--------|--------|
-| **Nome** | Copa Figurinhas |
-| **Datas** | 2025 – Presente |
+| **Nome** | Mentor de Gestão Industrial |
+| **Datas** | 2026 – Presente |
 | **Associado a** | Perfil (projeto pessoal) |
-| **URL** | `https://copa-figurinhas-plum.vercel.app` |
+| **URL** | `https://mentor-gestao-industrial.streamlit.app/` |
 
 **Descrição:**
 ```
-E-commerce full-stack para venda de álbum digital da Copa.
+Ferramenta multi-agente para supervisores de manutenção: wizard guiado, diagnóstico com RAG,
+roteiro de conversa (SBI), plano de ação e exportação em PDF.
 
-• Front-end: Next.js, TypeScript
-• Back-end: Supabase, Mercado Pago (PIX), Google Drive, Resend
-• Funcionalidades: landing, checkout, webhook, entrega automática, painel admin
-• Deploy: Vercel
+• Stack: Python, CrewAI, Groq, ChromaDB, Streamlit
+• Deploy: Streamlit Cloud
 
-Código: https://github.com/cardoso-ix/copa-figurinhas
+Código: https://github.com/cardoso-ix/mentor-gestao-industrial
 ```
 
-### Projeto 2 — FitMind
-| Campo | Valor |
-|--------|--------|
-| **Nome** | FitMind |
-| **URL** | `https://github.com/cardoso-ix/fitmind` |
-
-**Descrição:**
-```
-App mobile de personal trainer com IA: planos de treino, sessão guiada, alimentação, conquistas e APK Android para testes. React Native, Expo, TypeScript, Supabase e Gemini AI.
-
-GitHub: https://github.com/cardoso-ix/fitmind
-```
-
-### Projeto 3 — Conversor de Unidades
+### Projeto 2 — Conversor de Unidades
 | Campo | Valor |
 |--------|--------|
 | **Nome** | Conversor de Unidades |
@@ -223,7 +208,7 @@ Aplicação web com 49 categorias de grandezas físicas, histórico, busca globa
 GitHub: https://github.com/cardoso-ix/conversor-unidades
 ```
 
-### Projeto 4 — Portfólio Pessoal
+### Projeto 3 — Portfólio Pessoal
 | Campo | Valor |
 |--------|--------|
 | **Nome** | Portfólio Eduardo Cardoso |
@@ -242,7 +227,7 @@ Site de portfólio responsivo com HTML, CSS e JavaScript — design tecnológico
 
 Adicione nesta ordem:
 1. Link **Portfólio** → `https://cardoso-ix.github.io/Portifolio/`
-2. Link **Copa Figurinhas** → `https://copa-figurinhas-plum.vercel.app`
+2. Link **Mentor de Gestão Industrial** → `https://mentor-gestao-industrial.streamlit.app/`
 3. Arquivo **Currículo PDF** → upload de `cv_eduardo_cardoso.pdf`
 
 ---
@@ -250,18 +235,18 @@ Adicione nesta ordem:
 ## 12. Post de lançamento (publicar após atualizar perfil)
 
 ```
-Atualizei meu portfólio com meus projetos mais recentes: Copa Figurinhas (e-commerce full-stack) e FitMind (app mobile com IA).
+Atualizei meu portfólio com o Mentor de Gestão Industrial — ferramenta multi-agente com CrewAI, Groq e RAG para supervisores de manutenção.
 
-Stack em produção: Next.js, TypeScript, Supabase, React Native e integrações reais (PIX, e-mail, entrega digital).
+Stack em produção: Python, Streamlit, TypeScript, React e integrações com IA.
 
 Estou em busca de oportunidades como Desenvolvedor Web Júnior / Estágio.
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
-Demo: https://copa-figurinhas-plum.vercel.app
+Demo: https://mentor-gestao-industrial.streamlit.app/
 
 Se souber de uma vaga ou quiser trocar ideia sobre carreira em tech, chama no inbox!
 
-#desenvolvedor #typescript #react #nextjs #supabase #vagas #chapeco #remoto #transicaodecarreira
+#desenvolvedor #python #typescript #react #crewai #streamlit #vagas #chapeco #remoto #transicaodecarreira
 ```
 
 **Dica:** cole o link do post nos Destaques depois de publicar.
