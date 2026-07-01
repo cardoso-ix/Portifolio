@@ -45,7 +45,7 @@ Portifolio-EDU/
 
 | Projeto | Demo |
 |---------|------|
-| Mentor de Gestão Industrial | [mentor-gestao-industrial.streamlit.app](https://mentor-gestao-industrial.streamlit.app/) |
+| Mentor de Gestão Industrial | [Demo no Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) |
 | Conversor de Unidades | [cardoso-ix.github.io/Portifolio/conversor-unidades](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) |
 | Portfólio Pessoal | [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/) |
 
