@@ -2,7 +2,7 @@
 
 **Eduardo Cardoso** · Chapecó — SC  
 **Tempo estimado:** 25–35 minutos  
-**Links:** [Portfólio](https://cardoso-ix.github.io/Portifolio/) · [GitHub](https://github.com/cardoso-ix) · [Mentor de Gestão Industrial](https://mentor-gestao-industrial.streamlit.app/)
+**Links:** [Portfólio](https://cardoso-ix.github.io/Portifolio/) · [GitHub](https://github.com/cardoso-ix) · [Mentor de Gestão Industrial](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial)
 
 > O assistente **não pode** entrar na sua conta LinkedIn. Siga este guia seção por seção.
 
@@ -182,7 +182,7 @@ Marque até 50 (priorize as primeiras 3):
 | **Nome** | Mentor de Gestão Industrial |
 | **Datas** | 2026 – Presente |
 | **Associado a** | Perfil (projeto pessoal) |
-| **URL** | `https://mentor-gestao-industrial.streamlit.app/` |
+| **URL** | `https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial` |
 
 **Descrição:**
 ```
@@ -227,7 +227,7 @@ Site de portfólio responsivo com HTML, CSS e JavaScript — design tecnológico
 
 Adicione nesta ordem:
 1. Link **Portfólio** → `https://cardoso-ix.github.io/Portifolio/`
-2. Link **Mentor de Gestão Industrial** → `https://mentor-gestao-industrial.streamlit.app/`
+2. Link **Mentor de Gestão Industrial** → `https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial`
 3. Arquivo **Currículo PDF** → upload de `cv_eduardo_cardoso.pdf`
 
 ---
@@ -242,7 +242,7 @@ Stack em produção: Python, Streamlit, TypeScript, React e integrações com IA
 Estou em busca de oportunidades como Desenvolvedor Web Júnior / Estágio.
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
-Demo: https://mentor-gestao-industrial.streamlit.app/
+Demo: https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial
 
 Se souber de uma vaga ou quiser trocar ideia sobre carreira em tech, chama no inbox!
 
