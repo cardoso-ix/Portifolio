@@ -15,11 +15,11 @@
   const THEME_COLORS = { dark: '#0a0f18', light: '#eef4fb' };
 
   const TYPING_PHRASES = [
-    'Metrologia industrial + Agentes de IA',
-    'Projetos publicados no GitHub',
-    'Técnico de Calibração · Fluxo Metrologia',
+    'Metrologia + Agentes de IA',
+    'Projetos no GitHub',
+    'Fluxo Metrologia',
     'Pós Tech FIAP + Alura',
-    'Chapecó, SC — disponível'
+    'Chapecó, SC'
   ];
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
