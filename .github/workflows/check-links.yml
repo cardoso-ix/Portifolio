@@ -18,7 +18,6 @@ jobs:
           args: >
             --verbose
             --no-progress
-            --exclude-mail
             --max-retries 2
             --accept 200,403,429
             './**/*.html'
