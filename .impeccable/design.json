@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "title": "Design System: Eduardo Cardoso — Portfólio",
+  "extensions": {
+    "colorMeta": {
+      "accent-cyan": {
+        "role": "primary",
+        "displayName": "Signal Cyan",
+        "canonical": "#2ddcff",
+        "tonalRamp": ["#0a1020", "#16233b", "#2ddcff", "#7ee9ff"]
+      },
+      "bg-deep": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#0a1020",
+        "tonalRamp": ["#090f1c", "#0a1020", "#111a2e", "#16233b"]
+      },
+      "accent-magenta": {
+        "role": "secondary",
+        "displayName": "Lab Magenta",
+        "canonical": "#c85cff",
+        "tonalRamp": ["#1b2b47", "#8b4fc9", "#c85cff"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Hero Display", "purpose": "Nome no hero apenas; gradiente controlado." },
+      "mono": { "displayName": "Terminal Mono", "purpose": "Prompts, metadados, números de seção." }
+    },
+    "shadows": [
+      { "name": "header-scrolled", "value": "0 8px 32px rgba(45, 220, 255, 0.12)", "purpose": "Header fixo após scroll." },
+      { "name": "btn-primary-hover", "value": "0 0 30px rgba(0, 212, 255, 0.5), 0 4px 15px rgba(0, 212, 255, 0.2)", "purpose": "CTA hover glow." },
+      { "name": "card-soft", "value": "0 16px 40px rgba(0, 0, 0, 0.28)", "purpose": "Elevação suave em cards." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "0.25s ease", "purpose": "Transições padrão (--transition)." },
+      { "name": "typing-char", "value": "80ms type / 40ms delete", "purpose": "Hero typing effect." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "768px" },
+      { "name": "desktop", "value": "1024px" }
+    ],
+    "zIndex": {
+      "particles": 0,
+      "content": 1,
+      "header": 100,
+      "nav-mobile": 110,
+      "skip-link": 200,
+      "toast": 200
+    },
+    "northStar": "The Calibration Terminal",
+    "rules": [
+      "Glow Sparingly",
+      "Flat-At-Rest",
+      "Mono Marks System"
+    ]
+  }
+}
