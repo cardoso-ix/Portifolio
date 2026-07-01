@@ -12,7 +12,7 @@
 
 - [ ] Foto de perfil (use `assets/images/foto.png` do portfólio)
 - [ ] Currículo PDF em mãos (`assets/cv_eduardo_cardoso.pdf`)
-- [ ] Abra: [linkedin.com/me](https://www.linkedin.com/me) → **Ver perfil** → **Editar**
+- [ ] Abra: [linkedin.com/in/eduardo-cardoso-213a02267](https://www.linkedin.com/in/eduardo-cardoso-213a02267) → **Ver perfil** → **Editar**
 
 ---
 
