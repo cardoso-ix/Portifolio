@@ -43,11 +43,11 @@ Portifolio-EDU/
 
 ## Projetos em destaque no site
 
-| Projeto | Demo |
-|---------|------|
-| Mentor de Gestão Industrial | [Demo no Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) |
-| Conversor de Unidades | [cardoso-ix.github.io/Portifolio/conversor-unidades](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) |
-| Portfólio Pessoal | [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/) |
+| Projeto | Demo | Código |
+|---------|------|--------|
+| Mentor de Gestão Industrial | [Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | [GitHub](https://github.com/cardoso-ix/mentor-gestao-industrial) |
+| Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
+| Portfólio Pessoal | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/) | [GitHub](https://github.com/cardoso-ix/Portifolio) |
 
 ## Visualizar localmente
 
