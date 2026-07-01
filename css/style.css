@@ -240,7 +240,7 @@ ul {
   color: color-mix(in srgb, var(--color-text) 78%, var(--color-text-muted));
   font-size: 0.9375rem;
   margin: -1.5rem 0 2rem;
-  max-width: 40rem;
+  max-width: 42rem;
   line-height: 1.6;
   text-wrap: pretty;
 }
@@ -344,9 +344,12 @@ ul {
 .about__body p {
   color: var(--color-text-muted);
   font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 58ch;
+  text-wrap: pretty;
 }
 
-.about__body p::before {
+.about__body > p::before {
   content: '// ';
   font-family: var(--font-mono);
   color: var(--color-accent);
@@ -354,15 +357,33 @@ ul {
 }
 
 .about__highlight {
-  margin-top: 1.25rem !important;
+  margin-top: 1.25rem;
   padding: 1rem 1.125rem;
   border-radius: var(--radius);
   border: 1px solid rgba(45, 220, 255, 0.22);
   background: rgba(45, 220, 255, 0.05);
+  max-width: 58ch;
 }
 
-.about__highlight::before {
-  content: none !important;
+.about__highlight-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+}
+
+.about__highlight-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.about__highlight-text {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  text-wrap: pretty;
 }
 
 .about__link {
@@ -874,10 +895,11 @@ ul {
   gap: 0.75rem;
   align-items: baseline;
   font-size: 0.9375rem;
-  line-height: 1.5;
+  line-height: 1.55;
   color: color-mix(in srgb, var(--color-text) 88%, var(--color-text-muted));
   padding: 0.5rem 0;
   border-top: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  text-wrap: pretty;
 }
 
 .hero__fact:first-child {
@@ -896,11 +918,17 @@ ul {
 
 .hero__description {
   color: color-mix(in srgb, var(--color-text) 80%, var(--color-text-muted));
-  max-width: 42rem;
+  max-width: 38rem;
   margin-bottom: 1.75rem;
   font-size: 1rem;
-  line-height: 1.65;
+  line-height: 1.7;
   text-wrap: pretty;
+}
+
+.hero__description-accent {
+  display: block;
+  margin-top: 0.5rem;
+  color: color-mix(in srgb, var(--color-text) 92%, var(--color-text-muted));
 }
 
 .hero__actions {
@@ -1253,6 +1281,9 @@ ul {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  line-height: 1.35;
+  text-wrap: balance;
+  max-width: 36ch;
 }
 
 .timeline__institution {
@@ -1271,7 +1302,9 @@ ul {
   color: var(--color-text-muted);
   font-size: 0.9375rem;
   margin-top: 0.75rem;
-  line-height: 1.5;
+  line-height: 1.65;
+  max-width: 58ch;
+  text-wrap: pretty;
 }
 
 .timeline__archive {
@@ -1542,10 +1575,49 @@ ul {
   margin-right: 0.5rem;
 }
 
-.project-card__description {
+.project-card__description,
+.project-card__lead {
   color: var(--color-text-muted);
   font-size: 0.9375rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+  max-width: 58ch;
+}
+
+.project-card__lead {
+  font-weight: 500;
+  color: color-mix(in srgb, var(--color-text) 82%, var(--color-text-muted));
+  margin-bottom: 0.75rem;
+}
+
+.project-card__description {
   margin-bottom: 1rem;
+}
+
+.project-card__highlights {
+  margin: 0 0 0.75rem;
+  padding-left: 1.125rem;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  max-width: 58ch;
+  text-wrap: pretty;
+}
+
+.project-card__highlights li + li {
+  margin-top: 0.35rem;
+}
+
+.project-card__highlights li::marker {
+  color: var(--color-accent);
+}
+
+.project-card__note {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  opacity: 0.9;
 }
 
 .project-card__tags {
@@ -1597,8 +1669,10 @@ ul {
 
 .contact__intro {
   color: var(--color-text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   font-size: 0.9375rem;
+  line-height: 1.6;
+  text-wrap: pretty;
 }
 
 .contact__links {
