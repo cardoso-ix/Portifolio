@@ -15,7 +15,6 @@
   --duration-fast: 150ms;
   --duration-base: 250ms;
   --duration-slow: 450ms;
-  --duration-hero: 650ms;
   --transition: var(--duration-base) var(--ease-out-quart);
 }
 
@@ -1081,70 +1080,6 @@ ul {
   to { transform: rotate(360deg); }
 }
 
-@keyframes hero-enter {
-  from {
-    transform: translateY(14px);
-    filter: blur(3px);
-  }
-
-  to {
-    transform: none;
-    filter: none;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .hero.hero--ready .hero__badges {
-    animation: hero-enter var(--duration-hero) var(--ease-out-quint) both;
-    animation-delay: 0.05s;
-  }
-
-  .hero.hero--ready .hero__greeting {
-    animation: hero-enter var(--duration-hero) var(--ease-out-quint) both;
-    animation-delay: 0.12s;
-  }
-
-  .hero.hero--ready .hero__title {
-    animation: hero-enter var(--duration-hero) var(--ease-out-expo) both;
-    animation-delay: 0.18s;
-  }
-
-  .hero.hero--ready .hero__role {
-    animation: hero-enter calc(var(--duration-hero) - 80ms) var(--ease-out-quint) both;
-    animation-delay: 0.26s;
-  }
-
-  .hero.hero--ready .hero__subtitle {
-    animation: hero-enter calc(var(--duration-hero) - 120ms) var(--ease-out-quart) both;
-    animation-delay: 0.34s;
-  }
-
-  .hero.hero--ready .hero__fact {
-    animation: hero-enter 0.5s var(--ease-out-quart) both;
-    animation-delay: calc(0.42s + var(--fact-i, 0) * 0.07s);
-  }
-
-  .hero.hero--ready .hero__description {
-    animation: hero-enter 0.55s var(--ease-out-quart) both;
-    animation-delay: 0.68s;
-  }
-
-  .hero.hero--ready .hero__actions {
-    animation: hero-enter 0.55s var(--ease-out-quint) both;
-    animation-delay: 0.78s;
-  }
-
-  .hero.hero--ready .hero__avatar-wrap {
-    animation: hero-enter 0.75s var(--ease-out-expo) both;
-    animation-delay: 0.22s;
-  }
-
-  .hero.hero--ready .hero__profile-card {
-    animation: hero-enter 0.6s var(--ease-out-quart) both;
-    animation-delay: 0.55s;
-  }
-}
-
 .hero__avatar {
   position: absolute;
   inset: 3rem;
@@ -1508,13 +1443,6 @@ ul {
 .projects {
   display: grid;
   gap: 2rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .projects.projects--visible .project-card {
-    animation: hero-enter 0.55s var(--ease-out-quint) both;
-    animation-delay: calc(var(--card-i, 0) * 70ms);
-  }
 }
 
 .project-card {

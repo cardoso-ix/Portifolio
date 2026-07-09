@@ -1,6 +1,6 @@
 # Portfólio — Eduardo Cardoso
 
-Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**.
+Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**. Posicionamento: **agentes de IA** (LLMs, RAG, Make, n8n, CrewAI).
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
@@ -18,7 +18,7 @@ Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, respo
 ## Estrutura
 
 ```
-Portifolio-EDU/
+Portifolio/
 ├── index.html
 ├── css/style.css
 ├── js/main.js
@@ -45,9 +45,9 @@ Portifolio-EDU/
 
 | Projeto | Demo | Código |
 |---------|------|--------|
+| Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) |
 | PC Dashboard | — (app desktop Windows) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
 | Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
-| Portfólio Pessoal | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/) | [GitHub](https://github.com/cardoso-ix/Portifolio) |
 
 ## Visualizar localmente
 
@@ -84,12 +84,12 @@ Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.
 
 ## Seções do site
 
-1. **Início** — hero, terminal, currículo PDF  
-2. **Sobre** — trajetória + Pós Tech Agentes de IA  
+1. **Início** — hero focado em agentes de IA, terminal, currículo PDF  
+2. **Sobre** — Pós Tech Agentes de IA, LLMs, RAG e automações  
 3. **Formação** — timeline acadêmica  
 4. **Experiência** — histórico profissional (histórico antigo colapsável)  
-5. **Skills** — IA, tecnologia, técnicas, soft skills  
-6. **Projetos** — PC Dashboard, portfólio, conversor  
+5. **Skills** — agentes de IA, automações, metodologias, soft skills  
+6. **Projetos** — Automação LinkedIn, PC Dashboard, conversor  
 7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub  
 
 ## Cursor MCP (opcional)
