@@ -70,9 +70,9 @@ components:
 
 ## 1. Overview
 
-**Creative North Star: "The Calibration Terminal"**
+**Creative North Star: "The Agent Terminal"**
 
-Interface que parece um painel de laboratório de metrologia cruzado com um terminal de desenvolvedor: fundo navy profundo, grade sutil, partículas em rede, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão industrial** e **fluência digital** sem cair no clichê de portfólio dev genérico.
+Interface que parece um painel de sistema cruzado com um terminal de desenvolvedor: fundo navy profundo, grade sutil, partículas em rede, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão técnica** e **fluência em agentes de IA** sem cair no clichê de portfólio dev genérico.
 
 Densidade moderada: seções longas com respiro (`4rem` vertical), cards de projeto com preview visual, timeline vertical para formação/experiência. Profundidade vem de **glass surfaces** (`rgba` + `backdrop-filter`), bordas ciano semitransparentes e glows pontuais — não de sombras pesadas.
 
@@ -116,7 +116,7 @@ Paleta **Committed dark**: superfície navy tintada + um acento ciano saturado q
 **Body Font:** Inter  
 **Label/Mono Font:** JetBrains Mono — terminal, `.prompt`, `.hero__profile-key`, badges técnicos
 
-**Character:** Sans geométrica legível com mono mecânica para “camada de sistema”; par funcional para narrativa industrial + código.
+**Character:** Sans geométrica legível com mono mecânica para “camada de sistema”; par funcional para narrativa de agentes de IA + código.
 
 ### Hierarchy
 
@@ -182,11 +182,11 @@ Barra macOS + linhas `cat cargo-atual.txt` com output; typing effect no subtítu
 - **Do** manter contraste de texto muted ≥4.5:1; no light mode preferir `#4a5f7a` sobre `#eef3fb`.
 - **Do** usar `prefers-reduced-motion` para desligar partículas e encurtar animações.
 - **Do** bump `?v=` em CSS/JS/PDF ao publicar mudanças cache-sensitive.
-- **Do** preservar par terminal + metrologia como fio condutor visual.
+- **Do** preservar o terminal como fio condutor visual da identidade.
 
 ### Don't:
 
-- **Don't** transformar o site em narrativa de “abandono da indústria” — anti-referência estratégica do PRODUCT.md.
+- **Don't** deixar a narrativa pública ser dominada por cargo industrial — o posicionamento é agentes de IA.
 - **Don't** adicionar glassmorphism decorativo em todo elemento — só em header, cards-chave e terminal.
 - **Don't** usar gradient text fora do hero title; corpo e headings usam cor sólida.
 - **Don't** repetir grid idêntica de cards SaaS com ícone genérico sem preview ou demo.

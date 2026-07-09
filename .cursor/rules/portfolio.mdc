@@ -12,8 +12,8 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Balance professional background (metrologia, calibração) with Pós Tech Agentes de IA (FIAP + Alura).
-- Avoid heavy "career migration" narrative; industrial experience stays in experience/formation sections.
+- Portuguese (pt-BR). Lead with Pós Tech Agentes de IA (FIAP + Alura), LLMs, RAG, Make, n8n, CrewAI.
+- Public positioning is AI-first; industrial experience may remain in the experience/formation timelines only.
 
 ## CSS
 - Use existing CSS custom properties in `:root` / `[data-theme="light"]`.
