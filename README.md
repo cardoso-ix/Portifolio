@@ -45,7 +45,7 @@ Portifolio-EDU/
 
 | Projeto | Demo | Código |
 |---------|------|--------|
-| Mentor de Gestão Industrial | [Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | [GitHub](https://github.com/cardoso-ix/mentor-gestao-industrial) |
+| PC Dashboard | — (app desktop Windows) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
 | Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
 | Portfólio Pessoal | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/) | [GitHub](https://github.com/cardoso-ix/Portifolio) |
 
@@ -89,7 +89,7 @@ Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.
 3. **Formação** — timeline acadêmica  
 4. **Experiência** — histórico profissional (histórico antigo colapsável)  
 5. **Skills** — IA, tecnologia, técnicas, soft skills  
-6. **Projetos** — Mentor de Gestão Industrial, portfólio, conversor  
+6. **Projetos** — PC Dashboard, portfólio, conversor  
 7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub  
 
 ## Cursor MCP (opcional)
