@@ -15,11 +15,11 @@
   const THEME_COLORS = { dark: '#0a0f18', light: '#eef4fb' };
 
   const TYPING_PHRASES = [
-    'Agentes de IA · LLMs · RAG',
-    'Make · n8n · CrewAI',
-    'Prompt engineering',
-    'Pós Tech FIAP + Alura',
-    'Automações com OpenAI'
+    'Automações com n8n e Make',
+    'Leads · conteúdo · relatórios',
+    'Freela aberto em Chapecó',
+    'OpenAI · APIs · Webhooks',
+    'Pós Tech FIAP + Alura'
   ];
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
