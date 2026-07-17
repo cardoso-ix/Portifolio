@@ -45,8 +45,9 @@ rounded:
   lg: "0.75rem"
   pill: "999px"
 spacing:
-  section: "4rem"
-  container-padding: "clamp(0.875rem, 1.25vw, 1.5rem)"
+  section: "3.5rem"
+  container-padding: "clamp(1rem, 3vw, 1.5rem)"
+  container-width: "88rem"
   header-height: "4rem"
 components:
   button-primary:
