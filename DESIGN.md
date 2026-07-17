@@ -74,7 +74,7 @@ components:
 
 Interface sóbria com toques de terminal: fundo graphite, superfícies limpas, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão técnica** sem excesso de efeitos.
 
-Densidade controlada: conteúdo centralizado (`68rem`), cards de projeto com um destaque + grade compacta, timeline vertical. Profundidade via camadas de superfície e bordas discretas — sem partículas, grade ou glows neon.
+Densidade controlada: conteúdo centralizado (`88rem`), cards de projeto com um destaque + grade compacta, timeline vertical. Profundidade via camadas de superfície e bordas discretas — sem partículas, grade ou glows neon.
 
 Rejeita explicitamente: gradient text decorativo no corpo, hero-metric SaaS, azul “padrão IA”, ciano/magenta neon, paleta cream/sand genérica.
 
