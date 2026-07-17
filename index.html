@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Eduardo Cardoso — Automações com n8n, Make e IA. Projetos de leads, conteúdo e relatórios no piloto automático. Chapecó, SC.">
   <meta name="author" content="Eduardo Cardoso">
-  <meta name="theme-color" content="#0e1116">
+  <meta name="theme-color" content="#111211">
   <link rel="canonical" href="https://cardoso-ix.github.io/Portifolio/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
@@ -25,7 +25,7 @@
   <meta name="twitter:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
   <title>Eduardo Cardoso | Automações com n8n, Make e IA</title>
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="css/style.css?v=26" as="style">
+  <link rel="preload" href="css/style.css?v=27" as="style">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=26">
+  <link rel="stylesheet" href="css/style.css?v=27">
 
   <script type="application/ld+json">
   {
@@ -112,7 +112,6 @@
           <li><a href="#inicio" class="header__link">Início</a></li>
           <li><a href="#projetos" class="header__link">Projetos</a></li>
           <li><a href="#sobre" class="header__link">Sobre</a></li>
-          <li><a href="#atuacao" class="header__link">Atuação</a></li>
           <li><a href="#skills" class="header__link">Skills</a></li>
           <li><a href="#formacao" class="header__link">Formação</a></li>
           <li><a href="#experiencia" class="header__link">Experiência</a></li>
@@ -193,7 +192,8 @@
     <section class="section" id="projetos">
       <div class="container">
         <h2 class="section__title fade-in"><span class="section__number">01.</span> Projetos</h2>
-        <p class="section__intro fade-in">Seleção do que construo: problema, solução e resultado — com links para ver o trabalho de perto.</p>
+        <p class="section__intro fade-in">Seleção do que construo — com links para ver o trabalho de perto.</p>
+
         <div class="projects">
           <article class="project-card project-card--featured fade-in">
             <div class="project-card__image">
@@ -202,101 +202,59 @@
             </div>
             <div class="project-card__body">
               <h3 class="project-card__title">Automação LinkedIn com IA</h3>
-              <p class="project-card__lead"><strong>Problema:</strong> manter presença consistente na rede consome tempo todos os dias.</p>
-              <ul class="project-card__highlights">
-                <li><strong>Solução:</strong> pipeline n8n na VPS com GPT-4o — posts 2×/dia (11h e 19h), charge e engajamento</li>
-                <li><strong>Resultado:</strong> calendário no piloto: texto, cascata no próprio post e outbound em posts de terceiros</li>
-                <li>Data Table (pending/done) e fallback Gmail se a API falhar</li>
-              </ul>
+              <p class="project-card__lead">Pipeline n8n + GPT-4o na VPS: posts 2×/dia, cascata e outbound — calendário no piloto automático.</p>
               <p class="project-card__note">n8n · OpenAI · LinkedIn · VPS</p>
-              <ul class="project-card__tags">
-                <li class="skill-tag">n8n</li>
-                <li class="skill-tag">OpenAI</li>
-                <li class="skill-tag">LinkedIn</li>
-                <li class="skill-tag">GPT-4o</li>
-                <li class="skill-tag">VPS</li>
-              </ul>
               <div class="project-card__links">
                 <a href="https://www.linkedin.com/in/eduardo-cardoso-213a02267" class="project-card__link" target="_blank" rel="noopener noreferrer">Ver no LinkedIn</a>
                 <a href="https://github.com/cardoso-ix/linkedin-automacao-ia" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
           </article>
-          <article class="project-card fade-in">
-            <div class="project-card__image">
-              <div class="project-card__placeholder" aria-hidden="true">{ }</div>
-              <span class="project-card__badge project-card__badge--soft">Arquitetura</span>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Automação de leads (n8n)</h3>
-              <p class="project-card__lead"><strong>Problema:</strong> lead chega no Instagram/WhatsApp e some no meio do dia.</p>
-              <ul class="project-card__highlights">
-                <li><strong>Solução:</strong> formulário ou webhook → n8n → Google Sheets + alerta em tempo real</li>
-                <li><strong>Resultado:</strong> follow-up registrado; nenhum contato fica sem resposta por esquecimento</li>
-                <li>Adaptável ao canal: form, Typeform, Instagram e afins</li>
-              </ul>
-              <p class="project-card__note">n8n · Google Sheets · WhatsApp · Webhooks</p>
-              <ul class="project-card__tags">
-                <li class="skill-tag">n8n</li>
-                <li class="skill-tag">Sheets</li>
-                <li class="skill-tag">WhatsApp</li>
-                <li class="skill-tag">Webhooks</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="#contato" class="project-card__link">Falar sobre este fluxo</a>
+
+          <div class="projects__grid">
+            <article class="project-card project-card--compact fade-in">
+              <div class="project-card__image">
+                <div class="project-card__placeholder" aria-hidden="true">{ }</div>
               </div>
-            </div>
-          </article>
-        </div>
-        <h3 class="projects__subtitle fade-in">Mais projetos</h3>
-        <div class="projects projects--secondary">
-          <article class="project-card fade-in">
-            <div class="project-card__image">
-              <img src="assets/images/pc-dashboard-preview.png" alt="Preview do PC Dashboard" class="project-card__thumb" width="640" height="360" loading="lazy">
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">PC Dashboard</h3>
-              <p class="project-card__lead">Painel desktop para Windows com automações de um clique, bandeja e remoção de programas.</p>
-              <ul class="project-card__highlights">
-                <li>Layout estilo Slack com canais de ação e logs em tempo real</li>
-                <li>Bandeja do sistema, autostart e scripts invisíveis</li>
-                <li>Lista e desinstala programas via winget e registro</li>
-              </ul>
-              <p class="project-card__note">Tauri 2 · React · TypeScript · Rust</p>
-              <ul class="project-card__tags">
-                <li class="skill-tag">Tauri</li>
-                <li class="skill-tag">React</li>
-                <li class="skill-tag">TypeScript</li>
-                <li class="skill-tag">Rust</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="https://github.com/cardoso-ix/pc-dashboard" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Automação de leads</h3>
+                <p class="project-card__lead">Webhook → n8n → Sheets + alerta em tempo real.</p>
+                <p class="project-card__note">n8n · Sheets · WhatsApp</p>
+                <div class="project-card__links">
+                  <a href="#contato" class="project-card__link">Detalhes</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="project-card fade-in">
-            <div class="project-card__image">
-              <img src="assets/images/conversor-preview.svg" alt="Preview do Conversor de Unidades" class="project-card__thumb" width="640" height="360" loading="lazy">
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Conversor de Unidades</h3>
-              <p class="project-card__lead">App web com 49 categorias de grandezas — exercício de front-end com UX cuidadosa.</p>
-              <ul class="project-card__highlights">
-                <li>Histórico de conversões e busca global</li>
-                <li>Tema claro/escuro e layout responsivo</li>
-              </ul>
-              <p class="project-card__note">React · TypeScript · Vite</p>
-              <ul class="project-card__tags">
-                <li class="skill-tag">React</li>
-                <li class="skill-tag">TypeScript</li>
-                <li class="skill-tag">Vite</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="conversor-unidades/" class="project-card__link">Ver demo</a>
-                <a href="https://github.com/cardoso-ix/conversor-unidades" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </article>
+
+            <article class="project-card project-card--compact fade-in">
+              <div class="project-card__image">
+                <img src="assets/images/pc-dashboard-preview.png" alt="Preview do PC Dashboard" class="project-card__thumb" width="640" height="360" loading="lazy">
               </div>
-            </div>
-          </article>
+              <div class="project-card__body">
+                <h3 class="project-card__title">PC Dashboard</h3>
+                <p class="project-card__lead">Painel desktop Windows com automações de um clique.</p>
+                <p class="project-card__note">Tauri · React · Rust</p>
+                <div class="project-card__links">
+                  <a href="https://github.com/cardoso-ix/pc-dashboard" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--compact fade-in">
+              <div class="project-card__image">
+                <img src="assets/images/conversor-preview.svg" alt="Preview do Conversor de Unidades" class="project-card__thumb" width="640" height="360" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Conversor de Unidades</h3>
+                <p class="project-card__lead">App web com 49 categorias — front-end responsivo.</p>
+                <p class="project-card__note">React · TypeScript · Vite</p>
+                <div class="project-card__links">
+                  <a href="conversor-unidades/" class="project-card__link">Demo</a>
+                  <a href="https://github.com/cardoso-ix/conversor-unidades" class="project-card__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -351,52 +309,9 @@
 
     </section>
 
-    <section class="section" id="atuacao">
+    <section class="section" id="skills">
       <div class="container">
-        <h2 class="section__title fade-in"><span class="section__number">03.</span> Atuação</h2>
-        <p class="section__intro fade-in">Três frentes em que entrego valor com automações — do diagnóstico ao fluxo em produção.</p>
-        <div class="services">
-          <article class="service-card fade-in">
-            <p class="service-card__eyebrow">01 · Captação</p>
-            <h3 class="service-card__title">Leads organizados</h3>
-            <p class="service-card__lead">Formulário, Instagram ou WhatsApp → Google Sheets + aviso em tempo real.</p>
-            <ul class="service-card__list">
-              <li>Captura e registro automático</li>
-              <li>Alerta no WhatsApp ou e-mail</li>
-              <li>Planilha pronta para follow-up</li>
-            </ul>
-            <p class="service-card__meta"><span>Stack típica: n8n · Sheets · Webhooks</span></p>
-          </article>
-          <article class="service-card service-card--featured fade-in">
-            <p class="service-card__eyebrow">02 · Conteúdo</p>
-            <h3 class="service-card__title">Conteúdo no piloto</h3>
-            <p class="service-card__lead">Calendário + posts com IA (texto e/ou imagem) publicados no horário — no estilo do case LinkedIn.</p>
-            <ul class="service-card__list">
-              <li>Temas e roteiro alinhados à marca</li>
-              <li>Geração com OpenAI + tom consistente</li>
-              <li>Publicação agendada na rede</li>
-            </ul>
-            <p class="service-card__meta"><span>Stack típica: n8n · OpenAI · LinkedIn</span></p>
-          </article>
-          <article class="service-card fade-in">
-            <p class="service-card__eyebrow">03 · Dados</p>
-            <h3 class="service-card__title">Relatório no automático</h3>
-            <p class="service-card__lead">Planilha ou sistema → resumo diário/semanal no e-mail ou WhatsApp, sem abrir planilha toda hora.</p>
-            <ul class="service-card__list">
-              <li>Coleta de dados via API ou Sheets</li>
-              <li>Resumo claro (com IA quando fizer sentido)</li>
-              <li>Envio no horário combinado</li>
-            </ul>
-            <p class="service-card__meta"><span>Stack típica: n8n · Make · OpenAI</span></p>
-          </article>
-        </div>
-        <p class="services__note fade-in">Quer explorar um fluxo parecido? <a href="#contato">Entre em contato</a> — descrevo o caminho técnico e o próximo passo.</p>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="skills">
-      <div class="container">
-        <h2 class="section__title fade-in"><span class="section__number">04.</span> Skills</h2>
+        <h2 class="section__title fade-in"><span class="section__number">03.</span> Skills</h2>
         <p class="section__intro fade-in">Ferramentas que uso nos projetos — e o que estou aprofundando na pós.</p>
         <div class="skills">
           <div class="skills__group skills__group--primary fade-in">
@@ -441,9 +356,9 @@
       </div>
     </section>
 
-    <section class="section" id="formacao">
+    <section class="section section--alt" id="formacao">
       <div class="container">
-        <h2 class="section__title fade-in"><span class="section__number">05.</span> Formação</h2>
+        <h2 class="section__title fade-in"><span class="section__number">04.</span> Formação</h2>
         <div class="timeline">
           <article class="timeline__item fade-in">
             <div class="timeline__marker"></div>
@@ -497,9 +412,9 @@
 
     </section>
 
-    <section class="section section--alt" id="experiencia">
+    <section class="section" id="experiencia">
       <div class="container">
-        <h2 class="section__title fade-in"><span class="section__number">06.</span> Experiência</h2>
+        <h2 class="section__title fade-in"><span class="section__number">05.</span> Experiência</h2>
         <p class="section__intro fade-in">Operação real antes da automação: processos, cliente e prazo — o que hoje vira fluxo no n8n/Make.</p>
         <div class="timeline">
           <article class="timeline__item fade-in">
@@ -564,7 +479,7 @@
 
     <section class="section section--compact" id="contato">
       <div class="container container--narrow">
-        <h2 class="section__title fade-in"><span class="section__number">07.</span> Contato</h2>
+        <h2 class="section__title fade-in"><span class="section__number">06.</span> Contato</h2>
         <p class="contact__intro fade-in">Chapecó, SC. Aberto a conversas sobre automações, IA aplicada e próximos projetos.</p>
         <div class="contact__links fade-in">
           <a href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" class="contact__chip contact__chip--primary" target="_blank" rel="noopener noreferrer">WhatsApp</a>

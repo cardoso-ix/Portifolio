@@ -4,23 +4,23 @@
   "title": "Design System: Eduardo Cardoso — Portfólio",
   "extensions": {
     "colorMeta": {
-      "accent-blue": {
+      "accent-olive": {
         "role": "primary",
-        "displayName": "Soft Azure",
-        "canonical": "#5b8def",
-        "tonalRamp": ["#0e1116", "#191e28", "#5b8def", "#83a9f5"]
+        "displayName": "Muted Olive",
+        "canonical": "#a8b87a",
+        "tonalRamp": ["#111211", "#1f201e", "#a8b87a", "#bbc994"]
       },
       "bg-deep": {
         "role": "neutral",
-        "displayName": "Charcoal",
-        "canonical": "#0e1116",
-        "tonalRamp": ["#0c0f14", "#0e1116", "#141820", "#191e28"]
+        "displayName": "Graphite",
+        "canonical": "#111211",
+        "tonalRamp": ["#0e0f0e", "#111211", "#181918", "#1f201e"]
       },
       "accent-secondary": {
         "role": "secondary",
-        "displayName": "Steel Blue",
-        "canonical": "#7a92c4",
-        "tonalRamp": ["#1f2531", "#5f74a3", "#7a92c4"]
+        "displayName": "Warm Stone",
+        "canonical": "#b8b19a",
+        "tonalRamp": ["#272825", "#7a7564", "#b8b19a"]
       }
     },
     "typographyMeta": {
@@ -28,9 +28,9 @@
       "mono": { "displayName": "Terminal Mono", "purpose": "Prompts, metadados, números de seção." }
     },
     "shadows": [
-      { "name": "header-scrolled", "value": "0 4px 20px rgba(0, 0, 0, 0.28)", "purpose": "Header fixo após scroll." },
-      { "name": "btn-primary-hover", "value": "0 6px 16px rgba(91, 141, 239, 0.24)", "purpose": "CTA hover suave." },
-      { "name": "card-soft", "value": "0 12px 28px rgba(0, 0, 0, 0.22)", "purpose": "Elevação suave em cards." }
+      { "name": "header-scrolled", "value": "0 4px 18px rgba(0, 0, 0, 0.28)", "purpose": "Header fixo após scroll." },
+      { "name": "btn-primary-hover", "value": "0 6px 16px rgba(168, 184, 122, 0.24)", "purpose": "CTA hover suave." },
+      { "name": "card-soft", "value": "0 12px 28px rgba(0, 0, 0, 0.24)", "purpose": "Elevação suave em cards." }
     ],
     "motion": [
       { "name": "ease-standard", "value": "0.25s ease", "purpose": "Transições padrão (--transition)." },
@@ -47,7 +47,7 @@
       "skip-link": 200,
       "toast": 200
     },
-    "northStar": "Quiet Professional Terminal",
+    "northStar": "Quiet Graphite Olive",
     "rules": [
       "Quiet Surface",
       "Flat-At-Rest",

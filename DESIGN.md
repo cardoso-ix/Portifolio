@@ -1,23 +1,23 @@
 ---
 name: Eduardo Cardoso — Portfólio
-description: Superfície de marca tech-industrial com terminal, acento ciano e glass surfaces sobre fundo navy profundo.
+description: Superfície sóbria com terminal, acento oliva e glass surfaces sobre fundo graphite.
 colors:
-  bg-deep: "#0e1116"
-  bg-alt: "#141820"
-  surface: "#191e28"
-  surface-elevated: "#1f2531"
-  border: "#2c3340"
-  text-primary: "#eef2f7"
-  text-muted: "#8f98a8"
-  accent-blue: "#5b8def"
-  accent-blue-hover: "#83a9f5"
-  accent-secondary: "#7a92c4"
-  success: "#3dba8c"
-  warning: "#d4a017"
-  light-bg: "#f4f6f9"
-  light-text: "#12161e"
-  light-muted: "#5c6678"
-  light-accent: "#3b6fd4"
+  bg-deep: "#111211"
+  bg-alt: "#181918"
+  surface: "#1f201e"
+  surface-elevated: "#272825"
+  border: "#353732"
+  text-primary: "#eef0ea"
+  text-muted: "#9a9e93"
+  accent-olive: "#a8b87a"
+  accent-olive-hover: "#bbc994"
+  accent-secondary: "#b8b19a"
+  success: "#7d9b76"
+  warning: "#c4a35a"
+  light-bg: "#f3f4f1"
+  light-text: "#1a1b18"
+  light-muted: "#5f6458"
+  light-accent: "#5f6f3f"
 typography:
   display:
     fontFamily: "Inter, system-ui, sans-serif"
@@ -50,17 +50,17 @@ spacing:
   header-height: "4rem"
 components:
   button-primary:
-    backgroundColor: "{colors.accent-cyan}"
+    backgroundColor: "{colors.accent-olive}"
     textColor: "{colors.bg-deep}"
     rounded: "{rounded.pill}"
     padding: "0.75rem 1.5rem"
   button-outline:
     backgroundColor: "transparent"
-    textColor: "{colors.accent-cyan}"
+    textColor: "{colors.accent-olive}"
     rounded: "{rounded.pill}"
     padding: "0.75rem 1.5rem"
   skill-tag:
-    backgroundColor: "rgba(45, 220, 255, 0.08)"
+    backgroundColor: "rgba(168, 184, 122, 0.08)"
     textColor: "{colors.text-primary}"
     rounded: "{rounded.pill}"
     padding: "0.35rem 0.75rem"
@@ -70,41 +70,41 @@ components:
 
 ## 1. Overview
 
-**Creative North Star: "The Agent Terminal"**
+**Creative North Star: "Quiet Graphite Olive"**
 
-Interface sóbria com toques de terminal: fundo charcoal, superfícies limpas, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão técnica** sem excesso de efeitos.
+Interface sóbria com toques de terminal: fundo graphite, superfícies limpas, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão técnica** sem excesso de efeitos.
 
-Densidade controlada: seções com respiro (`4rem` vertical), cards de projeto com preview, timeline vertical. Profundidade via camadas de superfície e bordas discretas — sem partículas, grade ou glows neon.
+Densidade controlada: conteúdo centralizado (`68rem`), cards de projeto com um destaque + grade compacta, timeline vertical. Profundidade via camadas de superfície e bordas discretas — sem partículas, grade ou glows neon.
 
-Rejeita explicitamente: gradient text decorativo no corpo, hero-metric SaaS, eyebrows numerados em toda seção, paleta cream/sand de landing page AI-default, ciano/magenta neon.
+Rejeita explicitamente: gradient text decorativo no corpo, hero-metric SaaS, azul “padrão IA”, ciano/magenta neon, paleta cream/sand genérica.
 
 **Key Characteristics:**
 
-- Dark mode padrão; light mode espelhado com azul profissional (`#3b6fd4`).
+- Dark mode padrão; light mode espelhado com oliva profunda (`#5f6f3f`).
 - Dupla tipografia: Inter (UI/prosa) + JetBrains Mono (terminal, prompts, badges técnicos).
-- Acento azul suave (`#5b8def`) — uso pontual em CTAs, links e metadados.
-- Componentes: botões pill, skill-tags, terminal-window, project-card com thumb.
+- Acento oliva suave (`#a8b87a`) — uso pontual em CTAs, links e metadados.
+- Componentes: botões pill, skill-tags, terminal-window, project-card (featured + compact).
 - Motion: typing no hero e fade-in on scroll; sem partículas.
 
 ## 2. Colors
 
-Paleta **Quiet Professional**: charcoal neutro + um azul suave que carrega CTAs e links, sem neon.
+Paleta **Quiet Graphite Olive**: graphite neutro + oliva suave que carrega CTAs e links, sem azul de template.
 
 ### Primary
 
-- **Soft Azure** (`#5b8def` dark / `#3b6fd4` light): CTAs primários, links ativos, bordas bright, prompt `$`. Uso pontual — não pintar blocos inteiros.
+- **Muted Olive** (`#a8b87a` dark / `#5f6f3f` light): CTAs primários, links ativos, bordas bright, prompt `$`. Uso pontual — não pintar blocos inteiros.
 
 ### Secondary
 
-- **Steel Blue** (`#7a92c4` dark / `#5f74a3` light): metadados e acentos secundários; nunca como botão principal.
+- **Warm Stone** (`#b8b19a` dark / `#7a7564` light): metadados e acentos secundários; nunca como botão principal.
 
 ### Neutral
 
-- **Charcoal** (`#0e1116`): fundo base dark.
-- **Panel Slate** (`#191e28` / `#1f2531`): surfaces e cards elevados.
-- **Ink Frost** (`#eef2f7`): texto principal dark mode.
-- **Muted Steel** (`#8f98a8`): texto secundário; em light mode usar `#5c6678` para manter contraste ≥4.5:1.
-- **Rule Slate** (`#2c3340`): bordas estruturais.
+- **Graphite** (`#111211`): fundo base dark.
+- **Panel Stone** (`#1f201e` / `#272825`): surfaces e cards elevados.
+- **Ink Mist** (`#eef0ea`): texto principal dark mode.
+- **Muted Sage** (`#9a9e93`): texto secundário; em light mode usar `#5f6458` para manter contraste ≥4.5:1.
+- **Rule Stone** (`#353732`): bordas estruturais.
 
 ### Named Rules
 
