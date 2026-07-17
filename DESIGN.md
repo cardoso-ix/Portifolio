@@ -2,22 +2,22 @@
 name: Eduardo Cardoso — Portfólio
 description: Superfície de marca tech-industrial com terminal, acento ciano e glass surfaces sobre fundo navy profundo.
 colors:
-  bg-deep: "#0a1020"
-  bg-alt: "#111a2e"
-  surface: "#16233b"
-  surface-elevated: "#1b2b47"
-  border: "#2a3f63"
-  text-primary: "#f4f8ff"
-  text-muted: "#9eb0cc"
-  accent-cyan: "#2ddcff"
-  accent-cyan-hover: "#7ee9ff"
-  accent-magenta: "#c85cff"
-  success: "#3dffb0"
-  warning: "#ffaa00"
-  light-bg: "#eef3fb"
-  light-text: "#0f1a2e"
-  light-muted: "#4a5f7a"
-  light-accent: "#008eb8"
+  bg-deep: "#0e1116"
+  bg-alt: "#141820"
+  surface: "#191e28"
+  surface-elevated: "#1f2531"
+  border: "#2c3340"
+  text-primary: "#eef2f7"
+  text-muted: "#8f98a8"
+  accent-blue: "#5b8def"
+  accent-blue-hover: "#83a9f5"
+  accent-secondary: "#7a92c4"
+  success: "#3dba8c"
+  warning: "#d4a017"
+  light-bg: "#f4f6f9"
+  light-text: "#12161e"
+  light-muted: "#5c6678"
+  light-accent: "#3b6fd4"
 typography:
   display:
     fontFamily: "Inter, system-ui, sans-serif"
@@ -72,43 +72,43 @@ components:
 
 **Creative North Star: "The Agent Terminal"**
 
-Interface que parece um painel de sistema cruzado com um terminal de desenvolvedor: fundo navy profundo, grade sutil, partículas em rede, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão técnica** e **fluência em agentes de IA** sem cair no clichê de portfólio dev genérico.
+Interface sóbria com toques de terminal: fundo charcoal, superfícies limpas, janelas estilo macOS com dots vermelho/amarelo/verde, prompts `$` e `>` em JetBrains Mono. A identidade comunica **precisão técnica** sem excesso de efeitos.
 
-Densidade moderada: seções longas com respiro (`4rem` vertical), cards de projeto com preview visual, timeline vertical para formação/experiência. Profundidade vem de **glass surfaces** (`rgba` + `backdrop-filter`), bordas ciano semitransparentes e glows pontuais — não de sombras pesadas.
+Densidade controlada: seções com respiro (`4rem` vertical), cards de projeto com preview, timeline vertical. Profundidade via camadas de superfície e bordas discretas — sem partículas, grade ou glows neon.
 
-Rejeita explicitamente: gradient text decorativo no corpo, hero-metric SaaS, eyebrows numerados em toda seção, paleta cream/sand de landing page AI-default.
+Rejeita explicitamente: gradient text decorativo no corpo, hero-metric SaaS, eyebrows numerados em toda seção, paleta cream/sand de landing page AI-default, ciano/magenta neon.
 
 **Key Characteristics:**
 
-- Dark mode padrão; light mode espelhado com acento teal (`#008eb8`).
+- Dark mode padrão; light mode espelhado com azul profissional (`#3b6fd4`).
 - Dupla tipografia: Inter (UI/prosa) + JetBrains Mono (terminal, prompts, badges técnicos).
-- Acento ciano neon (`#2ddcff`) + magenta secundário (`#c85cff`) em gradientes pontuais (hero title).
+- Acento azul suave (`#5b8def`) — uso pontual em CTAs, links e metadados.
 - Componentes: botões pill, skill-tags, terminal-window, project-card com thumb.
-- Motion: typing no hero, fade-in on scroll, partículas (desktop only), `0.25s ease` padrão.
+- Motion: typing no hero e fade-in on scroll; sem partículas.
 
 ## 2. Colors
 
-Paleta **Committed dark**: superfície navy tintada + um acento ciano saturado que carrega CTAs, links e glow.
+Paleta **Quiet Professional**: charcoal neutro + um azul suave que carrega CTAs e links, sem neon.
 
 ### Primary
 
-- **Signal Cyan** (`#2ddcff` dark / `#008eb8` light): CTAs primários, links ativos, bordas bright, partículas, prompt `$`. Raro o suficiente para marcar interação; não pintar blocos inteiros.
+- **Soft Azure** (`#5b8def` dark / `#3b6fd4` light): CTAs primários, links ativos, bordas bright, prompt `$`. Uso pontual — não pintar blocos inteiros.
 
 ### Secondary
 
-- **Lab Magenta** (`#c85cff` dark / `#8b4fc9` light): acento no gradiente do nome no hero; uso pontual, nunca como cor de botão principal.
+- **Steel Blue** (`#7a92c4` dark / `#5f74a3` light): metadados e acentos secundários; nunca como botão principal.
 
 ### Neutral
 
-- **Deep Navy** (`#0a1020`): fundo base dark.
-- **Panel Slate** (`#16233b` / `#1b2b47`): surfaces e cards elevados.
-- **Ink Frost** (`#f4f8ff`): texto principal dark mode.
-- **Muted Steel** (`#9eb0cc`): texto secundário; em light mode usar `#4a5f7a` para manter contraste ≥4.5:1.
-- **Rule Blue** (`#2a3f63`): bordas estruturais.
+- **Charcoal** (`#0e1116`): fundo base dark.
+- **Panel Slate** (`#191e28` / `#1f2531`): surfaces e cards elevados.
+- **Ink Frost** (`#eef2f7`): texto principal dark mode.
+- **Muted Steel** (`#8f98a8`): texto secundário; em light mode usar `#5c6678` para manter contraste ≥4.5:1.
+- **Rule Slate** (`#2c3340`): bordas estruturais.
 
 ### Named Rules
 
-**The Glow Sparingly Rule.** Glow (`box-shadow` ciano) aparece em hover de botões, header scrolled e terminal windows — nunca em todo card por padrão.
+**The Quiet Surface Rule.** Elevação vem de borda + tint; sombras suaves só em hover — sem glow neon.
 
 ## 3. Typography
 
