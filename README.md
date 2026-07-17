@@ -1,6 +1,6 @@
 # Portfólio — Eduardo Cardoso
 
-Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**. Posicionamento: **agentes de IA** (LLMs, RAG, Make, n8n, CrewAI).
+Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**. Posicionamento: **projetos de automações com n8n, Make e IA** (LLMs, APIs, integrações).
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
@@ -84,13 +84,15 @@ Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.
 
 ## Seções do site
 
-1. **Início** — hero focado em agentes de IA, terminal, currículo PDF  
-2. **Sobre** — Pós Tech Agentes de IA, LLMs, RAG e automações  
-3. **Formação** — timeline acadêmica  
-4. **Experiência** — histórico profissional (histórico antigo colapsável)  
-5. **Skills** — agentes de IA, automações, metodologias, soft skills  
-6. **Projetos** — Automação LinkedIn, PC Dashboard, conversor  
-7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub  
+1. **Início** — hero com foco em automações/IA, terminal e CTAs (projetos, currículo, contato)  
+2. **Projetos** — Automação LinkedIn, leads, PC Dashboard, conversor  
+3. **Sobre** — trajetória, como trabalha e Pós Tech em Agentes de IA  
+4. **Atuação** — frentes de valor (leads, conteúdo, relatórios)  
+5. **Skills** — stack em uso, complementares, estudando, soft skills  
+6. **Formação** — timeline acadêmica  
+7. **Experiência** — histórico profissional (histórico antigo colapsável)  
+8. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub, currículo  
+
 
 ## Cursor MCP (opcional)
 

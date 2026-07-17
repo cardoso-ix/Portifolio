@@ -12,12 +12,14 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Public positioning is **freela-first**: automações com n8n, Make e IA for PME (leads, conteúdo, relatórios).
-- Lead with clear packages/CTAs (WhatsApp). Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
+- Portuguese (pt-BR). Public positioning is **project-first / professional**: automações com n8n, Make e IA (leads, conteúdo, relatórios).
+- Lead with projects and verifiable stack. Avoid freela/pacote/orçamento language; keep CTAs open (projetos, currículo, contato).
+- Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
 - Operational background (logística, suporte, laboratório) should connect to automating real process pain.
 
 ## CSS
-- Use existing CSS custom properties in `:root` / `[data-theme="light"]`.
+- Use existing CSS custom properties in `:root` / `[data-theme="light"]` (slate + soft blue; avoid neon cyan/magenta).
+- Prefer a clean layout: no particle canvas, no background grid, minimal glow.
 - BEM-like naming: `.section__element`, `.block__element--modifier`.
 - Respect `prefers-reduced-motion: reduce` for animations.
 

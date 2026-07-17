@@ -6,11 +6,11 @@ brand
 
 ## Users
 
-Recrutadores, tech leads e gestores que avaliam candidatos em **agentes de IA**, **automações com LLMs** e **integrações (Make, n8n, CrewAI)**. Visitam o site em triagem rápida (mobile ou desktop), muitas vezes a partir de LinkedIn, GitHub ou indicação. Precisam entender em poucos segundos quem é Eduardo, o que ele estuda e constrói em IA, quais projetos comprova e como entrar em contato.
+Recrutadores, tech leads, gestores e parceiros que avaliam trabalho em **automações com IA**, **LLMs** e **integrações (Make, n8n)**. Visitam o site em triagem rápida (mobile ou desktop), muitas vezes a partir de LinkedIn, GitHub ou indicação. Precisam entender em poucos segundos quem é Eduardo, quais projetos comprova, qual stack usa e como entrar em contato.
 
 ## Product Purpose
 
-Portfólio pessoal de uma página que **comunica posicionamento em agentes de IA** — Pós Tech (FIAP + Alura), LLMs, RAG, orquestração e automações — e **direciona para ação** (ver projetos, baixar currículo, contato). Sucesso = visitante entende o foco em IA aplicada, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
+Portfólio pessoal de uma página que **apresenta projetos de automações e IA aplicada** — n8n, Make, OpenAI, com Pós Tech (FIAP + Alura) em agentes — e **direciona para ação** (ver projetos, baixar currículo, contato). Tom profissional e aberto, sem posicionamento de freela/pacotes. Sucesso = visitante entende o foco, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
 
 ## Brand Personality
 
