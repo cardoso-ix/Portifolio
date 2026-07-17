@@ -6,17 +6,17 @@ brand
 
 ## Users
 
-Recrutadores, tech leads, gestores e parceiros que avaliam trabalho em **automações com IA**, **LLMs** e **integrações (Make, n8n)**. Visitam o site em triagem rápida (mobile ou desktop), muitas vezes a partir de LinkedIn, GitHub ou indicação. Precisam entender em poucos segundos quem é Eduardo, quais projetos comprova, qual stack usa e como entrar em contato.
+Recrutadores, tech leads, gestores e parceiros que avaliam trabalho em **automações com IA**, **LLMs** e **integrações (n8n)**. Visitam o site em triagem rápida (mobile ou desktop), muitas vezes a partir de LinkedIn, GitHub ou indicação. Precisam entender em poucos segundos quem é Eduardo, quais projetos comprova, qual stack usa e como entrar em contato.
 
 ## Product Purpose
 
-Portfólio pessoal de uma página que **apresenta projetos de automações e IA aplicada** — n8n, Make, OpenAI, com Pós Tech (FIAP + Alura) em agentes — e **direciona para ação** (ver projetos, baixar currículo, contato). Tom profissional e aberto, sem posicionamento de freela/pacotes. Sucesso = visitante entende o foco, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
+Portfólio pessoal de uma página que **apresenta projetos de automações e IA aplicada** — n8n, OpenAI, com Pós Tech (FIAP + Alura) em agentes — e **direciona para ação** (ver projetos, baixar currículo, contato). Tom profissional e aberto, sem posicionamento de freela/pacotes. Sucesso = visitante entende o foco, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
 
 ## Brand Personality
 
 **Preciso · Técnico · Em evolução**
 
-Tom profissional e direto, sem hype de startup. A estética remete a terminal e painel de sistema — técnico, confiável, com energia de quem está aprendendo e construindo em IA. Emoções desejadas: **confiança** (projetos e stack verificáveis), **curiosidade** (agentes, RAG, Make/n8n), **clareza** (informação escaneável).
+Tom profissional e direto, sem hype de startup. A estética remete a terminal e painel de sistema — técnico, confiável, com energia de quem está aprendendo e construindo em IA. Emoções desejadas: **confiança** (projetos e stack verificáveis), **curiosidade** (agentes, RAG, n8n), **clareza** (informação escaneável).
 
 Referências implícitas no código atual: interfaces de dev tool escuras com acento ciano (Vercel/Linear-adjacent, mas com identidade própria via terminal); hero com “perfil em markdown” e badges de status.
 

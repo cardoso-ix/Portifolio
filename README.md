@@ -1,6 +1,6 @@
 # Portfólio — Eduardo Cardoso
 
-Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**. Posicionamento: **projetos de automações com n8n, Make e IA** (LLMs, APIs, integrações).
+Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**. Posicionamento: **projetos de automações com n8n e IA** (LLMs, APIs, integrações).
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
