@@ -12,7 +12,7 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Public positioning is **project-first / professional**: automações com n8n, Make e IA (leads, conteúdo, relatórios).
+- Portuguese (pt-BR). Public positioning is **project-first / professional**: automações com n8n e IA (leads, conteúdo, relatórios).
 - Lead with projects and verifiable stack. Avoid freela/pacote/orçamento language; keep CTAs open (projetos, currículo, contato).
 - Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
 - Operational background (logística, suporte, laboratório) should connect to automating real process pain.
