@@ -1,6 +1,8 @@
 # Portfólio — Eduardo Cardoso
 
-Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**. Posicionamento: **projetos de automações com n8n e IA** (LLMs, APIs, integrações).
+Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**.
+
+**Posicionamento:** projetos de **automações com n8n e IA** (OpenAI, APIs, webhooks, integrações) — tom profissional e aberto a oportunidades.
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
@@ -10,6 +12,7 @@ Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, respo
 |--------|------------|
 | Site principal | HTML5, CSS3, JavaScript (vanilla) |
 | Fontes | Inter + JetBrains Mono (Google Fonts) |
+| Visual | Graphite + oliva (`#a8b87a`), layout centralizado (`88rem`) |
 | Subprojeto embarcado | React + Vite (build em `conversor-unidades/`) |
 | Scripts auxiliares | Python 3 — Pillow, ReportLab |
 | CI | GitHub Actions — verificação de links (Lychee) |
@@ -30,13 +33,20 @@ Portifolio/
 │   ├── generate_cv.py
 │   ├── generate_favicon.py
 │   ├── generate_og_image.py
+│   ├── gen_n8n_preview.py
+│   ├── gen_pc_dashboard_preview.py
 │   ├── font_utils.py
 │   ├── format_html.py
 │   └── requirements.txt
+├── docs/
+│   ├── LINKEDIN-PERFIL.md
+│   └── AVALIACAO-PERFIL.md
 ├── robots.txt
 ├── sitemap.xml
 ├── site.webmanifest
 ├── 404.html
+├── PRODUCT.md
+├── DESIGN.md
 ├── .github/workflows/check-links.yml
 └── .cursor/                   # MCP e regras do Cursor (opcional)
 ```
@@ -46,8 +56,19 @@ Portifolio/
 | Projeto | Demo | Código |
 |---------|------|--------|
 | Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) |
+| Automações com n8n | — | (fluxo / arquitetura) |
 | PC Dashboard | — (app desktop Windows) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
 | Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
+
+## Seções do site
+
+1. **Início** — hero (automações/IA), terminal, CTAs (projetos, currículo, contato)
+2. **Projetos** — 1 destaque + grade compacta
+3. **Sobre** — trajetória, como trabalha, Pós Tech em Agentes de IA
+4. **Skills** — em uso, complementares, estudando, soft skills
+5. **Formação** — timeline acadêmica
+6. **Experiência** — histórico profissional (antigo colapsável)
+7. **Contato** — WhatsApp, e-mail, LinkedIn, GitHub, currículo
 
 ## Visualizar localmente
 
@@ -64,38 +85,34 @@ pip install -r scripts/requirements.txt
 python scripts/generate_cv.py
 python scripts/generate_favicon.py
 python scripts/generate_og_image.py
+python scripts/gen_n8n_preview.py
+python scripts/gen_pc_dashboard_preview.py
 python scripts/format_html.py
 ```
 
 ## SEO e qualidade
 
-- **Open Graph** — `assets/images/og-image.png` (1200×630, gerado por script)
+- **Open Graph** — `assets/images/og-image.png` (1200×630)
 - **JSON-LD** — schema `Person` em `index.html`
-- **robots.txt** + **sitemap.xml** — indexação
-- **404.html** — erro personalizado no GitHub Pages
+- **robots.txt** + **sitemap.xml**
+- **404.html** — página de erro no GitHub Pages
 - **site.webmanifest** — metadados PWA básicos
 - **CI** — links (Lychee) + validação HTML
 
+## Documentação
+
+| Arquivo | Conteúdo |
+|---------|----------|
+| [PRODUCT.md](PRODUCT.md) | Propósito, público e princípios do produto |
+| [DESIGN.md](DESIGN.md) | Sistema visual (cores, tipografia, regras) |
+| [docs/AVALIACAO-PERFIL.md](docs/AVALIACAO-PERFIL.md) | Avaliação do posicionamento atual |
+| [docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md) | Textos prontos para o LinkedIn |
+
 ## Publicar
 
-Repositório remoto: [`cardoso-ix/Portifolio`](https://github.com/cardoso-ix/Portifolio). Push na branch `main` atualiza o GitHub Pages e dispara a verificação de links.
+Repositório: [`cardoso-ix/Portifolio`](https://github.com/cardoso-ix/Portifolio). Push na `main` atualiza o GitHub Pages.
 
-Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.html` para evitar cache.
-
-## Seções do site
-
-1. **Início** — hero com foco em automações/IA, terminal e CTAs (projetos, currículo, contato)  
-2. **Projetos** — destaque + grade compacta (LinkedIn, automações n8n, PC Dashboard, conversor)  
-3. **Sobre** — trajetória, como trabalha e Pós Tech em Agentes de IA  
-4. **Skills** — stack em uso, complementares, estudando, soft skills  
-5. **Formação** — timeline acadêmica  
-6. **Experiência** — histórico profissional (histórico antigo colapsável)  
-7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub, currículo  
-
-
-## Cursor MCP (opcional)
-
-Copie `.cursor/mcp.json.example` para `.cursor/mcp.json` e substitua o token do GitHub. Reinicie o Cursor e ative em **Settings → Tools & MCP**.
+Após alterar CSS, JS ou PDF, incremente `?v=` nos links em `index.html`.
 
 ## Licença
 
