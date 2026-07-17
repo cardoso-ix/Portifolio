@@ -10,11 +10,11 @@ OUTPUT = ROOT / "assets" / "images" / "og-image.png"
 PHOTO = ROOT / "assets" / "images" / "foto.png"
 SIZE = (1200, 630)
 
-BG = (14, 17, 22)
-PANEL = (25, 30, 40)
-CYAN = (91, 141, 239)
-TEXT = (238, 242, 247)
-MUTED = (143, 152, 168)
+BG = (17, 18, 17)
+PANEL = (31, 32, 30)
+CYAN = (168, 184, 122)
+TEXT = (238, 240, 234)
+MUTED = (154, 158, 147)
 
 
 def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:

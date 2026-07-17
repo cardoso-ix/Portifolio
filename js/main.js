@@ -11,7 +11,7 @@
   const themeToggle = document.getElementById('theme-toggle');
   const THEME_KEY = 'portfolio-theme';
   const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-  const THEME_COLORS = { dark: '#0e1116', light: '#f4f6f9' };
+  const THEME_COLORS = { dark: '#111211', light: '#f3f4f1' };
 
   const TYPING_PHRASES = [
     'Automações com n8n e Make',
