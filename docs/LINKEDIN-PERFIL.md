@@ -1,47 +1,47 @@
-# LinkedIn — guia completo (copiar e colar)
+# LinkedIn — textos prontos (alinhar ao portfólio)
 
 **Eduardo Cardoso** · Chapecó — SC  
-**Tempo estimado:** 25–35 minutos  
-**Links:** [Portfólio](https://cardoso-ix.github.io/Portifolio/) · [GitHub](https://github.com/cardoso-ix) · [Mentor de Gestão Industrial](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial)
+**Portfólio:** https://cardoso-ix.github.io/Portifolio/  
+**GitHub:** https://github.com/cardoso-ix  
 
-> O assistente **não pode** entrar na sua conta LinkedIn. Siga este guia seção por seção.
+> O assistente **não pode** editar sua conta. Copie seção por seção.  
+> Avaliação completa: [AVALIACAO-PERFIL.md](./AVALIACAO-PERFIL.md)
 
 ---
 
-## Passo 0 — Antes de começar
+## Passo 0 — Checklist rápido
 
-- [ ] Foto de perfil (use `assets/images/foto.png` do portfólio)
-- [ ] Currículo PDF em mãos (`assets/cv_eduardo_cardoso.pdf`)
-- [ ] Abra: [linkedin.com/in/eduardo-cardoso-213a02267](https://www.linkedin.com/in/eduardo-cardoso-213a02267) → **Ver perfil** → **Editar**
+- [ ] Foto de perfil (mesma do portfólio: `assets/images/foto.png`)
+- [ ] Banner simples (fundo escuro / técnico — opcional)
+- [ ] Currículo PDF: `assets/cv_eduardo_cardoso.pdf`
+- [ ] Abrir: [linkedin.com/in/eduardo-cardoso-213a02267](https://www.linkedin.com/in/eduardo-cardoso-213a02267) → **Editar perfil**
 
 ---
 
 ## 1. Título (Headline)
 
-**Perfil → ícone lápis ao lado do nome → Título**
+**Perfil → lápis ao lado do nome → Título**
 
 Cole **uma** opção (recomendada: **A**):
 
 ### Opção A (recomendada)
 ```
-Metrologista | Em transição para Desenvolvimento Web | TypeScript · React · Supabase | Administração & MBA Finanças
+Automações com n8n e IA | OpenAI · APIs · Webhooks | Pós Tech Agentes de IA (FIAP + Alura) | Chapecó, SC
 ```
 
-### Opção B
+### Opção B (híbrida com cargo atual)
 ```
-Metrologista na Fluxo Metrologia | Desenvolvedor Web em formação | Projetos full-stack com TypeScript, Vite e Supabase
+Técnico de Calibração · Construindo automações com n8n e IA | OpenAI · APIs | Pós Tech FIAP + Alura
 ```
 
-### Opção C (só vagas dev)
+### Opção C (mais aberta a vagas tech)
 ```
-Desenvolvedor Web Front-end / Full-stack Júnior | TypeScript · React · Vite · Supabase | Portfólio com projetos publicados
+Automações & IA aplicada | n8n · OpenAI · Integrações | Projetos em produção | Aberto a oportunidades
 ```
 
 ---
 
 ## 2. Localização
-
-**Introdução → Localização**
 
 ```
 Chapecó, Santa Catarina, Brasil
@@ -51,20 +51,19 @@ Chapecó, Santa Catarina, Brasil
 
 ## 3. Sobre (About)
 
-**Introdução → Sobre → Adicionar seção Sobre** (ou editar)
-
 ```
-Profissional com mais de 10 anos de experiência em metrologia, logística e suporte técnico, com formação em Administração (UNIFRAN) e MBA em Controladoria e Finanças (Cruzeiro do Sul).
+Construo automações e integrações com n8n e IA que tiram o trabalho manual do caminho — conectando sistemas, conteúdo e rotinas com escopo claro e resultado mensurável.
 
-Atualmente atuo como Metrologista na Fluxo Metrologia, com foco em calibração, controle de instrumentos de medição, relatórios de conformidade e padronização de processos — competências que reforçam atenção a detalhes, disciplina e qualidade, também essenciais em tecnologia.
+Hoje meu foco é:
+• Fluxos com n8n (APIs, webhooks, planilhas, alertas)
+• Conteúdo e engajamento com IA (pipeline LinkedIn com GPT-4o em VPS)
+• Integrações estáveis do trigger à entrega
 
-Paralelamente, desenvolvo habilidades em desenvolvimento web por meio de projetos práticos publicados:
+Trajetória em logística, suporte e laboratório de calibração: sei o que é retrabalho, prazo e processo. Isso guia como monto automações — simples de operar e confiáveis no dia a dia.
 
-• Mentor de Gestão Industrial — multi-agente com CrewAI, Groq, RAG e Streamlit para supervisores de manutenção
-• Conversor de Unidades — React + TypeScript + Vite (49 categorias de conversão)
-• Portfólio pessoal — HTML, CSS e JavaScript responsivo
+Em formação: Pós Tech em Agentes de IA (FIAP + Alura) — LLMs, RAG e orquestração.
 
-Busco oportunidades como Desenvolvedor Web (Júnior/Estágio) ou posições que unam analítica, processos e tecnologia. Aberto a remoto, híbrido ou presencial.
+Aberto a oportunidades em automação, IA aplicada e integração de sistemas (remoto, híbrido ou Chapecó/SC).
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
 GitHub: https://github.com/cardoso-ix
@@ -74,40 +73,35 @@ GitHub: https://github.com/cardoso-ix
 
 ## 4. Informações de contato
 
-**Introdução → Informações de contato**
-
 | Campo | Valor |
 |--------|--------|
 | **Site** | `https://cardoso-ix.github.io/Portifolio/` |
-| **GitHub** (se houver campo ou em Sobre) | `https://github.com/cardoso-ix` |
+| **GitHub** | `https://github.com/cardoso-ix` |
+| **E-mail** | o mesmo do currículo / portfólio |
 
 ---
 
-## 5. Aberto a trabalho (Open to Work)
-
-**Foto de perfil → #OpenToWork** ou **Vagas → Preferências**
+## 5. Aberto a oportunidades (Open to Work)
 
 | Campo | Escolha |
 |--------|---------|
-| **Procurando** | Emprego em tempo integral, Estágio |
-| **Cargos** | Desenvolvedor Front-end Júnior, Desenvolvedor Web Júnior, Analista de Sistemas Júnior, Desenvolvedor Full Stack Júnior, Analista de Suporte Técnico |
+| **Procurando** | Emprego em tempo integral (e/ou projetos, se fizer sentido) |
+| **Cargos** | Analista de Automação, Especialista em Automações, Automation Engineer (Júnior/Pleno), Analista de Integrações, Ops / IA aplicada, Analista de Processos com foco em automação |
 | **Local** | Chapecó e região + **Remoto** |
-| **Visível para** | Apenas recrutadores *(recomendado)* |
+| **Visível para** | Apenas recrutadores *(recomendado no início)* |
 
-**Mensagem para recrutadores (opcional):**
+**Mensagem para recrutadores:**
 ```
-Olá! Sou Eduardo, metrologista em transição para desenvolvimento web. Tenho projetos publicados em produção (TypeScript, React, Supabase) e portfólio online. Busco vaga júnior ou estágio em desenvolvimento — remoto ou Chapecó/SC. Obrigado pela atenção!
+Olá! Sou Eduardo — construo automações com n8n e IA (OpenAI, APIs, webhooks). Tenho case em produção (pipeline LinkedIn com GPT-4o na VPS) e portfólio online. Busco oportunidades em automação / IA aplicada / integrações — remoto ou Chapecó/SC. Obrigado!
 ```
 
 ---
 
-## 6. Experiência — Fluxo Metrologia (atual)
-
-**Adicionar experiência** ou editar cargo atual
+## 6. Experiência — cargo atual
 
 | Campo | Texto |
 |--------|--------|
-| **Cargo** | Metrologista |
+| **Cargo** | Técnico de Laboratório de Calibração |
 | **Empresa** | Fluxo Metrologia |
 | **Tipo** | Tempo integral |
 | **Início** | julho de 2025 |
@@ -115,44 +109,42 @@ Olá! Sou Eduardo, metrologista em transição para desenvolvimento web. Tenho p
 
 **Descrição:**
 ```
-• Calibração de equipamentos conforme procedimentos e normas técnicas
-• Elaboração de relatórios de conformidade e não conformidade
-• Cadastro e controle de instrumentos de medição
-• Aplicação de critérios de qualidade e rastreabilidade em processos metrológicos
+• Calibração, certificados e conformidade documental
+• Rotinas com precisão, rastreabilidade e padronização
+• Base operacional que uso para desenhar automações de processos reais
 ```
 
 ---
 
-## 7. Experiência — cargos anteriores (resumo)
-
-Copie se ainda não estiverem no perfil:
+## 7. Experiência — cargos anteriores
 
 **Coordenador de Logística · Sandimas** (mai/2023 – fev/2025)
 ```
-Supervisão da equipe de expedição, documentos fiscais e operacionais, controle de recebimentos e conferência de cargas.
+Expedição, documentos fiscais e conferência de cargas — convivência diária com retrabalho e prazos apertados (contexto que hoje vira fluxo automatizado).
 ```
 
 **Suporte Técnico Help Desk · Crescer Sistemas** (fev/2022 – mai/2023)
 ```
-Suporte técnico a clientes, esclarecimento de dúvidas e resolução de incidentes.
+Atendimento a clientes e resolução de problemas — escuta da dor antes de propor solução técnica.
 ```
 
 **Orçamentista · MR Indústria Gráfica** (out/2020 – jun/2021)
 ```
-Elaboração de orçamentos e tratativas comerciais.
+Elaboração de orçamentos e tratativas comerciais com vendedores.
 ```
 
 **Metrologista · JBS Foods** (dez/2014 – dez/2019)
 ```
-Calibração de equipamentos, relatórios de não conformidade, cadastro de instrumentos e controle de calibração conforme padrões de qualidade.
+Calibração de equipamentos, relatórios de não conformidade, cadastro de instrumentos e controle conforme normas.
 ```
 
 ---
 
 ## 8. Formação
 
-| Curso | Instituição | Ano |
-|--------|-------------|-----|
+| Curso | Instituição | Período |
+|--------|-------------|---------|
+| Pós Tech em Agentes de IA | FIAP + Alura | Jun/2026 — em andamento |
 | MBA Controladoria e Finanças | Universidade Cruzeiro do Sul | 2022 |
 | Administração | Universidade de Franca (UNIFRAN) | 2016 – 2020 |
 | Especialização Indicadores de Pesagem / INMETRO | Libratek | 2014 |
@@ -162,40 +154,64 @@ Calibração de equipamentos, relatórios de não conformidade, cadastro de inst
 
 ## 9. Competências (Skills)
 
-**Perfil → Competências → Adicionar**
+Priorize as **3 primeiras** (aparecem no topo):
 
-Marque até 50 (priorize as primeiras 3):
+1. n8n  
+2. Automação de processos  
+3. OpenAI / Prompt Engineering  
 
-**Tecnologia:** TypeScript, JavaScript, HTML, CSS, React, Vite, Git, GitHub, Supabase, SQL, VS Code  
+**Tecnologia:** n8n, OpenAI, APIs, Webhooks, Python, Google Sheets, Git, GitHub, LinkedIn API, React, TypeScript  
 
-**Profissional:** Metrologia, Calibração, INMETRO, Logística, Microsoft Excel, Help Desk, Trabalho em equipe, Comunicação, Organização, Aprendizado contínuo  
+**Profissional:** Processos & operação, Metrologia, Calibração, Logística, Comunicação, Aprendizado contínuo  
+
+*(LLMs, RAG, CrewAI — pode listar, mas deixe claro que estão em estudo na Pós.)*
 
 ---
 
-## 10. Projetos (seção Projetos do LinkedIn)
+## 10. Projetos (seção Projetos)
 
-**Perfil → Adicionar seção do perfil → Projetos**
-
-### Projeto 1 — Mentor de Gestão Industrial
+### Projeto 1 — Automação LinkedIn com IA (destaque)
 | Campo | Valor |
 |--------|--------|
-| **Nome** | Mentor de Gestão Industrial |
-| **Datas** | 2026 – Presente |
-| **Associado a** | Perfil (projeto pessoal) |
-| **URL** | `https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial` |
+| **Nome** | Automação LinkedIn com IA |
+| **URL** | `https://github.com/cardoso-ix/linkedin-automacao-ia` |
 
 **Descrição:**
 ```
-Ferramenta multi-agente para supervisores de manutenção: wizard guiado, diagnóstico com RAG,
-roteiro de conversa (SBI), plano de ação e exportação em PDF.
+Pipeline n8n na VPS com GPT-4o: posts 2×/dia (11h e 19h), cascata no próprio post, outbound em posts de terceiros, Data Table (pending/done) e fallback Gmail se a API falhar.
 
-• Stack: Python, CrewAI, Groq, ChromaDB, Streamlit
-• Deploy: Streamlit Cloud
+Stack: n8n · OpenAI · LinkedIn · VPS
 
-Código: https://github.com/cardoso-ix/mentor-gestao-industrial
+Portfólio: https://cardoso-ix.github.io/Portifolio/#projetos
 ```
 
-### Projeto 2 — Conversor de Unidades
+### Projeto 2 — Automações com n8n
+| Campo | Valor |
+|--------|--------|
+| **Nome** | Automações com n8n |
+| **URL** | `https://cardoso-ix.github.io/Portifolio/#projetos` |
+
+**Descrição:**
+```
+Fluxos que ligam APIs, planilhas, e-mail e alertas — do trigger à entrega. Foco em integrações estáveis e operação simples.
+
+Stack: n8n · APIs · Webhooks
+```
+
+### Projeto 3 — PC Dashboard
+| Campo | Valor |
+|--------|--------|
+| **Nome** | PC Dashboard |
+| **URL** | `https://github.com/cardoso-ix/pc-dashboard` |
+
+**Descrição:**
+```
+Painel desktop para Windows com automações de um clique, bandeja do sistema e gestão de programas.
+
+Stack: Tauri 2 · React · TypeScript · Rust
+```
+
+### Projeto 4 — Conversor de Unidades
 | Campo | Valor |
 |--------|--------|
 | **Nome** | Conversor de Unidades |
@@ -203,69 +219,73 @@ Código: https://github.com/cardoso-ix/mentor-gestao-industrial
 
 **Descrição:**
 ```
-Aplicação web com 49 categorias de grandezas físicas, histórico, busca global e tema claro/escuro. React, TypeScript e Vite.
+App web com 49 categorias de grandezas, histórico, busca e tema claro/escuro.
 
+Stack: React · TypeScript · Vite
 GitHub: https://github.com/cardoso-ix/conversor-unidades
-```
-
-### Projeto 3 — Portfólio Pessoal
-| Campo | Valor |
-|--------|--------|
-| **Nome** | Portfólio Eduardo Cardoso |
-| **URL** | `https://cardoso-ix.github.io/Portifolio/` |
-
-**Descrição:**
-```
-Site de portfólio responsivo com HTML, CSS e JavaScript — design tecnológico, animações e seções de projetos, formação e experiência.
 ```
 
 ---
 
 ## 11. Destaques (Featured)
 
-**Perfil → Destaques → (+)**
-
-Adicione nesta ordem:
-1. Link **Portfólio** → `https://cardoso-ix.github.io/Portifolio/`
-2. Link **Mentor de Gestão Industrial** → `https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial`
-3. Arquivo **Currículo PDF** → upload de `cv_eduardo_cardoso.pdf`
+Nesta ordem:
+1. **Portfólio** → `https://cardoso-ix.github.io/Portifolio/`
+2. **GitHub — Automação LinkedIn** → `https://github.com/cardoso-ix/linkedin-automacao-ia`
+3. **Currículo PDF** → upload de `cv_eduardo_cardoso.pdf`
 
 ---
 
-## 12. Post de lançamento (publicar após atualizar perfil)
+## 12. Post de lançamento (copiar e publicar)
 
 ```
-Atualizei meu portfólio com o Mentor de Gestão Industrial — ferramenta multi-agente com CrewAI, Groq e RAG para supervisores de manutenção.
+Atualizei meu portfólio com foco em automações com n8n e IA.
 
-Stack em produção: Python, Streamlit, TypeScript, React e integrações com IA.
+Destaque: pipeline LinkedIn com GPT-4o na VPS — posts 2×/dia, cascata e outbound no piloto automático.
 
-Estou em busca de oportunidades como Desenvolvedor Web Júnior / Estágio.
+Também organizo o restante da vitrine (fluxos n8n, PC Dashboard e projetos front-end) num layout mais limpo e profissional.
+
+Aberto a conversas sobre automação, integrações e IA aplicada.
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
-Demo: https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial
+GitHub: https://github.com/cardoso-ix
 
-Se souber de uma vaga ou quiser trocar ideia sobre carreira em tech, chama no inbox!
-
-#desenvolvedor #python #typescript #react #crewai #streamlit #vagas #chapeco #remoto #transicaodecarreira
+#n8n #automacao #openai #ia #integracoes #apis #chapeco #oportunidades
 ```
 
-**Dica:** cole o link do post nos Destaques depois de publicar.
+### Post curto (alternativa)
+```
+Novo portfólio no ar: automações com n8n e IA, case LinkedIn em produção e stack verificável.
+
+👉 https://cardoso-ix.github.io/Portifolio/
+
+#n8n #openai #automacao
+```
 
 ---
 
-## 13. Checklist final
+## 13. Mensagem pronta (inbox / networking)
 
-- [ ] Título atualizado
-- [ ] Sobre preenchido com links
-- [ ] Open to Work ativado
-- [ ] Experiência Fluxo + histórico
-- [ ] Formação completa
-- [ ] 10+ competências
-- [ ] 3 projetos
-- [ ] 3 destaques (portfólio, demo, PDF)
-- [ ] Post publicado
-- [ ] Convidar 5–10 conexões (ex-colegas, recrutadores)
+```
+Oi, [Nome]! Vi que você trabalha com [área]. Atualizei meu portfólio com automações em n8n e um case de LinkedIn com IA em produção — se fizer sentido trocar uma ideia sobre automação/ops, fico à disposição.
+
+https://cardoso-ix.github.io/Portifolio/
+```
 
 ---
 
-**Desenvolvido para Eduardo Cardoso · Portfólio 2026**
+## 14. Checklist final
+
+- [ ] Headline alinhada a n8n/IA  
+- [ ] Sobre atualizado (sem narrativa antiga de “só front júnior”)  
+- [ ] Open to Work / preferências de vaga  
+- [ ] Experiência atual + histórico  
+- [ ] Pós Tech FIAP + Alura na formação  
+- [ ] Skills: n8n, OpenAI, APIs no topo  
+- [ ] Projetos: LinkedIn automation + demais  
+- [ ] Destaques: portfólio, GitHub, PDF  
+- [ ] Post publicado  
+
+---
+
+**Alinhado ao portfólio 2026 · Eduardo Cardoso**
