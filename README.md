@@ -85,13 +85,12 @@ Após alterar CSS, JS ou PDF, incremente o parâmetro `?v=` nos links em `index.
 ## Seções do site
 
 1. **Início** — hero com foco em automações/IA, terminal e CTAs (projetos, currículo, contato)  
-2. **Projetos** — Automação LinkedIn, leads, PC Dashboard, conversor  
+2. **Projetos** — destaque + grade compacta (LinkedIn, leads, PC Dashboard, conversor)  
 3. **Sobre** — trajetória, como trabalha e Pós Tech em Agentes de IA  
-4. **Atuação** — frentes de valor (leads, conteúdo, relatórios)  
-5. **Skills** — stack em uso, complementares, estudando, soft skills  
-6. **Formação** — timeline acadêmica  
-7. **Experiência** — histórico profissional (histórico antigo colapsável)  
-8. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub, currículo  
+4. **Skills** — stack em uso, complementares, estudando, soft skills  
+5. **Formação** — timeline acadêmica  
+6. **Experiência** — histórico profissional (histórico antigo colapsável)  
+7. **Contato** — e-mail, WhatsApp, LinkedIn, GitHub, currículo  
 
 
 ## Cursor MCP (opcional)

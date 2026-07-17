@@ -18,8 +18,9 @@ alwaysApply: false
 - Operational background (logística, suporte, laboratório) should connect to automating real process pain.
 
 ## CSS
-- Use existing CSS custom properties in `:root` / `[data-theme="light"]` (slate + soft blue; avoid neon cyan/magenta).
-- Prefer a clean layout: no particle canvas, no background grid, minimal glow.
+- Use existing CSS custom properties in `:root` / `[data-theme="light"]` (graphite + muted olive; avoid AI-blue / neon cyan/magenta).
+- Keep layout centered (`--container-width: 68rem`) with one featured project + compact project grid.
+- Prefer a clean layout: no particle canvas, no background grid, minimal glow; no “Atuação/serviços” section.
 - BEM-like naming: `.section__element`, `.block__element--modifier`.
 - Respect `prefers-reduced-motion: reduce` for animations.
 
