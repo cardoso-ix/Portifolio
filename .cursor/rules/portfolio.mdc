@@ -18,7 +18,8 @@ alwaysApply: false
 - Operational background (logística, suporte, laboratório) should connect to automating real process pain.
 
 ## CSS
-- Use existing CSS custom properties in `:root` / `[data-theme="light"]`.
+- Use existing CSS custom properties in `:root` / `[data-theme="light"]` (slate + soft blue; avoid neon cyan/magenta).
+- Prefer a clean layout: no particle canvas, no background grid, minimal glow.
 - BEM-like naming: `.section__element`, `.block__element--modifier`.
 - Respect `prefers-reduced-motion: reduce` for animations.
 
