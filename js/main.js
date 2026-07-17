@@ -15,7 +15,7 @@
 
   const TYPING_PHRASES = [
     'Automações com n8n e IA',
-    'Leads · conteúdo · relatórios',
+    'Fluxos · integrações · conteúdo',
     'Projetos com IA aplicada',
     'OpenAI · APIs · Webhooks',
     'Pós Tech FIAP + Alura'
