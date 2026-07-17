@@ -14,7 +14,7 @@
   const THEME_COLORS = { dark: '#111211', light: '#f3f4f1' };
 
   const TYPING_PHRASES = [
-    'Automações com n8n e Make',
+    'Automações com n8n e IA',
     'Leads · conteúdo · relatórios',
     'Projetos com IA aplicada',
     'OpenAI · APIs · Webhooks',
