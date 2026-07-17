@@ -55,8 +55,8 @@ def main() -> None:
 
     draw.text((72, 72), "<EduCardoso />", font=tag_font, fill=CYAN)
     draw.text((72, 180), "Eduardo Cardoso", font=title_font, fill=TEXT)
-    draw.text((72, 268), "Técnico de Calibração · Pós Tech Agentes de IA", font=sub_font, fill=MUTED)
-    draw.text((72, 320), "FIAP + Alura · TypeScript · React · Supabase", font=sub_font, fill=MUTED)
+    draw.text((72, 268), "Automações com n8n, Make e IA", font=sub_font, fill=MUTED)
+    draw.text((72, 320), "Pós Tech FIAP + Alura · OpenAI · APIs", font=sub_font, fill=MUTED)
     draw.text((72, 390), "cardoso-ix.github.io/Portifolio", font=tag_font, fill=CYAN)
 
     if PHOTO.is_file():
