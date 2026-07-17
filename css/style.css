@@ -126,14 +126,6 @@ ul {
 }
 
 /* ===== Background Effects ===== */
-#particles-canvas {
-  display: none;
-}
-
-.bg-grid {
-  display: none;
-}
-
 .skip-link {
   position: absolute;
   top: -4rem;
