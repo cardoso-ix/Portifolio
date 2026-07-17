@@ -8,16 +8,15 @@
   const fadeElements = document.querySelectorAll('.fade-in');
   const yearEl = document.getElementById('year');
   const typingEl = document.getElementById('typing-text');
-  const canvas = document.getElementById('particles-canvas');
   const themeToggle = document.getElementById('theme-toggle');
   const THEME_KEY = 'portfolio-theme';
   const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-  const THEME_COLORS = { dark: '#0a0f18', light: '#eef4fb' };
+  const THEME_COLORS = { dark: '#0e1116', light: '#f4f6f9' };
 
   const TYPING_PHRASES = [
     'Automações com n8n e Make',
     'Leads · conteúdo · relatórios',
-    'Freela aberto em Chapecó',
+    'Projetos com IA aplicada',
     'OpenAI · APIs · Webhooks',
     'Pós Tech FIAP + Alura'
   ];
@@ -296,110 +295,6 @@
     fadeElements.forEach(function (el) {
       el.classList.add('visible');
     });
-  }
-
-  /* ===== Particle network (lightweight) ===== */
-  function initParticles() {
-    if (!canvas || prefersReducedMotion) {
-      return;
-    }
-
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-    let animationId;
-    let isMobile = window.innerWidth < 768;
-    let drawLines = !isMobile;
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      isMobile = window.innerWidth < 768;
-      drawLines = !isMobile;
-    }
-
-    function createParticles() {
-      const maxCount = isMobile ? 14 : 36;
-      const divisor = isMobile ? 32 : 24;
-      const count = Math.min(Math.floor(window.innerWidth / divisor), maxCount);
-      particles = [];
-
-      for (let i = 0; i < count; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.3,
-          vy: (Math.random() - 0.5) * 0.3,
-          radius: Math.random() * 1.2 + 0.4
-        });
-      }
-    }
-
-    function getParticleRgb() {
-      const rgb = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim();
-      return rgb || '45, 220, 255';
-    }
-
-    function draw() {
-      const particleRgb = getParticleRgb();
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      particles.forEach(function (p, i) {
-        p.x += p.vx;
-        p.y += p.vy;
-
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(' + particleRgb + ', 0.55)';
-        ctx.fill();
-
-        if (drawLines) {
-          for (let j = i + 1; j < particles.length; j++) {
-            const p2 = particles[j];
-            const dx = p.x - p2.x;
-            const dy = p.y - p2.y;
-            const dist = dx * dx + dy * dy;
-
-            if (dist < 8100) {
-              const d = Math.sqrt(dist);
-              ctx.beginPath();
-              ctx.moveTo(p.x, p.y);
-              ctx.lineTo(p2.x, p2.y);
-              ctx.strokeStyle = 'rgba(' + particleRgb + ', ' + (0.14 * (1 - d / 90)) + ')';
-              ctx.lineWidth = 0.5;
-              ctx.stroke();
-            }
-          }
-        }
-      });
-
-      animationId = requestAnimationFrame(draw);
-    }
-
-    resize();
-    createParticles();
-    draw();
-
-    window.addEventListener('resize', function () {
-      resize();
-      createParticles();
-    });
-
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) {
-        cancelAnimationFrame(animationId);
-      } else {
-        draw();
-      }
-    });
-  }
-
-  if (window.requestIdleCallback) {
-    window.requestIdleCallback(initParticles, { timeout: 1500 });
-  } else {
-    window.setTimeout(initParticles, 200);
   }
 
   /* ===== Experience archive toggle ===== */

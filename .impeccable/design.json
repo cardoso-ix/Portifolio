@@ -1,36 +1,36 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "generatedAt": "2026-07-17T00:00:00.000Z",
   "title": "Design System: Eduardo Cardoso — Portfólio",
   "extensions": {
     "colorMeta": {
-      "accent-cyan": {
+      "accent-blue": {
         "role": "primary",
-        "displayName": "Signal Cyan",
-        "canonical": "#2ddcff",
-        "tonalRamp": ["#0a1020", "#16233b", "#2ddcff", "#7ee9ff"]
+        "displayName": "Soft Azure",
+        "canonical": "#5b8def",
+        "tonalRamp": ["#0e1116", "#191e28", "#5b8def", "#83a9f5"]
       },
       "bg-deep": {
         "role": "neutral",
-        "displayName": "Deep Navy",
-        "canonical": "#0a1020",
-        "tonalRamp": ["#090f1c", "#0a1020", "#111a2e", "#16233b"]
+        "displayName": "Charcoal",
+        "canonical": "#0e1116",
+        "tonalRamp": ["#0c0f14", "#0e1116", "#141820", "#191e28"]
       },
-      "accent-magenta": {
+      "accent-secondary": {
         "role": "secondary",
-        "displayName": "Lab Magenta",
-        "canonical": "#c85cff",
-        "tonalRamp": ["#1b2b47", "#8b4fc9", "#c85cff"]
+        "displayName": "Steel Blue",
+        "canonical": "#7a92c4",
+        "tonalRamp": ["#1f2531", "#5f74a3", "#7a92c4"]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Hero Display", "purpose": "Nome no hero apenas; gradiente controlado." },
+      "display": { "displayName": "Hero Display", "purpose": "Nome no hero apenas." },
       "mono": { "displayName": "Terminal Mono", "purpose": "Prompts, metadados, números de seção." }
     },
     "shadows": [
-      { "name": "header-scrolled", "value": "0 8px 32px rgba(45, 220, 255, 0.12)", "purpose": "Header fixo após scroll." },
-      { "name": "btn-primary-hover", "value": "0 0 30px rgba(0, 212, 255, 0.5), 0 4px 15px rgba(0, 212, 255, 0.2)", "purpose": "CTA hover glow." },
-      { "name": "card-soft", "value": "0 16px 40px rgba(0, 0, 0, 0.28)", "purpose": "Elevação suave em cards." }
+      { "name": "header-scrolled", "value": "0 4px 20px rgba(0, 0, 0, 0.28)", "purpose": "Header fixo após scroll." },
+      { "name": "btn-primary-hover", "value": "0 6px 16px rgba(91, 141, 239, 0.24)", "purpose": "CTA hover suave." },
+      { "name": "card-soft", "value": "0 12px 28px rgba(0, 0, 0, 0.22)", "purpose": "Elevação suave em cards." }
     ],
     "motion": [
       { "name": "ease-standard", "value": "0.25s ease", "purpose": "Transições padrão (--transition)." },
@@ -41,16 +41,15 @@
       { "name": "desktop", "value": "1024px" }
     ],
     "zIndex": {
-      "particles": 0,
       "content": 1,
       "header": 100,
       "nav-mobile": 110,
       "skip-link": 200,
       "toast": 200
     },
-    "northStar": "The Calibration Terminal",
+    "northStar": "Quiet Professional Terminal",
     "rules": [
-      "Glow Sparingly",
+      "Quiet Surface",
       "Flat-At-Rest",
       "Mono Marks System"
     ]
