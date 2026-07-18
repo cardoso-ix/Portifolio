@@ -1,7 +1,7 @@
 # Avaliação de perfil — Eduardo Cardoso
 
 Foco atual: perfil **universal** — **suporte técnico** + **automações/IA** (n8n, OpenAI, APIs).  
-O envelope público não anuncia “buscando vaga”; as características do perfil é que fazem o encaixe natural.  
+O envelope público não anuncia “buscando vaga”; as características do perfil mostram o encaixe.  
 **Portfólio:** https://cardoso-ix.github.io/Portifolio/
 
 ---
