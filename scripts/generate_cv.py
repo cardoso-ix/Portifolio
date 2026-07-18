@@ -62,18 +62,18 @@ CONTACT = [
 ]
 
 SKILLS = [
-    "Automações com n8n",
+    "Suporte técnico e Help Desk",
+    "Implementação de automações (n8n)",
     "OpenAI · Prompt Engineering",
-    "APIs e Webhooks",
-    "Integrações e fluxos event-driven",
+    "APIs, Webhooks e integrações",
     "LLMs · RAG · agentes (em formação)",
 ]
 
 SUMMARY = (
-    "Construo automações e soluções com IA: n8n, OpenAI, APIs e webhooks — "
-    "do trigger ao fluxo em produção. Cursando Pós Tech em Agentes de IA "
-    "(FIAP + Alura), com foco em LLMs, RAG e orquestração. Busco oportunidades "
-    "em automação, IA aplicada e agentes."
+    "Busco vaga CLT em suporte técnico ou implementação de automações e IA — "
+    "não atuo como freela. Experiência em Help Desk, prática com n8n, OpenAI, "
+    "APIs e webhooks, e Pós Tech em Agentes de IA (FIAP + Alura). Pronto para "
+    "integrar um time, apoiar usuários e colocar fluxos em produção."
 )
 
 EXPERIENCE = [

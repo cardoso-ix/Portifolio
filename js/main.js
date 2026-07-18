@@ -14,11 +14,11 @@
   const THEME_COLORS = { dark: '#111211', light: '#f3f4f1' };
 
   const TYPING_PHRASES = [
-    'Automações com n8n e IA',
-    'Fluxos · integrações · conteúdo',
-    'Projetos com IA aplicada',
-    'OpenAI · APIs · Webhooks',
-    'Pós Tech FIAP + Alura'
+    'Suporte técnico em tech / IA',
+    'Implementação com n8n e OpenAI',
+    'Help Desk · diagnóstico · setup',
+    'APIs · Webhooks · automações',
+    'Buscando vaga CLT'
   ];
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
