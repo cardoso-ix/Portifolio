@@ -12,8 +12,9 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Public positioning: **CLT job seeker** for **tech support** or **AI/automation implementation** (n8n, OpenAI, APIs) — never freela/pacotes.
-- Lead with what he can do (projects + support skills). CTAs: projetos, currículo, contato para vaga.
+- Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (n8n, OpenAI, APIs). Never freela/pacotes.
+- Do **not** put job-hunting language in the public envelope (hero, headline, meta): avoid “busco vaga”, “CLT”, “aberto a vagas”, “não freela”.
+- Lead with characteristics and proof (projects + support skills). CTAs: projetos, currículo, contato.
 - Do **not** lead with metrologia/calibração; Help Desk experience may be highlighted as support proof.
 - Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
 - Keep `docs/LINKEDIN-PERFIL.md` and `docs/AVALIACAO-PERFIL.md` aligned when public positioning changes.
