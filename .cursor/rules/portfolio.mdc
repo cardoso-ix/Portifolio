@@ -13,8 +13,10 @@ alwaysApply: false
 
 ## Content tone
 - Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (n8n, OpenAI, APIs). Never freela/pacotes.
+- **Facts only:** education, companies, titles and dates must match `scripts/generate_cv.py` / the CV PDF. Never invent schools (e.g. UNOESC) or employers.
+- Adapt tone for Help Desk N1/N2 + n8n without inventing tools, metrics or roles. Framing ≠ fabrication.
 - Do **not** put job-hunting language in the public envelope (hero, headline, meta): avoid “busco vaga”, “CLT”, “aberto a vagas”, “não freela”.
-- Lead with characteristics and proof (projects + support skills). CTAs: projetos, currículo, contato.
+- Lead with characteristics and proof (projects + real Help Desk at Crescer Sistemas). CTAs: projetos, currículo, contato.
 - Do **not** lead with metrologia/calibração; Help Desk experience may be highlighted as support proof.
 - Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
 - Keep `docs/LINKEDIN-PERFIL.md` and `docs/AVALIACAO-PERFIL.md` aligned when public positioning changes.
