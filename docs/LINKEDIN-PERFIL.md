@@ -23,19 +23,114 @@
 
 ## 1. Título (Headline)
 
-### Opção A (recomendada)
+Limite do LinkedIn: **~220 caracteres**. Escolha **uma**.  
+**Recomendada padrão:** opção **A1**.
+
+### A — Diretas (n8n + IA + agentes)
+
+**A1 (recomendada)**
 ```
-Automações com n8n e IA | Agentes · LLMs · OpenAI · APIs | Pós Tech Agentes de IA (FIAP + Alura)
+Automações com n8n e IA | Agentes · LLMs · OpenAI | Pós Tech FIAP + Alura
 ```
 
-### Opção B
+**A2**
 ```
-IA aplicada & automações | n8n · OpenAI · Webhooks | Construindo agentes | Chapecó, SC
+n8n · OpenAI · Agentes de IA | Automações e integrações em produção | FIAP + Alura
 ```
 
-### Opção C
+**A3**
 ```
-Automation & AI | n8n · GPT · Integrações | Pós Tech em Agentes de IA (FIAP + Alura)
+Construindo automações e agentes de IA | n8n · GPT · APIs · Webhooks | Chapecó, SC
+```
+
+**A4**
+```
+IA aplicada à operação | Fluxos com n8n · LLMs · integrações | Pós Tech em Agentes de IA
+```
+
+### B — Mais “produto / resultado”
+
+**B1**
+```
+Tiro trabalho manual do caminho com n8n e IA | Automações · agentes · APIs | Aberto a oportunidades
+```
+
+**B2**
+```
+Do briefing ao fluxo em produção | Automações com n8n e OpenAI | Agentes de IA (FIAP + Alura)
+```
+
+**B3**
+```
+Automações que rodam sozinhas | n8n · GPT-4o · webhooks | Cases em produção
+```
+
+### C — Mais “estudo + prática” (Pós Tech em evidência)
+
+**C1**
+```
+Pós Tech Agentes de IA (FIAP + Alura) | Automações com n8n e OpenAI | LLMs · RAG · orquestração
+```
+
+**C2**
+```
+Estudando agentes de IA · Praticando com n8n e OpenAI | Integrações · APIs · automações
+```
+
+**C3**
+```
+Agentes de IA em formação (FIAP + Alura) | Automações com n8n em produção | Chapecó / Remoto
+```
+
+### D — Curtas e limpas
+
+**D1**
+```
+Automações · IA · Agentes | n8n · OpenAI · APIs
+```
+
+**D2**
+```
+n8n + IA aplicada | Construindo agentes | FIAP + Alura
+```
+
+**D3**
+```
+Automation & AI Agents | n8n · OpenAI · Integrations
+```
+
+### E — Em inglês (se quiser perfil bilíngue)
+
+**E1**
+```
+AI Automation with n8n | Agents · LLMs · OpenAI · APIs | Postgrad in AI Agents (FIAP + Alura)
+```
+
+**E2**
+```
+Building AI automations & agents | n8n · GPT · Webhooks | Open to opportunities
+```
+
+**E3**
+```
+n8n Automations · Applied AI · AI Agents (in training) | FIAP + Alura
+```
+
+### F — Foco em vaga / recrutador
+
+**F1**
+```
+Buscando oportunidades em Automação e IA | n8n · OpenAI · Agentes | Portfólio com cases
+```
+
+**F2**
+```
+Automation / AI Ops | n8n · LLMs · Integrations | Open to remote roles
+```
+
+**F3**
+```
+Analista de Automação & IA aplicada | n8n · OpenAI · APIs | Pós Tech Agentes de IA
 ```
 
 ---
@@ -48,8 +143,9 @@ Chapecó, Santa Catarina, Brasil
 
 ---
 
-## 3. Sobre (About)
+## 3. Sobre (About) — opções
 
+### Sobre 1 — padrão (recomendada)
 ```
 Construo automações e soluções com IA que tiram o trabalho manual do caminho — fluxos com n8n, integrações via APIs/webhooks e orquestração com LLMs.
 
@@ -64,6 +160,58 @@ Aberto a oportunidades em automação, IA aplicada e agentes (remoto, híbrido o
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
 GitHub: https://github.com/cardoso-ix
+```
+
+### Sobre 2 — mais curta
+```
+Automações com n8n e IA. Integrações, LLMs e fluxos em produção — com case de pipeline LinkedIn (GPT-4o + n8n na VPS).
+
+Cursando Pós Tech em Agentes de IA (FIAP + Alura): LLMs, RAG e orquestração.
+
+Portfólio: https://cardoso-ix.github.io/Portifolio/
+GitHub: https://github.com/cardoso-ix
+
+Aberto a oportunidades em automação e IA aplicada.
+```
+
+### Sobre 3 — tom mais técnico
+```
+Trabalho com automação event-driven e IA aplicada:
+n8n para orquestração, OpenAI/LLMs para geração e decisão, APIs e webhooks para integração.
+
+Em produção: pipeline de conteúdo no LinkedIn (posts 2×/dia, cascata, outbound, fallback).
+Em formação: Pós Tech em Agentes de IA (FIAP + Alura) — RAG, agentes e orquestração.
+
+Stack: n8n · OpenAI · APIs · Webhooks · Prompt Engineering
+
+Portfólio: https://cardoso-ix.github.io/Portifolio/
+GitHub: https://github.com/cardoso-ix
+```
+
+### Sobre 4 — tom mais humano / storytelling curto
+```
+Gosto de transformar tarefa repetitiva em fluxo que roda sozinho.
+
+Hoje construo automações com n8n e IA (OpenAI), do trigger à entrega — e estudo agentes na Pós Tech FIAP + Alura.
+
+Se você precisa de automação, integração ou IA aplicada no dia a dia, meu portfólio mostra o que já está no ar:
+
+https://cardoso-ix.github.io/Portifolio/
+https://github.com/cardoso-ix
+```
+
+### Sobre 5 — em inglês
+```
+I build AI automations with n8n and OpenAI — APIs, webhooks, and LLM-powered workflows from trigger to production.
+
+Currently deepening AI agents, RAG, and orchestration (Postgrad Tech in AI Agents — FIAP + Alura).
+
+Featured work: LinkedIn content pipeline with GPT-4o on a VPS (scheduled posts, engagement cascade, outbound).
+
+Portfolio: https://cardoso-ix.github.io/Portifolio/
+GitHub: https://github.com/cardoso-ix
+
+Open to automation & applied AI roles (remote or Brazil).
 ```
 
 ---
