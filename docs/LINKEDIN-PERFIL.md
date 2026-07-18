@@ -20,7 +20,7 @@ Arquivo gerado no tamanho recomendado do LinkedIn (**1584 × 396**):
 **Como usar**
 1. LinkedIn → foto da capa → Editar  
 2. Enviar `linkedin-banner.png`  
-3. Ajustar o enquadramento (o texto fica à esquerda, acima da foto de perfil)
+3. Ajustar o enquadramento (o texto fica à **direita**; a foto de perfil cobre o canto inferior esquerdo)
 
 Para regenerar: `python3 scripts/generate_linkedin_banner.py`
 
