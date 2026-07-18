@@ -86,6 +86,7 @@ pip install -r scripts/requirements.txt
 python scripts/generate_cv.py
 python scripts/generate_favicon.py
 python scripts/generate_og_image.py
+python scripts/generate_linkedin_banner.py
 python scripts/gen_n8n_preview.py
 python scripts/gen_pc_dashboard_preview.py
 python scripts/format_html.py
