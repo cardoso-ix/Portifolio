@@ -71,9 +71,10 @@ SKILLS = [
 
 SUMMARY = (
     "Perfil na interseção de suporte técnico e automações com IA: diagnóstico, "
-    "atendimento e implementação de fluxos. Experiência em Help Desk, prática com "
-    "n8n, OpenAI, APIs e webhooks, e Pós Tech em Agentes de IA (FIAP + Alura). "
-    "Foco em apoiar usuários, integrar ferramentas e manter soluções estáveis."
+    "atendimento e implementação de fluxos. Experiência em Help Desk (Crescer "
+    "Sistemas), prática com n8n, OpenAI, APIs e webhooks, e Pós Tech em Agentes "
+    "de IA (FIAP + Alura, em andamento). Foco em apoiar usuários, integrar "
+    "ferramentas e manter soluções estáveis."
 )
 
 EXPERIENCE = [
@@ -103,9 +104,8 @@ EXPERIENCE = [
         "company": "Crescer Sistemas, Chapecó, SC",
         "period": "Fevereiro 2022 — Maio 2023",
         "description": (
-            "Responsável por atender chamados técnicos, diagnosticar e resolver "
-            "problemas de software e hardware, prestar suporte remoto e presencial aos "
-            "usuários."
+            "Atendimento a chamados técnicos (N1/N2): diagnóstico e resolução de "
+            "problemas de software e hardware, suporte remoto e presencial aos usuários."
         ),
     },
     {
