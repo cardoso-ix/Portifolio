@@ -111,7 +111,7 @@ Nas descrições: atendimento, sistemas, redes, hardware — e, se couber, autom
 ## Projetos em destaque (Featured)
 
 1. Portfólio — https://cardoso-ix.github.io/Portifolio/
-2. Automação LinkedIn — https://github.com/cardoso-ix/Automacao-LinkedIn
+2. Automação LinkedIn — https://github.com/cardoso-ix/linkedin-automacao-ia
 3. CV PDF — do site
 
 ---
