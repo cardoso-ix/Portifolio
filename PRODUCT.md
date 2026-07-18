@@ -6,13 +6,13 @@ brand
 
 ## Users
 
-Recrutadores e gestores de tech/IA que contratam para **suporte técnico**, **implementação** ou papéis próximos (Automation Support, Help Desk técnico). Visitam o site em triagem rápida a partir de LinkedIn/GitHub. Precisam ver em segundos: o que Eduardo sabe fazer, se encaixa em CLT (não freela) e como contactar.
+Recrutadores e gestores de tech/IA interessados em **suporte técnico**, **automação** ou papéis próximos (Automation Support, Help Desk técnico, implementação). Visitam o site em triagem rápida a partir de LinkedIn/GitHub. Precisam ver em segundos: o que Eduardo sabe fazer, o encaixe natural com suporte+IA e como contactar.
 
 ## Product Purpose
 
-Portfólio pessoal que **mostra competências práticas** (n8n, OpenAI, APIs, suporte) para **conseguir emprego em empresa** — suporte técnico ou implementação de automações/IA — e direciona para currículo/contato.
+Portfólio pessoal que **mostra competências práticas** (n8n, OpenAI, APIs, suporte) com tom **universal e profissional** — sem anunciar “busco vaga” no envelope — e direciona para projetos, currículo e contato.
 
-Tom profissional, emprego CLT, sem freela/pacotes. Sucesso = recrutador entende o alvo de vaga, confia nos projetos e inicia processo seletivo.
+Tom: identidade clara (suporte + IA/automação), sem freela/pacotes e sem linguagem de anúncio de emprego. Sucesso = visitante entende o perfil, confia nos projetos e inicia conversa.
 
 ## Brand Personality
 

@@ -14,11 +14,11 @@
   const THEME_COLORS = { dark: '#111211', light: '#f3f4f1' };
 
   const TYPING_PHRASES = [
-    'Suporte técnico em tech / IA',
+    'Suporte técnico e automações',
     'Implementação com n8n e OpenAI',
-    'Help Desk · diagnóstico · setup',
-    'APIs · Webhooks · automações',
-    'Buscando vaga CLT'
+    'Diagnóstico · setup · integrações',
+    'APIs · Webhooks · IA aplicada',
+    'Pós Tech FIAP + Alura'
   ];
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
