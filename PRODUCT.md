@@ -12,7 +12,7 @@ Recrutadores, tech leads, gestores e parceiros que avaliam trabalho em **automa�
 
 Portfólio pessoal de uma página que **apresenta projetos de automações e IA aplicada** — n8n, OpenAI, APIs — com Pós Tech (FIAP + Alura) em agentes, e **direciona para ação** (ver projetos, baixar currículo, contato).
 
-Tom profissional e aberto a oportunidades — sem linguagem de freela/pacotes. Sucesso = visitante entende o foco, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
+Tom profissional e aberto a oportunidades — nicho **automação + IA + agentes**, sem linguagem de freela/pacotes e sem liderar com metrologia. Sucesso = visitante entende o foco, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
 
 ## Brand Personality
 
