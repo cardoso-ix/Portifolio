@@ -70,10 +70,10 @@ SKILLS = [
 ]
 
 SUMMARY = (
-    "Busco vaga CLT em suporte técnico ou implementação de automações e IA — "
-    "não atuo como freela. Experiência em Help Desk, prática com n8n, OpenAI, "
-    "APIs e webhooks, e Pós Tech em Agentes de IA (FIAP + Alura). Pronto para "
-    "integrar um time, apoiar usuários e colocar fluxos em produção."
+    "Perfil na interseção de suporte técnico e automações com IA: diagnóstico, "
+    "atendimento e implementação de fluxos. Experiência em Help Desk, prática com "
+    "n8n, OpenAI, APIs e webhooks, e Pós Tech em Agentes de IA (FIAP + Alura). "
+    "Foco em apoiar usuários, integrar ferramentas e manter soluções estáveis."
 )
 
 EXPERIENCE = [

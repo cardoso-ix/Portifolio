@@ -2,7 +2,7 @@
 
 Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**.
 
-**Posicionamento:** vaga **CLT** em **suporte técnico** ou **implementação** de automações/IA (n8n, OpenAI, APIs) — mostra o que sabe fazer; não é portfólio de freela.
+**Posicionamento:** perfil universal de **suporte técnico** e **automações com IA** (n8n, OpenAI, APIs) — mostra competências na prática, sem tom de anúncio de vaga.
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
