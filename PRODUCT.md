@@ -6,13 +6,13 @@ brand
 
 ## Users
 
-Recrutadores, tech leads, gestores e parceiros que avaliam trabalho em **automações com IA**, **LLMs** e **integrações (n8n)**. Visitam o site em triagem rápida (mobile ou desktop), muitas vezes a partir de LinkedIn, GitHub ou indicação. Precisam entender em poucos segundos quem é Eduardo, quais projetos comprova, qual stack usa e como entrar em contato.
+Recrutadores e gestores de tech/IA que contratam para **suporte técnico**, **implementação** ou papéis próximos (Automation Support, Help Desk técnico). Visitam o site em triagem rápida a partir de LinkedIn/GitHub. Precisam ver em segundos: o que Eduardo sabe fazer, se encaixa em CLT (não freela) e como contactar.
 
 ## Product Purpose
 
-Portfólio pessoal de uma página que **apresenta projetos de automações e IA aplicada** — n8n, OpenAI, APIs — com Pós Tech (FIAP + Alura) em agentes, e **direciona para ação** (ver projetos, baixar currículo, contato).
+Portfólio pessoal que **mostra competências práticas** (n8n, OpenAI, APIs, suporte) para **conseguir emprego em empresa** — suporte técnico ou implementação de automações/IA — e direciona para currículo/contato.
 
-Tom profissional e aberto a oportunidades — nicho **automação + IA + agentes**, sem linguagem de freela/pacotes e sem liderar com metrologia. Sucesso = visitante entende o foco, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
+Tom profissional, emprego CLT, sem freela/pacotes. Sucesso = recrutador entende o alvo de vaga, confia nos projetos e inicia processo seletivo.
 
 ## Brand Personality
 
