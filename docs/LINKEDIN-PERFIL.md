@@ -1,6 +1,6 @@
-# LinkedIn — textos prontos (foco: automação, IA e agentes)
+# LinkedIn — textos prontos (vaga CLT: suporte / implementação de IA)
 
-**Posicionamento:** o mesmo do portfólio — **automações com n8n e IA / agentes**  
+**Posicionamento:** igual ao portfólio — **suporte técnico e implementação de automações/IA em empresa** (não freela)  
 **Eduardo Cardoso** · Chapecó — SC  
 **Portfólio:** https://cardoso-ix.github.io/Portifolio/  
 **GitHub:** https://github.com/cardoso-ix  
@@ -8,129 +8,76 @@
 > Copie seção por seção. Eu **não consigo** editar sua conta.  
 > Avaliação: [AVALIACAO-PERFIL.md](./AVALIACAO-PERFIL.md)
 
-> **Importante:** a narrativa pública é só automação + IA + agentes.  
-> Experiências antigas podem ficar no LinkedIn como histórico, mas **não** entram na headline, no Sobre nem nas skills em destaque.
-
 ---
 
 ## Passo 0 — Checklist
 
 - [ ] Foto (`assets/images/foto.png`)
-- [ ] Currículo PDF atualizado (resumo já em IA/automação)
+- [ ] Currículo PDF atualizado
 - [ ] Abrir: [linkedin.com/in/eduardo-cardoso-213a02267](https://www.linkedin.com/in/eduardo-cardoso-213a02267) → **Editar perfil**
+- [ ] Open to Work: **emprego** (não “serviços de freela”)
 
 ---
 
 ## 1. Título (Headline)
 
-Limite do LinkedIn: **~220 caracteres**. Escolha **uma**.  
-**Recomendada padrão:** opção **A1**.
+Limite: **~220 caracteres**. Escolha **uma**.  
+**Recomendada:** **A1**.
 
-### A — Diretas (n8n + IA + agentes)
+### A — Suporte + implementação (recomendadas)
 
 **A1 (recomendada)**
 ```
-Automações com n8n e IA | Agentes · LLMs · OpenAI | Pós Tech FIAP + Alura
+Suporte técnico e implementação de IA | n8n · OpenAI · APIs | Buscando vaga CLT
 ```
 
 **A2**
 ```
-n8n · OpenAI · Agentes de IA | Automações e integrações em produção | FIAP + Alura
+Suporte técnico em automações e IA | Help Desk · n8n · OpenAI | Aberto a vagas em empresa
 ```
 
 **A3**
 ```
-Construindo automações e agentes de IA | n8n · GPT · APIs · Webhooks | Chapecó, SC
+Implementador de automações com IA | n8n · integrações · suporte ao usuário | Chapecó / Remoto
 ```
 
 **A4**
 ```
-IA aplicada à operação | Fluxos com n8n · LLMs · integrações | Pós Tech em Agentes de IA
+Tech Support & AI Implementation | n8n · OpenAI · Webhooks | Open to full-time roles
 ```
 
-### B — Mais “produto / resultado”
+### B — Mais IA / agentes (ainda com emprego)
 
 **B1**
 ```
-Tiro trabalho manual do caminho com n8n e IA | Automações · agentes · APIs | Aberto a oportunidades
+Suporte e implementação em IA aplicada | n8n · LLMs · APIs | Pós Tech Agentes de IA (FIAP + Alura)
 ```
 
 **B2**
 ```
-Do briefing ao fluxo em produção | Automações com n8n e OpenAI | Agentes de IA (FIAP + Alura)
+Buscando vaga em suporte técnico / implementação de IA | n8n · OpenAI · diagnóstico
 ```
 
 **B3**
 ```
-Automações que rodam sozinhas | n8n · GPT-4o · webhooks | Cases em produção
+Help Desk + automações com IA | n8n · OpenAI · APIs | Pronto para integrar um time
 ```
 
-### C — Mais “estudo + prática” (Pós Tech em evidência)
+### C — Curtas
 
 **C1**
 ```
-Pós Tech Agentes de IA (FIAP + Alura) | Automações com n8n e OpenAI | LLMs · RAG · orquestração
+Suporte técnico · Implementação de IA | n8n · OpenAI | Vaga CLT
 ```
 
 **C2**
 ```
-Estudando agentes de IA · Praticando com n8n e OpenAI | Integrações · APIs · automações
+AI Support & Implementation | n8n · OpenAI · APIs
 ```
 
 **C3**
 ```
-Agentes de IA em formação (FIAP + Alura) | Automações com n8n em produção | Chapecó / Remoto
-```
-
-### D — Curtas e limpas
-
-**D1**
-```
-Automações · IA · Agentes | n8n · OpenAI · APIs
-```
-
-**D2**
-```
-n8n + IA aplicada | Construindo agentes | FIAP + Alura
-```
-
-**D3**
-```
-Automation & AI Agents | n8n · OpenAI · Integrations
-```
-
-### E — Em inglês (se quiser perfil bilíngue)
-
-**E1**
-```
-AI Automation with n8n | Agents · LLMs · OpenAI · APIs | Postgrad in AI Agents (FIAP + Alura)
-```
-
-**E2**
-```
-Building AI automations & agents | n8n · GPT · Webhooks | Open to opportunities
-```
-
-**E3**
-```
-n8n Automations · Applied AI · AI Agents (in training) | FIAP + Alura
-```
-
-### F — Foco em vaga / recrutador
-
-**F1**
-```
-Buscando oportunidades em Automação e IA | n8n · OpenAI · Agentes | Portfólio com cases
-```
-
-**F2**
-```
-Automation / AI Ops | n8n · LLMs · Integrations | Open to remote roles
-```
-
-**F3**
-```
-Analista de Automação & IA aplicada | n8n · OpenAI · APIs | Pós Tech Agentes de IA
+Suporte técnico em tech / IA | Automações com n8n | Aberto a oportunidades CLT
 ```
 
 ---
@@ -143,75 +90,44 @@ Chapecó, Santa Catarina, Brasil
 
 ---
 
-## 3. Sobre (About) — opções
+## 3. Sobre (About)
 
 ### Sobre 1 — padrão (recomendada)
 ```
-Construo automações e soluções com IA que tiram o trabalho manual do caminho — fluxos com n8n, integrações via APIs/webhooks e orquestração com LLMs.
+Busco uma vaga CLT em empresa — como suporte técnico ou implementador de automações e IA. Não atuo como freela.
 
-Foco atual:
-• Automações com n8n (triggers, APIs, planilhas, alertas)
-• IA aplicada a conteúdo e operações (pipeline com GPT-4o em produção)
-• Em aprofundamento: agentes de IA, RAG e orquestração (Pós Tech FIAP + Alura)
+O que eu sei fazer na prática:
+• Suporte e diagnóstico (experiência em Help Desk)
+• Implementar e ajustar fluxos com n8n
+• Integrar APIs, webhooks e ferramentas (OpenAI, planilhas, alertas)
+• Explicar soluções com clareza para o usuário / time
 
-Mostro o trabalho no portfólio com cases verificáveis — do briefing ao fluxo rodando.
+Estou na Pós Tech em Agentes de IA (FIAP + Alura): LLMs, RAG e orquestração.
 
-Aberto a oportunidades em automação, IA aplicada e agentes (remoto, híbrido ou Chapecó/SC).
+Portfólio com projetos: https://cardoso-ix.github.io/Portifolio/
+GitHub: https://github.com/cardoso-ix
+
+Aberto a remoto, híbrido ou Chapecó/SC.
+```
+
+### Sobre 2 — curta
+```
+Quero integrar um time de tech/IA como suporte técnico ou implementador (CLT) — não freela.
+
+Prática com n8n, OpenAI, APIs e webhooks + experiência em Help Desk.
+Pós Tech em Agentes de IA (FIAP + Alura).
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
-GitHub: https://github.com/cardoso-ix
 ```
 
-### Sobre 2 — mais curta
+### Sobre 3 — foco recrutador
 ```
-Automações com n8n e IA. Integrações, LLMs e fluxos em produção — com case de pipeline LinkedIn (GPT-4o + n8n na VPS).
+Objetivo: vaga de Suporte Técnico, Analista de Implementação ou Automation Support em empresa de tecnologia / IA.
 
-Cursando Pós Tech em Agentes de IA (FIAP + Alura): LLMs, RAG e orquestração.
+Competências: atendimento e diagnóstico, implementação de fluxos n8n, OpenAI/LLMs, APIs e webhooks.
+Formação em andamento: Pós Tech Agentes de IA (FIAP + Alura).
 
-Portfólio: https://cardoso-ix.github.io/Portifolio/
-GitHub: https://github.com/cardoso-ix
-
-Aberto a oportunidades em automação e IA aplicada.
-```
-
-### Sobre 3 — tom mais técnico
-```
-Trabalho com automação event-driven e IA aplicada:
-n8n para orquestração, OpenAI/LLMs para geração e decisão, APIs e webhooks para integração.
-
-Em produção: pipeline de conteúdo no LinkedIn (posts 2×/dia, cascata, outbound, fallback).
-Em formação: Pós Tech em Agentes de IA (FIAP + Alura) — RAG, agentes e orquestração.
-
-Stack: n8n · OpenAI · APIs · Webhooks · Prompt Engineering
-
-Portfólio: https://cardoso-ix.github.io/Portifolio/
-GitHub: https://github.com/cardoso-ix
-```
-
-### Sobre 4 — tom mais humano / storytelling curto
-```
-Gosto de transformar tarefa repetitiva em fluxo que roda sozinho.
-
-Hoje construo automações com n8n e IA (OpenAI), do trigger à entrega — e estudo agentes na Pós Tech FIAP + Alura.
-
-Se você precisa de automação, integração ou IA aplicada no dia a dia, meu portfólio mostra o que já está no ar:
-
-https://cardoso-ix.github.io/Portifolio/
-https://github.com/cardoso-ix
-```
-
-### Sobre 5 — em inglês
-```
-I build AI automations with n8n and OpenAI — APIs, webhooks, and LLM-powered workflows from trigger to production.
-
-Currently deepening AI agents, RAG, and orchestration (Postgrad Tech in AI Agents — FIAP + Alura).
-
-Featured work: LinkedIn content pipeline with GPT-4o on a VPS (scheduled posts, engagement cascade, outbound).
-
-Portfolio: https://cardoso-ix.github.io/Portifolio/
-GitHub: https://github.com/cardoso-ix
-
-Open to automation & applied AI roles (remote or Brazil).
+Cases e stack no portfólio: https://cardoso-ix.github.io/Portifolio/
 ```
 
 ---
@@ -227,148 +143,109 @@ Open to automation & applied AI roles (remote or Brazil).
 
 ---
 
-## 5. Aberto a oportunidades
+## 5. Aberto a oportunidades (Open to Work)
 
 | Campo | Escolha |
 |--------|---------|
-| **Cargos** | Automation Engineer, Analista de Automação, Especialista em Automações com IA, AI Operations, Integrações / n8n, Prompt Engineer (júnior/pleno), Analista de IA aplicada |
+| **Tipo** | Emprego em tempo integral (CLT) |
+| **Cargos** | Suporte Técnico, Analista de Suporte, Help Desk, Analista de Implementação, Automation Support, Suporte em IA / Automações, Analista de Integrações (júnior) |
 | **Local** | Remoto + Chapecó |
-| **Visível para** | Apenas recrutadores *(no início)* |
+| **Visível para** | Apenas recrutadores |
 
 **Mensagem para recrutadores:**
 ```
-Olá! Construo automações com n8n e IA (OpenAI, APIs, webhooks) e estudo agentes na Pós Tech FIAP + Alura. Tenho case em produção (pipeline LinkedIn com GPT-4o) e portfólio em https://cardoso-ix.github.io/Portifolio/. Busco oportunidades em automação e IA aplicada. Obrigado!
+Olá! Busco vaga CLT (não freela) como suporte técnico ou implementador de automações/IA. Tenho Help Desk na bagagem, prática com n8n e OpenAI, e Pós Tech em Agentes de IA (FIAP + Alura). Portfólio: https://cardoso-ix.github.io/Portifolio/ — obrigado!
 ```
 
 ---
 
-## 6. Experiência no LinkedIn (como tratar)
+## 6. Experiência (destaque o Help Desk)
 
-**Recomendação:** mantenha os cargos reais se quiser histórico, mas **não** use metrologia/calibração na identidade pública.
+### Crescer Sistemas — priorize no perfil
+| Campo | Texto |
+|--------|--------|
+| **Cargo** | Suporte Técnico Help Desk |
+| **Empresa** | Crescer Sistemas |
+| **Local** | Chapecó, SC |
+| **Período** | fevereiro de 2022 — maio de 2023 |
 
-Se preferir enxugar o perfil:
-- Deixe só cargos recentes resumidos
-- Coloque **Projetos** e **Destaques** como prova principal (n8n / IA)
-
-Se for manter o cargo atual no LinkedIn, use descrição curta e neutra — sem empurrar metrologia:
-
+**Descrição:**
 ```
-Operação com processos padronizados e documentação — base que uso para desenhar automações confiáveis com n8n e IA.
+Atendimento a chamados, diagnóstico e resolução de problemas de software e hardware, suporte remoto e presencial aos usuários — base direta para suporte técnico em produtos de tech/IA.
 ```
 
-*(Opcional: você pode omitir detalhes de calibração na descrição pública.)*
+### Demais cargos
+Mantenha resumidos. No cargo atual, se quiser descrição neutra:
+```
+Operação com processos padronizados e documentação. Em paralelo, desenvolvo automações com n8n e IA e busco vaga CLT em suporte/implementação.
+```
 
 ---
 
-## 7. Formação (priorize no topo)
+## 7. Formação
 
 | Curso | Instituição | Período |
 |--------|-------------|---------|
-| **Pós Tech em Agentes de IA** | FIAP + Alura | Jun 2026 — Em andamento |
+| Pós Tech em Agentes de IA | FIAP + Alura | Jun 2026 — Em andamento |
 | MBA Controladoria e Finanças | Cruzeiro do Sul | 2022 |
 | Administração | Universidade de Franca | 2016 — 2020 |
-
-> Técnico em Automação Industrial (Senai) pode ficar — reforça “automação”.  
-> Cursos de pesagem/INMETRO: deixe secundários ou fora do destaque.
+| Automação Industrial | Senai | 2010 — 2012 |
 
 ---
 
-## 8. Competências (só o nicho)
+## 8. Competências (topo)
 
-**Top 3 (ordem importa):**
-1. n8n  
-2. OpenAI  
-3. Automação de processos / IA aplicada  
+1. Suporte técnico  
+2. Help Desk  
+3. n8n  
 
-**Adicione também:**
-- Prompt Engineering  
-- APIs  
-- Webhooks  
-- LLMs  
-- RAG *(estudando)*  
-- Orquestração de agentes *(estudando)*  
-- Python  
-- Git / GitHub  
-
-**Não priorize no topo:** metrologia, calibração, INMETRO, logística.
+**Também:** OpenAI, Implementação de sistemas, APIs, Webhooks, Prompt Engineering, Comunicação, Atendimento ao cliente, LLMs *(estudando)*, RAG *(estudando)*
 
 ---
 
-## 9. Projetos (principal do perfil)
+## 9. Projetos (prova do que você sabe)
 
-### 1) Automação LinkedIn com IA
-- **URL:** https://github.com/cardoso-ix/linkedin-automacao-ia  
-```
-Pipeline n8n + GPT-4o na VPS: posts 2×/dia, cascata e outbound, com fallback se a API falhar.
-
-Stack: n8n · OpenAI · LinkedIn · VPS
-```
-
-### 2) Automações com n8n
-- **URL:** https://cardoso-ix.github.io/Portifolio/#projetos  
-```
-Fluxos que ligam APIs, planilhas, e-mail e alertas — do trigger à entrega.
-```
-
-### 3) PC Dashboard
-- **URL:** https://github.com/cardoso-ix/pc-dashboard  
-```
-Painel desktop com automações de um clique. Tauri · React · TypeScript · Rust
-```
-
-### 4) Conversor de Unidades
-- **URL:** https://cardoso-ix.github.io/Portifolio/conversor-unidades/  
-```
-App web com 49 categorias. React · TypeScript · Vite
-```
+1. **Automação LinkedIn com IA** — https://github.com/cardoso-ix/linkedin-automacao-ia  
+2. **Automações com n8n** — https://cardoso-ix.github.io/Portifolio/#projetos  
+3. **PC Dashboard** — https://github.com/cardoso-ix/pc-dashboard  
+4. **Conversor de Unidades** — https://cardoso-ix.github.io/Portifolio/conversor-unidades/  
 
 ---
 
-## 10. Destaques (Featured)
+## 10. Destaques
 
-1. **Portfólio** → https://cardoso-ix.github.io/Portifolio/  
-2. **GitHub — Automação LinkedIn** → https://github.com/cardoso-ix/linkedin-automacao-ia  
-3. **Currículo PDF** (versão com resumo em IA/automação)
+1. Portfólio  
+2. GitHub da automação LinkedIn  
+3. Currículo PDF  
 
 ---
 
-## 11. Post para publicar
+## 11. Post
 
 ```
-Atualizei meu portfólio com foco total em automações, IA e agentes.
+Atualizei meu portfólio com um objetivo claro: vaga CLT em suporte técnico ou implementação de automações/IA — não freela.
 
-Destaque: pipeline LinkedIn com n8n + GPT-4o em produção (posts 2×/dia, cascata e outbound).
-
-Também curso Pós Tech em Agentes de IA (FIAP + Alura) — LLMs, RAG e orquestração.
+Mostro o que sei fazer na prática (n8n, OpenAI, APIs) e trago experiência em Help Desk + Pós Tech em Agentes de IA (FIAP + Alura).
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
 GitHub: https://github.com/cardoso-ix
 
-Aberto a conversas sobre n8n, IA aplicada e agentes.
+Se souber de uma vaga de suporte/implementação em tech ou IA, chama no inbox.
 
-#n8n #openai #automacao #ia #agentesdeia #llms #rag #fiap #oportunidades
-```
-
-### Post curto
-```
-Portfólio novo: automações com n8n e IA + case LinkedIn em produção.
-
-👉 https://cardoso-ix.github.io/Portifolio/
-
-#n8n #openai #agentesdeia
+#suportetecnico #helpdesk #n8n #openai #ia #implementacao #vagas #clt #chapeco #remoto
 ```
 
 ---
 
-## 12. Checklist final
+## 12. Checklist
 
-- [ ] Headline só IA / automação / agentes  
-- [ ] Sobre sem metrologia/laboratório  
-- [ ] Skills: n8n, OpenAI, APIs no topo  
-- [ ] Projetos + Destaques do portfólio  
-- [ ] Open to Work em cargos de automação/IA  
-- [ ] Post publicado  
+- [ ] Headline de suporte/implementação + vaga CLT  
+- [ ] Sobre deixando claro: emprego, não freela  
+- [ ] Open to Work em cargos de suporte/implementação  
+- [ ] Help Desk em evidência  
+- [ ] Skills: Suporte técnico, Help Desk, n8n no topo  
+- [ ] Projetos + post  
 
 ---
 
-**Alinhado ao portfólio · nicho automação + IA + agentes · 2026**
+**Alinhado ao portfólio · emprego em suporte / implementação de IA · 2026**

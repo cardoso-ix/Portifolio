@@ -1,68 +1,55 @@
 # Avaliação de perfil — Eduardo Cardoso
 
-Avaliação com base no portfólio ([live](https://cardoso-ix.github.io/Portifolio/)) no nicho **automação + IA + agentes**.  
-**Data de referência:** julho/2026.
+Foco atual: **vaga CLT** em **suporte técnico** ou **implementação** de automações/IA (não freela).  
+**Portfólio:** https://cardoso-ix.github.io/Portifolio/
 
 ---
 
-## Veredito em uma frase
+## Veredito
 
-Perfil **coerente e profissional** para automação com n8n e IA — com case em produção e Pós Tech em agentes. A identidade pública deve ficar **só nesse nicho** (sem metrologia/laboratório na headline ou no Sobre).
-
----
-
-## Pontos fortes
-
-1. **Case verificável** — Automação LinkedIn com n8n + GPT-4o em VPS.  
-2. **Stack clara** — n8n · OpenAI · APIs · Webhooks.  
-3. **Formação alinhada** — Pós Tech Agentes de IA (FIAP + Alura).  
-4. **Portfólio limpo** — projetos em destaque, sem poluição de freela/pacotes.  
-5. **Direção de agentes** — RAG / orquestração como próximo nível (em estudo).
+Boa combinação para o alvo: **Help Desk real** + **projetos com n8n/OpenAI** + **Pós Tech em agentes**.  
+O portfólio agora comunica emprego em empresa; o LinkedIn precisa espelhar isso ([LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md)).
 
 ---
 
-## Lacunas / riscos
+## Encaixe nas vagas
 
-| Lacuna | Ação |
-|--------|------|
-| LinkedIn ainda pode citar metrologia | Usar [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md) 100% IA/automação |
-| Poucas métricas públicas | Colocar 1 número no case (ex.: posts/dia, uptime) |
-| Projetos sem demo (PC Dashboard) | GIF/Loom curto ou só GitHub bem documentado |
-| Consistência CV ↔ LinkedIn ↔ site | Regenerar PDF e colar textos do guia |
-
----
-
-## Posicionamento
-
-**Vender como:** quem constrói **automações com n8n e IA**, em evolução para **agentes** (Pós Tech).
-
-**Não vender como:** metrologista · freela de pacotes · dev front júnior genérico.
-
-**Vagas-alvo:** Automation / IA aplicada / integrações / n8n / AI Ops / agentes.
+| Tipo de vaga | Fit | Por quê |
+|--------------|-----|---------|
+| Suporte técnico / Help Desk (tech) | Alto | Experiência Crescer Sistemas + comunicação |
+| Implementação de automações / n8n | Alto | Projetos práticos (LinkedIn pipeline, fluxos) |
+| Suporte a produto de IA | Médio-alto | Stack OpenAI + vontade de agentes; falta case “suporte a clientes de SaaS IA” |
+| Eng. de IA / pesquisa | Baixo-médio | Ainda em formação (Pós) — não é o alvo principal |
 
 ---
 
-## Nota geral
+## Pontos fortes para recrutador de suporte/implementação
 
-| Dimensão | Nota |
-|----------|------|
-| Clareza de nicho (site) | 9/10 |
-| Prova de trabalho | 8/10 |
-| Consistência LinkedIn | depende da atualização (use o guia) |
-| Apresentação visual | 9/10 |
-
-**Média do produto portfólio: ~8,5/10** no nicho automação/IA.
+1. Help Desk comprovado  
+2. Sabe configurar e explicar (implementação)  
+3. Stack atual: n8n, OpenAI, APIs  
+4. Portfólio mostra o que sabe fazer  
+5. Clareza: CLT, não freela  
 
 ---
 
-## Próximos 3 movimentos
+## Riscos
 
-1. Colar headline + Sobre + skills do [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md).  
-2. Destacar portfólio + GitHub da automação LinkedIn + PDF.  
-3. Publicar 1 post só sobre n8n / IA / agentes.
+| Risco | Mitigação |
+|-------|-----------|
+| Cargo atual fora de tech | Headline/Sobre 100% suporte+IA; Help Desk em evidência |
+| Parecer “só automação criativa” | Usar palavras: suporte, implementação, diagnóstico, usuário |
+| LinkedIn desalinhado | Colar textos do guia |
 
 ---
 
-**Portfólio:** https://cardoso-ix.github.io/Portifolio/  
+## Próximos 3 passos
+
+1. Colar headline A1 + Sobre 1 do guia LinkedIn.  
+2. Open to Work: Suporte Técnico, Implementação, Help Desk.  
+3. Post deixando explícito: **vaga CLT, não freela**.
+
+---
+
 **GitHub:** https://github.com/cardoso-ix  
 **LinkedIn:** https://www.linkedin.com/in/eduardo-cardoso-213a02267
