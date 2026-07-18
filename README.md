@@ -106,7 +106,7 @@ python scripts/format_html.py
 | [PRODUCT.md](PRODUCT.md) | Propósito, público e princípios do produto |
 | [DESIGN.md](DESIGN.md) | Sistema visual (cores, tipografia, regras) |
 | [docs/AVALIACAO-PERFIL.md](docs/AVALIACAO-PERFIL.md) | Avaliação do posicionamento atual |
-| [docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md) | Textos prontos para o LinkedIn |
+| [docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md) | Textos prontos para o LinkedIn (sincronizados com o currículo) |
 
 ## Publicar
 
