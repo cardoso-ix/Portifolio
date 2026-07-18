@@ -62,18 +62,18 @@ CONTACT = [
 ]
 
 SKILLS = [
-    "Gestão e controle de padrões de referência",
-    "Análise e elaboração de custos gráfico",
-    "Diagnóstico e resolução ágil de problemas técnicos",
-    "Planejamento e otimização de processos logísticos",
-    "Rastreabilidade metrológica",
+    "Automações com n8n",
+    "OpenAI · Prompt Engineering",
+    "APIs e Webhooks",
+    "Integrações e fluxos event-driven",
+    "LLMs · RAG · agentes (em formação)",
 ]
 
 SUMMARY = (
-    "Profissional com experiência em metrologia, calibração de instrumentos, "
-    "logística e suporte técnico. Cursando Pós Tech em Agentes de IA (FIAP + Alura). "
-    "Combina sólida base técnica com formação em Administração e visão orientada a "
-    "resultados, buscando oportunidades em Inteligência Artificial e ambientes industriais."
+    "Construo automações e soluções com IA: n8n, OpenAI, APIs e webhooks — "
+    "do trigger ao fluxo em produção. Cursando Pós Tech em Agentes de IA "
+    "(FIAP + Alura), com foco em LLMs, RAG e orquestração. Busco oportunidades "
+    "em automação, IA aplicada e agentes."
 )
 
 EXPERIENCE = [

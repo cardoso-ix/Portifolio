@@ -1,39 +1,41 @@
-# LinkedIn — textos prontos (baseados no currículo)
+# LinkedIn — textos prontos (foco: automação, IA e agentes)
 
-**Fonte:** `scripts/generate_cv.py` + portfólio  
+**Posicionamento:** o mesmo do portfólio — **automações com n8n e IA / agentes**  
 **Eduardo Cardoso** · Chapecó — SC  
-**PDF:** `assets/cv_eduardo_cardoso.pdf`  
 **Portfólio:** https://cardoso-ix.github.io/Portifolio/  
 **GitHub:** https://github.com/cardoso-ix  
 
-> Copie seção por seção no LinkedIn. Eu **não consigo** editar sua conta.  
+> Copie seção por seção. Eu **não consigo** editar sua conta.  
 > Avaliação: [AVALIACAO-PERFIL.md](./AVALIACAO-PERFIL.md)
+
+> **Importante:** a narrativa pública é só automação + IA + agentes.  
+> Experiências antigas podem ficar no LinkedIn como histórico, mas **não** entram na headline, no Sobre nem nas skills em destaque.
 
 ---
 
 ## Passo 0 — Checklist
 
-- [ ] Foto (`assets/images/foto.png` / `foto-cv.png`)
-- [ ] Currículo PDF em mãos
+- [ ] Foto (`assets/images/foto.png`)
+- [ ] Currículo PDF atualizado (resumo já em IA/automação)
 - [ ] Abrir: [linkedin.com/in/eduardo-cardoso-213a02267](https://www.linkedin.com/in/eduardo-cardoso-213a02267) → **Editar perfil**
 
 ---
 
 ## 1. Título (Headline)
 
-### Opção A — alinhada ao currículo + IA (recomendada)
+### Opção A (recomendada)
 ```
-Técnico de Laboratório de Calibração | Pós Tech Agentes de IA (FIAP + Alura) | Automações com n8n e OpenAI
-```
-
-### Opção B — mais aberta a tech
-```
-Automações com n8n e IA | Metrologia & processos | Pós Tech Agentes de IA (FIAP + Alura) | Chapecó, SC
+Automações com n8n e IA | Agentes · LLMs · OpenAI · APIs | Pós Tech Agentes de IA (FIAP + Alura)
 ```
 
-### Opção C — foco currículo clássico
+### Opção B
 ```
-Técnico de Laboratório de Calibração · Fluxo Metrologia | Administração & MBA Finanças | Em formação em Agentes de IA
+IA aplicada & automações | n8n · OpenAI · Webhooks | Construindo agentes | Chapecó, SC
+```
+
+### Opção C
+```
+Automation & AI | n8n · GPT · Integrações | Pós Tech em Agentes de IA (FIAP + Alura)
 ```
 
 ---
@@ -48,184 +50,125 @@ Chapecó, Santa Catarina, Brasil
 
 ## 3. Sobre (About)
 
-Baseado no resumo do currículo, com o posicionamento atual do portfólio:
-
 ```
-Profissional com experiência em metrologia, calibração de instrumentos, logística e suporte técnico. Cursando Pós Tech em Agentes de IA (FIAP + Alura).
+Construo automações e soluções com IA que tiram o trabalho manual do caminho — fluxos com n8n, integrações via APIs/webhooks e orquestração com LLMs.
 
-Combino base técnica e formação em Administração (UNIFRAN) + MBA em Controladoria e Finanças (Cruzeiro do Sul) com construção prática de automações: n8n, OpenAI, APIs e webhooks — do processo real ao fluxo em produção.
+Foco atual:
+• Automações com n8n (triggers, APIs, planilhas, alertas)
+• IA aplicada a conteúdo e operações (pipeline com GPT-4o em produção)
+• Em aprofundamento: agentes de IA, RAG e orquestração (Pós Tech FIAP + Alura)
 
-Atualmente sou Técnico de Laboratório de Calibração na Fluxo Metrologia (Chapecó), com foco em calibração, certificados, padrões de referência e conformidade documental.
+Mostro o trabalho no portfólio com cases verificáveis — do briefing ao fluxo rodando.
 
-Em paralelo, desenvolvo projetos de automação e IA aplicada (incluindo pipeline LinkedIn com n8n + GPT-4o). Busco oportunidades em Inteligência Artificial, automações e ambientes que unam processo e tecnologia.
+Aberto a oportunidades em automação, IA aplicada e agentes (remoto, híbrido ou Chapecó/SC).
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
 GitHub: https://github.com/cardoso-ix
-Currículo: disponível no portfólio (PDF)
 ```
 
 ---
 
-## 4. Contato (do currículo)
+## 4. Contato
 
 | Campo | Valor |
 |--------|--------|
 | **Telefone** | (49) 99809-5955 |
 | **E-mail** | eduardoocardosoo@gmail.com |
-| **Site / Portfólio** | https://cardoso-ix.github.io/Portifolio/ |
-| **LinkedIn** | https://www.linkedin.com/in/eduardo-cardoso-213a02267 |
+| **Site** | https://cardoso-ix.github.io/Portifolio/ |
 | **GitHub** | https://github.com/cardoso-ix |
-| **Endereço** (se quiser no perfil) | Rua Paulo VI, 489 - Casa · CEP 89804-540 · Chapecó/SC |
 
 ---
 
 ## 5. Aberto a oportunidades
 
-| Campo | Sugestão |
-|--------|----------|
-| **Cargos** | Técnico de Calibração, Analista de Automação, Automação com IA, Integrações / n8n, Ops Tech, Analista de Processos |
-| **Local** | Chapecó + Remoto |
-| **Visível para** | Apenas recrutadores |
+| Campo | Escolha |
+|--------|---------|
+| **Cargos** | Automation Engineer, Analista de Automação, Especialista em Automações com IA, AI Operations, Integrações / n8n, Prompt Engineer (júnior/pleno), Analista de IA aplicada |
+| **Local** | Remoto + Chapecó |
+| **Visível para** | Apenas recrutadores *(no início)* |
 
 **Mensagem para recrutadores:**
 ```
-Olá! Sou Eduardo — Técnico de Laboratório de Calibração na Fluxo Metrologia, com trajetória em logística e suporte. Cursando Pós Tech em Agentes de IA (FIAP + Alura) e construindo automações com n8n e OpenAI. Portfólio: https://cardoso-ix.github.io/Portifolio/ — aberto a oportunidades em IA, automação e processos. Obrigado!
+Olá! Construo automações com n8n e IA (OpenAI, APIs, webhooks) e estudo agentes na Pós Tech FIAP + Alura. Tenho case em produção (pipeline LinkedIn com GPT-4o) e portfólio em https://cardoso-ix.github.io/Portifolio/. Busco oportunidades em automação e IA aplicada. Obrigado!
 ```
 
 ---
 
-## 6. Experiência (copiar do currículo)
+## 6. Experiência no LinkedIn (como tratar)
 
-### Fluxo Metrologia — atual
-| Campo | Texto |
-|--------|--------|
-| **Cargo** | Técnico de Laboratório de Calibração |
-| **Empresa** | Fluxo Metrologia |
-| **Local** | Chapecó, Santa Catarina, Brasil |
-| **Início** | julho de 2025 |
-| **Atual** | Sim |
+**Recomendação:** mantenha os cargos reais se quiser histórico, mas **não** use metrologia/calibração na identidade pública.
 
-**Descrição:**
+Se preferir enxugar o perfil:
+- Deixe só cargos recentes resumidos
+- Coloque **Projetos** e **Destaques** como prova principal (n8n / IA)
+
+Se for manter o cargo atual no LinkedIn, use descrição curta e neutra — sem empurrar metrologia:
+
 ```
-Técnico responsável pela calibração de instrumentos de medição, emissão de certificados, gestão de padrões de referência e conformidade documental conforme normas de qualidade.
+Operação com processos padronizados e documentação — base que uso para desenhar automações confiáveis com n8n e IA.
 ```
+
+*(Opcional: você pode omitir detalhes de calibração na descrição pública.)*
 
 ---
 
-### Sandimas
-| Campo | Texto |
-|--------|--------|
-| **Cargo** | Coordenador de Logística |
-| **Empresa** | Sandimas |
-| **Local** | Chapecó, SC |
-| **Período** | maio de 2023 — fevereiro de 2025 |
-
-**Descrição:**
-```
-Responsável por planejar, coordenar e controlar as operações logísticas da empresa, incluindo gestão de transporte, armazenagem, distribuição e controle de estoque, garantindo eficiência nos processos, cumprimento de prazos e redução de custos operacionais.
-```
-
----
-
-### Crescer Sistemas
-| Campo | Texto |
-|--------|--------|
-| **Cargo** | Suporte Técnico Help Desk |
-| **Empresa** | Crescer Sistemas |
-| **Local** | Chapecó, SC |
-| **Período** | fevereiro de 2022 — maio de 2023 |
-
-**Descrição:**
-```
-Responsável por atender chamados técnicos, diagnosticar e resolver problemas de software e hardware, prestar suporte remoto e presencial aos usuários.
-```
-
----
-
-### MR Indústria Gráfica
-| Campo | Texto |
-|--------|--------|
-| **Cargo** | Orçamentista |
-| **Empresa** | MR Indústria Gráfica |
-| **Local** | Concórdia, SC |
-| **Período** | outubro de 2020 — junho de 2021 |
-
-**Descrição:**
-```
-Responsável por analisar solicitações de clientes e elaborar orçamentos de produtos gráficos, considerando custos de materiais, processos de impressão, acabamentos e prazos de produção.
-```
-
----
-
-### JBS Foods
-| Campo | Texto |
-|--------|--------|
-| **Cargo** | Metrologista |
-| **Empresa** | JBS Foods |
-| **Local** | Jacarezinho, PR |
-| **Período** | dezembro de 2014 — dezembro de 2019 |
-
-**Descrição:**
-```
-Responsável por garantir a confiabilidade dos processos de medição da empresa, executando calibrações, gerenciando padrões de referência e mantendo a rastreabilidade metrológica.
-```
-
----
-
-## 7. Formação (do currículo)
+## 7. Formação (priorize no topo)
 
 | Curso | Instituição | Período |
 |--------|-------------|---------|
-| Pós Tech em Agentes de IA | FIAP + Alura | Jun 2026 — Em andamento |
+| **Pós Tech em Agentes de IA** | FIAP + Alura | Jun 2026 — Em andamento |
 | MBA Controladoria e Finanças | Cruzeiro do Sul | 2022 |
 | Administração | Universidade de Franca | 2016 — 2020 |
-| Indicadores de Pesagem e Normalização | INMETRO | 2014 |
-| Automação Industrial | Senai, Santo Antônio da Platina | 2010 — 2012 |
+
+> Técnico em Automação Industrial (Senai) pode ficar — reforça “automação”.  
+> Cursos de pesagem/INMETRO: deixe secundários ou fora do destaque.
 
 ---
 
-## 8. Competências
+## 8. Competências (só o nicho)
 
-**Do currículo (sidebar):**
-- Gestão e controle de padrões de referência  
-- Análise e elaboração de custos gráfico  
-- Diagnóstico e resolução ágil de problemas técnicos  
-- Planejamento e otimização de processos logísticos  
-- Rastreabilidade metrológica  
-
-**Do portfólio (adicione também — topo do LinkedIn):**
+**Top 3 (ordem importa):**
 1. n8n  
-2. OpenAI / Prompt Engineering  
-3. Automação de processos  
-4. APIs · Webhooks  
-5. Metrologia · Calibração  
+2. OpenAI  
+3. Automação de processos / IA aplicada  
+
+**Adicione também:**
+- Prompt Engineering  
+- APIs  
+- Webhooks  
+- LLMs  
+- RAG *(estudando)*  
+- Orquestração de agentes *(estudando)*  
+- Python  
+- Git / GitHub  
+
+**Não priorize no topo:** metrologia, calibração, INMETRO, logística.
 
 ---
 
-## 9. Projetos (portfólio — complementar ao currículo)
+## 9. Projetos (principal do perfil)
 
-### Automação LinkedIn com IA
+### 1) Automação LinkedIn com IA
 - **URL:** https://github.com/cardoso-ix/linkedin-automacao-ia  
-- **Descrição:**
 ```
-Pipeline n8n na VPS com GPT-4o: posts 2×/dia, cascata e outbound, com fallback se a API falhar.
+Pipeline n8n + GPT-4o na VPS: posts 2×/dia, cascata e outbound, com fallback se a API falhar.
 
 Stack: n8n · OpenAI · LinkedIn · VPS
 ```
 
-### Automações com n8n
+### 2) Automações com n8n
 - **URL:** https://cardoso-ix.github.io/Portifolio/#projetos  
 ```
 Fluxos que ligam APIs, planilhas, e-mail e alertas — do trigger à entrega.
 ```
 
-### PC Dashboard
+### 3) PC Dashboard
 - **URL:** https://github.com/cardoso-ix/pc-dashboard  
 ```
-Painel desktop Windows com automações de um clique. Tauri · React · TypeScript · Rust
+Painel desktop com automações de um clique. Tauri · React · TypeScript · Rust
 ```
 
-### Conversor de Unidades
+### 4) Conversor de Unidades
 - **URL:** https://cardoso-ix.github.io/Portifolio/conversor-unidades/  
 ```
 App web com 49 categorias. React · TypeScript · Vite
@@ -235,40 +178,49 @@ App web com 49 categorias. React · TypeScript · Vite
 
 ## 10. Destaques (Featured)
 
-1. Portfólio → https://cardoso-ix.github.io/Portifolio/  
-2. Currículo PDF → upload de `cv_eduardo_cardoso.pdf`  
-3. GitHub (automação LinkedIn) → https://github.com/cardoso-ix/linkedin-automacao-ia  
+1. **Portfólio** → https://cardoso-ix.github.io/Portifolio/  
+2. **GitHub — Automação LinkedIn** → https://github.com/cardoso-ix/linkedin-automacao-ia  
+3. **Currículo PDF** (versão com resumo em IA/automação)
 
 ---
 
 ## 11. Post para publicar
 
 ```
-Atualizei meu portfólio e alinhei com meu currículo.
+Atualizei meu portfólio com foco total em automações, IA e agentes.
 
-Atuo como Técnico de Laboratório de Calibração na Fluxo Metrologia e curso Pós Tech em Agentes de IA (FIAP + Alura). Em paralelo, construo automações com n8n e OpenAI — com case em produção no LinkedIn.
+Destaque: pipeline LinkedIn com n8n + GPT-4o em produção (posts 2×/dia, cascata e outbound).
+
+Também curso Pós Tech em Agentes de IA (FIAP + Alura) — LLMs, RAG e orquestração.
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/
 GitHub: https://github.com/cardoso-ix
 
-Aberto a conversas sobre metrologia, processos, automação e IA aplicada.
+Aberto a conversas sobre n8n, IA aplicada e agentes.
 
-#metrologia #n8n #openai #automacao #agentesdeia #fiap #chapeco
+#n8n #openai #automacao #ia #agentesdeia #llms #rag #fiap #oportunidades
+```
+
+### Post curto
+```
+Portfólio novo: automações com n8n e IA + case LinkedIn em produção.
+
+👉 https://cardoso-ix.github.io/Portifolio/
+
+#n8n #openai #agentesdeia
 ```
 
 ---
 
 ## 12. Checklist final
 
-- [ ] Headline  
-- [ ] Sobre  
-- [ ] Contato (e-mail, site, telefone se quiser)  
-- [ ] 5 experiências com texto do currículo  
-- [ ] Formação completa  
-- [ ] Skills (currículo + n8n/OpenAI)  
-- [ ] Projetos + Destaques (PDF do CV)  
+- [ ] Headline só IA / automação / agentes  
+- [ ] Sobre sem metrologia/laboratório  
+- [ ] Skills: n8n, OpenAI, APIs no topo  
+- [ ] Projetos + Destaques do portfólio  
+- [ ] Open to Work em cargos de automação/IA  
 - [ ] Post publicado  
 
 ---
 
-**Sincronizado com o currículo em `scripts/generate_cv.py` · Portfólio 2026**
+**Alinhado ao portfólio · nicho automação + IA + agentes · 2026**

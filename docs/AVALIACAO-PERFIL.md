@@ -1,79 +1,65 @@
 # Avaliação de perfil — Eduardo Cardoso
 
-Avaliação com base no portfólio atual ([live](https://cardoso-ix.github.io/Portifolio/)), formação, experiência e projetos publicados.  
+Avaliação com base no portfólio ([live](https://cardoso-ix.github.io/Portifolio/)) no nicho **automação + IA + agentes**.  
 **Data de referência:** julho/2026.
 
 ---
 
 ## Veredito em uma frase
 
-Você tem um perfil **sólido e diferenciado** para quem une operação real + automações com n8n/IA — mais maduro e profissional do que a narrativa antiga de “dev júnior em transição” ou “freela de pacotes”.
+Perfil **coerente e profissional** para automação com n8n e IA — com case em produção e Pós Tech em agentes. A identidade pública deve ficar **só nesse nicho** (sem metrologia/laboratório na headline ou no Sobre).
 
 ---
 
 ## Pontos fortes
 
-1. **Diferencial operacional**  
-   Logística, suporte e laboratório de calibração não são “ruído”: mostram que você entende processo, prazo e retrabalho. Isso é ouro para automações.
-
-2. **Prova de execução**  
-   Automação LinkedIn com n8n + GPT-4o em VPS (posts 2×/dia, cascata, outbound, fallback) é um case concreto — não só estudo teórico.
-
-3. **Stack clara**  
-   n8n · OpenAI · APIs · Webhooks. Fácil de escanearem em 10 segundos.
-
-4. **Formação alinhada ao futuro**  
-   Pós Tech em Agentes de IA (FIAP + Alura) + base em Administração/MBA dá credibilidade sem soar “só curso”.
-
-5. **Portfólio coerente**  
-   Visual sóbrio, projetos em destaque, sem poluição de freela/pacotes. Transmite profissionalismo.
+1. **Case verificável** — Automação LinkedIn com n8n + GPT-4o em VPS.  
+2. **Stack clara** — n8n · OpenAI · APIs · Webhooks.  
+3. **Formação alinhada** — Pós Tech Agentes de IA (FIAP + Alura).  
+4. **Portfólio limpo** — projetos em destaque, sem poluição de freela/pacotes.  
+5. **Direção de agentes** — RAG / orquestração como próximo nível (em estudo).
 
 ---
 
-## Lacunas / riscos (o que melhorar)
+## Lacunas / riscos
 
-| Lacuna | Por quê importa | Ação sugerida |
-|--------|-----------------|---------------|
-| Poucos cases com métricas | Recrutador quer número (tempo economizado, posts/semana, taxa de falha) | Adicionar 1–2 números reais no LinkedIn e no card destaque |
-| Cargo atual ≠ headline de IA | Pode gerar dúvida se o perfil “bate” | Headline híbrida: cargo + automações/IA (ver guia LinkedIn) |
-| Projetos secundários sem demo | PC Dashboard sem demo online; n8n genérico ainda é arquitetura | Publicar 1 GIF/ Loom curto ou diagrama no GitHub |
-| Skills LinkedIn desatualizadas | Se ainda listar só React/Supabase, desalinha do site | Priorizar n8n, OpenAI, APIs, automação |
-| Baixa presença de conteúdo | Algoritmo LinkedIn favorece posts consistentes | 1 post/semana sobre o que você automatiza (pode usar sua própria pipeline) |
-
----
-
-## Posicionamento recomendado
-
-**Não vender como:** freela de pacotes · dev front júnior genérico · “migração de carreira” dramática.
-
-**Vender como:** profissional de operação que **constrói automações com n8n e IA** — fluxos estáveis, integrações e conteúdo no piloto — em evolução para agentes (Pós Tech).
-
-**Público-alvo ideal:**
-- Empresas/times que precisam de automação (ops, marketing, comercial)
-- Vagas: Automação, Analytics/Ops Tech, IA aplicada, integração de sistemas
-- Também: oportunidades híbridas onde processo + tech se encontram
+| Lacuna | Ação |
+|--------|------|
+| LinkedIn ainda pode citar metrologia | Usar [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md) 100% IA/automação |
+| Poucas métricas públicas | Colocar 1 número no case (ex.: posts/dia, uptime) |
+| Projetos sem demo (PC Dashboard) | GIF/Loom curto ou só GitHub bem documentado |
+| Consistência CV ↔ LinkedIn ↔ site | Regenerar PDF e colar textos do guia |
 
 ---
 
-## Nota geral (subjetiva)
+## Posicionamento
 
-| Dimensão | Nota | Comentário |
-|----------|------|------------|
-| Clareza de posicionamento | 8,5/10 | Site já comunica bem; LinkedIn precisa acompanhar |
-| Prova de trabalho | 8/10 | Case LinkedIn forte; falta métrica pública |
-| Narrativa de carreira | 7,5/10 | História boa, mas headline/sobre no LI ainda podem estar no passado |
-| Apresentação visual | 9/10 | Portfólio limpo e profissional |
-| Consistência entre canais | 6,5/10 | Portfólio à frente do LinkedIn antigo |
+**Vender como:** quem constrói **automações com n8n e IA**, em evolução para **agentes** (Pós Tech).
 
-**Média aproximada: 8/10** — pronto para circular; o maior ROI agora é **alinhar o LinkedIn** ao site.
+**Não vender como:** metrologista · freela de pacotes · dev front júnior genérico.
+
+**Vagas-alvo:** Automation / IA aplicada / integrações / n8n / AI Ops / agentes.
 
 ---
 
-## Próximos 3 movimentos (prioridade)
+## Nota geral
 
-1. Atualizar **headline + Sobre + Experiências + Destaques** no LinkedIn com os textos do currículo ([LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md) — já sincronizado com `scripts/generate_cv.py`).
-2. Anexar o **PDF do currículo** nos Destaques do LinkedIn.
-3. Publicar **1 post** ligando currículo + portfólio + case n8n/IA.
+| Dimensão | Nota |
+|----------|------|
+| Clareza de nicho (site) | 9/10 |
+| Prova de trabalho | 8/10 |
+| Consistência LinkedIn | depende da atualização (use o guia) |
+| Apresentação visual | 9/10 |
+
+**Média do produto portfólio: ~8,5/10** no nicho automação/IA.
+
+---
+
+## Próximos 3 movimentos
+
+1. Colar headline + Sobre + skills do [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md).  
+2. Destacar portfólio + GitHub da automação LinkedIn + PDF.  
+3. Publicar 1 post só sobre n8n / IA / agentes.
 
 ---
 
