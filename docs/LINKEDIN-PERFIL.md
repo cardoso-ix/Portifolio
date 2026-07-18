@@ -6,7 +6,25 @@ Tudo abaixo está alinhado ao portfólio publicado e ao currículo real.
 Portfólio: https://cardoso-ix.github.io/Portifolio/  
 Currículo PDF: https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
 
-Ordem sugerida no LinkedIn: Headline → Sobre → Experiência → Formação → Featured → Skills.
+Ordem sugerida no LinkedIn: Capa → Headline → Sobre → Experiência → Formação → Featured → Skills.
+
+---
+
+## 0) Capa (banner) — arquivo pronto
+
+Arquivo gerado no tamanho recomendado do LinkedIn (**1584 × 396**):
+
+- No repositório: `assets/images/linkedin-banner.png`
+- URL (após publish): https://cardoso-ix.github.io/Portifolio/assets/images/linkedin-banner.png
+
+**Como usar**
+1. LinkedIn → foto da capa → Editar  
+2. Enviar `linkedin-banner.png`  
+3. Ajustar o enquadramento (o texto fica à esquerda, acima da foto de perfil)
+
+Para regenerar: `python3 scripts/generate_linkedin_banner.py`
+
+Identidade da capa: graphite + oliva do portfólio · suporte técnico · n8n / OpenAI / Help Desk · sem “busco vaga”.
 
 ---
 
@@ -193,6 +211,7 @@ Adicione e pin as primeiras:
 
 ## Checklist rápido
 
+- [ ] Capa `linkedin-banner.png` enviada  
 - [ ] Headline colada  
 - [ ] Sobre colado  
 - [ ] 5 experiências com título/empresa/período/descrição corretos  

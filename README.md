@@ -33,6 +33,7 @@ Portifolio/
 │   ├── generate_cv.py
 │   ├── generate_favicon.py
 │   ├── generate_og_image.py
+│   ├── generate_linkedin_banner.py
 │   ├── gen_n8n_preview.py
 │   ├── gen_pc_dashboard_preview.py
 │   ├── font_utils.py
