@@ -71,9 +71,9 @@ Você tem um perfil **sólido e diferenciado** para quem une operação real + a
 
 ## Próximos 3 movimentos (prioridade)
 
-1. Atualizar **headline + Sobre + Projetos + Destaques** no LinkedIn (usar [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md)).
-2. Publicar **1 post de lançamento** do portfólio novo.
-3. Extrair **1 métrica** do case LinkedIn (ex.: “2 posts/dia há X semanas sem falha crítica”) e colocar no Sobre/projeto.
+1. Atualizar **headline + Sobre + Experiências + Destaques** no LinkedIn com os textos do currículo ([LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md) — já sincronizado com `scripts/generate_cv.py`).
+2. Anexar o **PDF do currículo** nos Destaques do LinkedIn.
+3. Publicar **1 post** ligando currículo + portfólio + case n8n/IA.
 
 ---
 
