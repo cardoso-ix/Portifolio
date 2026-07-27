@@ -62,7 +62,7 @@ Portifolio/
 | Projeto | Demo | Código |
 |---------|------|--------|
 | Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) |
-| PC Dashboard | — (app desktop Windows) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
+| PC Dashboard | — (Windows · Tauri v1.4 · bandeja + remoção de programas) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
 | Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
 
 ## Seções do site
