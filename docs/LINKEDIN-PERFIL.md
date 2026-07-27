@@ -68,7 +68,7 @@ Tenho experiência em Help Desk (Crescer Sistemas): atendimento a chamados técn
 
 Projetos em destaque:
 • Automação de publicações no LinkedIn (n8n + OpenAI + API)
-• PC Dashboard — painel desktop com automações de um clique
+• PC Dashboard — painel Windows (Tauri) com ações de um clique, bandeja e remoção de programas
 • Conversor de Unidades — app web (React + TypeScript)
 
 Stack: n8n · OpenAI / APIs · Python · HTML/CSS/JS · Git/GitHub
