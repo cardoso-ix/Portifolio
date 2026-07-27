@@ -77,6 +77,8 @@ Interface sóbria com toques de terminal: fundo graphite, superfícies limpas, j
 
 Densidade controlada: conteúdo centralizado (`88rem`), cards de projeto com um destaque + grade compacta, timeline vertical. Profundidade via camadas de superfície e bordas discretas — sem partículas, grade ou glows neon.
 
+Posicionamento visual e verbal: **suporte técnico + automações com IA** (n8n, OpenAI, APIs). Não é template “azul IA” nem narrativa de pesquisa em agentes.
+
 Rejeita explicitamente: gradient text decorativo no corpo, hero-metric SaaS, azul “padrão IA”, ciano/magenta neon, paleta cream/sand genérica.
 
 **Key Characteristics:**
@@ -117,11 +119,11 @@ Paleta **Quiet Graphite Olive**: graphite neutro + oliva suave que carrega CTAs 
 **Body Font:** Inter  
 **Label/Mono Font:** JetBrains Mono — terminal, `.prompt`, `.hero__profile-key`, badges técnicos
 
-**Character:** Sans geométrica legível com mono mecânica para “camada de sistema”; par funcional para narrativa de agentes de IA + código.
+**Character:** Sans geométrica legível com mono mecânica para “camada de sistema”; par funcional para narrativa de suporte + automação/IA.
 
 ### Hierarchy
 
-- **Display** (700, `clamp(2.75rem, 9vw, 5rem)`, lh 1.1): nome no hero; gradiente ciano→magenta via `.glitch` (background-clip, uso único).
+- **Display** (700, `clamp(2.75rem, 9vw, 5rem)`, lh 1.1): nome no hero — cor sólida (`--color-text`), sem gradient decorativo.
 - **Headline** (700, `clamp(1.75rem, 4vw, 2.25rem)`): títulos de seção `.section__title` com número `01.` em mono accent.
 - **Title** (600, ~1.0625rem): títulos de cards e timeline.
 - **Body** (400, 1rem, lh 1.6): prosa; máx. ~65–75ch em blocos longos.
@@ -133,63 +135,77 @@ Paleta **Quiet Graphite Olive**: graphite neutro + oliva suave que carrega CTAs 
 
 ## 4. Elevation
 
-Sistema **híbrido tonal + glow**: profundidade principal via camadas de surface (`--color-bg` → `--color-surface` → `--color-surface-elevated`) e glass (`--glass-surface` com blur). Sombras são **reativas** (hover, header scrolled), não estruturais em repouso.
+Sistema **tonal + glass discreto**: profundidade via camadas (`--color-bg` → `--color-surface` → `--color-surface-elevated`) e glass oliva/graphite (`--glass-surface` com blur leve). Sombras são **reativas** (hover, header scrolled), não estruturais em repouso.
 
 ### Shadow Vocabulary
 
-- **Header scrolled** (`0 8px 32px rgba(45, 220, 255, 0.12)`): barra fixa após scroll.
-- **Button primary hover** (`0 0 30px rgba(0, 212, 255, 0.5), 0 4px 15px ...`): feedback tátil em CTA.
-- **Card soft** (`0 16px 40px var(--shadow-soft)`): hero profile card e project cards em hover.
+- **Header scrolled** (`0 8px 24px var(--shadow-soft)`): barra fixa após scroll — sombra neutra, sem tint ciano.
+- **Button / card hover**: feedback sutil com `--shadow-soft` e borda accent semitransparente.
+- **Accent glow** (`--color-accent-glow`): só como tint pontual (foco, hover leve) — nunca neon.
 
 ### Named Rules
 
-**The Flat-At-Rest Rule.** Cards e surfaces em repouso usam borda + tint; sombra só em estado hover ou elementos flutuantes (header, toast).
+**The Flat-At-Rest Rule.** Cards e surfaces em repouso usam borda + tint; sombra só em estado hover ou elementos flutuantes (header).
 
 ## 5. Components
 
 ### Buttons
 
 - **Shape:** pill (`border-radius: 999px`)
-- **Primary:** fundo `--color-accent`, texto escuro no dark mode; glow no hover
-- **Outline:** borda accent, fundo transparente; hover com glow leve
+- **Primary:** fundo `--color-accent` (oliva), texto escuro no dark mode
+- **Outline / secondary:** borda accent, fundo transparente ou surface
 - **Padding:** ~`0.75rem 1.5rem`; transição `0.25s ease`
 
 ### Chips
 
-- **Contact chips:** pill, borda accent semitransparente, hover com background tint
-- **Skill tags:** fundo `rgba(45, 220, 255, 0.08)`; variante `--primary` com borda accent para skills de IA
+- **Contact chips:** pill, borda accent semitransparente, hover com background tint oliva
+- **Skill tags:** fundo `rgba(168, 184, 122, 0.08)`; variante `--primary` com borda accent para skills em uso
 
 ### Cards / Containers
 
-- **Terminal window:** barra com 3 dots + título; corpo com `--terminal-bg`
-- **Project card:** thumb 16:9, body com tags e links; hover eleva borda/glow
-- **Hero profile card:** rows key/val estilo config file
+- **Terminal window:** barra com 3 dots + título; corpo com surface glass
+- **Project card:** thumb 16:9, body com tags e links; 1 featured + grade compacta
+- **Hero profile card:** rows key/val estilo `status.json`
 - **Corner:** `--radius` (8px) ou `--radius-lg` (12px) em janelas
 
 ### Navigation
 
 - Header fixo, blur + glass; logo `<EduCardoso />` em mono
 - Links com underline animado; estado `.active` na seção visível
-- Mobile: menu full-screen overlay com toggle hamburger
+- Mobile: menu overlay com toggle hamburger
+- Theme toggle claro/escuro com persistência em `localStorage`
 
 ### Signature: Hero Terminal
 
-Barra macOS + linhas `cat cargo-atual.txt` com output; typing effect no subtítulo; anéis orbitais na foto.
+Barra macOS + título `~/eduardo-cardoso — perfil.md`; typing no subtítulo; foto em `assets/images/foto.png` com anéis orbitais discretos; card `status.json` (modo / stack).
+
+### Foto de perfil
+
+| Arquivo | Uso |
+|---------|-----|
+| `assets/images/foto.png` | Hero + JSON-LD `Person.image` |
+| `assets/images/foto-cv.png` | Foto do currículo PDF (`scripts/generate_cv.py`) |
+| `assets/images/og-image.png` | Open Graph / Twitter (regenerar com `generate_og_image.py`) |
+| `assets/images/linkedin-banner.png` | Capa LinkedIn 1584×396 |
+
+Ao trocar a foto: substituir `foto.png` e `foto-cv.png`, regenerar OG (e CV se a foto do PDF mudar), e incrementar `?v=` em `index.html`.
 
 ## 6. Do's and Don'ts
 
 ### Do:
 
-- **Do** manter contraste de texto muted ≥4.5:1; no light mode preferir `#4a5f7a` sobre `#eef3fb`.
-- **Do** usar `prefers-reduced-motion` para desligar partículas e encurtar animações.
-- **Do** bump `?v=` em CSS/JS/PDF ao publicar mudanças cache-sensitive.
+- **Do** manter contraste de texto muted ≥4.5:1; no light mode preferir `#5f6458` sobre cinzas claros demais.
+- **Do** usar `prefers-reduced-motion` para encurtar typing e fade-in.
+- **Do** bump `?v=` em CSS/JS/PDF/foto ao publicar mudanças cache-sensitive.
 - **Do** preservar o terminal como fio condutor visual da identidade.
+- **Do** manter fatos (empresas, datas, formação) iguais a `scripts/generate_cv.py`.
 
 ### Don't:
 
-- **Don't** deixar a narrativa pública ser dominada por cargo industrial — o posicionamento é agentes de IA.
+- **Don't** deixar o envelope público anunciar “busco vaga / CLT / freela”.
+- **Don't** liderar com metrologia/calibração — Help Desk + projetos de automação/IA vêm primeiro.
+- **Don't** usar azul “padrão IA”, ciano/magenta neon, partículas ou grade decorativa.
 - **Don't** adicionar glassmorphism decorativo em todo elemento — só em header, cards-chave e terminal.
-- **Don't** usar gradient text fora do hero title; corpo e headings usam cor sólida.
+- **Don't** usar gradient text no corpo; headings usam cor sólida.
 - **Don't** repetir grid idêntica de cards SaaS com ícone genérico sem preview ou demo.
-- **Don't** numerar toda seção (01/02/03) como único recurso de hierarquia — números já existem em `.section__number`; não duplicar como eyebrows.
-- **Don't** usar `border-left` grosso colorido em callouts ou timeline items.
+- **Don't** inventar formação, empresa ou ferramenta fora do CV.
