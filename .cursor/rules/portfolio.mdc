@@ -1,6 +1,6 @@
 ---
 description: Conventions for Eduardo Cardoso portfolio (static site + Python scripts)
-globs: index.html, css/**, js/**, scripts/**, assets/**
+globs: index.html, css/**, js/**, scripts/**, assets/**, docs/**, PRODUCT.md, DESIGN.md, README.md
 alwaysApply: false
 ---
 
@@ -19,7 +19,7 @@ alwaysApply: false
 - Lead with characteristics and proof (projects + real Help Desk at Crescer Sistemas). CTAs: projetos, currículo, contato.
 - Do **not** lead with metrologia/calibração; Help Desk experience may be highlighted as support proof.
 - Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
-- Keep `docs/LINKEDIN-PERFIL.md` and `docs/AVALIACAO-PERFIL.md` aligned when public positioning changes.
+- Keep `docs/LINKEDIN-PERFIL.md`, `docs/AVALIACAO-PERFIL.md`, `PRODUCT.md` and `DESIGN.md` aligned when public positioning changes.
 
 ## CSS
 - Use existing CSS custom properties in `:root` / `[data-theme="light"]` (graphite + muted olive; avoid AI-blue / neon cyan/magenta).
@@ -31,7 +31,13 @@ alwaysApply: false
 ## JS
 - Keep `main.js` as a single IIFE with `'use strict'`.
 - Use passive scroll listeners and `requestAnimationFrame` throttling.
-- Bump `?v=` query on `css/style.css`, `js/main.js`, and PDF links when shipping cache-sensitive assets.
+- Bump `?v=` query on `css/style.css`, `js/main.js`, PDF links and photo when shipping cache-sensitive assets.
+
+## Photos & generated assets
+- Site photo: `assets/images/foto.png` (hero + JSON-LD).
+- CV photo: `assets/images/foto-cv.png` (used by `generate_cv.py`).
+- After replacing photos: regenerate CV + OG (`generate_cv.py`, `generate_og_image.py`) and bump `?v=` in `index.html`.
+- LinkedIn banner: `assets/images/linkedin-banner.png` via `generate_linkedin_banner.py`.
 
 ## CV generator
 - `scripts/generate_cv.py` writes to paths relative to `ROOT` (project folder).
@@ -40,3 +46,10 @@ alwaysApply: false
 ## Paths
 - GitHub Pages base path is `/Portifolio/` — subproject links must account for this.
 - Repo remote: `cardoso-ix/Portifolio` (local folder may be `Portifolio-EDU`).
+
+## Documentation sync
+- When changing positioning, experience, education or projects, update in this order when relevant:
+  1. `scripts/generate_cv.py` (+ regenerate PDF)
+  2. `index.html` (and typing phrases in `js/main.js` if hero copy changes)
+  3. `docs/LINKEDIN-PERFIL.md` + `docs/AVALIACAO-PERFIL.md`
+  4. `PRODUCT.md` / `DESIGN.md` / `README.md` if product or visual rules change
