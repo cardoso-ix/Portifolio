@@ -15,7 +15,7 @@ Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, respo
 | Visual | Graphite + oliva (`#a8b87a`), layout centralizado (`88rem`) |
 | Subprojeto embarcado | React + Vite (build em `conversor-unidades/`) |
 | Scripts auxiliares | Python 3 — Pillow, ReportLab |
-| CI | GitHub Actions — verificação de links (Lychee) |
+| CI | GitHub Actions — verificação de links (Lychee) + HTML validate |
 | Deploy | GitHub Pages (`main` → `/`) |
 
 ## Estrutura
@@ -27,7 +27,13 @@ Portifolio/
 ├── js/main.js
 ├── assets/
 │   ├── cv_eduardo_cardoso.pdf
+│   ├── favicon-*.png / favicon.svg / apple-touch-icon.png
 │   └── images/
+│       ├── foto.png              # hero + JSON-LD
+│       ├── foto-cv.png           # foto do currículo
+│       ├── og-image.png
+│       ├── linkedin-banner.png
+│       └── *-preview.*           # previews dos projetos
 ├── conversor-unidades/
 ├── scripts/
 │   ├── generate_cv.py
@@ -49,7 +55,7 @@ Portifolio/
 ├── PRODUCT.md
 ├── DESIGN.md
 ├── .github/workflows/check-links.yml
-└── .cursor/                   # MCP e regras do Cursor (opcional)
+└── .cursor/                   # regras do Cursor (opcional)
 ```
 
 ## Projetos em destaque no site
@@ -63,7 +69,7 @@ Portifolio/
 
 ## Seções do site
 
-1. **Início** — hero (automações/IA), terminal, CTAs (projetos, currículo, contato)
+1. **Início** — hero (suporte técnico + automações/IA), terminal, CTAs (projetos, currículo, contato)
 2. **Projetos** — 1 destaque + grade compacta
 3. **Sobre** — trajetória, como trabalha, Pós Tech em Agentes de IA
 4. **Skills** — em uso, complementares, estudando, soft skills
@@ -92,6 +98,13 @@ python scripts/gen_pc_dashboard_preview.py
 python scripts/format_html.py
 ```
 
+## Trocar foto de perfil
+
+1. Substitua `assets/images/foto.png` (site) e `assets/images/foto-cv.png` (currículo).  
+2. Rode `python scripts/generate_cv.py` e `python scripts/generate_og_image.py`.  
+3. Incremente `?v=` nos links da foto/PDF em `index.html`.  
+4. Publique na `main` (GitHub Pages).
+
 ## SEO e qualidade
 
 - **Open Graph** — `assets/images/og-image.png` (1200×630)
@@ -105,16 +118,17 @@ python scripts/format_html.py
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| [PRODUCT.md](PRODUCT.md) | Propósito, público e princípios do produto |
-| [DESIGN.md](DESIGN.md) | Sistema visual (cores, tipografia, regras) |
-| [docs/AVALIACAO-PERFIL.md](docs/AVALIACAO-PERFIL.md) | Avaliação do posicionamento atual |
-| [docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md) | Textos prontos para o LinkedIn (sincronizados com o currículo) |
+| [PRODUCT.md](PRODUCT.md) | Propósito, público, princípios e fontes de verdade |
+| [DESIGN.md](DESIGN.md) | Sistema visual Quiet Graphite Olive (cores, tipografia, componentes) |
+| [docs/AVALIACAO-PERFIL.md](docs/AVALIACAO-PERFIL.md) | Avaliação do posicionamento e próximos passos |
+| [docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md) | Kit LinkedIn (capa, headline, Sobre, experiências) |
+| [.cursor/rules/portfolio.mdc](.cursor/rules/portfolio.mdc) | Convenções para edição no Cursor |
 
 ## Publicar
 
 Repositório: [`cardoso-ix/Portifolio`](https://github.com/cardoso-ix/Portifolio). Push na `main` atualiza o GitHub Pages.
 
-Após alterar CSS, JS ou PDF, incremente `?v=` nos links em `index.html`.
+Após alterar CSS, JS, PDF ou foto, incremente `?v=` nos links em `index.html`.
 
 ## Licença
 

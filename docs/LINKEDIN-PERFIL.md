@@ -1,16 +1,29 @@
 # LinkedIn — kit para copiar e colar
 
+Atualizado: jul/2026.
+
 Tudo abaixo está alinhado ao portfólio publicado e ao currículo real.  
 **Não invente** formação, empresa ou ferramenta fora desta lista.
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/  
 Currículo PDF: https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
 
-Ordem sugerida no LinkedIn: Capa → Headline → Sobre → Experiência → Formação → Featured → Skills.
+Ordem sugerida no LinkedIn: Foto → Capa → Headline → Sobre → Experiência → Formação → Featured → Skills.
 
 ---
 
-## 0) Capa (banner) — arquivo pronto
+## 0) Foto de perfil
+
+Use a mesma foto do portfólio (rosto bem enquadrado, fundo limpo).
+
+- Arquivo no site: `assets/images/foto.png`  
+- URL: https://cardoso-ix.github.io/Portifolio/assets/images/foto.png  
+
+Ao trocar a foto no LinkedIn, atualize também `foto.png` + `foto-cv.png` no repositório e regenere OG/CV se necessário.
+
+---
+
+## 1) Capa (banner) — arquivo pronto
 
 Arquivo gerado no tamanho recomendado do LinkedIn (**1584 × 396**):
 
@@ -28,7 +41,7 @@ Identidade da capa: graphite + oliva do portfólio · suporte técnico · n8n / 
 
 ---
 
-## 1) Headline (cargo sob o nome)
+## 2) Headline (cargo sob o nome)
 
 Cole exatamente:
 
@@ -44,7 +57,7 @@ Suporte técnico e automações com IA | n8n · OpenAI · APIs
 
 ---
 
-## 2) Sobre (About)
+## 3) Sobre (About)
 
 Cole exatamente:
 
@@ -56,6 +69,7 @@ Tenho experiência em Help Desk (Crescer Sistemas): atendimento a chamados técn
 Projetos em destaque:
 • Automação de publicações no LinkedIn (n8n + OpenAI + API)
 • Automações com n8n — fluxos, integrações e IA aplicada a processos
+• PC Dashboard — painel desktop com automações de um clique
 
 Stack: n8n · OpenAI / APIs · Python · HTML/CSS/JS · Git/GitHub
 
@@ -67,11 +81,11 @@ Portfólio: https://cardoso-ix.github.io/Portifolio/
 
 ---
 
-## 3) Experiência — um bloco por cargo
+## 4) Experiência — um bloco por cargo
 
 Use **título e empresa exatamente** como abaixo. Em cada cargo, cole a descrição na caixa “Descrição”.
 
-### 3.1 Técnico de Laboratório de Calibração — Fluxo Metrologia
+### 4.1 Técnico de Laboratório de Calibração — Fluxo Metrologia
 
 - **Cargo:** Técnico de Laboratório de Calibração  
 - **Empresa:** Fluxo Metrologia  
@@ -83,7 +97,7 @@ Use **título e empresa exatamente** como abaixo. Em cada cargo, cole a descriç
 Calibração de instrumentos de medição, emissão de certificados, gestão de padrões de referência e conformidade documental conforme normas de qualidade.
 ```
 
-### 3.2 Coordenador de Logística — Sandimas
+### 4.2 Coordenador de Logística — Sandimas
 
 - **Cargo:** Coordenador de Logística  
 - **Empresa:** Sandimas  
@@ -95,7 +109,7 @@ Calibração de instrumentos de medição, emissão de certificados, gestão de 
 Planejamento, coordenação e controle das operações logísticas: transporte, armazenagem, distribuição e controle de estoque, com foco em eficiência, cumprimento de prazos e redução de custos operacionais.
 ```
 
-### 3.3 Suporte Técnico Help Desk — Crescer Sistemas
+### 4.3 Suporte Técnico Help Desk — Crescer Sistemas
 
 - **Cargo:** Suporte Técnico Help Desk  
 - **Empresa:** Crescer Sistemas  
@@ -107,7 +121,7 @@ Planejamento, coordenação e controle das operações logísticas: transporte, 
 Atendimento a chamados técnicos (N1/N2): diagnóstico e resolução de problemas de software e hardware, suporte remoto e presencial aos usuários, com comunicação clara e foco na resolução.
 ```
 
-### 3.4 Orçamentista — MR Indústria Gráfica
+### 4.4 Orçamentista — MR Indústria Gráfica
 
 - **Cargo:** Orçamentista  
 - **Empresa:** MR Indústria Gráfica  
@@ -119,7 +133,7 @@ Atendimento a chamados técnicos (N1/N2): diagnóstico e resolução de problema
 Análise de solicitações de clientes e elaboração de orçamentos de produtos gráficos, considerando custos de materiais, processos de impressão, acabamentos e prazos de produção.
 ```
 
-### 3.5 Metrologista — JBS Foods
+### 4.5 Metrologista — JBS Foods
 
 - **Cargo:** Metrologista  
 - **Empresa:** JBS Foods  
@@ -133,33 +147,33 @@ Garantia da confiabilidade dos processos de medição: execução de calibraçõ
 
 ---
 
-## 4) Formação (Educação)
+## 5) Formação (Educação)
 
-### 4.1 Pós Tech em Agentes de IA — FIAP + Alura
+### 5.1 Pós Tech em Agentes de IA — FIAP + Alura
 
 - **Curso:** Pós Tech em Agentes de IA  
 - **Instituição:** FIAP (parceria Alura)  
 - **Período:** jun de 2026 — em andamento  
 
-### 4.2 MBA em Controladoria e Finanças — Cruzeiro do Sul
+### 5.2 MBA em Controladoria e Finanças — Cruzeiro do Sul
 
 - **Curso:** MBA em Controladoria e Finanças  
 - **Instituição:** Universidade Cruzeiro do Sul  
 - **Período:** 2022  
 
-### 4.3 Administração — Universidade de Franca
+### 5.3 Administração — Universidade de Franca
 
 - **Curso:** Administração  
 - **Instituição:** Universidade de Franca (UNIFRAN)  
 - **Período:** 2016 — 2020  
 
-### 4.4 Indicadores de Pesagem e Normalização — INMETRO
+### 5.4 Indicadores de Pesagem e Normalização — INMETRO
 
 - **Curso:** Indicadores de Pesagem e Normalização  
 - **Instituição:** INMETRO  
 - **Período:** 2014  
 
-### 4.5 Técnico em Automação Industrial — SENAI
+### 5.5 Técnico em Automação Industrial — SENAI
 
 - **Curso:** Técnico em Automação Industrial  
 - **Instituição:** SENAI — Santo Antônio da Platina  
@@ -167,17 +181,18 @@ Garantia da confiabilidade dos processos de medição: execução de calibraçõ
 
 ---
 
-## 5) Em destaque (Featured) — links
+## 6) Em destaque (Featured) — links
 
 Adicione nesta ordem:
 
 1. **Portfólio** — https://cardoso-ix.github.io/Portifolio/  
 2. **Automação LinkedIn (GitHub)** — https://github.com/cardoso-ix/linkedin-automacao-ia  
 3. **Currículo (PDF)** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf  
+4. **PC Dashboard (opcional)** — https://github.com/cardoso-ix/pc-dashboard  
 
 ---
 
-## 6) Competências (Skills) — ordem sugerida
+## 7) Competências (Skills) — ordem sugerida
 
 Adicione e pin as primeiras:
 
@@ -195,10 +210,11 @@ Adicione e pin as primeiras:
 12. Git  
 13. Diagnóstico de software e hardware  
 14. Atendimento ao usuário  
+15. Prompt Engineering  
 
 ---
 
-## 7) Informações do perfil
+## 8) Informações do perfil
 
 | Campo | Valor |
 |-------|--------|
@@ -206,11 +222,14 @@ Adicione e pin as primeiras:
 | Localização | Chapecó, Santa Catarina, Brasil |
 | Site | https://cardoso-ix.github.io/Portifolio/ |
 | E-mail | eduardoocardosoo@gmail.com |
+| WhatsApp | +55 49 99809-5955 |
+| GitHub | https://github.com/cardoso-ix |
 
 ---
 
 ## Checklist rápido
 
+- [ ] Foto de perfil alinhada ao portfólio  
 - [ ] Capa `linkedin-banner.png` enviada  
 - [ ] Headline colada  
 - [ ] Sobre colado  
