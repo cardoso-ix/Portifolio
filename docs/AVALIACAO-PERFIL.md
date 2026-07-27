@@ -22,7 +22,7 @@ Documentação de produto/design alinhada ao site (graphite + oliva; suporte + I
 | Tipo de oportunidade | Fit | Por quê |
 |----------------------|-----|---------|
 | Suporte técnico / Help Desk (tech) | Alto | Experiência + comunicação |
-| Implementação de automações / n8n | Alto | Projetos práticos (LinkedIn pipeline, fluxos) |
+| Implementação de automações / n8n | Alto | Projeto prático (pipeline LinkedIn com n8n/OpenAI) |
 | Suporte a produto de IA | Médio-alto | Stack OpenAI + estudo de agentes |
 | Eng. de IA / pesquisa | Baixo-médio | Ainda em formação (Pós) — não é o eixo principal |
 
