@@ -63,7 +63,7 @@ CONTACT = [
 
 SKILLS = [
     "Suporte técnico e Help Desk",
-    "Implementação de automações (Make.com · n8n)",
+    "Implementação de automações (n8n)",
     "OpenAI · Prompt Engineering",
     "APIs, Webhooks e integrações",
     "LLMs · RAG · agentes (em formação)",
@@ -72,9 +72,9 @@ SKILLS = [
 SUMMARY = (
     "Perfil na interseção de suporte técnico e automações com IA: diagnóstico, "
     "atendimento e implementação de fluxos. Experiência em Help Desk (Crescer "
-    "Sistemas), prática com Make.com, OpenAI, n8n, APIs e webhooks, e Pós Tech "
-    "em Agentes de IA (FIAP + Alura, em andamento). Foco em apoiar usuários, "
-    "integrar ferramentas e manter soluções estáveis."
+    "Sistemas), prática com n8n, OpenAI, APIs e webhooks, e Pós Tech em Agentes "
+    "de IA (FIAP + Alura, em andamento). Foco em apoiar usuários, integrar "
+    "ferramentas e manter soluções estáveis."
 )
 
 EXPERIENCE = [

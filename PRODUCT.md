@@ -10,7 +10,7 @@ Recrutadores e gestores de tech/IA interessados em **suporte técnico**, **autom
 
 ## Product Purpose
 
-Portfólio pessoal que **mostra competências práticas** (Make.com, OpenAI, n8n, APIs, suporte) com tom **universal e profissional** — sem anunciar “busco vaga” no envelope — e direciona para projetos, currículo e contato.
+Portfólio pessoal que **mostra competências práticas** (n8n, OpenAI, APIs, suporte) com tom **universal e profissional** — sem anunciar “busco vaga” no envelope — e direciona para projetos, currículo e contato.
 
 Tom: identidade clara (**suporte técnico + IA/automação**), sem freela/pacotes e sem linguagem de anúncio de emprego. Sucesso = visitante entende o perfil, confia nos projetos e inicia conversa.
 
@@ -57,4 +57,4 @@ Tom profissional e direto, sem hype de startup. Estética quieta (graphite + oli
 | Visual | `DESIGN.md` + tokens em `css/style.css` |
 | Posicionamento | este arquivo + `docs/AVALIACAO-PERFIL.md` |
 
-**Regra:** descrição de projeto no site deve bater com o README do repositório correspondente (ex.: Automação LinkedIn = Make.com, não n8n).
+**Regra:** descrição de projeto no site deve ser factual e alinhada ao inventário em `docs/PROJETOS-GITHUB.md`. No envelope público, priorizar n8n / OpenAI / APIs — sem destacar Make.com.
