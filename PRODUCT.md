@@ -10,7 +10,7 @@ Recrutadores e gestores de tech/IA interessados em **suporte técnico**, **autom
 
 ## Product Purpose
 
-Portfólio pessoal que **mostra competências práticas** (n8n, OpenAI, APIs, suporte) com tom **universal e profissional** — sem anunciar “busco vaga” no envelope — e direciona para projetos, currículo e contato.
+Portfólio pessoal que **mostra competências práticas** (Make.com, OpenAI, n8n, APIs, suporte) com tom **universal e profissional** — sem anunciar “busco vaga” no envelope — e direciona para projetos, currículo e contato.
 
 Tom: identidade clara (**suporte técnico + IA/automação**), sem freela/pacotes e sem linguagem de anúncio de emprego. Sucesso = visitante entende o perfil, confia nos projetos e inicia conversa.
 
@@ -52,6 +52,9 @@ Tom profissional e direto, sem hype de startup. Estética quieta (graphite + oli
 |----------|--------|
 | Site público | `index.html` + `css/style.css` + `js/main.js` |
 | Currículo PDF | `scripts/generate_cv.py` → `assets/cv_eduardo_cardoso.pdf` |
-| Textos LinkedIn | `docs/LINKEDIN-PERFIL.md` (espelha o CV) |
+| Repos / demos | `docs/PROJETOS-GITHUB.md` (espelha GitHub público) |
+| Textos LinkedIn | `docs/LINKEDIN-PERFIL.md` (espelha CV + repos) |
 | Visual | `DESIGN.md` + tokens em `css/style.css` |
 | Posicionamento | este arquivo + `docs/AVALIACAO-PERFIL.md` |
+
+**Regra:** descrição de projeto no site deve bater com o README do repositório correspondente (ex.: Automação LinkedIn = Make.com, não n8n).
