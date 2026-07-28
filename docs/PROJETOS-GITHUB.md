@@ -17,7 +17,7 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 | [Portifolio](https://github.com/cardoso-ix/Portifolio) | Site pessoal (este repo) | HTML · CSS · JS · GitHub Pages | [Live](https://cardoso-ix.github.io/Portifolio/) | — |
 | [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Automação diária de posts LinkedIn | OpenAI (GPT-4o / imagem) · LinkedIn | Perfil LinkedIn | Destaque |
 | [pc-dashboard](https://github.com/cardoso-ix/pc-dashboard) | Painel desktop Windows v1.4 | Tauri 2 · React · TS · Rust · Tailwind | — (app local) | Sim |
-| [mentor-gestao-industrial](https://github.com/cardoso-ix/mentor-gestao-industrial) | Multi-agente para supervisores de manutenção | CrewAI · RAG · ChromaDB · Streamlit | [Demo](https://duzinxd-mentor-gestao-industrial.hf.space) · [HF Space](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | Sim |
+| [mentor-gestao-industrial](https://github.com/cardoso-ix/mentor-gestao-industrial) | Multi-agente para supervisores de manutenção | CrewAI · OpenRouter (Gemma) · RAG · ChromaDB · Streamlit | [Demo](https://duzinxd-mentor-gestao-industrial.hf.space) · [HF Space](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | Sim |
 | [conversor-unidades](https://github.com/cardoso-ix/conversor-unidades) | Conversor web (49 categorias) | React · TypeScript · Vite | [Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | Sim |
 | [cardoso-ix](https://github.com/cardoso-ix/cardoso-ix) | README do perfil GitHub | Markdown | — | Não (meta) |
 
@@ -42,12 +42,12 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 ### 3) mentor-gestao-industrial
 
-- **O que é:** 4 agentes CrewAI + RAG (ChromaDB) + interface Streamlit; LLM Groq.
+- **O que é:** 5 agentes CrewAI + RAG (ChromaDB) + interface Streamlit; LLM via OpenRouter (`gemma-4-26b-a4b-it:free`); parecer executivo e PDF.
+- **Visual:** layout industrial moderno (hero grafite + acento cobre) — atualizado jul/2026.
 - **Demo:** https://duzinxd-mentor-gestao-industrial.hf.space  
 - **Space:** https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial  
 - **GitHub:** https://github.com/cardoso-ix/mentor-gestao-industrial
-- **Encaixe no posicionamento:** prova prática da Pós Tech / agentes — não lidera o envelope (suporte + automação), mas aparece na grade de projetos.
-- **Description / topics GitHub:** ok.
+- **Description GitHub:** ainda cita Groq — pendência manual de alinhar à stack OpenRouter.
 
 ### 4) conversor-unidades
 
