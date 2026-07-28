@@ -2,7 +2,7 @@
 
 Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**.
 
-**Posicionamento:** perfil universal de **suporte técnico** e **automações com IA** (n8n, OpenAI, APIs) — mostra competências na prática, sem tom de anúncio de vaga.
+**Posicionamento:** perfil universal de **suporte técnico** e **automações com IA** (Make.com, OpenAI, n8n, APIs) — mostra competências na prática, sem tom de anúncio de vaga.
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
@@ -45,6 +45,7 @@ Portifolio/
 │   ├── format_html.py
 │   └── requirements.txt
 ├── docs/
+│   ├── PROJETOS-GITHUB.md
 │   ├── LINKEDIN-PERFIL.md
 │   └── AVALIACAO-PERFIL.md
 ├── robots.txt
@@ -59,11 +60,16 @@ Portifolio/
 
 ## Projetos em destaque no site
 
+Inventário completo: [docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md).
+
 | Projeto | Demo | Código |
 |---------|------|--------|
-| Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) |
-| PC Dashboard | — (Windows · Tauri v1.4 · bandeja + remoção de programas) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
+| Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) — Make.com + OpenAI |
+| PC Dashboard | — (Windows · Tauri v1.4) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
+| Mentor de Gestão Industrial | [Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | [GitHub](https://github.com/cardoso-ix/mentor-gestao-industrial) |
 | Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
+
+Outros repos públicos: `cardoso-ix` (README do perfil).
 
 ## Seções do site
 
@@ -117,6 +123,7 @@ python scripts/format_html.py
 |---------|----------|
 | [PRODUCT.md](PRODUCT.md) | Propósito, público, princípios e fontes de verdade |
 | [DESIGN.md](DESIGN.md) | Sistema visual Quiet Graphite Olive (cores, tipografia, componentes) |
+| [docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md) | Inventário dos repositórios públicos e demos |
 | [docs/AVALIACAO-PERFIL.md](docs/AVALIACAO-PERFIL.md) | Avaliação do posicionamento e próximos passos |
 | [docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md) | Kit LinkedIn (capa, headline, Sobre, experiências) |
 | [.cursor/rules/portfolio.mdc](.cursor/rules/portfolio.mdc) | Convenções para edição no Cursor |

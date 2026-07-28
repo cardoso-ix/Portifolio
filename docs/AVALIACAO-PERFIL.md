@@ -1,19 +1,18 @@
 # Avaliação de perfil — Eduardo Cardoso
 
-Atualizado: jul/2026.
+Atualizado: jul/2026 (após auditoria dos repositórios GitHub).
 
-Foco atual: perfil **universal** e **factual** — **suporte técnico** (Help Desk) + **automações/IA** (n8n, OpenAI, APIs).  
-Base = currículo real (`scripts/generate_cv.py`). Sem inventar formação/empresas. O envelope não anuncia “buscando vaga”.  
+Foco atual: perfil **universal** e **factual** — **suporte técnico** (Help Desk) + **automações/IA** (Make.com, OpenAI, n8n, APIs).  
+Base = currículo real (`scripts/generate_cv.py`) + repos públicos ([PROJETOS-GITHUB.md](./PROJETOS-GITHUB.md)).  
+O envelope não anuncia “buscando vaga”.  
 **Portfólio:** https://cardoso-ix.github.io/Portifolio/
 
 ---
 
 ## Veredito
 
-Boa combinação: **Help Desk real** + **projetos com n8n/OpenAI** + **Pós Tech em agentes** (em formação).  
-O site comunica competência e identidade; o LinkedIn deve espelhar o mesmo tom ([LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md)).
-
-Documentação de produto/design alinhada ao site (graphite + oliva; suporte + IA) — ver `PRODUCT.md` e `DESIGN.md`.
+Boa combinação: **Help Desk real** + **automações com Make/OpenAI** + **multi-agente (Mentor)** + **Pós Tech em agentes**.  
+O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack correta do LinkedIn automation).
 
 ---
 
@@ -22,20 +21,20 @@ Documentação de produto/design alinhada ao site (graphite + oliva; suporte + I
 | Tipo de oportunidade | Fit | Por quê |
 |----------------------|-----|---------|
 | Suporte técnico / Help Desk (tech) | Alto | Experiência + comunicação |
-| Implementação de automações / n8n | Alto | Projeto prático (pipeline LinkedIn com n8n/OpenAI) |
-| Suporte a produto de IA | Médio-alto | Stack OpenAI + estudo de agentes |
+| Implementação de automações / Make / n8n | Alto | Pipeline LinkedIn (Make) + PC Dashboard |
+| Suporte a produto de IA | Médio-alto | OpenAI + Mentor (CrewAI/RAG) + estudo de agentes |
 | Eng. de IA / pesquisa | Baixo-médio | Ainda em formação (Pós) — não é o eixo principal |
 
 ---
 
-## Pontos fortes para quem lê suporte/implementação
+## Pontos fortes
 
 1. Help Desk comprovado (Crescer Sistemas)  
-2. Sabe configurar e explicar (implementação)  
-3. Stack atual: n8n, OpenAI, APIs, Webhooks  
-4. Portfólio mostra o que sabe fazer (preview + GitHub)  
+2. Projeto LinkedIn **verificável** (Make.com + OpenAI)  
+3. PC Dashboard mostra craft desktop (Tauri)  
+4. Mentor mostra prática com agentes/RAG (demo HF)  
 5. Tom profissional, sem “pedágio” comercial  
-6. Kit LinkedIn pronto (capa, headline, Sobre, Featured)
+6. Kit LinkedIn + inventário GitHub documentados  
 
 ---
 
@@ -44,31 +43,31 @@ Documentação de produto/design alinhada ao site (graphite + oliva; suporte + I
 | Risco | Mitigação |
 |-------|-----------|
 | Cargo atual fora de tech | Headline/Sobre 100% suporte+IA; Help Desk em evidência |
-| Parecer “só automação criativa” | Usar palavras: suporte, implementação, diagnóstico, usuário |
-| LinkedIn desalinhado | Colar textos do guia (tom universal) |
+| Stack errada no site (já ocorreu: n8n vs Make) | Conferir README do repo antes de escrever o card |
+| README do perfil GitHub desatualizado | Atualizar `cardoso-ix/cardoso-ix` manualmente |
+| Bio GitHub com “Buscando oportunidade júnior” | Trocar bio pelo texto universal do kit |
 | Envelope soar como “procuro emprego” | Evitar “vaga/CLT/busco” no título público |
-| Docs/site/CV divergirem | Sempre sincronizar `generate_cv.py` ↔ site ↔ `LINKEDIN-PERFIL.md` |
 
 ---
 
-## Estado atual (repo)
+## Estado atual
 
 | Item | Status |
 |------|--------|
-| Site live (GitHub Pages) | Pronto |
-| Posicionamento suporte + IA | No ar (hero, meta, Sobre) |
-| Capa LinkedIn (`linkedin-banner.png`) | Gerada no repo |
-| Kit copiar/colar LinkedIn | Em `LINKEDIN-PERFIL.md` |
-| CV PDF | Gerado via script |
-| CI de links | Ativo (Lychee + HTML validate) |
+| Site live | Pronto |
+| Projetos no site = repos públicos relevantes | Alinhado (LinkedIn, PC Dashboard, Mentor, Conversor) |
+| Inventário `PROJETOS-GITHUB.md` | Criado |
+| Kit LinkedIn | Atualizado (Make + Mentor) |
+| Bio GitHub / README perfil | Pendência **manual** (403 neste agente) |
+| Description `linkedin-automacao-ia` | Pendência **manual** (vazia) |
 
 ---
 
-## Próximos 3 passos (ação humana no LinkedIn)
+## Próximos 3 passos (ação humana)
 
-1. Colar headline recomendada + Sobre do guia LinkedIn (universal).  
-2. Featured: site + GitHub da automação + PDF do currículo.  
-3. Enviar capa `linkedin-banner.png` e (opcional) Open to Work só nas preferências — não no headline.
+1. Colar headline + Sobre do [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md).  
+2. Atualizar **bio do GitHub** e README do perfil (`cardoso-ix`).  
+3. Featured LinkedIn: site + automação LinkedIn + demo Mentor + PDF.
 
 ---
 

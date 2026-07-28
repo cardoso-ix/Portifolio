@@ -12,14 +12,15 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (n8n, OpenAI, APIs). Never freela/pacotes.
+- Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (Make.com, OpenAI, n8n, APIs). Never freela/pacotes.
 - **Facts only:** education, companies, titles and dates must match `scripts/generate_cv.py` / the CV PDF. Never invent schools (e.g. UNOESC) or employers.
-- Adapt tone for Help Desk N1/N2 + n8n without inventing tools, metrics or roles. Framing ≠ fabrication.
+- **Project cards must match the GitHub repo README** (see `docs/PROJETOS-GITHUB.md`). Example: `linkedin-automacao-ia` is Make.com + OpenAI — not n8n/VPS.
+- Adapt tone for Help Desk N1/N2 + automation without inventing tools, metrics or roles. Framing ≠ fabrication.
 - Do **not** put job-hunting language in the public envelope (hero, headline, meta): avoid “busco vaga”, “CLT”, “aberto a vagas”, “não freela”.
 - Lead with characteristics and proof (projects + real Help Desk at Crescer Sistemas). CTAs: projetos, currículo, contato.
 - Do **not** lead with metrologia/calibração; Help Desk experience may be highlighted as support proof.
 - Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
-- Keep `docs/LINKEDIN-PERFIL.md`, `docs/AVALIACAO-PERFIL.md`, `PRODUCT.md` and `DESIGN.md` aligned when public positioning changes.
+- Keep `docs/PROJETOS-GITHUB.md`, `docs/LINKEDIN-PERFIL.md`, `docs/AVALIACAO-PERFIL.md`, `PRODUCT.md` and `DESIGN.md` aligned when public positioning or repos change.
 
 ## CSS
 - Use existing CSS custom properties in `:root` / `[data-theme="light"]` (graphite + muted olive; avoid AI-blue / neon cyan/magenta).
@@ -49,7 +50,8 @@ alwaysApply: false
 
 ## Documentation sync
 - When changing positioning, experience, education or projects, update in this order when relevant:
-  1. `scripts/generate_cv.py` (+ regenerate PDF)
-  2. `index.html` (and typing phrases in `js/main.js` if hero copy changes)
-  3. `docs/LINKEDIN-PERFIL.md` + `docs/AVALIACAO-PERFIL.md`
-  4. `PRODUCT.md` / `DESIGN.md` / `README.md` if product or visual rules change
+  1. Confirm facts against the GitHub repo README / `docs/PROJETOS-GITHUB.md`
+  2. `scripts/generate_cv.py` (+ regenerate PDF) if CV facts change
+  3. `index.html` (and typing phrases in `js/main.js` if hero copy changes)
+  4. `docs/PROJETOS-GITHUB.md` + `docs/LINKEDIN-PERFIL.md` + `docs/AVALIACAO-PERFIL.md`
+  5. `PRODUCT.md` / `DESIGN.md` / `README.md` if product or visual rules change
