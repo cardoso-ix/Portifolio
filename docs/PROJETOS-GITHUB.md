@@ -15,7 +15,7 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 | Repo | Papel | Stack (README) | Demo | No site? |
 |------|--------|----------------|------|----------|
 | [Portifolio](https://github.com/cardoso-ix/Portifolio) | Site pessoal (este repo) | HTML · CSS · JS · GitHub Pages | [Live](https://cardoso-ix.github.io/Portifolio/) | — |
-| [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Automação diária de posts LinkedIn | **Make.com** · OpenAI (GPT-4o / imagem) · LinkedIn | Perfil LinkedIn | Destaque |
+| [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Automação diária de posts LinkedIn | OpenAI (GPT-4o / imagem) · LinkedIn | Perfil LinkedIn | Destaque |
 | [pc-dashboard](https://github.com/cardoso-ix/pc-dashboard) | Painel desktop Windows v1.4 | Tauri 2 · React · TS · Rust · Tailwind | — (app local) | Sim |
 | [mentor-gestao-industrial](https://github.com/cardoso-ix/mentor-gestao-industrial) | Multi-agente para supervisores de manutenção | CrewAI · Groq · RAG · ChromaDB · Streamlit | [Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | Sim |
 | [conversor-unidades](https://github.com/cardoso-ix/conversor-unidades) | Conversor web (49 categorias) | React · TypeScript · Vite | [Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | Sim |
@@ -28,10 +28,10 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 ### 1) linkedin-automacao-ia (destaque)
 
 - **O que é:** schedule diário 08:00 (America/Sao_Paulo); GPT-4o gera texto; router escolhe só texto ou texto + charge (qui/dom).
-- **Orquestração:** Make.com (não n8n).
+- **Orquestração (repo):** ver README do projeto — **não exibir Make.com no envelope público**.
 - **GitHub description:** vazia (pendência manual — este agente não tem permissão de escrita nesse repo).
 - **Topics:** nenhum (pendência manual).
-- **Card do site:** Make.com · GPT-4o · LinkedIn.
+- **Card do site:** OpenAI · GPT-4o · LinkedIn (sem Make.com).
 
 ### 2) pc-dashboard
 
@@ -71,7 +71,7 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 | Item | Onde | Ação sugerida |
 |------|------|----------------|
-| Bio do GitHub | Perfil | Trocar “Buscando oportunidade júnior” por tom universal (ex.: `Suporte técnico e automações com IA \| Make · OpenAI · Help Desk · Chapecó, SC`) |
+| Bio do GitHub | Perfil | Trocar “Buscando oportunidade júnior” por tom universal (ex.: `Suporte técnico e automações com IA \| n8n · OpenAI · Help Desk · Chapecó, SC`) |
 | Description vazia | `linkedin-automacao-ia` | Preencher description + homepage do portfólio |
 | Topics | `linkedin-automacao-ia`, `pc-dashboard` | Adicionar topics relevantes |
 | README perfil | `cardoso-ix` | Incluir LinkedIn automation + PC Dashboard; alinhar tom |

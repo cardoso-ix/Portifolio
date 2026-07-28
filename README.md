@@ -2,7 +2,7 @@
 
 Portfólio pessoal em HTML, CSS e JavaScript vanilla. Site de uma página, responsivo, com tema claro/escuro, deploy via **GitHub Pages**.
 
-**Posicionamento:** perfil universal de **suporte técnico** e **automações com IA** (Make.com, OpenAI, n8n, APIs) — mostra competências na prática, sem tom de anúncio de vaga.
+**Posicionamento:** perfil universal de **suporte técnico** e **automações com IA** (n8n, OpenAI, APIs) — mostra competências na prática, sem tom de anúncio de vaga.
 
 **Live:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
 
@@ -64,7 +64,7 @@ Inventário completo: [docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md).
 
 | Projeto | Demo | Código |
 |---------|------|--------|
-| Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) — Make.com + OpenAI |
+| Automação LinkedIn com IA | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) — OpenAI + LinkedIn |
 | PC Dashboard | — (Windows · Tauri v1.4) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
 | Mentor de Gestão Industrial | [Hugging Face](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | [GitHub](https://github.com/cardoso-ix/mentor-gestao-industrial) |
 | Conversor de Unidades | [GitHub Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |

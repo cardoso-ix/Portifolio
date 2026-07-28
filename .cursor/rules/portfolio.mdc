@@ -12,9 +12,9 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (Make.com, OpenAI, n8n, APIs). Never freela/pacotes.
+- Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (n8n, OpenAI, APIs). Never freela/pacotes.
 - **Facts only:** education, companies, titles and dates must match `scripts/generate_cv.py` / the CV PDF. Never invent schools (e.g. UNOESC) or employers.
-- **Project cards must match the GitHub repo README** (see `docs/PROJETOS-GITHUB.md`). Example: `linkedin-automacao-ia` is Make.com + OpenAI — not n8n/VPS.
+- **Do not advertise Make.com** on the public portfolio envelope (hero, skills, project cards, LinkedIn kit). Prefer OpenAI / n8n / APIs. Repo-level notes can live in `docs/PROJETOS-GITHUB.md`.
 - Adapt tone for Help Desk N1/N2 + automation without inventing tools, metrics or roles. Framing ≠ fabrication.
 - Do **not** put job-hunting language in the public envelope (hero, headline, meta): avoid “busco vaga”, “CLT”, “aberto a vagas”, “não freela”.
 - Lead with characteristics and proof (projects + real Help Desk at Crescer Sistemas). CTAs: projetos, currículo, contato.
