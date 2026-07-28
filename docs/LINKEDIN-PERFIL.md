@@ -189,7 +189,7 @@ Adicione nesta ordem:
 
 1. **Portfólio** — https://cardoso-ix.github.io/Portifolio/  
 2. **Automação LinkedIn (GitHub)** — https://github.com/cardoso-ix/linkedin-automacao-ia  
-3. **Mentor — demo Hugging Face** — https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial  
+3. **Mentor — demo** — https://duzinxd-mentor-gestao-industrial.hf.space  
 4. **Currículo (PDF)** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf  
 5. **PC Dashboard (opcional)** — https://github.com/cardoso-ix/pc-dashboard  
 
