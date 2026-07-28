@@ -15,9 +15,9 @@
 
   const TYPING_PHRASES = [
     'Suporte técnico e automações',
-    'Make.com · OpenAI · APIs',
+    'Implementação com n8n e OpenAI',
     'Diagnóstico · setup · integrações',
-    'n8n · Webhooks · IA aplicada',
+    'APIs · Webhooks · IA aplicada',
     'Pós Tech FIAP + Alura'
   ];
 
