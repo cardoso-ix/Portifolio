@@ -70,7 +70,7 @@ Tenho experiência em Help Desk (Crescer Sistemas): atendimento a chamados técn
 Projetos em destaque:
 • Automação de publicações no LinkedIn (OpenAI + API) — post diário com texto e charge editorial
 • PC Dashboard — painel Windows (Tauri) com ações de um clique, bandeja e remoção de programas
-• Mentor de Gestão Industrial — multi-agente CrewAI + Groq + RAG (demo no Hugging Face)
+• Mentor de Gestão Industrial — multi-agente CrewAI + OpenRouter + RAG (demo no Hugging Face)
 • Conversor de Unidades — app web React + TypeScript (49 categorias)
 
 Stack: n8n · OpenAI / APIs · Python · HTML/CSS/JS · Git/GitHub
