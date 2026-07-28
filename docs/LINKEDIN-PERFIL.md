@@ -2,8 +2,9 @@
 
 Atualizado: jul/2026.
 
-Tudo abaixo está alinhado ao portfólio publicado e ao currículo real.  
-**Não invente** formação, empresa ou ferramenta fora desta lista.
+Tudo abaixo está alinhado ao portfólio publicado, ao currículo real e aos repositórios GitHub.  
+**Não invente** formação, empresa ou ferramenta fora desta lista.  
+Inventário completo: [PROJETOS-GITHUB.md](./PROJETOS-GITHUB.md).
 
 Portfólio: https://cardoso-ix.github.io/Portifolio/  
 Currículo PDF: https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
@@ -14,7 +15,7 @@ Ordem sugerida no LinkedIn: Foto → Capa → Headline → Sobre → Experiênci
 
 ## 0) Foto de perfil
 
-Use a mesma foto do portfólio (rosto bem enquadrado, fundo limpo).
+Use a mesma foto do portfólio (rosto bem enquadrado).
 
 - Arquivo no site: `assets/images/foto.png`  
 - URL: https://cardoso-ix.github.io/Portifolio/assets/images/foto.png  
@@ -37,7 +38,7 @@ Arquivo gerado no tamanho recomendado do LinkedIn (**1584 × 396**):
 
 Para regenerar: `python3 scripts/generate_linkedin_banner.py`
 
-Identidade da capa: graphite + oliva do portfólio · suporte técnico · n8n / OpenAI / Help Desk · sem “busco vaga”.
+Identidade da capa: graphite + oliva do portfólio · suporte técnico · Make / OpenAI / Help Desk · sem “busco vaga”.
 
 ---
 
@@ -46,13 +47,13 @@ Identidade da capa: graphite + oliva do portfólio · suporte técnico · n8n / 
 Cole exatamente:
 
 ```
-Suporte técnico · Automações com IA | n8n · OpenAI · Help Desk · Chapecó, SC
+Suporte técnico · Automações com IA | Make · OpenAI · Help Desk · Chapecó, SC
 ```
 
 Alternativa (se preferir mais curta):
 
 ```
-Suporte técnico e automações com IA | n8n · OpenAI · APIs
+Suporte técnico e automações com IA | Make · OpenAI · APIs
 ```
 
 ---
@@ -62,16 +63,17 @@ Suporte técnico e automações com IA | n8n · OpenAI · APIs
 Cole exatamente:
 
 ```
-Trabalho na interseção de suporte técnico e automações com IA: entender o problema do usuário, diagnosticar, resolver e — quando faz sentido — automatizar com n8n, OpenAI e APIs.
+Trabalho na interseção de suporte técnico e automações com IA: entender o problema do usuário, diagnosticar, resolver e — quando faz sentido — automatizar com Make.com, OpenAI, n8n e APIs.
 
 Tenho experiência em Help Desk (Crescer Sistemas): atendimento a chamados técnicos (N1/N2), diagnóstico e resolução de software e hardware, suporte remoto e presencial. Essa base de atendimento e diagnóstico eu aplico hoje em fluxos e integrações que reduzem retrabalho.
 
 Projetos em destaque:
-• Automação de publicações no LinkedIn (n8n + OpenAI + API)
+• Automação de publicações no LinkedIn (Make.com + OpenAI) — post diário com texto e charge editorial
 • PC Dashboard — painel Windows (Tauri) com ações de um clique, bandeja e remoção de programas
-• Conversor de Unidades — app web (React + TypeScript)
+• Mentor de Gestão Industrial — multi-agente CrewAI + Groq + RAG (demo no Hugging Face)
+• Conversor de Unidades — app web React + TypeScript (49 categorias)
 
-Stack: n8n · OpenAI / APIs · Python · HTML/CSS/JS · Git/GitHub
+Stack: Make.com · OpenAI / APIs · n8n · Python · HTML/CSS/JS · Git/GitHub
 
 Formação: Administração (Universidade de Franca) · MBA em Controladoria e Finanças (Cruzeiro do Sul) · Técnico em Automação Industrial (SENAI) · Pós Tech em Agentes de IA (FIAP + Alura, em andamento)
 
@@ -187,8 +189,9 @@ Adicione nesta ordem:
 
 1. **Portfólio** — https://cardoso-ix.github.io/Portifolio/  
 2. **Automação LinkedIn (GitHub)** — https://github.com/cardoso-ix/linkedin-automacao-ia  
-3. **Currículo (PDF)** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf  
-4. **PC Dashboard (opcional)** — https://github.com/cardoso-ix/pc-dashboard  
+3. **Mentor — demo Hugging Face** — https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial  
+4. **Currículo (PDF)** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf  
+5. **PC Dashboard (opcional)** — https://github.com/cardoso-ix/pc-dashboard  
 
 ---
 
@@ -198,19 +201,20 @@ Adicione e pin as primeiras:
 
 1. Help Desk  
 2. Suporte Técnico  
-3. n8n  
+3. Make.com  
 4. OpenAI  
-5. Automação de Processos  
-6. APIs  
-7. Integrações  
-8. Python  
-9. HTML  
-10. CSS  
-11. JavaScript  
-12. Git  
-13. Diagnóstico de software e hardware  
-14. Atendimento ao usuário  
-15. Prompt Engineering  
+5. n8n  
+6. Automação de Processos  
+7. APIs  
+8. Integrações  
+9. Python  
+10. Prompt Engineering  
+11. HTML  
+12. CSS  
+13. JavaScript  
+14. Git  
+15. Diagnóstico de software e hardware  
+16. Atendimento ao usuário  
 
 ---
 
@@ -231,11 +235,12 @@ Adicione e pin as primeiras:
 
 - [ ] Foto de perfil alinhada ao portfólio  
 - [ ] Capa `linkedin-banner.png` enviada  
-- [ ] Headline colada  
-- [ ] Sobre colado  
+- [ ] Headline colada (Make · OpenAI)  
+- [ ] Sobre colado (projetos reais do GitHub)  
 - [ ] 5 experiências com título/empresa/período/descrição corretos  
 - [ ] 5 formações corretas  
-- [ ] Featured com site + GitHub + PDF  
+- [ ] Featured com site + LinkedIn automation + Mentor demo + PDF  
 - [ ] Skills priorizadas  
 - [ ] Sem “busco vaga / CLT / freela” no título  
 - [ ] Sem UNOESC, Unimed ou qualquer dado fora deste documento  
+- [ ] Bio do GitHub sem “Buscando oportunidade júnior” (pendência no perfil github.com)  
