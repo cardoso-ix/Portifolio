@@ -57,7 +57,7 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 | Site live | Pronto |
 | Projetos no site = repos públicos relevantes | Alinhado (LinkedIn, PC Dashboard, Mentor, Conversor) |
 | Inventário `PROJETOS-GITHUB.md` | Criado |
-| Kit LinkedIn | Atualizado (Make + Mentor) |
+| Kit LinkedIn | Atualizado (n8n · OpenAI + Mentor) |
 | Bio GitHub / README perfil | Pendência **manual** (403 neste agente) |
 | Description `linkedin-automacao-ia` | Pendência **manual** (vazia) |
 
