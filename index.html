@@ -25,7 +25,7 @@
   <meta name="twitter:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
   <title>Eduardo Cardoso | Automações com n8n, Make e IA</title>
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="css/style.css?v=24" as="style">
+  <link rel="preload" href="css/style.css?v=25" as="style">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="stylesheet" href="css/style.css?v=25">
 
   <script type="application/ld+json">
   {
@@ -265,8 +265,8 @@
             <p class="service-card__lead">Calendário + posts com IA (texto e/ou imagem) publicados no horário — no estilo do meu case LinkedIn.</p>
             <ul class="service-card__list">
               <li>Temas e roteiro definidos com você</li>
-              <li>Geração com OpenAI + tom da marca</li>
-              <li>Publicação agendada na rede</li>
+              <li>Geração com LLM (ex.: DeepSeek via OpenRouter) + tom da marca</li>
+              <li>Publicação agendada e respostas a comentários</li>
             </ul>
             <p class="service-card__meta"><span>Prazo estimado: 7–10 dias</span></p>
             <a href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20quero%20o%20pacote%20Conte%C3%BAdo%20no%20piloto" class="btn btn--primary service-card__cta" target="_blank" rel="noopener noreferrer"><span>Pedir orçamento</span></a>
@@ -300,19 +300,20 @@
             </div>
             <div class="project-card__body">
               <h3 class="project-card__title">Automação LinkedIn com IA</h3>
-              <p class="project-card__lead"><strong>Problema:</strong> postar com consistência consome tempo todos os dias.</p>
+              <p class="project-card__lead"><strong>Problema:</strong> postar e responder comentários com consistência consome tempo todos os dias.</p>
               <ul class="project-card__highlights">
-                <li><strong>Solução:</strong> pipeline n8n na VPS com GPT-4o, posts 2×/dia (11h e 19h), charge e engajamento</li>
-                <li><strong>Resultado:</strong> calendário no piloto — texto, cascata no próprio post e outbound em posts de terceiros</li>
-                <li>Data Table (pending/done), fallback Gmail se a API falhar</li>
+                <li><strong>Solução:</strong> pipeline n8n na VPS — post diário 08:00 com DeepSeek-V4-Flash (texto) + FLUX.2 Pro (capa editorial) via OpenRouter</li>
+                <li><strong>Engajamento:</strong> a cada ~2 min, monitora posts, lê comentários e responde com DeepSeek (Sheets + HTML → reply no LinkedIn)</li>
+                <li><strong>Resultado:</strong> calendário no piloto — 30 temas/mês, anti-dupe, fallback só texto se a capa falhar, alertas no Telegram</li>
                 <li>Contrate uma versão disso para LinkedIn, Instagram ou outra rede</li>
               </ul>
-              <p class="project-card__note">n8n · OpenAI · LinkedIn · VPS</p>
+              <p class="project-card__note">n8n · OpenRouter · DeepSeek · FLUX · LinkedIn · VPS</p>
               <ul class="project-card__tags">
                 <li class="skill-tag">n8n</li>
-                <li class="skill-tag">OpenAI</li>
+                <li class="skill-tag">OpenRouter</li>
+                <li class="skill-tag">DeepSeek</li>
+                <li class="skill-tag">FLUX</li>
                 <li class="skill-tag">LinkedIn</li>
-                <li class="skill-tag">GPT-4o</li>
                 <li class="skill-tag">VPS</li>
               </ul>
               <div class="project-card__links">
