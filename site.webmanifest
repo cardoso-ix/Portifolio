@@ -1,12 +1,12 @@
 {
   "name": "Eduardo Cardoso — Portfólio",
   "short_name": "EduCardoso",
-  "description": "Eduardo Cardoso — Freela de automações com n8n, Make e IA. Chapecó, SC.",
+  "description": "Eduardo Cardoso — Suporte técnico e automações com IA: n8n, OpenAI, APIs. Chapecó, SC.",
   "start_url": "/Portifolio/",
   "scope": "/Portifolio/",
   "display": "standalone",
-  "background_color": "#0a1020",
-  "theme_color": "#0a0f18",
+  "background_color": "#111211",
+  "theme_color": "#111211",
   "lang": "pt-BR",
   "icons": [
     {

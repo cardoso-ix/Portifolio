@@ -62,18 +62,19 @@ CONTACT = [
 ]
 
 SKILLS = [
-    "Gestão e controle de padrões de referência",
-    "Análise e elaboração de custos gráfico",
-    "Diagnóstico e resolução ágil de problemas técnicos",
-    "Planejamento e otimização de processos logísticos",
-    "Rastreabilidade metrológica",
+    "Suporte técnico e Help Desk",
+    "Implementação de automações (n8n)",
+    "OpenAI · Prompt Engineering",
+    "APIs, Webhooks e integrações",
+    "LLMs · RAG · agentes (em formação)",
 ]
 
 SUMMARY = (
-    "Profissional com experiência em metrologia, calibração de instrumentos, "
-    "logística e suporte técnico. Cursando Pós Tech em Agentes de IA (FIAP + Alura). "
-    "Combina sólida base técnica com formação em Administração e visão orientada a "
-    "resultados, buscando oportunidades em Inteligência Artificial e ambientes industriais."
+    "Perfil na interseção de suporte técnico e automações com IA: diagnóstico, "
+    "atendimento e implementação de fluxos. Experiência em Help Desk (Crescer "
+    "Sistemas), prática com n8n, OpenAI, APIs e webhooks, e Pós Tech em Agentes "
+    "de IA (FIAP + Alura, em andamento). Foco em apoiar usuários, integrar "
+    "ferramentas e manter soluções estáveis."
 )
 
 EXPERIENCE = [
@@ -103,9 +104,8 @@ EXPERIENCE = [
         "company": "Crescer Sistemas, Chapecó, SC",
         "period": "Fevereiro 2022 — Maio 2023",
         "description": (
-            "Responsável por atender chamados técnicos, diagnosticar e resolver "
-            "problemas de software e hardware, prestar suporte remoto e presencial aos "
-            "usuários."
+            "Atendimento a chamados técnicos (N1/N2): diagnóstico e resolução de "
+            "problemas de software e hardware, suporte remoto e presencial aos usuários."
         ),
     },
     {

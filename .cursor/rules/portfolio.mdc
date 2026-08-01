@@ -1,6 +1,6 @@
 ---
 description: Conventions for Eduardo Cardoso portfolio (static site + Python scripts)
-globs: index.html, css/**, js/**, scripts/**, assets/**
+globs: index.html, css/**, js/**, scripts/**, assets/**, docs/**, PRODUCT.md, DESIGN.md, README.md
 alwaysApply: false
 ---
 
@@ -12,19 +12,33 @@ alwaysApply: false
 - Embedded sub-app: `conversor-unidades/` is a pre-built Vite artifact — do not edit hashed files; rebuild from source repo.
 
 ## Content tone
-- Portuguese (pt-BR). Public positioning is **freela-first**: automações com n8n, Make e IA for PME (leads, conteúdo, relatórios).
-- Lead with clear packages/CTAs (WhatsApp). Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
-- Operational background (logística, suporte, laboratório) should connect to automating real process pain.
+- Portuguese (pt-BR). Public positioning: **universal professional identity** — tech support + AI/automation (n8n, OpenAI, APIs). Never freela/pacotes.
+- **Facts only:** education, companies, titles and dates must match `scripts/generate_cv.py` / the CV PDF. Never invent schools (e.g. UNOESC) or employers.
+- **Do not advertise Make.com** on the public portfolio envelope (hero, skills, project cards, LinkedIn kit). Prefer OpenAI / n8n / APIs. Repo-level notes can live in `docs/PROJETOS-GITHUB.md`.
+- Adapt tone for Help Desk N1/N2 + automation without inventing tools, metrics or roles. Framing ≠ fabrication.
+- Do **not** put job-hunting language in the public envelope (hero, headline, meta): avoid “busco vaga”, “CLT”, “aberto a vagas”, “não freela”.
+- Lead with characteristics and proof (projects + real Help Desk at Crescer Sistemas). CTAs: projetos, currículo, contato.
+- Do **not** lead with metrologia/calibração; Help Desk experience may be highlighted as support proof.
+- Pós Tech / RAG / CrewAI stay as “estudando”, not the hero pitch.
+- Keep `docs/PROJETOS-GITHUB.md`, `docs/LINKEDIN-PERFIL.md`, `docs/AVALIACAO-PERFIL.md`, `PRODUCT.md` and `DESIGN.md` aligned when public positioning or repos change.
 
 ## CSS
-- Use existing CSS custom properties in `:root` / `[data-theme="light"]`.
+- Use existing CSS custom properties in `:root` / `[data-theme="light"]` (graphite + muted olive; avoid AI-blue / neon cyan/magenta).
+- Keep layout centered (`--container-width: 88rem`) with one featured project + compact project grid.
+- Prefer a clean layout: no particle canvas, no background grid, minimal glow; no “Atuação/serviços” section.
 - BEM-like naming: `.section__element`, `.block__element--modifier`.
 - Respect `prefers-reduced-motion: reduce` for animations.
 
 ## JS
 - Keep `main.js` as a single IIFE with `'use strict'`.
 - Use passive scroll listeners and `requestAnimationFrame` throttling.
-- Bump `?v=` query on `css/style.css`, `js/main.js`, and PDF links when shipping cache-sensitive assets.
+- Bump `?v=` query on `css/style.css`, `js/main.js`, PDF links and photo when shipping cache-sensitive assets.
+
+## Photos & generated assets
+- Site photo: `assets/images/foto.png` (hero + JSON-LD).
+- CV photo: `assets/images/foto-cv.png` (used by `generate_cv.py`).
+- After replacing photos: regenerate CV + OG (`generate_cv.py`, `generate_og_image.py`) and bump `?v=` in `index.html`.
+- LinkedIn banner: `assets/images/linkedin-banner.png` via `generate_linkedin_banner.py`.
 
 ## CV generator
 - `scripts/generate_cv.py` writes to paths relative to `ROOT` (project folder).
@@ -33,3 +47,11 @@ alwaysApply: false
 ## Paths
 - GitHub Pages base path is `/Portifolio/` — subproject links must account for this.
 - Repo remote: `cardoso-ix/Portifolio` (local folder may be `Portifolio-EDU`).
+
+## Documentation sync
+- When changing positioning, experience, education or projects, update in this order when relevant:
+  1. Confirm facts against the GitHub repo README / `docs/PROJETOS-GITHUB.md`
+  2. `scripts/generate_cv.py` (+ regenerate PDF) if CV facts change
+  3. `index.html` (and typing phrases in `js/main.js` if hero copy changes)
+  4. `docs/PROJETOS-GITHUB.md` + `docs/LINKEDIN-PERFIL.md` + `docs/AVALIACAO-PERFIL.md`
+  5. `PRODUCT.md` / `DESIGN.md` / `README.md` if product or visual rules change
