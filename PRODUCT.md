@@ -6,40 +6,55 @@ brand
 
 ## Users
 
-Recrutadores, tech leads e gestores que avaliam candidatos em **agentes de IA**, **automações com LLMs** e **integrações (Make, n8n, CrewAI)**. Visitam o site em triagem rápida (mobile ou desktop), muitas vezes a partir de LinkedIn, GitHub ou indicação. Precisam entender em poucos segundos quem é Eduardo, o que ele estuda e constrói em IA, quais projetos comprova e como entrar em contato.
+Recrutadores e gestores de tech/IA interessados em **suporte técnico**, **automação** ou papéis próximos (Automation Support, Help Desk técnico, implementação). Visitam o site em triagem rápida a partir de LinkedIn/GitHub. Precisam ver em segundos: o que Eduardo sabe fazer, o encaixe natural com suporte+IA e como contactar.
 
 ## Product Purpose
 
-Portfólio pessoal de uma página que **comunica posicionamento em agentes de IA** — Pós Tech (FIAP + Alura), LLMs, RAG, orquestração e automações — e **direciona para ação** (ver projetos, baixar currículo, contato). Sucesso = visitante entende o foco em IA aplicada, confia na prática demonstrada e inicia contato ou segue para demo/GitHub.
+Portfólio pessoal que **mostra competências práticas** (n8n, OpenAI, APIs, suporte) com tom **universal e profissional** — sem anunciar “busco vaga” no envelope — e direciona para projetos, currículo e contato.
+
+Tom: identidade clara (**suporte técnico + IA/automação**), sem freela/pacotes e sem linguagem de anúncio de emprego. Sucesso = visitante entende o perfil, confia nos projetos e inicia conversa.
 
 ## Brand Personality
 
 **Preciso · Técnico · Em evolução**
 
-Tom profissional e direto, sem hype de startup. A estética remete a terminal e painel de sistema — técnico, confiável, com energia de quem está aprendendo e construindo em IA. Emoções desejadas: **confiança** (projetos e stack verificáveis), **curiosidade** (agentes, RAG, Make/n8n), **clareza** (informação escaneável).
-
-Referências implícitas no código atual: interfaces de dev tool escuras com acento ciano (Vercel/Linear-adjacent, mas com identidade própria via terminal); hero com “perfil em markdown” e badges de status.
+Tom profissional e direto, sem hype de startup. Estética quieta (graphite + oliva) com toques de terminal — confiável, escaneável. Emoções desejadas: **confiança** (projetos e stack verificáveis), **curiosidade** (automações, n8n, OpenAI), **clareza** (informação objetiva).
 
 ## Anti-references
 
-- Portfólio genérico de dev júnior: gradiente roxo, glassmorphism decorativo, grid idêntica de cards com ícone + título + texto.
-- Narrativa exagerada de “migração de carreira”; a experiência industrial pode aparecer na timeline, mas o posicionamento público é IA.
-- Template SaaS com hero-metric (número grande + label pequena + stats).
-- Eyebrows numerados em toda seção (01 / 02 / 03) como único recurso de hierarquia.
-- Texto de corpo acinzentado com contraste insuficiente sobre fundos tintados.
-- Projetos listados sem demo ou link verificável.
+- Portfólio genérico de dev júnior: gradiente roxo, glassmorphism decorativo, grid idêntica de cards.
+- Narrativa exagerada de “migração de carreira”; a experiência operacional aparece na timeline, o posicionamento público é **suporte técnico + automações/IA**.
+- Template SaaS com hero-metric (número grande + stats).
+- Azul “padrão IA”, ciano/magenta neon, partículas e grade decorativa.
+- Linguagem de freela, pacotes ou orçamento público.
+- Projetos listados sem preview ou link verificável.
+- Envelope que soa como anúncio de emprego (“busco vaga”, “CLT”, “aberto a oportunidades” no título).
 
 ## Design Principles
 
-1. **Mostrar, não só contar** — projetos com preview, links para demo e repositório; currículo PDF a um clique.
-2. **IA em primeiro plano** — hero, sobre e skills lideram com agentes, LLMs e metodologias; histórico profissional fica na timeline.
-3. **Escaneável em 30 segundos** — hero responde foco, estudo, stack e CTA; timeline e skills agrupadas por tema.
-4. **Performance como prova de craft** — site estático, leve, acessível; o próprio portfólio demonstra competência front-end.
-5. **Motion com propósito** — animações reforçam identidade tech (typing, partículas, fade-in), nunca bloqueiam conteúdo; respeitar `prefers-reduced-motion`.
+1. **Mostrar, não só contar** — projetos com preview e links; currículo PDF a um clique.
+2. **Projetos em primeiro plano** — hero e seção Projetos lideram; histórico profissional fica na timeline.
+3. **Escaneável em 30 segundos** — hero responde perfil, stack, estudo e CTA.
+4. **Performance como prova de craft** — site estático, leve, acessível.
+5. **Motion com propósito** — typing e fade-in; respeitar `prefers-reduced-motion`.
+6. **Fatos verificáveis** — formação, empresas e datas iguais ao CV (`scripts/generate_cv.py`).
 
 ## Accessibility & Inclusion
 
-- Alvo **WCAG 2.1 AA** para contraste de texto e componentes interativos.
-- Skip link, labels ARIA em menu e toggle de tema, `alt` em imagens, foco visível.
-- Partículas e typing desativados ou reduzidos quando `prefers-reduced-motion: reduce`.
-- Tema claro/escuro com persistência em `localStorage` para conforto visual.
+- Alvo **WCAG 2.1 AA** para contraste e componentes interativos.
+- Skip link, labels ARIA, `alt` em imagens, foco visível.
+- Typing reduzido quando `prefers-reduced-motion: reduce`.
+- Tema claro/escuro com persistência em `localStorage`.
+
+## Source of truth
+
+| Artefato | Fonte |
+|----------|--------|
+| Site público | `index.html` + `css/style.css` + `js/main.js` |
+| Currículo PDF | `scripts/generate_cv.py` → `assets/cv_eduardo_cardoso.pdf` |
+| Repos / demos | `docs/PROJETOS-GITHUB.md` (espelha GitHub público) |
+| Textos LinkedIn | `docs/LINKEDIN-PERFIL.md` (espelha CV + repos) |
+| Visual | `DESIGN.md` + tokens em `css/style.css` |
+| Posicionamento | este arquivo + `docs/AVALIACAO-PERFIL.md` |
+
+**Regra:** descrição de projeto no site deve ser factual e alinhada ao inventário em `docs/PROJETOS-GITHUB.md`. No envelope público, priorizar n8n / OpenAI / APIs — sem destacar Make.com.
