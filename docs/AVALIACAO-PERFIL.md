@@ -21,7 +21,7 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 | Tipo de oportunidade | Fit | Por quê |
 |----------------------|-----|---------|
 | Suporte técnico / Help Desk (tech) | Alto | Experiência + comunicação |
-| Implementação de automações / n8n | Alto | Pipeline LinkedIn (DeepSeek + FLUX + replies) + PC Dashboard |
+| Implementação de automações / n8n | Alto | Pipeline LinkedIn (Hermes + DeepSeek + replies) + PC Dashboard |
 | Suporte a produto de IA | Médio-alto | OpenAI + Mentor (CrewAI/RAG) + estudo de agentes |
 | Eng. de IA / pesquisa | Baixo-médio | Ainda em formação (Pós) — não é o eixo principal |
 
@@ -30,7 +30,7 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 ## Pontos fortes
 
 1. Help Desk comprovado (Crescer Sistemas)  
-2. Projeto LinkedIn **verificável** (DeepSeek + FLUX + replies via OpenRouter)  
+2. Projeto LinkedIn **verificável** (Hermes + DeepSeek + replies automáticos)  
 3. PC Dashboard mostra craft desktop (Tauri)  
 4. Mentor mostra prática com agentes/RAG (demo HF)  
 5. Tom profissional, sem “pedágio” comercial  

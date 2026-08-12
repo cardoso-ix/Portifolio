@@ -68,7 +68,7 @@ Trabalho na interseção de suporte técnico e automações com IA: entender o p
 Tenho experiência em Help Desk (Crescer Sistemas): atendimento a chamados técnicos (N1/N2), diagnóstico e resolução de software e hardware, suporte remoto e presencial. Essa base de atendimento e diagnóstico eu aplico hoje em fluxos e integrações que reduzem retrabalho.
 
 Projetos em destaque:
-• Automação de publicações no LinkedIn (DeepSeek + FLUX via OpenRouter) — post diário com capa editorial e respostas automáticas a comentários
+• Automação de publicações no LinkedIn (Hermes + DeepSeek via OpenCode Go) — post diário com foto real e respostas automáticas a comentários
 • PC Dashboard — painel Windows (Tauri) com ações de um clique, bandeja e remoção de programas
 • Mentor de Gestão Industrial — multi-agente CrewAI + OpenRouter + RAG (demo no Hugging Face)
 • Conversor de Unidades — app web React + TypeScript (49 categorias)
