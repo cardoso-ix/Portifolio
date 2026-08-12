@@ -15,7 +15,7 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 | Repo | Papel | Stack (README) | Demo | No site? |
 |------|--------|----------------|------|----------|
 | [Portifolio](https://github.com/cardoso-ix/Portifolio) | Site pessoal (este repo) | HTML · CSS · JS · GitHub Pages | [Live](https://cardoso-ix.github.io/Portifolio/) | — |
-| [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Post diário + replies a comentários | n8n · Hermes · DeepSeek-V4-Flash · LinkedIn · Telegram | Perfil LinkedIn | Destaque |
+| [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Post diário + replies a comentários | n8n · Hermes · DeepSeek-V4-Flash · LinkedIn API · Telegram | Perfil LinkedIn | Destaque |
 | [pc-dashboard](https://github.com/cardoso-ix/pc-dashboard) | Painel desktop Windows v1.4 | Tauri 2 · React · TS · Rust · Tailwind | — (app local) | Sim |
 | [mentor-gestao-industrial](https://github.com/cardoso-ix/mentor-gestao-industrial) | Multi-agente para supervisores de manutenção | CrewAI · OpenRouter (Gemma) · RAG · ChromaDB · Streamlit | [Demo](https://duzinxd-mentor-gestao-industrial.hf.space) · [HF Space](https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial) | Sim |
 | [conversor-unidades](https://github.com/cardoso-ix/conversor-unidades) | Conversor web (49 categorias) | React · TypeScript · Vite | [Pages](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | Sim |
@@ -27,11 +27,11 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 ### 1) linkedin-automacao-ia (destaque)
 
-- **O que é:** schedule diário 08:00 (America/Sao_Paulo); texto validado no Telegram (fila ready); foto real via Telegram; fallback só texto; anti-dupe + Telegram. Assistente Hermes (Telegram) comanda o post. Em paralelo, poll ~2 min responde comentários com DeepSeek-V4-Flash (OpenCode Go → reply LinkedIn).
+- **O que é:** post diário no LinkedIn sob comando do assistente Hermes (Telegram); texto validado pelo usuário + foto própria; sem geração de texto por IA no post. Em paralelo, poll ~2 min responde comentários automaticamente com DeepSeek-V4-Flash via API LinkedIn.
 - **Orquestração:** n8n na VPS (Hostinger) — ver README do projeto.
 - **Arquivado:** Resposta via Gmail (não exibir como ativo).
 - **GitHub:** https://github.com/cardoso-ix/linkedin-automacao-ia
-- **Card do site:** n8n · Hermes · DeepSeek · LinkedIn · Telegram.
+- **Card do site:** n8n · Hermes · DeepSeek-V4-Flash · LinkedIn API · Telegram.
 
 ### 2) pc-dashboard
 
