@@ -440,6 +440,10 @@ section[id] {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--color-text);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 0;
   transition: color var(--transition);
 }
 
@@ -454,7 +458,20 @@ section[id] {
   background: var(--color-accent-surface);
   color: var(--color-accent);
   box-shadow: 0 0 16px var(--color-accent-glow);
+  flex-shrink: 0;
   transition: all var(--transition);
+}
+
+.header__logo-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  flex-shrink: 0;
+}
+
+.header__logo-text {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .header__logo:hover .header__logo-icon {
@@ -1735,6 +1752,30 @@ section[id] {
 }
 
 @media (max-width: 768px) {
+  .header__inner {
+    gap: 0.75rem;
+  }
+
+  .header__logo {
+    gap: 0.5rem;
+    font-size: clamp(0.9rem, 3.8vw, 1.05rem);
+  }
+
+  .header__logo-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .header__logo-icon svg {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  .header__controls {
+    gap: 0.65rem;
+    flex-shrink: 0;
+  }
+
   .header__toggle {
     display: flex;
   }
@@ -1797,6 +1838,94 @@ section[id] {
   .footer__inner {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+    --header-height: 3.85rem;
+  }
+
+  .header__inner {
+    gap: 0.5rem;
+  }
+
+  .header__logo {
+    gap: 0.45rem;
+    font-size: 0.9375rem;
+  }
+
+  .header__logo-icon {
+    width: 1.85rem;
+    height: 1.85rem;
+  }
+
+  .header__logo-icon svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+
+  .theme-toggle,
+  .header__toggle {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .header__controls {
+    gap: 0.4rem;
+  }
+
+  .hero__content-body {
+    padding: 1.25rem 1rem;
+  }
+
+  .hero__facts {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .hero__fact {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .timeline {
+    padding-left: 1.35rem;
+  }
+
+  .timeline::before {
+    left: 0.35rem;
+  }
+
+  .timeline__marker {
+    left: -1.35rem;
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .timeline__content {
+    padding: 1.1rem 1.15rem;
+  }
+
+  .contact-card {
+    padding: 2rem 1.15rem;
+  }
+
+  .contact__chips {
+    gap: 0.65rem;
+  }
+
+  .contact__chip {
+    padding: 0.75rem 1.15rem;
+    font-size: 0.8125rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__logo-text {
+    font-size: 0.825rem;
   }
 }
 

@@ -121,3 +121,12 @@ Posicionamento visual e verbal: **Suporte Técnico + Automações com IA** (n8n,
 - **Cards Bento:** estrutura geométrica responsiva com glassmorphism, tags tecnológicas e links diretos para código e demo.
 - **Terminal Window:** barra de controle macOS com três dots coloridos, título do arquivo e surface com backdrop blur.
 - **Contact Card:** bloco centralizado de alta conversão com botão de cópia de e-mail integrado e feedback visual instantâneo.
+
+---
+
+## 5. Mobile & Viewport Responsiveness
+
+- **Header & Logo:** ícone `< >` com dimensões explícitas (`width="20" height="20"` no SVG + CSS `width: 1.25rem; height: 1.25rem; flex-shrink: 0`) prevenindo colapso para 0x0 em WebKit/iOS Safari.
+- **Logo Text:** texto `<EduCardoso />` com `white-space: nowrap` e escala tipográfica dinâmica (`clamp(0.85rem, 3.8vw, 1.05rem)`) para eliminar qualquer risco de truncamento em telas de 320px a 480px.
+- **Touch Targets:** botões, chips e toggles calibrados para no mínimo 44px de altura acessível.
+- **Grid Stacking:** empilhamento fluido de seções de dados (hero facts, timeline e chips de contato) com padding adaptativo em `@media (max-width: 480px)`.
