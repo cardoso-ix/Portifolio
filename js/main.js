@@ -123,6 +123,13 @@
         navToggle.focus();
       }
     });
+
+    // Fechar ao redimensionar para tela desktop (> 768px)
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
   }
 
   /* ===== 4. Navegação Suave Universal e Offset do Header ===== */
