@@ -1,245 +1,255 @@
-# LinkedIn — kit para copiar e colar
+# Kit LinkedIn — Perfil Alinhado ao Currículo e Portfólio
 
-Atualizado: jul/2026.
+Documento oficial de alinhamento entre o **Currículo canônico (`cv_eduardo_cardoso.pdf`)**, o **Portfólio** e o **Perfil do LinkedIn**.
 
-Tudo abaixo está alinhado ao portfólio publicado, ao currículo real e aos repositórios GitHub.  
-**Não invente** formação, empresa ou ferramenta fora desta lista.  
-Inventário completo: [PROJETOS-GITHUB.md](./PROJETOS-GITHUB.md).
-
-Portfólio: https://cardoso-ix.github.io/Portifolio/  
-Currículo PDF: https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
-
-Ordem sugerida no LinkedIn: Foto → Capa → Headline → Sobre → Experiência → Formação → Featured → Skills.
+- **Objetivo:** Garantir que quem leia o LinkedIn e baixe o currículo em PDF encontre **100% de coerência** em títulos, datas, atribuições, projetos e competências.
+- **Posicionamento:** Perfil técnico com atuação na conexão entre **suporte técnico** (atendimento N1/N2, diagnóstico de software e hardware, help desk) e **automações inteligentes com IA** (n8n, OpenAI, APIs REST, webhooks e orquestração).
+- **Links oficiais:**
+  - Portfólio: https://cardoso-ix.github.io/Portifolio/
+  - Currículo PDF: https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
+  - GitHub: https://github.com/cardoso-ix
 
 ---
 
-## 0) Foto de perfil
+## 1. Foto e Imagem de Capa (Banner)
 
-Use a mesma foto do portfólio (rosto bem enquadrado).
+### Foto de Perfil
+- **Arquivo de referência:** [assets/images/foto.png](file:///c:/Users/eduar/Projects/Portifolio/assets/images/foto.png)
+- **Diretriz:** Utilizar a mesma foto profissional com fundo sóbrio do portfólio para consistência de marca pessoal.
 
-- Arquivo no site: `assets/images/foto.png`  
-- URL: https://cardoso-ix.github.io/Portifolio/assets/images/foto.png  
-
-Ao trocar a foto no LinkedIn, atualize também `foto.png` + `foto-cv.png` no repositório e regenere OG/CV se necessário.
-
----
-
-## 1) Capa (banner) — arquivo pronto
-
-Arquivo gerado no tamanho recomendado do LinkedIn (**1584 × 396**):
-
-- No repositório: `assets/images/linkedin-banner.png`
-- URL (após publish): https://cardoso-ix.github.io/Portifolio/assets/images/linkedin-banner.png
-
-**Como usar**
-1. LinkedIn → foto da capa → Editar  
-2. Enviar `linkedin-banner.png`  
-3. Ajustar o enquadramento (o texto fica à **direita**; a foto de perfil cobre o canto inferior esquerdo)
-
-Para regenerar: `python3 scripts/generate_linkedin_banner.py`
-
-Identidade da capa: graphite + oliva do portfólio · suporte técnico · n8n / OpenAI / Help Desk · sem “busco vaga”.
+### Capa (Banner de 1584 × 396 px)
+- **Arquivo pronto:** [assets/images/linkedin-banner.png](file:///c:/Users/eduar/Projects/Portifolio/assets/images/linkedin-banner.png)
+- **Identidade:** Visual Quiet Graphite Olive com as competências-chave (Suporte Técnico · n8n · OpenAI · APIs · Help Desk) posicionadas à direita para não conflitar com o avatar.
+- *Para regenerar o banner programaticamente:* `python scripts/generate_linkedin_banner.py`.
 
 ---
 
-## 2) Headline (cargo sob o nome)
+## 2. Headline (Título Profissional)
 
-Cole exatamente:
+Copie e cole no campo **Título**:
 
+```text
+Suporte Técnico & Automações com IA | n8n · OpenAI · APIs REST · Help Desk · Pós Tech FIAP · Chapecó, SC
 ```
-Suporte técnico · Automações com IA | n8n · OpenAI · Help Desk · Chapecó, SC
-```
 
-Alternativa (se preferir mais curta):
-
-```
-Suporte técnico e automações com IA | n8n · OpenAI · APIs
+*Alternativa condensada:*
+```text
+Suporte Técnico & Automações com IA | n8n · OpenAI · APIs REST · Help Desk
 ```
 
 ---
 
-## 3) Sobre (About)
+## 3. Sobre (About)
 
-Cole exatamente:
+Copie e cole exatamente na seção **Sobre**:
 
-```
-Trabalho na interseção de suporte técnico e automações com IA: entender o problema do usuário, diagnosticar, resolver e — quando faz sentido — automatizar com n8n, OpenAI e APIs.
+```text
+Atuo na conexão estratégica entre suporte técnico e automação inteligente: diagnosticar a dor real do usuário, construir fluxos eficientes com n8n e IA, e manter integrações estáveis no dia a dia com comunicação clara e resolutiva.
 
-Tenho experiência em Help Desk (Crescer Sistemas): atendimento a chamados técnicos (N1/N2), diagnóstico e resolução de software e hardware, suporte remoto e presencial. Essa base de atendimento e diagnóstico eu aplico hoje em fluxos e integrações que reduzem retrabalho.
+Tenho sólida experiência prática em Help Desk na Crescer Sistemas: atendimento a chamados técnicos (N1/N2), suporte presencial e remoto a usuários, diagnóstico de falhas de software e hardware, manutenção de estações e treinamento de clientes. Essa vivência direta no suporte operacional é a base que utilizo para desenhar automações que realmente eliminam gargalos e reduzem retrabalho.
 
-Projetos em destaque:
-• Automação de publicações no LinkedIn (Hermes + DeepSeek-V4-Flash) — post diário com texto validado e foto própria; respostas automáticas a comentários via API LinkedIn
-• PC Dashboard — painel Windows (Tauri) com ações de um clique, bandeja e remoção de programas
-• Mentor de Gestão Industrial — multi-agente CrewAI + OpenRouter + RAG (demo no Hugging Face)
-• Conversor de Unidades — app web React + TypeScript (49 categorias)
+Hoje combino essa base com tecnologias de automação e inteligência artificial aplicada:
+• Automações com n8n: criação de workflows complexos, webhooks, tratamento de payloads JSON e integrações via APIs REST.
+• IA Aplicada & LLMs: engenharia de prompts, integração da API da OpenAI e modelos abertos em processos de negócio.
+• Formação Especializada: Pós Tech em Agentes de IA (FIAP + Alura, em andamento), aprofundando arquiteturas de agentes, RAG, ChromaDB e CrewAI.
 
-Stack: n8n · OpenAI / APIs · Python · HTML/CSS/JS · Git/GitHub
+Projetos práticos desenvolvidos:
+1. Automação LinkedIn com IA: publicação sob comando do assistente Hermes (Telegram), texto validado e foto própria; monitoramento e respostas automáticas a comentários via LinkedIn API oficial + DeepSeek-V4-Flash.
+2. PC Dashboard (v1.4): utilitário Windows para ações rápidas de um clique, monitoramento na bandeja do sistema e gerenciador de desinstalação (Tauri 2 + React + TypeScript + Rust).
+3. Mentor de Gestão Industrial: sistema multi-agente para supervisão de manutenção com parecer executivo, comunicação SBI e plano 24h estruturado (CrewAI + OpenRouter + RAG ChromaDB + Streamlit).
+4. Conversor de Unidades: aplicação web com 49 categorias completas de conversão física e industrial, busca instantânea e histórico (React + TypeScript + Vite).
 
-Formação: Administração (Universidade de Franca) · MBA em Controladoria e Finanças (Cruzeiro do Sul) · Técnico em Automação Industrial (SENAI) · Pós Tech em Agentes de IA (FIAP + Alura, em andamento)
+Competências técnicas:
+• Suporte & Help Desk: Atendimento N1/N2, diagnóstico de software/hardware, suporte remoto/presencial, redes básicas.
+• Automação & IA: n8n, OpenAI API, APIs REST, Webhooks, Prompt Engineering, CrewAI, RAG.
+• Ferramentas & Código: Python, JavaScript, HTML5/CSS3, Git/GitHub, Google Sheets avançado.
 
-Chapecó, SC
-Portfólio: https://cardoso-ix.github.io/Portifolio/
+Formação acadêmica:
+• Pós Tech em Agentes de IA — FIAP + Alura (Em andamento)
+• MBA em Controladoria e Finanças — Universidade Cruzeiro do Sul (2022)
+• Bacharelado em Administração — Universidade de Franca / UNIFRAN (2016 — 2020)
+• Técnico em Automação Industrial — SENAI (2010 — 2012)
+
+Localização: Chapecó, SC (Disponível para atuação Remota ou Híbrida)
+Portfólio interativo: https://cardoso-ix.github.io/Portifolio/
+Currículo completo em PDF: https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
+Contato: eduardoocardosoo@gmail.com | (49) 99809-5955
 ```
 
 ---
 
-## 4) Experiência — um bloco por cargo
+## 4. Experiências Profissionais (Alinhamento 1:1 com o CV)
 
-Use **título e empresa exatamente** como abaixo. Em cada cargo, cole a descrição na caixa “Descrição”.
+Cadastre os 5 cargos exatamente como descritos abaixo para garantir congruência perfeita com o PDF:
 
 ### 4.1 Técnico de Laboratório de Calibração — Fluxo Metrologia
-
-- **Cargo:** Técnico de Laboratório de Calibração  
-- **Empresa:** Fluxo Metrologia  
-- **Local:** Chapecó, Santa Catarina, Brasil  
-- **Período:** jul de 2025 — o momento (atual)  
+- **Título do cargo:** Técnico de Laboratório de Calibração
+- **Nome da empresa:** Fluxo Metrologia
+- **Tipo de emprego:** Tempo integral
+- **Localidade:** Chapecó, Santa Catarina, Brasil
+- **Tipo de localidade:** Presencial
+- **Período:** Julho de 2025 — o momento (Atual)
 - **Descrição:**
+```text
+Atuação técnica na calibração de instrumentos de medição de precisão, emissão de certificados técnicos e laudos periciais, gerenciamento de padrões de referência e controle de conformidade documental segundo normas de qualidade metrológica.
+```
+- **Competências associadas:** Metrologia, Calibração, Gestão da Qualidade, Controle de Documentação Técnica.
 
-```
-Calibração de instrumentos de medição, emissão de certificados, gestão de padrões de referência e conformidade documental conforme normas de qualidade.
-```
+---
 
 ### 4.2 Coordenador de Logística — Sandimas
-
-- **Cargo:** Coordenador de Logística  
-- **Empresa:** Sandimas  
-- **Local:** Chapecó, Santa Catarina, Brasil  
-- **Período:** mai de 2023 — fev de 2025  
+- **Título do cargo:** Coordenador de Logística
+- **Nome da empresa:** Sandimas
+- **Tipo de emprego:** Tempo integral
+- **Localidade:** Chapecó, Santa Catarina, Brasil
+- **Tipo de localidade:** Presencial
+- **Período:** Maio de 2023 — Fevereiro de 2025
 - **Descrição:**
+```text
+Planejamento, coordenação e controle operacional das rotinas logísticas da empresa: gestão de transporte, armazenagem, roteirização de distribuição e controle rigoroso de estoque. Foco em aumento de eficiência operacional, cumprimento de prazos de entrega e redução de custos.
+```
+- **Competências associadas:** Gestão de Processos, Logística Integrada, Controle de Estoque, Liderança Operacional, Otimização de Custos.
 
-```
-Planejamento, coordenação e controle das operações logísticas: transporte, armazenagem, distribuição e controle de estoque, com foco em eficiência, cumprimento de prazos e redução de custos operacionais.
-```
+---
 
 ### 4.3 Suporte Técnico Help Desk — Crescer Sistemas
-
-- **Cargo:** Suporte Técnico Help Desk  
-- **Empresa:** Crescer Sistemas  
-- **Local:** Chapecó, Santa Catarina, Brasil  
-- **Período:** fev de 2022 — mai de 2023  
+- **Título do cargo:** Suporte Técnico Help Desk
+- **Nome da empresa:** Crescer Sistemas
+- **Tipo de emprego:** Tempo integral
+- **Localidade:** Chapecó, Santa Catarina, Brasil
+- **Tipo de localidade:** Presencial / Remoto
+- **Período:** Fevereiro de 2022 — Maio de 2023
 - **Descrição:**
+```text
+Atendimento a chamados técnicos de suporte N1 e N2 para clientes e usuários internos:
+• Diagnóstico, análise de causa-raiz e resolução de incidentes de software e hardware.
+• Suporte remoto e presencial, configuração de estações de trabalho e sistemas operacionais.
+• Comunicação ativa com usuários para esclarecimento de dúvidas, registro de chamados e garantia de satisfação no atendimento.
+• Identificação de padrões de chamados para documentação de bases de conhecimento internas.
+```
+- **Competências associadas:** Help Desk, Suporte Técnico N1/N2, Atendimento ao Usuário, Diagnóstico de Software e Hardware, Resolução de Problemas, Suporte Remoto.
 
-```
-Atendimento a chamados técnicos (N1/N2): diagnóstico e resolução de problemas de software e hardware, suporte remoto e presencial aos usuários, com comunicação clara e foco na resolução.
-```
+---
 
 ### 4.4 Orçamentista — MR Indústria Gráfica
-
-- **Cargo:** Orçamentista  
-- **Empresa:** MR Indústria Gráfica  
-- **Local:** Concórdia, Santa Catarina, Brasil  
-- **Período:** out de 2020 — jun de 2021  
+- **Título do cargo:** Orçamentista
+- **Nome da empresa:** MR Indústria Gráfica
+- **Tipo de emprego:** Tempo integral
+- **Localidade:** Concórdia, Santa Catarina, Brasil
+- **Tipo de localidade:** Presencial
+- **Período:** Outubro de 2020 — Junho de 2021
 - **Descrição:**
+```text
+Análise técnica de projetos e solicitações de clientes para elaboração de orçamentos técnicos de produtos gráficos, levantamento e análise de custos de insumos, matérias-primas, processos industriais de impressão, acabamentos e estimativa de prazos de produção.
+```
+- **Competências associadas:** Análise de Custos, Elaboração de Orçamentos, Planejamento e Controle de Produção.
 
-```
-Análise de solicitações de clientes e elaboração de orçamentos de produtos gráficos, considerando custos de materiais, processos de impressão, acabamentos e prazos de produção.
-```
+---
 
 ### 4.5 Metrologista — JBS Foods
-
-- **Cargo:** Metrologista  
-- **Empresa:** JBS Foods  
-- **Local:** Jacarezinho, Paraná, Brasil  
-- **Período:** dez de 2014 — dez de 2019  
+- **Título do cargo:** Metrologista
+- **Nome da empresa:** JBS Foods
+- **Tipo de emprego:** Tempo integral
+- **Localidade:** Jacarezinho, Paraná, Brasil
+- **Tipo de localidade:** Presencial
+- **Período:** Dezembro de 2014 — Dezembro de 2019
 - **Descrição:**
-
+```text
+Responsável pela garantia da confiabilidade metrológica nos processos industriais: calibração periódica de instrumentos e equipamentos de medição, gestão e conservação de padrões de referência, e manutenção de registros de rastreabilidade metrológica conforme normas regulatórias.
 ```
-Garantia da confiabilidade dos processos de medição: execução de calibrações, gestão de padrões de referência e manutenção da rastreabilidade metrológica.
-```
+- **Competências associadas:** Calibração de Instrumentos, Rastreabilidade Metrológica, Normas de Qualidade Industrial.
 
 ---
 
-## 5) Formação (Educação)
+## 5. Formação Acadêmica
 
 ### 5.1 Pós Tech em Agentes de IA — FIAP + Alura
+- **Instituição:** FIAP
+- **Formação:** Pós-graduação Lato Sensu (Pós Tech)
+- **Área de estudo:** Agentes de Inteligência Artificial
+- **Período:** Junho de 2026 — Em andamento (360 horas)
+- **Descrição:** Especialização avançada cobrindo arquiteturas de LLMs, Retrieval-Augmented Generation (RAG), ChromaDB, orquestração de múltiplos agentes com CrewAI, integração de APIs e governança de soluções de inteligência artificial.
 
-- **Curso:** Pós Tech em Agentes de IA  
-- **Instituição:** FIAP (parceria Alura)  
-- **Período:** jun de 2026 — em andamento  
+### 5.2 MBA em Controladoria e Finanças — Universidade Cruzeiro do Sul
+- **Instituição:** Universidade Cruzeiro do Sul
+- **Formação:** Pós-graduação Lato Sensu (MBA)
+- **Área de estudo:** Controladoria e Finanças Corporativas
+- **Ano de conclusão:** 2022
 
-### 5.2 MBA em Controladoria e Finanças — Cruzeiro do Sul
-
-- **Curso:** MBA em Controladoria e Finanças  
-- **Instituição:** Universidade Cruzeiro do Sul  
-- **Período:** 2022  
-
-### 5.3 Administração — Universidade de Franca
-
-- **Curso:** Administração  
-- **Instituição:** Universidade de Franca (UNIFRAN)  
-- **Período:** 2016 — 2020  
+### 5.3 Graduação em Administração — Universidade de Franca (UNIFRAN)
+- **Instituição:** Universidade de Franca
+- **Formação:** Bacharelado
+- **Área de estudo:** Administração de Empresas
+- **Período:** 2016 — 2020
 
 ### 5.4 Indicadores de Pesagem e Normalização — INMETRO
-
-- **Curso:** Indicadores de Pesagem e Normalização  
-- **Instituição:** INMETRO  
-- **Período:** 2014  
+- **Instituição:** INMETRO
+- **Formação:** Aperfeiçoamento Profissional / Extensão
+- **Ano:** 2014
 
 ### 5.5 Técnico em Automação Industrial — SENAI
-
-- **Curso:** Técnico em Automação Industrial  
-- **Instituição:** SENAI — Santo Antônio da Platina  
-- **Período:** 2010 — 2012  
-
----
-
-## 6) Em destaque (Featured) — links
-
-Adicione nesta ordem:
-
-1. **Portfólio** — https://cardoso-ix.github.io/Portifolio/  
-2. **Automação LinkedIn (GitHub)** — https://github.com/cardoso-ix/linkedin-automacao-ia  
-3. **Mentor — demo** — https://duzinxd-mentor-gestao-industrial.hf.space  
-4. **Currículo (PDF)** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf  
-5. **PC Dashboard (opcional)** — https://github.com/cardoso-ix/pc-dashboard  
+- **Instituição:** SENAI — Santo Antônio da Platina
+- **Formação:** Ensino Técnico Profissionalizante
+- **Área de estudo:** Automação Industrial e Controle
+- **Período:** 2010 — 2012
 
 ---
 
-## 7) Competências (Skills) — ordem sugerida
+## 6. Seção "Em Destaque" (Featured)
 
-Adicione e pin as primeiras:
+Adicione os itens na seguinte ordem estratégica:
 
-1. Help Desk  
-2. Suporte Técnico  
-3. n8n  
-4. OpenAI  
-5. Automação de Processos  
-6. APIs  
-7. Integrações  
-8. Python  
-9. Prompt Engineering  
-10. HTML  
-11. CSS  
-12. JavaScript  
-13. Git  
-14. Diagnóstico de software e hardware  
-15. Atendimento ao usuário  
-
----
-
-## 8) Informações do perfil
-
-| Campo | Valor |
-|-------|--------|
-| Nome | Eduardo Cardoso |
-| Localização | Chapecó, Santa Catarina, Brasil |
-| Site | https://cardoso-ix.github.io/Portifolio/ |
-| E-mail | eduardoocardosoo@gmail.com |
-| WhatsApp | +55 49 99809-5955 |
-| GitHub | https://github.com/cardoso-ix |
+1. **Link:** Portfólio Oficial — https://cardoso-ix.github.io/Portifolio/
+   - *Título:* Portfólio Interativo | Eduardo Cardoso
+   - *Descrição:* Conheça meus projetos práticos de suporte técnico, automações com n8n e IA aplicada.
+2. **Mídia / Link:** Currículo Atualizado em PDF — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
+   - *Título:* Currículo Completo (PDF) — Eduardo Cardoso
+   - *Descrição:* Download direto do currículo estruturado com histórico profissional e acadêmico.
+3. **Link:** Automação LinkedIn com IA (GitHub) — https://github.com/cardoso-ix/linkedin-automacao-ia
+   - *Título:* Automação LinkedIn com n8n e IA (Código Aberto)
+   - *Descrição:* Pipeline autônomo com Telegram, DeepSeek-V4-Flash e LinkedIn API.
+4. **Link:** Mentor de Gestão Industrial (Demo) — https://duzinxd-mentor-gestao-industrial.hf.space
+   - *Título:* Mentor de Gestão Industrial (Demo no Hugging Face)
+   - *Descrição:* Sistema multi-agente CrewAI com RAG para supervisores de manutenção.
+5. **Link:** Conversor de Unidades (Aplicação Web) — https://cardoso-ix.github.io/Portifolio/conversor-unidades/
+   - *Título:* Conversor de Unidades Físicas (React + Vite)
+   - *Descrição:* Aplicação com 49 categorias completas de conversão física e industrial.
 
 ---
 
-## Checklist rápido
+## 7. Competências (Top Skills para Algoritmo do LinkedIn)
 
-- [ ] Foto de perfil alinhada ao portfólio  
-- [ ] Capa `linkedin-banner.png` enviada  
-- [ ] Headline colada  
-- [ ] Sobre colado (projetos reais do GitHub)  
-- [ ] 5 experiências com título/empresa/período/descrição corretos  
-- [ ] 5 formações corretas  
-- [ ] Featured com site + LinkedIn automation + Mentor demo + PDF  
-- [ ] Skills priorizadas  
-- [ ] Sem “busco vaga / CLT / freela” no título  
-- [ ] Sem UNOESC, Unimed ou qualquer dado fora deste documento  
-- [ ] Bio do GitHub sem “Buscando oportunidade júnior” (pendência no perfil github.com)  
+Fixe (*pin*) as 3 principais no topo do perfil:
+1. **Suporte Técnico**
+2. **Help Desk**
+3. **Automação de Processos (n8n)**
+
+Demais competências recomendadas para cadastro:
+- OpenAI API
+- APIs REST
+- Webhooks
+- Diagnóstico de Software e Hardware
+- Atendimento ao Usuário
+- Resolução de Problemas Técnicos
+- Python (Linguagem de Programação)
+- Prompt Engineering
+- CrewAI
+- Inteligência Artificial (IA)
+- Retrieval-Augmented Generation (RAG)
+- Git & GitHub
+- Google Sheets / Excel
+- Metrologia e Qualidade
+
+---
+
+## 8. Checklist de Aplicação
+
+- [ ] Foto de perfil profissional configurada
+- [ ] Banner de capa (`linkedin-banner.png`) enviado
+- [ ] Headline atualizada com o texto exato
+- [ ] Seção "Sobre" atualizada com projetos e competências
+- [ ] 5 experiências cadastradas com títulos e datas iguais ao CV
+- [ ] 5 formações acadêmicas cadastradas
+- [ ] Seção "Em Destaque" configurada com os 5 links recomendados
+- [ ] Top 3 competências fixadas no perfil
+- [ ] Bio do perfil no GitHub alinhada (sem o termo "buscando vaga")
