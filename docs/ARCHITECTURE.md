@@ -27,13 +27,13 @@ O design visual segue a diretriz **Quiet Graphite Olive** com inspiração em te
 
 | Token | Dark Mode (Padrão) | Light Mode | Propósito |
 |---|---|---|---|
-| `--color-bg` | `#0e0f0e` (Obsidian) | `#f6f7f3` (Warm Porcelain) | Cor de fundo primária da página |
-| `--color-surface` | `#1a1c1a` | `#ffffff` | Fundo de cartões e blocos elevados |
-| `--color-border` | `#323530` | `#d4d8ce` | Bordas e divisores estruturais |
-| `--color-accent` | `#a8b87a` (Muted Olive) | `#4e5d32` (Deep Forest Olive) | Cor de destaque, links e CTAs |
-| `--color-text` | `#f0f2ec` | `#141613` | Tipografia principal |
-| `--color-text-secondary` | `#adb1a6` | `#484d43` | Subtítulos e prosa longa |
-| `--color-success` | `#68b068` | `#2e7a33` | Badges de status ativo e pontos online |
+| `--color-bg` | `#090a09` (Obsidian) | `#f7f8f4` (Warm Porcelain) | Cor de fundo primária da página com grade matricial |
+| `--color-surface` | `#151715` | `#ffffff` | Fundo de cartões e blocos elevados |
+| `--color-border` | `#2d302c` | `#d5d9ce` | Bordas e divisores estruturais |
+| `--color-accent` | `#b6cb7c` (Cyber Olive) | `#3f5620` (Deep Forest Olive) | Cor de destaque, números de seção, links e CTAs |
+| `--color-text` | `#f4f6f0` | `#131611` | Tipografia principal |
+| `--color-text-secondary` | `#b2b7ac` | `#464b40` | Subtítulos e prosa longa |
+| `--color-success` | `#34d399` | `#1b7a3a` | Badges de status ativo e prompts de comando |
 
 ### Tipografia
 
