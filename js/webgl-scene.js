@@ -149,11 +149,26 @@
     meshGroup.scale.set(0.75, 0.75, 0.75);
   }
 
-  // ===== 5. Loop de Animação e Física Ondulatória =====
+  // ===== 5. Loop de Animação e Física Ondulatória com Gestão de Bateria =====
   const clock = new THREE.Clock();
+  let animationFrameId = null;
+  let isPageVisible = !document.hidden;
+
+  // Pausar o loop WebGL quando a aba estiver em segundo plano para economizar 100% de GPU/CPU
+  document.addEventListener('visibilitychange', () => {
+    isPageVisible = !document.hidden;
+    if (isPageVisible) {
+      clock.start();
+      animate();
+    } else if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
+  });
 
   function animate() {
-    requestAnimationFrame(animate);
+    if (!isPageVisible) return;
+    animationFrameId = requestAnimationFrame(animate);
 
     const time = clock.getElapsedTime();
 
