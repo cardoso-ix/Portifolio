@@ -1,0 +1,131 @@
+/* ==========================================================================
+   PORTFÓLIO — CREATIVE ENHANCEMENTS (Awwwards Style Edition)
+   Styles for WebGL Background, Custom Neon Cursor, Glassmorphism & Lenis
+   ========================================================================== */
+
+/* ===== 1. WebGL Background Canvas ===== */
+#webgl-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* ===== 2. Custom Neon Cursor ===== */
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 245, 255, 0.85);
+  background-color: transparent;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              opacity 0.2s ease;
+  box-shadow: 0 0 14px rgba(0, 245, 255, 0.35),
+              inset 0 0 6px rgba(0, 245, 255, 0.15);
+  will-change: transform, width, height;
+  opacity: 0;
+}
+
+#custom-cursor.visible {
+  opacity: 1;
+}
+
+#custom-cursor.active {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(0, 245, 255, 0.12);
+  border-color: #00f5ff;
+  box-shadow: 0 0 26px rgba(0, 245, 255, 0.55),
+              inset 0 0 12px rgba(0, 245, 255, 0.28);
+}
+
+/* Ocultar cursor customizado em dispositivos com toque/pointer coarse */
+@media (pointer: coarse), (hover: none) {
+  #custom-cursor {
+    display: none !important;
+  }
+}
+
+/* ===== 3. Glassmorphism Refinado nos Cards (<article>) ===== */
+article,
+.project-card,
+.timeline__item {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(15, 18, 15, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: border-color 0.3s ease,
+              box-shadow 0.35s ease;
+}
+
+.project-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+[data-theme="light"] article,
+[data-theme="light"] .project-card,
+[data-theme="light"] .timeline__item {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 8px 28px 0 rgba(0, 0, 0, 0.06);
+}
+
+article:hover,
+.project-card:hover,
+.timeline__item:hover {
+  border-color: rgba(0, 245, 255, 0.32) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45),
+              0 0 22px rgba(0, 245, 255, 0.12) !important;
+}
+
+[data-theme="light"] article:hover,
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .timeline__item:hover {
+  border-color: rgba(0, 180, 216, 0.4) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1),
+              0 0 18px rgba(0, 180, 216, 0.15) !important;
+}
+
+/* Evitar conflito de transição CSS em elementos controlados pelo GSAP */
+.gsap-reveal {
+  transition: opacity 0s, transform 0s !important;
+}
+
+/* ===== 4. Lenis Smooth Scroll Utilities ===== */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
