@@ -8,6 +8,8 @@
   <meta name="description" content="Eduardo Cardoso — Suporte técnico e automações com IA: n8n, OpenAI, APIs REST, Help Desk e implementação de fluxos. Chapecó, SC.">
   <meta name="author" content="Eduardo Cardoso">
   <meta name="theme-color" content="#0e0f0e">
+  <!-- Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self';">
   <link rel="canonical" href="https://cardoso-ix.github.io/Portifolio/">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -685,11 +687,11 @@
 
   </footer>
 
-  <!-- Bibliotecas Externas (CDNs) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- Bibliotecas Externas (CDNs com Subresource Integrity - SRI) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js" integrity="sha384-+REtFDoDRWvUt5Grd8QIjcEBMl/i1THNyfNjKs6QdHxRoyUyner8zmxoiK0jgloK" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Módulos Criativos e Interativos -->
   <script src="js/smooth-scroll.js"></script>
