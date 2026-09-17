@@ -62,7 +62,6 @@ Portifolio/
 │       ├── foto.png            # Foto de perfil de alta qualidade
 │       ├── og-image.png        # Imagem para compartilhamento social (1200x630)
 │       └── *-preview.*         # Capturas e prévias dos projetos
-├── conversor-unidades/         # Subaplicação embarcada (build React + Vite)
 ├── docs/                       # Documentação técnica e de posicionamento
 │   ├── ARCHITECTURE.md         # Este documento
 │   ├── PROJETOS-GITHUB.md      # Inventário dos repositórios e demos

@@ -55,9 +55,10 @@ Hoje combino essa base com tecnologias de automação e inteligência artificial
 
 Projetos práticos desenvolvidos:
 1. Automação LinkedIn com IA: publicação sob comando do assistente Hermes (Telegram), texto validado e foto própria; monitoramento e respostas automáticas a comentários via LinkedIn API oficial + DeepSeek-V4-Flash.
-2. PC Dashboard (v1.4): utilitário Windows para ações rápidas de um clique, monitoramento na bandeja do sistema e gerenciador de desinstalação (Tauri 2 + React + TypeScript + Rust).
-3. Mentor de Gestão Industrial: sistema multi-agente para supervisão de manutenção com parecer executivo, comunicação SBI e plano 24h estruturado (CrewAI + OpenRouter + RAG ChromaDB + Streamlit).
-4. Conversor de Unidades: aplicação web com 49 categorias completas de conversão física e industrial, busca instantânea e histórico (React + TypeScript + Vite).
+2. LP Soluções: site institucional e agendamento online integrado ao Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital com assinatura eletrônica.
+3. Replicador de Ofertas (Pokémon TCG): plataforma autônoma em nuvem (Railway) para monitoramento 24/7, interceptação de links concorrentes, geração de afiliados Mercado Livre (meli.la) e replicação no WhatsApp via Baileys.
+4. Disparador WhatsApp & Atendimento IA: captação de leads de grupos em 1 clique, disparos em massa com motor anti-ban e Spintax dinâmica, simulador visual do WhatsApp e atendimento humanizado privado com DeepSeek V4.
+5. Mentor de Gestão Industrial: sistema multi-agente para supervisão de manutenção com parecer executivo, comunicação SBI e plano 24h estruturado (CrewAI + OpenRouter + RAG ChromaDB + Streamlit).
 
 Competências técnicas:
 • Suporte & Help Desk: Atendimento N1/N2, diagnóstico de software/hardware, suporte remoto/presencial, redes básicas.
@@ -202,18 +203,24 @@ Adicione os itens na seguinte ordem estratégica:
 1. **Link:** Portfólio Oficial — https://cardoso-ix.github.io/Portifolio/
    - *Título:* Portfólio Interativo | Eduardo Cardoso
    - *Descrição:* Conheça meus projetos práticos de suporte técnico, automações com n8n e IA aplicada.
-2. **Mídia / Link:** Currículo Atualizado em PDF — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
-   - *Título:* Currículo Completo (PDF) — Eduardo Cardoso
-   - *Descrição:* Download direto do currículo estruturado com histórico profissional e acadêmico.
-3. **Link:** Automação LinkedIn com IA (GitHub) — https://github.com/cardoso-ix/linkedin-automacao-ia
+2. **Link:** LP Soluções — Site Institucional & Agendamento — https://lp-solucoes.vercel.app
+   - *Título:* LP Soluções | Next.js 16 & Google Calendar
+   - *Descrição:* Plataforma profissional com agendamento online automatizado e contrato digital.
+3. **Link:** Replicador de Ofertas Pokémon TCG — https://promo-replica-bot-production.up.railway.app
+   - *Título:* Replicador de Ofertas 24/7 (Railway + WhatsApp)
+   - *Descrição:* Automação contínua em nuvem com afiliação Mercado Livre e Baileys.
+4. **Link:** Disparador WhatsApp & Atendimento IA — https://bot-disparador-ia-production.up.railway.app
+   - *Título:* Disparador Anti-Ban & Atendimento DeepSeek V4
+   - *Descrição:* Prospecção de grupos e atendimento humanizado com IA.
+5. **Link:** Automação LinkedIn com IA (GitHub) — https://github.com/cardoso-ix/linkedin-automacao-ia
    - *Título:* Automação LinkedIn com n8n e IA (Código Aberto)
    - *Descrição:* Pipeline autônomo com Telegram, DeepSeek-V4-Flash e LinkedIn API.
-4. **Link:** Mentor de Gestão Industrial (Demo) — https://duzinxd-mentor-gestao-industrial.hf.space
+6. **Link:** Mentor de Gestão Industrial (Demo) — https://duzinxd-mentor-gestao-industrial.hf.space
    - *Título:* Mentor de Gestão Industrial (Demo no Hugging Face)
    - *Descrição:* Sistema multi-agente CrewAI com RAG para supervisores de manutenção.
-5. **Link:** Conversor de Unidades (Aplicação Web) — https://cardoso-ix.github.io/Portifolio/conversor-unidades/
-   - *Título:* Conversor de Unidades Físicas (React + Vite)
-   - *Descrição:* Aplicação com 49 categorias completas de conversão física e industrial.
+7. **Mídia / Link:** Currículo Atualizado em PDF — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
+   - *Título:* Currículo Completo (PDF) — Eduardo Cardoso
+   - *Descrição:* Download direto do currículo estruturado com histórico profissional e acadêmico.
 
 ---
 
