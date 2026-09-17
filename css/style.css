@@ -1092,12 +1092,12 @@ section[id] {
 /* Secondary Projects Grid (Bento) */
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
 .project-card--compact .project-card__image {
-  height: 12rem;
+  height: 13.5rem;
   border-bottom: 1px solid var(--color-border);
 }
 

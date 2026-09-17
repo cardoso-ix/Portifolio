@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=36">
+  <link rel="stylesheet" href="css/style.css?v=37">
   <link rel="stylesheet" href="css/creative.css">
   <!-- Schema.org JSON-LD -->
 
@@ -275,27 +275,100 @@
               </div>
             </div>
           </article>
-          <!-- Compact Projects Grid (Bento) -->
+          <!-- Compact Projects Grid (Bento 2x2) -->
           <div class="projects__grid">
             <article class="project-card project-card--compact fade-in">
               <div class="project-card__image">
-                <img src="assets/images/pc-dashboard-preview.png" alt="Preview do PC Dashboard" class="project-card__thumb" width="640" height="360" loading="lazy">
-                <span class="project-card__badge">Desktop App</span>
+                <img src="assets/images/lp-solucoes-preview.png" alt="Preview do site institucional LP Soluções" class="project-card__thumb" width="640" height="360" loading="lazy">
+                <span class="project-card__badge">Web Platform &amp; Agendamento</span>
               </div>
               <div class="project-card__body">
                 <div class="project-card__header">
-                  <h3 class="project-card__title">PC Dashboard</h3>
-                  <p class="project-card__lead">Painel utilitário para Windows (Tauri v1.4): atalhos de um clique, monitoramento na bandeja do sistema e gerenciador de desinstalação de programas.</p>
+                  <h3 class="project-card__title">LP Soluções — Site &amp; Agendamento</h3>
+                  <p class="project-card__lead">Site institucional para serviços elétricos com agendamento online inteligente direto no Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital.</p>
                   <div class="project-card__tags">
-                    <span class="project-tag">Tauri 2</span>
-                    <span class="project-tag">React</span>
+                    <span class="project-tag">Next.js 16</span>
+                    <span class="project-tag">React 19</span>
                     <span class="project-tag">TypeScript</span>
-                    <span class="project-tag">Rust</span>
+                    <span class="project-tag">Tailwind CSS</span>
+                    <span class="project-tag">Google Calendar</span>
+                    <span class="project-tag">Vercel</span>
                   </div>
                 </div>
                 <div class="project-card__links">
-                  <a href="https://github.com/cardoso-ix/pc-dashboard" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
-                    <span>Ver no GitHub</span>
+                  <a href="https://lp-solucoes.vercel.app" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                    <span>Demo Online</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-card--compact fade-in">
+              <div class="project-card__image">
+                <img src="assets/images/replica-preview.png" alt="Preview do Replicador de Ofertas Pokémon TCG" class="project-card__thumb" width="640" height="360" loading="lazy">
+                <span class="project-card__badge">Automação 24/7 · Nuvem</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__header">
+                  <h3 class="project-card__title">Replicador de Ofertas — Pokémon TCG</h3>
+                  <p class="project-card__lead">Plataforma autônoma em nuvem (Railway) para monitoramento 24/7 de grupos, interceptação de links, conversão automática para Mercado Livre Afiliados (meli.la) e replicação com Baileys.</p>
+                  <div class="project-card__tags">
+                    <span class="project-tag">Node.js 22</span>
+                    <span class="project-tag">TypeScript</span>
+                    <span class="project-tag">Baileys WhatsApp</span>
+                    <span class="project-tag">Mercado Livre API</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">Railway</span>
+                  </div>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://promo-replica-bot-production.up.railway.app" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                    <span>Painel Online</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/cardoso-ix/promo-pokemon-tcg" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-card--compact fade-in">
+              <div class="project-card__image">
+                <img src="assets/images/disparador-preview.png" alt="Preview do Disparador WhatsApp e Atendimento IA" class="project-card__thumb" width="640" height="360" loading="lazy">
+                <span class="project-card__badge">IA &amp; Prospecção em Massa</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__header">
+                  <h3 class="project-card__title">Disparador WhatsApp &amp; Atendimento IA</h3>
+                  <p class="project-card__lead">Captação de leads de grupos em 1 clique, disparos em massa com motor anti-ban e Spintax, simulador de WhatsApp ao vivo e atendimento privado humanizado com IA DeepSeek V4.</p>
+                  <div class="project-card__tags">
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">TypeScript</span>
+                    <span class="project-tag">DeepSeek V4</span>
+                    <span class="project-tag">OpenCode Gateway</span>
+                    <span class="project-tag">Spintax Anti-Ban</span>
+                    <span class="project-tag">Fastify</span>
+                  </div>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://bot-disparador-ia-production.up.railway.app" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                    <span>Painel Online</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/cardoso-ix/promo-pokemon-tcg" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+                    <span>GitHub</span>
                   </a>
                 </div>
               </div>
@@ -308,7 +381,7 @@
               <div class="project-card__body">
                 <div class="project-card__header">
                   <h3 class="project-card__title">Mentor de Gestão Industrial</h3>
-                  <p class="project-card__lead">Sistema multi-agente para supervisão de manutenção: parecer executivo, comunicação SBI e plano 24h estruturado com RAG e ChromaDB.</p>
+                  <p class="project-card__lead">Sistema multi-agente para supervisão de manutenção: parecer executivo estruturado, comunicação SBI e plano 24h estruturado com RAG e ChromaDB.</p>
                   <div class="project-card__tags">
                     <span class="project-tag">CrewAI</span>
                     <span class="project-tag">OpenRouter</span>
@@ -321,31 +394,6 @@
                     <span>Demo Online</span>
                   </a>
                   <a href="https://github.com/cardoso-ix/mentor-gestao-industrial" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
-                    <span>GitHub</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card project-card--compact fade-in">
-              <div class="project-card__image">
-                <img src="assets/images/conversor-preview.svg" alt="Preview do Conversor de Unidades" class="project-card__thumb" width="640" height="360" loading="lazy">
-                <span class="project-card__badge">Web Application</span>
-              </div>
-              <div class="project-card__body">
-                <div class="project-card__header">
-                  <h3 class="project-card__title">Conversor de Unidades</h3>
-                  <p class="project-card__lead">Aplicação web completa com 49 categorias de conversão física e industrial, busca instantânea, histórico persistente e alternância de temas.</p>
-                  <div class="project-card__tags">
-                    <span class="project-tag">React</span>
-                    <span class="project-tag">TypeScript</span>
-                    <span class="project-tag">Vite</span>
-                  </div>
-                </div>
-                <div class="project-card__links">
-                  <a href="conversor-unidades/" class="btn btn--primary">
-                    <span>Testar App</span>
-                  </a>
-                  <a href="https://github.com/cardoso-ix/conversor-unidades" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
                     <span>GitHub</span>
                   </a>
                 </div>
@@ -394,8 +442,8 @@
                     <span class="about__stat-label">Experiência em suporte e operações</span>
                   </div>
                   <div class="about__stat-card">
-                    <span class="about__stat-number">49</span>
-                    <span class="about__stat-label">Categorias convertidas no app</span>
+                    <span class="about__stat-number">24/7</span>
+                    <span class="about__stat-label">Automações ativas em nuvem</span>
                   </div>
                   <div class="about__stat-card">
                     <span class="about__stat-number">Pós Tech</span>
@@ -686,21 +734,27 @@
     </div>
 
   </footer>
-
   <!-- Bibliotecas Externas (CDNs com Subresource Integrity - SRI) -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js" integrity="sha384-+REtFDoDRWvUt5Grd8QIjcEBMl/i1THNyfNjKs6QdHxRoyUyner8zmxoiK0jgloK" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <!-- Módulos Criativos e Interativos -->
-  <script src="js/smooth-scroll.js"></script>
-  <script src="js/webgl-scene.js"></script>
-  <script src="js/cursor.js"></script>
-  <script src="js/animations.js"></script>
 
+  <script src="js/smooth-scroll.js"></script>
+
+  <script src="js/webgl-scene.js"></script>
+
+  <script src="js/cursor.js"></script>
+
+  <script src="js/animations.js"></script>
   <!-- Script Principal -->
-  <script src="js/main.js?v=36"></script>
+
+  <script src="js/main.js?v=37"></script>
 
 </body>
 </html>

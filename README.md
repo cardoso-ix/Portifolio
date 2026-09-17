@@ -22,7 +22,7 @@ Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnol
 | **Página Principal** | HTML5 semântico, CSS3 moderno (Custom Properties / Design Tokens), JavaScript ES6+ Vanilla |
 | **Tipografia** | Inter (leitura e UI) + JetBrains Mono (código, terminal e metadados) |
 | **Design System** | *Quiet Graphite Olive* — superfícies graphite (`#0e0f0e`), acento oliva suave (`#a8b87a`), glassmorphism e dark/light mode nativo |
-| **Subprojeto Embarcado** | React 18 + Vite + TypeScript (build otimizado em `conversor-unidades/`) |
+| **Integrações & Demos** | Deploy em nuvem (Railway 24/7, Vercel, Hugging Face Spaces) e repositórios oficiais |
 | **Scripts de Automação** | Python 3 (Pillow, ReportLab) para geração programática do CV em PDF e favicons |
 | **CI / CD** | GitHub Actions (validação HTML com `html-validate` e verificação de links com `lychee`) |
 | **Hospedagem** | GitHub Pages com deploy automático a partir da branch `main` |
@@ -34,9 +34,10 @@ Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnol
 | Projeto | Descrição & Stack | Demonstração | Código Fonte |
 |---|---|---|---|
 | **Automação LinkedIn com IA** | Fluxo de publicação e engajamento: envio sob comando via Telegram (Hermes) e respostas automáticas a comentários via LinkedIn API e DeepSeek-V4-Flash. <br>`n8n · Hermes · DeepSeek-V4-Flash · LinkedIn API · Telegram` | [Perfil LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | [GitHub](https://github.com/cardoso-ix/linkedin-automacao-ia) |
-| **PC Dashboard** | Utilitário desktop Windows v1.4: atalhos de um clique, bandeja do sistema e gerenciador de desinstalação de programas. <br>`Tauri 2 · React · TypeScript · Rust` | — (App Desktop) | [GitHub](https://github.com/cardoso-ix/pc-dashboard) |
+| **LP Soluções — Site & Agendamento** | Site institucional para serviços elétricos com agendamento online inteligente direto no Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital. <br>`Next.js 16 · React 19 · TypeScript · Google Calendar · Tailwind CSS · Vercel` | [Demo Online](https://lp-solucoes.vercel.app) | — (Cliente) |
+| **Replicador de Ofertas — Pokémon TCG** | Plataforma autônoma em nuvem (Railway) para monitoramento 24/7 de grupos, interceptação de links, conversão para Mercado Livre Afiliados (meli.la) e replicação com Baileys. <br>`Node.js 22 LTS · TypeScript · Baileys · Mercado Livre API · Docker · Railway` | [Painel Online](https://promo-replica-bot-production.up.railway.app) | [GitHub](https://github.com/cardoso-ix/promo-pokemon-tcg) |
+| **Disparador WhatsApp & Atendimento IA** | Captação de leads de grupos em 1 clique, disparos em massa com motor anti-ban e Spintax, simulador de WhatsApp ao vivo e atendimento privado humanizado com DeepSeek V4. <br>`Node.js · TypeScript · DeepSeek V4 · OpenCode · Spintax Anti-Ban · Fastify` | [Painel Online](https://bot-disparador-ia-production.up.railway.app) | [GitHub](https://github.com/cardoso-ix/promo-pokemon-tcg) |
 | **Mentor de Gestão Industrial** | Sistema multi-agente para supervisores de manutenção: parecer executivo estruturado, comunicação SBI e plano 24h. <br>`CrewAI · OpenRouter · RAG · ChromaDB · Streamlit` | [Demo no Spaces](https://duzinxd-mentor-gestao-industrial.hf.space) | [GitHub](https://github.com/cardoso-ix/mentor-gestao-industrial) |
-| **Conversor de Unidades** | Aplicação web completa com 49 categorias de conversão física, pesquisa instantânea e histórico persistente. <br>`React · TypeScript · Vite · Tailwind` | [Testar App](https://cardoso-ix.github.io/Portifolio/conversor-unidades/) | [GitHub](https://github.com/cardoso-ix/conversor-unidades) |
 
 *Para o inventário completo e detalhado de repositórios, consulte [docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md).*
 
@@ -63,7 +64,6 @@ Portifolio/
 │       ├── og-image.png        # Imagem de compartilhamento social (1200×630)
 │       ├── linkedin-banner.png # Banner personalizado para o LinkedIn
 │       └── *-preview.*         # Capturas e ilustrações dos projetos
-├── conversor-unidades/         # Build estático da aplicação conversor de unidades
 ├── docs/                       # Documentação técnica e de posicionamento
 │   ├── ARCHITECTURE.md         # Detalhamento da arquitetura técnica e código
 │   ├── PROJETOS-GITHUB.md      # Inventário completo dos repositórios
@@ -93,7 +93,7 @@ python -m http.server 8000
 npx --yes serve .
 ```
 
-Abra seu navegador em `http://localhost:8000`. O subprojeto embutido estará disponível em `http://localhost:8000/conversor-unidades/`.
+Abra seu navegador em `http://localhost:8000` para visualizar o portfólio completo com todas as seções e demos interativas.
 
 ---
 
