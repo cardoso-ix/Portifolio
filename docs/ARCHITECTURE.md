@@ -46,15 +46,19 @@ O design visual segue a diretriz **Quiet Graphite Olive** com inspiração em te
 
 ```
 Portifolio/
-├── index.html                  # Página principal e ponto de entrada
+├── index.html                  # Página principal e ponto de entrada semântico
 ├── 404.html                    # Página de erro para GitHub Pages
 ├── robots.txt                  # Instruções para crawlers de busca
 ├── sitemap.xml                 # Mapeamento do site para indexação
 ├── site.webmanifest            # Metadados de PWA e ícones móveis
 ├── css/
-│   └── style.css               # Design system unificado sem dependências
+│   ├── style.css               # Design system unificado sem dependências (Quiet Olive)
+│   └── creative.css            # Camada visual avançada (HUD, scanner, spotlight, command palette)
 ├── js/
-│   └── main.js                 # Lógica de tema, navegação, scroll e clipboard
+│   ├── main.js                 # Lógica de tema, navegação, scroll e clipboard
+│   ├── animations.js           # Orquestração GSAP, spotlight reativo ao cursor e Matrix Decrypt
+│   ├── webgl-scene.js          # Cena 3D Three.js com geometrias flutuantes e cyber dust
+│   └── command-palette.js      # Central de Comandos HUD (Ctrl+K / ⌘K estilo Raycast)
 ├── assets/
 │   ├── cv_eduardo_cardoso.pdf  # Currículo canônico atualizado
 │   ├── favicon-*.png / .svg    # Favicons em múltiplas resoluções
@@ -78,22 +82,40 @@ Portifolio/
 
 ---
 
-## 4. Ciclo de Vida do JavaScript (`js/main.js`)
+## 4. Módulos JavaScript e Ciclo de Vida
 
-O script roda encapsulado em uma IIFE (*Immediately Invoked Function Expression*) em modo estrito (`'use strict'`), composto pelos módulos:
+Cada script é encapsulado em IIFE com `'use strict'`, mantendo isolamento de escopo e alta performance:
 
-1. **Gestão de Tema:** Detecta preferência salva em `localStorage` ou preferência do sistema (`prefers-color-scheme`), aplicando atributos e sincronizando a meta-tag `theme-color`.
-2. **Menu Mobile Acessível:** Gerencia abertura/fechamento, atributos ARIA (`aria-expanded`, `aria-controls`), tecla `Escape` e bloqueio de rolagem do body quando aberto.
-3. **Navegação Suave Universal:** Intercepta âncoras internas (`a[href^="#"]`), calcula a compensação da barra de navegação fixa e move o foco para garantir navegação fluida por teclado.
-4. **ScrollSpy de Alta Precisão:** Monitora o deslocamento do scroll com `requestAnimationFrame` e destaca dinamicamente o link da seção em visualização, incluindo tratamento especial para a seção de Contato no rodapé.
-5. **Efeito de Digitação com Proteção A11y:** Itera pelas frases de especialização com pausas naturais. Não polui leitores de tela devido à camada `.sr-only` paralela.
-6. **Cópia de E-mail Interativa:** Copia o endereço institucional para a área de transferência com feedback visual no próprio botão e notificação toast temporária.
+1. **`js/main.js` (Interatividade e A11y Base):**
+   - **Gestão de Tema:** Detecta preferência salva em `localStorage` ou preferência do sistema (`prefers-color-scheme`), aplicando atributos e sincronizando a meta-tag `theme-color`.
+   - **Menu Mobile Acessível:** Gerencia abertura/fechamento, atributos ARIA (`aria-expanded`, `aria-controls`), tecla `Escape` e bloqueio de rolagem.
+   - **Navegação Suave Universal:** Intercepta âncoras internas, calcula compensação de cabeçalho fixo e foca seções.
+   - **ScrollSpy:** Monitora o deslocamento do scroll e atualiza a barra de navegação.
+   - **Efeito de Digitação Seguro:** Cicla as frases de especialização com suporte para leitores de tela (`.sr-only`).
+   - **Cópia de E-mail Interativa:** Copia o endereço institucional com toast notification.
+
+2. **`js/command-palette.js` (Central de Comandos HUD Raycast / Linear):**
+   - **Atalho Global:** `Ctrl + K` (Windows/Linux) ou `⌘K` (macOS), além de botão flutuante `#cmd-trigger`.
+   - **Busca em Tempo Real:** Filtra ações rápidas, links diretos de projetos e seções por título, descrição e `data-keywords`.
+   - **Acessibilidade & Navegação:** Navegação por setas `↑` / `↓`, `Enter` para executar, `ESC` para sair e controle de foco.
+
+3. **`js/animations.js` (Micro-interações e GSAP):**
+   - **Spotlight Reativo:** Calcula coordenadas do cursor nos cards via `pointermove` e injeta variáveis CSS `--mouse-x` e `--mouse-y` para gradiente radial suave.
+   - **Text Scramble / Matrix Decrypt:** Decodifica caracteres cibernéticos aleatórios nos títulos das seções ao passar o cursor ou acionar via teclado.
+   - **Revelações GSAP ScrollTrigger:** Entrada suave dos cards e seções com verificação de `prefers-reduced-motion`.
+
+4. **`js/webgl-scene.js` (Cena 3D Three.js & Cyber Dust):**
+   - Canvas 3D renderizado em segundo plano com Torus Knots em wireframe e materiais emissivos.
+   - Matriz de 180 partículas de poeira cibernética (*cyber dust*) em rotação orbital suave.
+   - Pausa automática do loop de renderização quando a aba perde visibilidade (`visibilitychange`) para economia de GPU/bateria.
 
 ---
 
-## 5. Práticas de SEO e Performance
+## 5. Práticas de SEO, A11y e Performance
 
 - **Metadados Sociais:** Tags completas Open Graph e Twitter Cards com imagem de 1200×630.
 - **Marcação Semântica Estruturada:** Dados em formato JSON-LD do tipo `Person` (schema.org) no cabeçalho do HTML.
 - **Cache-Busting:** Inclusão de sufixos de versão (`?v=XX`) nos recursos estáticos (CSS, JS, PDF e imagens) para atualização imediata nos navegadores dos visitantes.
 - **Carregamento Otimizado:** Imagens abaixo da dobra com `loading="lazy"` e `decoding="async"`. Foto principal do hero com `fetchpriority="high"`.
+- **Validação Automatizada:** CI com `html-validate` (garantindo 0 erros de conformidade HTML5 e ARIA) e `lychee` para checagem de links ativos.
+

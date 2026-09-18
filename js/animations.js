@@ -207,5 +207,132 @@
         delay: 0.5,
       });
     }
+
+    // ===== 4. Spotlight Reativo ao Cursor nos Cards =====
+    const spotlightCards = document.querySelectorAll(
+      '.project-card, .terminal-window, .hero__profile-card, .timeline__item'
+    );
+
+    spotlightCards.forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+        card.style.setProperty('--spotlight-opacity', '1');
+      }, { passive: true });
+
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--spotlight-opacity', '0');
+      });
+    });
+
+    // ===== 5. Text Scramble / Decrypt Engine (Matrix Cyber Effect) =====
+    class TextScramble {
+      constructor(el) {
+        this.el = el;
+        this.chars = '!<>-_\\/[]{}—=+*^?#010101XYZ';
+        this.update = this.update.bind(this);
+        const numberSpan = el.querySelector('.section__number');
+        this.prefix = numberSpan ? numberSpan.outerHTML + ' ' : '';
+        this.targetText = (numberSpan ? el.innerText.replace(numberSpan.innerText, '') : el.innerText).trim();
+        this.currentText = this.targetText;
+      }
+
+      setText(newText) {
+        const text = newText || this.targetText;
+        const oldText = this.currentText || text;
+        const length = Math.max(oldText.length, text.length);
+        const promise = new Promise((resolve) => (this.resolve = resolve));
+        this.queue = [];
+        for (let i = 0; i < length; i++) {
+          const from = oldText[i] || '';
+          const to = text[i] || '';
+          const start = Math.floor(Math.random() * 12);
+          const end = start + Math.floor(Math.random() * 14) + 6;
+          this.queue.push({ from, to, start, end, char: '' });
+        }
+        cancelAnimationFrame(this.frameRequest);
+        this.frame = 0;
+        this.update();
+        return promise;
+      }
+
+      update() {
+        let output = '';
+        let complete = 0;
+        for (let i = 0, n = this.queue.length; i < n; i++) {
+          let { from, to, start, end, char } = this.queue[i];
+          if (this.frame >= end) {
+            complete++;
+            output += to;
+          } else if (this.frame >= start) {
+            if (!char || Math.random() < 0.28) {
+              char = this.chars[Math.floor(Math.random() * this.chars.length)];
+              this.queue[i].char = char;
+            }
+            output += `<span class="scramble-glyph">${char}</span>`;
+          } else {
+            output += from;
+          }
+        }
+        this.el.innerHTML = this.prefix + output;
+        this.currentText = output.replace(/<[^>]*>/g, '');
+        if (complete === this.queue.length) {
+          this.el.innerHTML = this.prefix + this.targetText;
+          if (this.resolve) this.resolve();
+        } else {
+          this.frameRequest = requestAnimationFrame(this.update);
+          this.frame++;
+        }
+      }
+    }
+
+    if (!prefersReducedMotion) {
+      // (a) Hero Title Decrypt
+      const heroTitle = document.getElementById('hero-title');
+      if (heroTitle) {
+        const heroScrambler = new TextScramble(heroTitle);
+        setTimeout(() => {
+          heroScrambler.setText();
+        }, 200);
+        heroTitle.addEventListener('mouseenter', () => {
+          heroScrambler.setText();
+        });
+      }
+
+      // (b) Section Titles Decrypt (ScrollTrigger + Hover)
+      document.querySelectorAll('.section__title').forEach((title) => {
+        const scrambler = new TextScramble(title);
+
+        if (typeof ScrollTrigger !== 'undefined') {
+          ScrollTrigger.create({
+            trigger: title,
+            start: 'top 85%',
+            once: true,
+            onEnter: () => scrambler.setText(),
+          });
+        }
+
+        title.addEventListener('mouseenter', () => {
+          scrambler.setText();
+        });
+      });
+
+      // ===== 6. Telemetria em Tempo Real (Live Ping Jitter) =====
+      const pingEl = document.getElementById('telemetry-ping');
+      if (pingEl) {
+        const pings = [14, 16, 18, 15, 19, 17, 22, 15, 18];
+        let pingIndex = 0;
+        setInterval(() => {
+          pingIndex = (pingIndex + 1) % pings.length;
+          const currentPing = pings[pingIndex];
+          const jitter = Math.floor(Math.random() * 3) - 1;
+          const val = Math.max(12, currentPing + jitter);
+          pingEl.textContent = `${val}ms`;
+        }, 2600);
+      }
+    }
   });
 })();
