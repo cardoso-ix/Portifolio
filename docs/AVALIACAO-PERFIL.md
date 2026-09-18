@@ -12,7 +12,7 @@ O envelope não anuncia “buscando vaga”.
 ## Veredito
 
 Boa combinação: **Help Desk real** + **automações com OpenAI/n8n** + **multi-agente (Mentor)** + **Pós Tech em agentes**.  
-O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack correta do LinkedIn automation).
+O site agora espelha os projetos reais do GitHub (LP Soluções, Replicador de Ofertas, Disparador WhatsApp e Mentor de Gestão Industrial).
 
 ---
 
@@ -21,7 +21,7 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 | Tipo de oportunidade | Fit | Por quê |
 |----------------------|-----|---------|
 | Suporte técnico / Help Desk (tech) | Alto | Experiência + comunicação |
-| Implementação de automações / n8n | Alto | Pipeline LinkedIn (Hermes + DeepSeek + replies) + PC Dashboard |
+| Implementação de automações / n8n | Alto | Automações 24/7 em nuvem (Replicador Baileys, Disparador Spintax/IA) + webhooks |
 | Suporte a produto de IA | Médio-alto | OpenAI + Mentor (CrewAI/RAG) + estudo de agentes |
 | Eng. de IA / pesquisa | Baixo-médio | Ainda em formação (Pós) — não é o eixo principal |
 
@@ -30,7 +30,7 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 ## Pontos fortes
 
 1. Help Desk comprovado (Crescer Sistemas)  
-2. Projeto LinkedIn **verificável** (Hermes + DeepSeek + replies automáticos)  
+2. Automações de mensagens e IA verificáveis (Replicador Baileys, Disparador DeepSeek)  
 3. PC Dashboard mostra craft desktop (Tauri)  
 4. Mentor mostra prática com agentes/RAG (demo HF)  
 5. Tom profissional, sem “pedágio” comercial  
@@ -55,11 +55,10 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 | Item | Status |
 |------|--------|
 | Site live | Pronto |
-| Projetos no site = repos públicos relevantes | Alinhado (LinkedIn, PC Dashboard, Mentor, Conversor) |
+| Projetos no site = repos públicos relevantes | Alinhado (LP Soluções, Replicador, Disparador, Mentor) |
 | Inventário `PROJETOS-GITHUB.md` | Criado |
 | Kit LinkedIn | Atualizado (n8n · OpenAI + Mentor) |
 | Bio GitHub / README perfil | Pendência **manual** (403 neste agente) |
-| Description `linkedin-automacao-ia` | Pendência **manual** (vazia) |
 
 ---
 
@@ -67,7 +66,7 @@ O site agora espelha os projetos reais do GitHub (incluindo Mentor e stack corre
 
 1. Colar headline + Sobre do [LINKEDIN-PERFIL.md](./LINKEDIN-PERFIL.md).  
 2. Atualizar **bio do GitHub** e README do perfil (`cardoso-ix`).  
-3. Featured LinkedIn: site + automação LinkedIn + demo Mentor + PDF.
+3. Featured LinkedIn: site + LP Soluções + Replicador/Disparador + demo Mentor + PDF.
 
 ---
 
