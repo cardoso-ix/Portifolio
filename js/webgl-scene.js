@@ -87,6 +87,28 @@
   const wireframeMesh = new THREE.Mesh(geometry, wireframeMaterial);
   meshGroup.add(wireframeMesh);
 
+  // ===== Partículas de Dados Flutuantes (Cyber Dust Matrix) =====
+  const particleCount = window.innerWidth < 768 ? 90 : 180;
+  const particleGeometry = new THREE.BufferGeometry();
+  const particlePositions = new Float32Array(particleCount * 3);
+  for (let i = 0; i < particleCount * 3; i += 3) {
+    particlePositions[i] = (Math.random() - 0.5) * 55;
+    particlePositions[i + 1] = (Math.random() - 0.5) * 55;
+    particlePositions[i + 2] = (Math.random() - 0.5) * 35;
+  }
+  particleGeometry.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+
+  const particleMaterial = new THREE.PointsMaterial({
+    color: 0x00f5ff,
+    size: 0.18,
+    transparent: true,
+    opacity: 0.42,
+    blending: THREE.AdditiveBlending,
+  });
+
+  const particles = new THREE.Points(particleGeometry, particleMaterial);
+  scene.add(particles);
+
   // Posicionamento inicial sutil deslocado para a direita do hero
   meshGroup.position.set(4, 0, 0);
 
@@ -222,6 +244,12 @@
     if (window.lenis && !prefersReducedMotion) {
       const scrollOffset = (window.lenis.scroll || 0) * 0.003;
       meshGroup.rotation.y += scrollOffset * 0.05;
+    }
+
+    // Rotação suave das partículas de dados em órbita
+    if (particles && !prefersReducedMotion) {
+      particles.rotation.y = time * 0.035;
+      particles.rotation.x = Math.sin(time * 0.02) * 0.05;
     }
 
     renderer.render(scene, camera);
