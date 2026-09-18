@@ -14,7 +14,6 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 | Projeto / Repo | Papel | Stack principal | Demo / Produção | No site? |
 |---|---|---|---|---|
-| [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Post diário + replies a comentários com IA | n8n · Hermes · DeepSeek-V4-Flash · LinkedIn API · Telegram | [Perfil LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | **Destaque** |
 | LP Soluções (`carlos-landingpage`) | Site institucional + agendamento Google Calendar | Next.js 16 · React 19 · TypeScript · Google Calendar · Tailwind CSS · Vercel | [Demo Online](https://lp-solucoes.vercel.app) | **Sim (Grid 2×2)** |
 | [promo-pokemon-tcg](https://github.com/cardoso-ix/promo-pokemon-tcg) — Replicador | Automação de ofertas e afiliação 24/7 em nuvem | Node.js 22 · TypeScript · Baileys · Mercado Livre API · Docker · Railway | [Painel Railway](https://promo-replica-bot-production.up.railway.app) | **Sim (Grid 2×2)** |
 | [promo-pokemon-tcg](https://github.com/cardoso-ix/promo-pokemon-tcg) — Disparador | Extração de leads, disparos Spintax e IA DeepSeek | Node.js · TypeScript · DeepSeek V4 · OpenCode · Fastify · Railway | [Painel Railway](https://bot-disparador-ia-production.up.railway.app) | **Sim (Grid 2×2)** |
@@ -35,29 +34,24 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 ## Detalhe por projeto ativo
 
-### 1) linkedin-automacao-ia (destaque principal)
-- **O que é:** post diário no LinkedIn sob comando do assistente Hermes (Telegram); texto validado pelo usuário + foto própria; sem geração de texto por IA no post. Em paralelo, monitoramento contínuo responde comentários automaticamente com DeepSeek-V4-Flash via API oficial do LinkedIn.
-- **Orquestração:** n8n em VPS.
-- **GitHub:** https://github.com/cardoso-ix/linkedin-automacao-ia
-
-### 2) LP Soluções — Site Institucional & Agendamento
+### 1) LP Soluções — Site Institucional & Agendamento
 - **O que é:** Site profissional para empresa de engenharia e serviços elétricos. Agendamento de visitas com integração direta à API do Google Calendar no Next.js (sem necessidade de VPS ou n8n intermediário), notificações automáticas via WhatsApp (CallMeBot) e e-mail (Resend/Gmail), além de emissão e assinatura digital de contratos em PDF.
 - **Produção:** https://lp-solucoes.vercel.app
 - **Stack:** Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, Google Calendar API.
 
-### 3) Replicador de Ofertas — Pokémon TCG (Replica)
+### 2) Replicador de Ofertas — Pokémon TCG (Replica)
 - **O que é:** Plataforma autônoma operando 24/7 na nuvem (Railway) para monitoramento de grupos de WhatsApp, interceptação de ofertas de concorrentes, conversão dinâmica para links de afiliado Mercado Livre (`meli.la`), preservação de mídia em alta resolução e replicação automatizada nos canais oficiais.
 - **Produção:** https://promo-replica-bot-production.up.railway.app
 - **GitHub:** https://github.com/cardoso-ix/promo-pokemon-tcg
 - **Stack:** Node.js 22 LTS, TypeScript, Baileys (WhatsApp Web), SQLite (WAL), Docker, Railway.
 
-### 4) Bot Disparador WhatsApp & Atendimento IA (Disparador)
+### 3) Bot Disparador WhatsApp & Atendimento IA (Disparador)
 - **O que é:** Sistema avançado de prospecção e engajamento. Permite sincronizar grupos do WhatsApp e extrair participantes em 1 clique, disparar campanhas com variações Spintax e parâmetros anti-ban, visualizar preview visual em tempo real em mockup do WhatsApp e realizar atendimento privado humanizado com IA (DeepSeek V4 via OpenCode Gateway).
 - **Produção:** https://bot-disparador-ia-production.up.railway.app
 - **GitHub:** https://github.com/cardoso-ix/promo-pokemon-tcg
 - **Stack:** Node.js, Fastify, TypeScript, DeepSeek V4, OpenCode AI, Spintax Engine, Baileys.
 
-### 5) Mentor de Gestão Industrial
+### 4) Mentor de Gestão Industrial
 - **O que é:** Sistema multi-agente com 5 agentes CrewAI + RAG vetorial (ChromaDB) + interface Streamlit; LLM via OpenRouter; parecer executivo e plano de ação estruturado em 24h.
 - **Demo:** https://duzinxd-mentor-gestao-industrial.hf.space
 - **GitHub:** https://github.com/cardoso-ix/mentor-gestao-industrial
@@ -67,9 +61,8 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 ## Ordem sugerida no LinkedIn Featured
 
 1. **Portfólio Pessoal** — https://cardoso-ix.github.io/Portifolio/
-2. **Automação LinkedIn com IA** — https://github.com/cardoso-ix/linkedin-automacao-ia
-3. **LP Soluções (Demo)** — https://lp-solucoes.vercel.app
-4. **Replicador Pokémon TCG (Painel)** — https://promo-replica-bot-production.up.railway.app
-5. **Disparador & Atendimento IA (Painel)** — https://bot-disparador-ia-production.up.railway.app
-6. **Mentor de Gestão Industrial (Demo)** — https://duzinxd-mentor-gestao-industrial.hf.space
-7. **Currículo PDF** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
+2. **LP Soluções (Demo)** — https://lp-solucoes.vercel.app
+3. **Replicador Pokémon TCG (Painel)** — https://promo-replica-bot-production.up.railway.app
+4. **Disparador & Atendimento IA (Painel)** — https://bot-disparador-ia-production.up.railway.app
+5. **Mentor de Gestão Industrial (Demo)** — https://duzinxd-mentor-gestao-industrial.hf.space
+6. **Currículo PDF** — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
