@@ -14,6 +14,7 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 | Projeto / Repo | Papel | Stack principal | Demo / Produção | No site? |
 |---|---|---|---|---|
+| [linkedin-automacao-ia](https://github.com/cardoso-ix/linkedin-automacao-ia) | Automação LinkedIn, bot Telegram e monitor Premium | Python · Playwright · n8n · Telegram · DeepSeek v4.1 · VPS | [LinkedIn](https://www.linkedin.com/in/eduardo-cardoso-213a02267) | **Sim (Featured)** |
 | LP Soluções (`carlos-landingpage`) | Site institucional + agendamento Google Calendar | Next.js 16 · React 19 · TypeScript · Google Calendar · Tailwind CSS · Vercel | [Demo Online](https://lp-solucoes.vercel.app) | **Sim (Grid 2×2)** |
 | [promo-pokemon-tcg](https://github.com/cardoso-ix/promo-pokemon-tcg) — Replicador | Automação de ofertas e afiliação 24/7 em nuvem | Node.js 22 · TypeScript · Baileys · Mercado Livre API · Docker · Railway | [Painel Railway](https://promo-replica-bot-production.up.railway.app) | **Sim (Grid 2×2)** |
 | [promo-pokemon-tcg](https://github.com/cardoso-ix/promo-pokemon-tcg) — Disparador | Extração de leads, disparos Spintax e IA DeepSeek | Node.js · TypeScript · DeepSeek V4 · OpenCode · Fastify · Railway | [Painel Railway](https://bot-disparador-ia-production.up.railway.app) | **Sim (Grid 2×2)** |
@@ -33,6 +34,12 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 ---
 
 ## Detalhe por projeto ativo
+
+### 0) Automação LinkedIn — Telegram + n8n + Playwright Bridge
+- **O que é:** Ecossistema autônomo operando 24/7 na VPS para autoridade técnica e prospecção de oportunidades no LinkedIn. Inclui bot no Telegram com geração de propostas anti-IA pelo DeepSeek v4.1 e prompts para Meta AI 100% em PT-BR, engajamento sob demanda colando links de posts no chat com curtida e comentário simulando digitação humana, além de workflows no n8n para moderação de comentários e monitoramento ativo de quem visitou o perfil (LinkedIn Premium).
+- **Produção:** Operacional em container Docker com sessão persistente Playwright (Xvfb) e bot daemon no Telegram.
+- **GitHub:** https://github.com/cardoso-ix/linkedin-automacao-ia
+- **Stack:** Python (FastAPI), Playwright, Chromium Persistente, n8n, Telegram Bot API, DeepSeek v4.1, Docker, Xvfb.
 
 ### 1) LP Soluções — Site Institucional & Agendamento
 - **O que é:** Site profissional para empresa de engenharia e serviços elétricos. Agendamento de visitas com integração direta à API do Google Calendar no Next.js (sem necessidade de VPS ou n8n intermediário), notificações automáticas via WhatsApp (CallMeBot) e e-mail (Resend/Gmail), além de emissão e assinatura digital de contratos em PDF.
@@ -60,7 +67,8 @@ Ao mudar um projeto, atualize também: `index.html` → este arquivo → `README
 
 ## Ordem sugerida no LinkedIn Featured
 
-1. **Portfólio Pessoal** — https://cardoso-ix.github.io/Portifolio/
+1. **Automação LinkedIn com IA (GitHub)** - https://github.com/cardoso-ix/linkedin-automacao-ia
+2. **Portfólio Pessoal** — https://cardoso-ix.github.io/Portifolio/
 2. **LP Soluções (Demo)** — https://lp-solucoes.vercel.app
 3. **Replicador Pokémon TCG (Painel)** — https://promo-replica-bot-production.up.railway.app
 4. **Disparador & Atendimento IA (Painel)** — https://bot-disparador-ia-production.up.railway.app

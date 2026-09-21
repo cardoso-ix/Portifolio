@@ -54,10 +54,11 @@ Hoje combino essa base com tecnologias de automação e inteligência artificial
 • Formação Especializada: Pós Tech em Agentes de IA (FIAP + Alura, em andamento), aprofundando arquiteturas de agentes, RAG, ChromaDB e CrewAI.
 
 Projetos práticos desenvolvidos:
-1. LP Soluções: site institucional e agendamento online integrado ao Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital com assinatura eletrônica.
-2. Replicador de Ofertas (Pokémon TCG): plataforma autônoma em nuvem (Railway) para monitoramento 24/7, interceptação de links concorrentes, geração de afiliados Mercado Livre (meli.la) e replicação no WhatsApp via Baileys.
-3. Disparador WhatsApp & Atendimento IA: captação de leads de grupos em 1 clique, disparos em massa com motor anti-ban e Spintax dinâmica, simulador visual do WhatsApp e atendimento humanizado privado com DeepSeek V4.
-4. Mentor de Gestão Industrial: sistema multi-agente para supervisão de manutenção com parecer executivo, comunicação SBI e plano 24h estruturado (CrewAI + OpenRouter + RAG ChromaDB + Streamlit).
+1. Automação LinkedIn com IA (v2): ecossistema em nuvem na VPS com Playwright persistente (zero risco de ban), bot Telegram para rascunhos e aprovação em 1 clique, prompts para Meta AI em PT-BR e workflows n8n para moderação de comentários e monitoramento de visitantes do perfil (LinkedIn Premium) com DeepSeek v4.1.
+2. LP Soluções: site institucional e agendamento online integrado ao Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital com assinatura eletrônica.
+3. Replicador de Ofertas (Pokémon TCG): plataforma autônoma em nuvem (Railway) para monitoramento 24/7, interceptação de links concorrentes, geração de afiliados Mercado Livre (meli.la) e replicação no WhatsApp via Baileys.
+4. Disparador WhatsApp & Atendimento IA: captação de leads de grupos em 1 clique, disparos em massa com motor anti-ban e Spintax dinâmica, simulador visual do WhatsApp e atendimento humanizado privado com DeepSeek V4.
+5. Mentor de Gestão Industrial: sistema multi-agente para supervisão de manutenção com parecer executivo, comunicação SBI e plano 24h estruturado (CrewAI + OpenRouter + RAG ChromaDB + Streamlit).
 
 Competências técnicas:
 • Suporte & Help Desk: Atendimento N1/N2, diagnóstico de software/hardware, suporte remoto/presencial, redes básicas.
