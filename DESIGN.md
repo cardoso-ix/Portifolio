@@ -42,12 +42,12 @@ typography:
     lineHeight: 1.5
 rounded:
   sm: "0.375rem"
-  md: "0.625rem"
-  lg: "0.875rem"
-  xl: "1.25rem"
+  md: "0.5rem"
+  lg: "0.625rem"
+  xl: "0.75rem"
   pill: "9999px"
 spacing:
-  section: "clamp(3.5rem, 7vw, 5.5rem)"
+  section: "clamp(2.75rem, 5.5vw, 4.25rem)"
   container-padding: "clamp(1.25rem, 3.5vw, 2rem)"
   container-width: "84rem"
   header-height: "4.25rem"
@@ -85,7 +85,10 @@ Posicionamento visual e verbal: **Suporte Técnico + Automações com IA** (n8n,
 - Modo escuro padrão com oliva cibernética vibrante (`#b6cb7c`) e toques de esmeralda (`#34d399`).
 - Modo claro calibrado com alto contraste WCAG AA (`#3f5620` sobre `#f7f8f4`).
 - Tipografia dupla: `Inter` para clareza de leitura + `JetBrains Mono` para terminais, tags, badges e números.
-- Numeração estrita 1:1: `~ Início`, `01. Projetos`, `02. Sobre`, `03. Skills`, `04. Formação`, `05. Experiência`, `06. Contato`.
+- Numeração estrita 1:1: `~ Início`, `01. Projetos`, `02. Sobre`, `03. Método`, `04. Skills`, `05. Formação`, `06. Experiência`, `07. Contato`.
+- Acento HUD `--neon` (ciano `#00f5ff` no dark, `#0891b2` no light) usado em bordas, rótulos mono, diagrama e retículo da foto.
+- Grade técnica de 48px, estática e com máscara radial, atrás do conteúdo; cena 3D com deformação em shader.
+- Raios mais retos (0.5 a 0.75rem) e espaçamento denso para leitura mais técnica.
 
 ---
 
@@ -103,6 +106,7 @@ Posicionamento visual e verbal: **Suporte Técnico + Automações com IA** (n8n,
 | `success` | `#34d399` | `#1b7a3a` | Status online, pulso e prompts |
 | `text` | `#f4f6f0` | `#131611` | Texto principal |
 | `text-secondary` | `#b2b7ac` | `#464b40` | Subtítulos e parágrafos |
+| `neon` | `#00f5ff` | `#0891b2` | Acento HUD (`--neon`, `--neon-rgb`) |
 
 ---
 
@@ -118,8 +122,10 @@ Posicionamento visual e verbal: **Suporte Técnico + Automações com IA** (n8n,
 ## 4. Componentes
 
 - **Botões:** formato pill (`border-radius: 9999px`) com ícones SVG inline e micro-interação ao hover (`transform: translateY(-2px)`).
-- **Cards Bento:** estrutura geométrica responsiva com glassmorphism, tags tecnológicas e links diretos para código e demo.
-- **Terminal Window:** barra de controle macOS com três dots coloridos, título do arquivo e surface com backdrop blur.
+- **Card de projeto e estudo de caso:** card em destaque com preview, tags e link; abaixo, bloco de estudo de caso em 4 colunas (problema, solução, decisões, aprendizado) e diagrama SVG de arquitetura que segue o tema.
+- **Método:** cinco passos numerados em cards com filete neon no topo.
+- **Foto:** retículo e etiqueta HUD fixos; a varredura de laser roda uma única vez ao carregar (a versão em loop cortava o rosto e foi removida).
+- **Terminal Window:** barra de controle macOS com três dots coloridos, título do arquivo e surface com backdrop blur (blur só no terminal e no card em destaque, por custo de GPU).
 - **Contact Card:** bloco centralizado de alta conversão com botão de cópia de e-mail integrado e feedback visual instantâneo.
 
 ---

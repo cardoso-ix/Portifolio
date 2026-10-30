@@ -20,10 +20,11 @@ Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnol
 |---|---|
 | **Página Principal** | HTML5 semântico, CSS3 moderno (Custom Properties / Design Tokens), JavaScript ES6+ Vanilla |
 | **Experiência 3D & Animações** | **Three.js** (WebGL 3D Background & Cyber Dust), **GSAP** + **ScrollTrigger** (revelações e micro-interações) |
-| **Recursos HUD & Interatividade** | Central de Comandos (`Ctrl+K` / `⌘K`), card de perfil HUD, Text Scramble (Matrix Decrypt), Spotlight reativo |
+| **Recursos HUD & Interatividade** | Central de Comandos (`Ctrl+K` / `⌘K`), card de perfil HUD, Text Scramble nos títulos, Spotlight reativo, grade técnica de fundo |
 | **Tipografia** | Inter (leitura e UI) + JetBrains Mono (código, terminal e metadados) |
 | **Design System** | *Quiet Graphite Olive + Cyber HUD* — superfícies graphite (`#0e0f0e`), acento oliva suave (`#a8b87a`), ciano neon (`#00f5ff`), glassmorphism e dark/light mode nativo |
-| **Integrações & Demos** | Deploy em nuvem (Railway 24/7, Vercel, Hugging Face Spaces) e repositórios oficiais |
+| **Conteúdo** | Estudo de caso com diagrama de arquitetura (SVG inline), seção de método, dados conferidos com o currículo |
+| **Integrações & Demos** | Demo do LP Soluções na Vercel |
 | **Scripts de Automação** | Python 3 (Pillow, ReportLab) para geração programática do CV em PDF e favicons |
 | **CI / CD** | GitHub Actions (validação HTML com `html-validate` e verificação de links com `lychee`) |
 | **Hospedagem** | GitHub Pages com deploy automático a partir da branch `main` |
@@ -141,6 +142,7 @@ python scripts/optimize_images.py          # Gera as variantes WebP responsivas 
 ## 📚 Documentação Adicional
 
 - 📐 **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**: Especificação detalhada da arquitetura, acessibilidade e ciclo de vida do JavaScript.
+- 📈 **[docs/PERFORMANCE.md](docs/PERFORMANCE.md)**: Medições Lighthouse (mobile 94, desktop 100) e como reproduzir.
 - 📦 **[docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md)**: Inventário completo de repositórios, dependências e status.
 - 💼 **[docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md)**: Textos validados para o perfil no LinkedIn.
 - 🎯 **[PRODUCT.md](PRODUCT.md)**: Declaração de propósito, usuário-alvo e princípios do portfólio.
