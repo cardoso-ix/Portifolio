@@ -14,11 +14,11 @@ Documento oficial de alinhamento entre o **Currículo canônico (`cv_eduardo_car
 ## 1. Foto e Imagem de Capa (Banner)
 
 ### Foto de Perfil
-- **Arquivo de referência:** [assets/images/foto.png](file:///c:/Users/eduar/Projects/Portifolio/assets/images/foto.png)
+- **Arquivo de referência:** [assets/images/foto.png](../assets/images/foto.png)
 - **Diretriz:** Utilizar a mesma foto profissional com fundo sóbrio do portfólio para consistência de marca pessoal.
 
 ### Capa (Banner de 1584 × 396 px)
-- **Arquivo pronto:** [assets/images/linkedin-banner.png](file:///c:/Users/eduar/Projects/Portifolio/assets/images/linkedin-banner.png)
+- **Arquivo pronto:** [assets/images/linkedin-banner.png](../assets/images/linkedin-banner.png)
 - **Identidade:** Visual Quiet Graphite Olive com as competências-chave (Suporte Técnico · n8n · OpenAI · APIs · Help Desk) posicionadas à direita para não conflitar com o avatar.
 - *Para regenerar o banner programaticamente:* `python scripts/generate_linkedin_banner.py`.
 
@@ -206,16 +206,7 @@ Adicione os itens na seguinte ordem estratégica:
 2. **Link:** LP Soluções — Site Institucional & Agendamento — https://lp-solucoes.vercel.app
    - *Título:* LP Soluções | Next.js 16 & Google Calendar
    - *Descrição:* Plataforma profissional com agendamento online automatizado e contrato digital.
-3. **Link:** Replicador de Ofertas Pokémon TCG — https://promo-replica-bot-production.up.railway.app
-   - *Título:* Replicador de Ofertas 24/7 (Railway + WhatsApp)
-   - *Descrição:* Automação contínua em nuvem com afiliação Mercado Livre e Baileys.
-4. **Link:** Disparador WhatsApp & Atendimento IA — https://bot-disparador-ia-production.up.railway.app
-   - *Título:* Disparador Anti-Ban & Atendimento DeepSeek V4
-   - *Descrição:* Prospecção de grupos e atendimento humanizado com IA.
-5. **Link:** Mentor de Gestão Industrial (Demo) — https://duzinxd-mentor-gestao-industrial.hf.space
-   - *Título:* Mentor de Gestão Industrial (Demo no Hugging Face)
-   - *Descrição:* Sistema multi-agente CrewAI com RAG para supervisores de manutenção.
-6. **Mídia / Link:** Currículo Atualizado em PDF — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
+3. **Mídia / Link:** Currículo Atualizado em PDF — https://cardoso-ix.github.io/Portifolio/assets/cv_eduardo_cardoso.pdf
    - *Título:* Currículo Completo (PDF) — Eduardo Cardoso
    - *Descrição:* Download direto do currículo estruturado com histórico profissional e acadêmico.
 

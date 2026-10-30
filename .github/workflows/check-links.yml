@@ -20,6 +20,8 @@ jobs:
             --no-progress
             --max-retries 2
             --accept 200,403,429,999
+            --timeout 30
+            --exclude 'img.shields.io'
             './**/*.html'
             './**/*.md'
             './**/*.xml'
