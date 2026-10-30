@@ -3,6 +3,9 @@
    Styles for WebGL Background, Custom Neon Cursor, Glassmorphism & Lenis
    ========================================================================== */
 
+@layer creative {
+
+
 /* ===== Tokens do acento neon (HUD) =====
    Dark: ciano vivo. Light: ciano escurecido para manter contraste sobre fundo claro. */
 :root,
@@ -93,12 +96,12 @@ article,
 .terminal-window,
 .timeline__item {
   position: relative;
-  background: rgba(13, 16, 13, 0.72) !important;
-  border: 1px solid rgba(var(--neon-rgb), 0.12) !important;
+  background: rgba(13, 16, 13, 0.72);
+  border: 1px solid rgba(var(--neon-rgb), 0.12);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
   transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --mouse-x: -1000px;
   --mouse-y: -1000px;
   --spotlight-opacity: 0;
@@ -129,7 +132,7 @@ article,
 
 /* Divisor interno do card de destaque sem linha branca */
 .project-card--featured .project-card__image {
-  border-right: 1px solid rgba(var(--neon-rgb), 0.12) !important;
+  border-right: 1px solid rgba(var(--neon-rgb), 0.12);
 }
 
 /* Garantir que conteúdo interno fique acima do spotlight */
@@ -195,10 +198,10 @@ article,
 
 /* Selo Tecnológico em Destaque nos Cards */
 .project-card__badge {
-  background: rgba(10, 25, 28, 0.85) !important;
-  color: var(--neon) !important;
-  border: 1px solid rgba(var(--neon-rgb), 0.42) !important;
-  box-shadow: 0 0 14px rgba(var(--neon-rgb), 0.22), inset 0 0 6px rgba(var(--neon-rgb), 0.12) !important;
+  background: rgba(10, 25, 28, 0.85);
+  color: var(--neon);
+  border: 1px solid rgba(var(--neon-rgb), 0.42);
+  box-shadow: 0 0 14px rgba(var(--neon-rgb), 0.22), inset 0 0 6px rgba(var(--neon-rgb), 0.12);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   letter-spacing: 0.06em;
@@ -209,13 +212,13 @@ article,
 [data-theme="light"] .project-card,
 [data-theme="light"] .terminal-window,
 [data-theme="light"] .timeline__item {
-  background: rgba(255, 255, 255, 0.86) !important;
-  border: 1px solid rgba(0, 180, 216, 0.18) !important;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(0, 180, 216, 0.18);
   box-shadow: 0 8px 28px 0 rgba(0, 0, 0, 0.06);
 }
 
 [data-theme="light"] .project-card--featured .project-card__image {
-  border-right: 1px solid rgba(0, 180, 216, 0.18) !important;
+  border-right: 1px solid rgba(0, 180, 216, 0.18);
 }
 
 [data-theme="light"] .project-card::before,
@@ -240,31 +243,31 @@ article,
 }
 
 [data-theme="light"] .project-card__badge {
-  background: rgba(240, 248, 255, 0.9) !important;
-  color: #0077b6 !important;
-  border-color: rgba(0, 180, 216, 0.45) !important;
-  box-shadow: 0 0 10px rgba(0, 180, 216, 0.15) !important;
+  background: rgba(240, 248, 255, 0.9);
+  color: #0077b6;
+  border-color: rgba(0, 180, 216, 0.45);
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.15);
 }
 
 /* Hover dos Cards: transição suave para ciano neon refinado (sem linha branca) */
 article:hover,
 .project-card:hover,
 .timeline__item:hover {
-  border-color: rgba(var(--neon-rgb), 0.45) !important;
+  border-color: rgba(var(--neon-rgb), 0.45);
   box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.65),
-              0 0 22px rgba(var(--neon-rgb), 0.16) !important;
+              0 0 22px rgba(var(--neon-rgb), 0.16);
 }
 
 .project-card:hover {
-  transform: translateY(-5px) !important;
+  transform: translateY(-5px);
 }
 
 [data-theme="light"] article:hover,
 [data-theme="light"] .project-card:hover,
 [data-theme="light"] .timeline__item:hover {
-  border-color: rgba(0, 180, 216, 0.55) !important;
+  border-color: rgba(0, 180, 216, 0.55);
   box-shadow: 0 14px 34px -8px rgba(0, 119, 182, 0.16),
-              0 0 18px rgba(0, 180, 216, 0.18) !important;
+              0 0 18px rgba(0, 180, 216, 0.18);
 }
 
 /* ===== Efeito Scramble / Decrypt de Texto Cibernético ===== */
@@ -311,14 +314,14 @@ article:hover,
 .hero__avatar {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(var(--neon-rgb), 0.35) !important;
-  box-shadow: 0 0 26px rgba(var(--neon-rgb), 0.16), 0 14px 40px rgba(0, 0, 0, 0.6) !important;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease !important;
+  border: 1px solid rgba(var(--neon-rgb), 0.35);
+  box-shadow: 0 0 26px rgba(var(--neon-rgb), 0.16), 0 14px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .hero__avatar:hover {
-  border-color: var(--neon) !important;
-  box-shadow: 0 0 35px rgba(var(--neon-rgb), 0.3), 0 16px 44px rgba(0, 0, 0, 0.7) !important;
+  border-color: var(--neon);
+  box-shadow: 0 0 35px rgba(var(--neon-rgb), 0.3), 0 16px 44px rgba(0, 0, 0, 0.7);
 }
 
 /* Linha de Varredura Laser (Scanner Line) */
@@ -454,9 +457,9 @@ article:hover,
 /* ===== 5. Telemetria Viva & Central de Comando HUD ===== */
 .telemetry-card {
   position: relative;
-  border-color: rgba(var(--neon-rgb), 0.28) !important;
-  background: rgba(9, 13, 10, 0.82) !important;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), inset 0 0 20px rgba(var(--neon-rgb), 0.05) !important;
+  border-color: rgba(var(--neon-rgb), 0.28);
+  background: rgba(9, 13, 10, 0.82);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), inset 0 0 20px rgba(var(--neon-rgb), 0.05);
 }
 
 .telemetry__header {
@@ -535,9 +538,9 @@ article:hover,
 
 /* Light Theme Telemetry Overrides */
 [data-theme="light"] .telemetry-card {
-  background: rgba(255, 255, 255, 0.88) !important;
-  border-color: rgba(0, 180, 216, 0.3) !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), inset 0 0 16px rgba(0, 180, 216, 0.03) !important;
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(0, 180, 216, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), inset 0 0 16px rgba(0, 180, 216, 0.03);
 }
 
 [data-theme="light"] .telemetry__header {
@@ -555,8 +558,8 @@ article:hover,
 }
 
 [data-theme="light"] .hero__avatar {
-  border-color: rgba(0, 180, 216, 0.4) !important;
-  box-shadow: 0 0 20px rgba(0, 180, 216, 0.15), 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(0, 180, 216, 0.4);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.15), 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="light"] .hero__avatar::before {
@@ -996,4 +999,5 @@ html.lenis body {
   .cmd-palette-trigger {
     display: none;
   }
+}
 }
