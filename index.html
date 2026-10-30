@@ -8,8 +8,10 @@
   <meta name="description" content="Eduardo Cardoso — Suporte técnico e automações com IA: n8n, OpenAI, APIs REST, Help Desk e implementação de fluxos. Chapecó, SC.">
   <meta name="author" content="Eduardo Cardoso">
   <meta name="theme-color" content="#090a09">
+  <meta name="color-scheme" content="dark light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <!-- Content Security Policy (CSP) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
   <link rel="canonical" href="https://cardoso-ix.github.io/Portifolio/">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -19,6 +21,7 @@
   <meta property="og:description" content="Suporte técnico, atendimento N1/N2, implementação e automações com IA: n8n, OpenAI, APIs e Help Desk. Chapecó, SC.">
   <meta property="og:url" content="https://cardoso-ix.github.io/Portifolio/">
   <meta property="og:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Eduardo Cardoso — Suporte técnico e automações com IA">
@@ -38,55 +41,96 @@
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrains-mono-latin.woff2" crossorigin>
   <link rel="preload" as="image" type="image/webp" href="assets/images/foto-800.webp" imagesrcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" imagesizes="(max-width: 768px) 70vw, 400px" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=41">
-  <link rel="stylesheet" href="css/creative.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=42">
+  <link rel="stylesheet" href="css/creative.css?v=10">
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Eduardo Cardoso",
-    "url": "https://cardoso-ix.github.io/Portifolio/",
-    "image": "https://cardoso-ix.github.io/Portifolio/assets/images/foto.png",
-    "jobTitle": "Suporte técnico e automações com IA",
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "Universidade de Franca" },
-      { "@type": "CollegeOrUniversity", "name": "Universidade Cruzeiro do Sul" },
-      { "@type": "CollegeOrUniversity", "name": "FIAP" },
-      { "@type": "CollegeOrUniversity", "name": "SENAI" }
-    ],
-    "knowsAbout": ["n8n", "OpenAI", "Suporte técnico", "Help Desk", "Automações", "APIs REST", "Webhooks", "Prompt Engineering", "LLMs", "Python", "CrewAI"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Chapecó",
-      "addressRegion": "SC",
-      "addressCountry": "BR"
-    },
-    "sameAs": [
-      "https://github.com/cardoso-ix",
-      "https://www.linkedin.com/in/eduardo-cardoso-213a02267"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cardoso-ix.github.io/Portifolio/#website",
+        "url": "https://cardoso-ix.github.io/Portifolio/",
+        "name": "Eduardo Cardoso — Portfólio",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://cardoso-ix.github.io/Portifolio/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://cardoso-ix.github.io/Portifolio/#profile",
+        "url": "https://cardoso-ix.github.io/Portifolio/",
+        "name": "Eduardo Cardoso | Suporte técnico e automações com IA",
+        "isPartOf": {
+          "@id": "https://cardoso-ix.github.io/Portifolio/#website"
+        },
+        "about": {
+          "@id": "https://cardoso-ix.github.io/Portifolio/#person"
+        },
+        "mainEntity": {
+          "@id": "https://cardoso-ix.github.io/Portifolio/#person"
+        },
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-10-30"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cardoso-ix.github.io/Portifolio/#person",
+        "name": "Eduardo Cardoso",
+        "url": "https://cardoso-ix.github.io/Portifolio/",
+        "image": "https://cardoso-ix.github.io/Portifolio/assets/images/foto.png",
+        "jobTitle": "Suporte técnico e automações com IA",
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidade de Franca"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidade Cruzeiro do Sul"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "FIAP"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "SENAI"
+          }
+        ],
+        "knowsAbout": [
+          "n8n",
+          "OpenAI",
+          "Suporte técnico",
+          "Help Desk",
+          "Automações",
+          "APIs REST",
+          "Webhooks",
+          "Prompt Engineering",
+          "LLMs",
+          "Python",
+          "CrewAI"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chapecó",
+          "addressRegion": "SC",
+          "addressCountry": "BR"
+        },
+        "sameAs": [
+          "https://github.com/cardoso-ix",
+          "https://www.linkedin.com/in/eduardo-cardoso-213a02267"
+        ]
+      }
     ]
   }
-
   </script>
   <!-- Preload Theme Preference to prevent FOUC -->
 
-  <script>
-    (function () {
-      // Habilita o estado inicial do reveal (GSAP) só com JS e sem movimento reduzido
-      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.documentElement.classList.add('js-reveal');
-      }
-      try {
-        var saved = localStorage.getItem('portfolio-theme');
-        if (saved === 'light' || saved === 'dark') {
-          document.documentElement.setAttribute('data-theme', saved);
-        }
-      } catch (e) {}
-    })();
-
-  </script>
+  <script src="js/theme-init.js?v=1"></script>
 
 </head>
 
@@ -119,7 +163,7 @@
             <li><a href="#contato" class="header__link">Contato</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro" aria-pressed="false">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
           <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
@@ -625,7 +669,7 @@
 
   </footer>
   <!-- Botão Flutuante da Central de Comandos (Ctrl+K) -->
-  <button class="cmd-palette-trigger" id="cmd-trigger" type="button" aria-label="Abrir central de comandos (Ctrl+K)">
+  <button class="cmd-palette-trigger" id="cmd-trigger" type="button" aria-label="Abrir central de comandos (Ctrl+K)" aria-haspopup="dialog" aria-expanded="false">
     <span class="cmd-trigger__icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -635,17 +679,17 @@
     <kbd class="cmd-trigger__kbd">Ctrl K</kbd>
   </button>
   <!-- Modal da Central de Comandos HUD -->
-  <div class="cmd-palette-overlay" id="cmd-overlay">
+  <div class="cmd-palette-overlay" id="cmd-overlay" aria-hidden="true" inert>
     <div class="cmd-palette-dialog" role="dialog" aria-modal="true" aria-label="Central de Comandos e Navegação">
       <div class="cmd-palette__search-bar">
         <svg class="cmd-palette__search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" class="cmd-palette__input" id="cmd-input" placeholder="Digite um comando, projeto ou seção..." autocomplete="off" spellcheck="false" aria-label="Buscar comandos e projetos">
-        <kbd class="cmd-palette__esc-badge" id="cmd-close-btn">ESC</kbd>
+        <input type="text" class="cmd-palette__input" id="cmd-input" placeholder="Digite um comando, projeto ou seção..." autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="cmd-results" aria-autocomplete="list" aria-label="Buscar comandos e projetos">
+        <button type="button" class="cmd-palette__esc-badge" id="cmd-close-btn" aria-label="Fechar central de comandos">ESC</button>
       </div>
-      <div class="cmd-palette__results" id="cmd-results">
+      <div class="cmd-palette__results" id="cmd-results" role="listbox" aria-label="Resultados">
         <!-- Grupo 1: Ações Rápidas -->
         <div class="cmd-group" data-group="actions">
           <div class="cmd-group__title">Ações Rápidas</div>
@@ -758,6 +802,7 @@
           </div>
         </div>
       </div>
+      <div class="sr-only" id="cmd-status" role="status" aria-live="polite"></div>
       <div class="cmd-palette__footer">
         <div class="cmd-palette__footer-tips">
           <span><kbd>↑</kbd><kbd>↓</kbd> Navegar</span>
@@ -779,6 +824,7 @@
   <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Módulos Criativos e Interativos -->
 
+  <script src="js/config.js"></script>
   <script src="js/smooth-scroll.js?v=3"></script>
 
   <script src="js/webgl-scene.js?v=3"></script>
@@ -787,10 +833,10 @@
 
   <script src="js/animations.js?v=5"></script>
 
-  <script src="js/command-palette.js?v=1"></script>
+  <script src="js/command-palette.js?v=2"></script>
   <!-- Script Principal -->
 
-  <script src="js/main.js?v=40"></script>
+  <script src="js/main.js?v=41"></script>
 
 </body>
 </html>

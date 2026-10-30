@@ -421,7 +421,7 @@ article:hover,
   border: 1px solid rgba(var(--neon-rgb), 0.3);
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: #d1d5db;
   z-index: 6;
   letter-spacing: 0.05em;
@@ -505,7 +505,7 @@ article:hover,
 
 .telemetry__badge {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
   padding: 0.15rem 0.45rem;
   border-radius: var(--radius-sm);
@@ -528,7 +528,7 @@ article:hover,
 .terminal-bar__coords {
   margin-left: auto;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: rgba(var(--neon-rgb), 0.65);
   letter-spacing: 0.05em;
 }
@@ -671,7 +671,7 @@ html.lenis body {
 
 .cmd-trigger__kbd {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   padding: 0.15rem 0.4rem;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -753,7 +753,7 @@ html.lenis body {
 
 .cmd-palette__esc-badge {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   padding: 0.2rem 0.45rem;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.06);
@@ -761,6 +761,7 @@ html.lenis body {
   color: var(--color-text-muted);
   cursor: pointer;
   user-select: none;
+  line-height: 1;
 }
 
 .cmd-palette__esc-badge:hover {
@@ -788,7 +789,7 @@ html.lenis body {
 
 .cmd-group__title {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -868,7 +869,7 @@ html.lenis body {
 
 .cmd-item__badge {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
   padding: 0.2rem 0.5rem;
   border-radius: var(--radius-sm);
@@ -895,7 +896,7 @@ html.lenis body {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(0, 0, 0, 0.3);
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--color-text-muted);
 }
 
@@ -968,3 +969,31 @@ html.lenis body {
   color: #0077b6;
 }
 
+
+
+/* ===== Foco visível (teclado) ===== */
+.cmd-palette-trigger:focus-visible,
+.cmd-palette__esc-badge:focus-visible,
+.contact__chip:focus-visible,
+.cmd-palette__input:focus-visible {
+  outline: 2px solid var(--neon);
+  outline-offset: 3px;
+}
+
+/* O input mantém o foco; o item ativo (aria-activedescendant) é destacado por .is-selected */
+.cmd-palette__input:focus-visible {
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.cmd-item.is-selected {
+  outline: 2px solid rgba(var(--neon-rgb), 0.55);
+  outline-offset: -2px;
+}
+
+/* Botão flutuante de comandos não faz sentido em touch (sem teclado físico) */
+@media (hover: none) and (pointer: coarse) {
+  .cmd-palette-trigger {
+    display: none;
+  }
+}
