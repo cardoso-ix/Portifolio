@@ -324,7 +324,7 @@ article:hover,
   box-shadow: 0 0 35px rgba(var(--neon-rgb), 0.3), 0 16px 44px rgba(0, 0, 0, 0.7);
 }
 
-/* Linha de Varredura Laser (Scanner Line) */
+/* Linha de varredura (scanner): executa uma vez */
 .hero__avatar::before {
   content: "";
   position: absolute;
@@ -345,8 +345,9 @@ article:hover,
   box-shadow: 0 0 14px rgba(var(--neon-rgb), 0.9), 0 0 24px rgba(var(--neon-rgb), 0.5);
   z-index: 5;
   pointer-events: none;
-  animation: laser-scan 4s ease-in-out infinite alternate;
-  opacity: 0.85;
+  /* Uma única passada ao carregar: dá o toque HUD sem cortar o rosto em loop */
+  animation: laser-scan 1.8s cubic-bezier(0.4, 0, 0.2, 1) 0.7s 1 both;
+  opacity: 0;
 }
 
 @keyframes laser-scan {
@@ -999,5 +1000,199 @@ html.lenis body {
   .cmd-palette-trigger {
     display: none;
   }
+}
+
+/* ===== Direção visual: mais técnico e denso ===== */
+:root {
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --section-padding: clamp(2.75rem, 5.5vw, 4.25rem) 0;
+}
+
+/* Grade técnica sutil, estática, que esmaece para as bordas */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(var(--neon-rgb), 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--neon-rgb), 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 25%, #000 0%, transparent 72%);
+  mask-image: radial-gradient(ellipse at 50% 25%, #000 0%, transparent 72%);
+}
+
+/* ===== Estudo de caso ===== */
+.case-study {
+  margin-top: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(var(--neon-rgb), 0.18);
+  border-radius: var(--radius-xl);
+  background: var(--glass-card);
+}
+
+.case-study__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.case-study__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--neon);
+}
+
+.case-study__title {
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+.case-study__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem 1.5rem;
+}
+
+.case-study__label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.4rem;
+}
+
+.case-study__block p,
+.case-study__list {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.case-study__list {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+  padding: 0;
+}
+
+.case-study__list li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.case-study__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  background: var(--neon);
+}
+
+.case-study__figure {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.case-study__caption {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Diagrama de arquitetura (SVG inline, segue o tema) */
+.diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 16rem;
+}
+
+.diagram__node {
+  fill: var(--color-surface);
+  stroke: rgba(var(--neon-rgb), 0.35);
+  stroke-width: 1;
+}
+
+.diagram__node--core {
+  stroke: var(--neon);
+  stroke-width: 1.5;
+}
+
+.diagram__text {
+  fill: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.diagram__text--title {
+  fill: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.diagram__link {
+  stroke: var(--neon);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.diagram__arrow-head {
+  fill: var(--neon);
+}
+
+/* ===== Método ===== */
+.method {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.method__step {
+  position: relative;
+  padding: 1.25rem 1.25rem 1.35rem;
+  border: 1px solid var(--color-border);
+  border-top: 2px solid rgba(var(--neon-rgb), 0.55);
+  border-radius: var(--radius-lg);
+  background: var(--glass-card);
+}
+
+.method__num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--neon);
+  margin-bottom: 0.6rem;
+}
+
+.method__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+}
+
+.method__text {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
 }
 }

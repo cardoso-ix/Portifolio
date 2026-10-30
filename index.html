@@ -42,7 +42,7 @@
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrains-mono-latin.woff2" crossorigin>
   <link rel="preload" as="image" type="image/webp" href="assets/images/foto-800.webp" imagesrcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" imagesizes="(max-width: 768px) 70vw, 400px" fetchpriority="high">
   <link rel="stylesheet" href="css/style.css?v=43">
-  <link rel="stylesheet" href="css/creative.css?v=11">
+  <link rel="stylesheet" href="css/creative.css?v=12">
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
@@ -112,7 +112,8 @@
           "Prompt Engineering",
           "LLMs",
           "Python",
-          "CrewAI"
+          "Metrologia",
+          "Calibração de instrumentos"
         ],
         "address": {
           "@type": "PostalAddress",
@@ -157,6 +158,7 @@
             <li><a href="#inicio" class="header__link">Início</a></li>
             <li><a href="#projetos" class="header__link">Projetos</a></li>
             <li><a href="#sobre" class="header__link">Sobre</a></li>
+            <li><a href="#metodo" class="header__link">Método</a></li>
             <li><a href="#skills" class="header__link">Skills</a></li>
             <li><a href="#formacao" class="header__link">Formação</a></li>
             <li><a href="#experiencia" class="header__link">Experiência</a></li>
@@ -222,7 +224,7 @@
             </ul>
             <p class="hero__description">
               Atuo na conexão estratégica entre suporte técnico e automação inteligente: compreender a dor real do usuário, construir fluxos eficientes com n8n e IA, e manter integrações estáveis no dia a dia com comunicação clara.
-              <span class="hero__description-accent">Confira abaixo os projetos práticos desenvolvidos.</span>
+              <span class="hero__description-accent">Veja abaixo o projeto entregue a cliente e como eu trabalho.</span>
             </p>
             <div class="hero__actions">
               <a href="#projetos" class="btn btn--primary btn--lg">
@@ -298,7 +300,7 @@
     <section class="section" id="projetos" aria-labelledby="projetos-title">
       <div class="container">
         <h2 class="section__title fade-in" id="projetos-title"><span class="section__number">01.</span> Projetos em Destaque</h2>
-        <p class="section__intro fade-in">Soluções reais que unem suporte técnico, automações robustas e inteligência artificial aplicada.</p>
+        <p class="section__intro fade-in">Um projeto entregue a cliente real, com arquitetura e decisões documentadas. Novos projetos de agentes de IA estão em construção durante a Pós Tech.</p>
         <div class="projects">
           <!-- Projeto em destaque: LP Soluções -->
           <article class="project-card project-card--featured fade-in">
@@ -334,6 +336,71 @@
               </div>
             </div>
           </article>
+          <!-- Estudo de caso: LP Soluções -->
+          <div class="case-study fade-in" id="case-lp">
+            <div class="case-study__head">
+              <span class="case-study__tag">Estudo de caso</span>
+              <h3 class="case-study__title">LP Soluções: do problema à arquitetura</h3>
+            </div>
+            <div class="case-study__grid">
+              <div class="case-study__block">
+                <h4 class="case-study__label">Problema</h4>
+                <p>Uma empresa de engenharia e serviços elétricos precisava de presença online profissional e de uma forma de agendar visitas técnicas pela internet, sem depender de troca manual de mensagens.</p>
+              </div>
+              <div class="case-study__block">
+                <h4 class="case-study__label">Solução</h4>
+                <p>Site institucional com fluxo de agendamento que grava direto no Google Calendar, notificações por WhatsApp e e-mail e contrato digital.</p>
+              </div>
+              <div class="case-study__block">
+                <h4 class="case-study__label">Decisões</h4>
+                <ul class="case-study__list">
+                  <li>Next.js (App Router) na Vercel, sem VPS e sem orquestrador no meio.</li>
+                  <li>Google Calendar API chamada pelo servidor do próprio Next.js.</li>
+                  <li>TypeScript para tipar os dados do agendamento.</li>
+                </ul>
+              </div>
+              <div class="case-study__block">
+                <h4 class="case-study__label">Aprendizado</h4>
+                <p>Menos peças móveis significam menos pontos de falha: dispensar servidor dedicado e orquestrador reduziu custo e manutenção.</p>
+              </div>
+            </div>
+            <figure class="case-study__figure">
+              <svg class="diagram" viewBox="0 0 760 230" role="img" aria-labelledby="diagram-title diagram-desc">
+                <title id="diagram-title">Arquitetura do LP Soluções</title>
+                <desc id="diagram-desc">O visitante acessa o site em Next.js na Vercel. O servidor grava o agendamento na Google Calendar API e dispara notificações por WhatsApp ou e-mail e o contrato digital.</desc>
+                <defs>
+                  <marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                    <path d="M0 0 L10 5 L0 10 z" class="diagram__arrow-head"></path>
+                  </marker>
+                </defs>
+                <rect class="diagram__node" x="10" y="45" width="150" height="70" rx="6"></rect>
+                <text class="diagram__text diagram__text--title" x="85" y="76" text-anchor="middle">Visitante</text>
+                <text class="diagram__text" x="85" y="96" text-anchor="middle">navegador</text>
+
+                <rect class="diagram__node diagram__node--core" x="240" y="45" width="230" height="70" rx="6"></rect>
+                <text class="diagram__text diagram__text--title" x="355" y="76" text-anchor="middle">Next.js 16 · Vercel</text>
+                <text class="diagram__text" x="355" y="96" text-anchor="middle">site + rotas de servidor</text>
+
+                <rect class="diagram__node" x="550" y="45" width="200" height="70" rx="6"></rect>
+                <text class="diagram__text diagram__text--title" x="650" y="76" text-anchor="middle">Google Calendar API</text>
+                <text class="diagram__text" x="650" y="96" text-anchor="middle">agenda de visitas</text>
+
+                <rect class="diagram__node" x="170" y="160" width="190" height="60" rx="6"></rect>
+                <text class="diagram__text diagram__text--title" x="265" y="186" text-anchor="middle">Notificações</text>
+                <text class="diagram__text" x="265" y="204" text-anchor="middle">WhatsApp · E-mail</text>
+
+                <rect class="diagram__node" x="380" y="160" width="190" height="60" rx="6"></rect>
+                <text class="diagram__text diagram__text--title" x="475" y="186" text-anchor="middle">Contrato digital</text>
+                <text class="diagram__text" x="475" y="204" text-anchor="middle">geração e envio</text>
+
+                <line class="diagram__link" x1="160" y1="80" x2="238" y2="80" marker-end="url(#diagram-arrow)"></line>
+                <line class="diagram__link" x1="470" y1="80" x2="548" y2="80" marker-end="url(#diagram-arrow)"></line>
+                <line class="diagram__link" x1="320" y1="115" x2="280" y2="158" marker-end="url(#diagram-arrow)"></line>
+                <line class="diagram__link" x1="390" y1="115" x2="450" y2="158" marker-end="url(#diagram-arrow)"></line>
+              </svg>
+              <figcaption class="case-study__caption">Fluxo do agendamento: o servidor do Next.js é o único elo entre o visitante, a agenda e as notificações.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
@@ -355,7 +422,7 @@
             <div class="about__grid">
               <div class="about__main">
                 <p class="about__lead">
-                  Resido em Chapecó, SC. Minha atuação combina a escuta ativa e o rigor do <strong>suporte técnico</strong> (diagnóstico de software/hardware e atendimento ao usuário) com o poder de escala das <strong>automações e IA aplicada</strong> (n8n, OpenAI e integrações via API).
+                  Resido em Chapecó, SC. Combino mais de uma década de carreira técnica, com base em <strong>metrologia e calibração</strong>, com <strong>suporte técnico N1/N2</strong> e <strong>automações com IA</strong> (n8n, OpenAI e integrações via API).
                 </p>
                 <div class="about__block">
                   <p class="about__label">Como atuo no dia a dia</p>
@@ -372,22 +439,23 @@
                 <!-- Stats Grid -->
                 <div class="about__stats">
                   <div class="about__stat-card">
-                    <span class="about__stat-number">3+ Anos</span>
-                    <span class="about__stat-label">Experiência em suporte e operações</span>
+                    <span class="about__stat-number">11+ anos</span>
+                    <span class="about__stat-label">De carreira técnica, desde dez/2014</span>
                   </div>
                   <div class="about__stat-card">
-                    <span class="about__stat-number">24/7</span>
-                    <span class="about__stat-label">Automações ativas em nuvem</span>
+                    <span class="about__stat-number">6+ anos</span>
+                    <span class="about__stat-label">Em metrologia e calibração (JBS Foods e Fluxo Metrologia)</span>
+                  </div>
+                  <div class="about__stat-card">
+                    <span class="about__stat-number">N1/N2</span>
+                    <span class="about__stat-label">Help Desk na Crescer Sistemas, 2022 a 2023</span>
                   </div>
                   <div class="about__stat-card">
                     <span class="about__stat-number">Pós Tech</span>
-                    <span class="about__stat-label">Agentes de IA (FIAP + Alura)</span>
-                  </div>
-                  <div class="about__stat-card">
-                    <span class="about__stat-number">100%</span>
-                    <span class="about__stat-label">Foco em estabilidade e processos</span>
+                    <span class="about__stat-label">Agentes de IA, FIAP + Alura (em andamento)</span>
                   </div>
                 </div>
+              </div>
               </div>
               <aside class="about__highlight">
                 <span class="about__highlight-badge">Perfil Profissional</span>
@@ -407,12 +475,48 @@
       </div>
 
     </section>
+    <!-- Method Section -->
+
+    <section class="section" id="metodo" aria-labelledby="metodo-title">
+      <div class="container">
+        <h2 class="section__title fade-in" id="metodo-title"><span class="section__number">03.</span> Como eu trabalho</h2>
+        <p class="section__intro fade-in">Vindo da metrologia, trato automação e IA como um instrumento de medição: precisa de padrão, rastreabilidade e verificação.</p>
+        <ol class="method">
+          <li class="method__step fade-in">
+            <span class="method__num" aria-hidden="true">01</span>
+            <h3 class="method__title">Mapear</h3>
+            <p class="method__text">Entender a dor real e o fluxo atual antes de automatizar qualquer coisa.</p>
+          </li>
+          <li class="method__step fade-in">
+            <span class="method__num" aria-hidden="true">02</span>
+            <h3 class="method__title">Construir simples</h3>
+            <p class="method__text">n8n, APIs e webhooks com o menor número de peças possível, para ter menos pontos de falha.</p>
+          </li>
+          <li class="method__step fade-in">
+            <span class="method__num" aria-hidden="true">03</span>
+            <h3 class="method__title">Validar</h3>
+            <p class="method__text">Critério de aceitação definido antes de entregar, inclusive para respostas de modelos de linguagem.</p>
+          </li>
+          <li class="method__step fade-in">
+            <span class="method__num" aria-hidden="true">04</span>
+            <h3 class="method__title">Rastrear</h3>
+            <p class="method__text">Registro do que foi feito e por quê, como na rastreabilidade metrológica: toda decisão tem origem.</p>
+          </li>
+          <li class="method__step fade-in">
+            <span class="method__num" aria-hidden="true">05</span>
+            <h3 class="method__title">Documentar e operar</h3>
+            <p class="method__text">Comunicação clara com quem usa e manutenção para a solução continuar estável.</p>
+          </li>
+        </ol>
+      </div>
+
+    </section>
     <!-- Skills Section -->
 
     <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <h2 class="section__title fade-in" id="skills-title"><span class="section__number">03.</span> Skills &amp; Tecnologias</h2>
-        <p class="section__intro fade-in">Competências consolidadas em suporte, ferramentas de automação e especializações em andamento.</p>
+        <h2 class="section__title fade-in" id="skills-title"><span class="section__number">04.</span> Skills &amp; Tecnologias</h2>
+        <p class="section__intro fade-in">Competências em suporte, automação e metrologia, mais o que estou estudando na Pós Tech.</p>
         <div class="skills">
           <div class="skills__group skills__group--primary fade-in">
             <h3 class="skills__category">Em Uso Hoje</h3>
@@ -437,7 +541,7 @@
             </ul>
           </div>
           <div class="skills__group fade-in">
-            <h3 class="skills__category">Especialização IA</h3>
+            <h3 class="skills__category">Em estudo (Pós Tech)</h3>
             <ul class="skills__list">
               <li class="skill-tag skill-tag--study">LLMs &amp; Embeddings</li>
               <li class="skill-tag skill-tag--study">RAG Architecture</li>
@@ -447,13 +551,14 @@
             </ul>
           </div>
           <div class="skills__group fade-in">
-            <h3 class="skills__category">Soft Skills</h3>
+            <h3 class="skills__category">Metrologia &amp; Qualidade</h3>
             <ul class="skills__list">
-              <li class="skill-tag">Atendimento Humanizado</li>
-              <li class="skill-tag">Comunicação Clara</li>
-              <li class="skill-tag">Resolução de Problemas</li>
-              <li class="skill-tag">Proatividade</li>
-              <li class="skill-tag">Aprendizado Contínuo</li>
+              <li class="skill-tag">Calibração de instrumentos</li>
+              <li class="skill-tag">Rastreabilidade metrológica</li>
+              <li class="skill-tag">Padrões de referência</li>
+              <li class="skill-tag">Certificados técnicos</li>
+              <li class="skill-tag">Normas de qualidade</li>
+              <li class="skill-tag">Orçamentos técnicos</li>
             </ul>
           </div>
         </div>
@@ -464,7 +569,7 @@
 
     <section class="section section--alt" id="formacao" aria-labelledby="formacao-title">
       <div class="container">
-        <h2 class="section__title fade-in" id="formacao-title"><span class="section__number">04.</span> Formação Acadêmica</h2>
+        <h2 class="section__title fade-in" id="formacao-title"><span class="section__number">05.</span> Formação Acadêmica</h2>
         <p class="section__intro fade-in">Trajetória acadêmica com foco contínuo em tecnologia, gestão e inteligência artificial.</p>
         <div class="timeline">
           <article class="timeline__item fade-in">
@@ -532,7 +637,7 @@
 
     <section class="section" id="experiencia" aria-labelledby="experiencia-title">
       <div class="container">
-        <h2 class="section__title fade-in" id="experiencia-title"><span class="section__number">05.</span> Experiência Profissional</h2>
+        <h2 class="section__title fade-in" id="experiencia-title"><span class="section__number">06.</span> Experiência Profissional</h2>
         <p class="section__intro fade-in">Histórico real de atuação em suporte técnico, operações e instrumentação.</p>
         <div class="timeline">
           <article class="timeline__item fade-in">
@@ -605,7 +710,7 @@
     <section class="section" id="contato" aria-labelledby="contato-title">
       <div class="container container--narrow">
         <div class="contact-card fade-in">
-          <span class="contact-card__badge-number" aria-hidden="true">06. Contato</span>
+          <span class="contact-card__badge-number" aria-hidden="true">07. Contato</span>
           <h2 class="contact-card__heading" id="contato-title">Vamos conversar?</h2>
           <p class="contact-card__lead">
             Disponível para oportunidades em suporte técnico, implementação de fluxos e automações com IA. Fique à vontade para mandar uma mensagem direta ou conectar nas redes.
@@ -617,7 +722,7 @@
               </svg>
               <span>WhatsApp</span>
             </a>
-            <button class="contact__chip contact__chip--copy" id="contact-email" type="button" data-email="eduardoocardosoo@gmail.com" aria-label="Copiar endereço de e-mail eduardoocardosoo@gmail.com">
+            <button class="contact__chip contact__chip--copy" id="contact-email" type="button" aria-label="Copiar endereço de e-mail eduardoocardosoo@gmail.com">
               <svg class="contact__chip-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -699,7 +804,7 @@
             </div>
             <div class="cmd-item__body">
               <span class="cmd-item__label">Copiar E-mail Institucional</span>
-              <span class="cmd-item__desc">eduardoocardosoo@gmail.com</span>
+              <span class="cmd-item__desc">Copiar o endereço para a área de transferência</span>
             </div>
             <span class="cmd-item__badge">Copiar</span>
           </div>
@@ -762,7 +867,7 @@
             <span class="cmd-item__mono-num">01.</span>
             <div class="cmd-item__body">
               <span class="cmd-item__label">Projetos em Destaque</span>
-              <span class="cmd-item__desc">LP Soluções, Bots e IA Aplicada</span>
+              <span class="cmd-item__desc">LP Soluções e estudo de caso</span>
             </div>
           </div>
           <div class="cmd-item" data-action="scroll-to" data-target="#sobre" data-keywords="sobre bio trajeto historia perfil mim">
@@ -772,29 +877,36 @@
               <span class="cmd-item__desc">Trajetória e atuação no dia a dia</span>
             </div>
           </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#skills" data-keywords="skills habilidades tecnologias ferramentas n8n openai python help desk">
+          <div class="cmd-item" data-action="scroll-to" data-target="#metodo" data-keywords="metodo como trabalho processo metrologia rastreabilidade validacao">
             <span class="cmd-item__mono-num">03.</span>
+            <div class="cmd-item__body">
+              <span class="cmd-item__label">Como eu trabalho</span>
+              <span class="cmd-item__desc">Método: mapear, validar, rastrear</span>
+            </div>
+          </div>
+          <div class="cmd-item" data-action="scroll-to" data-target="#skills" data-keywords="skills habilidades tecnologias ferramentas n8n openai python help desk">
+            <span class="cmd-item__mono-num">04.</span>
             <div class="cmd-item__body">
               <span class="cmd-item__label">Especialização &amp; Ferramentas</span>
               <span class="cmd-item__desc">Stack técnica, suporte e IA</span>
             </div>
           </div>
           <div class="cmd-item" data-action="scroll-to" data-target="#formacao" data-keywords="formacao estudos fiap pos mba faculdade unifran">
-            <span class="cmd-item__mono-num">04.</span>
+            <span class="cmd-item__mono-num">05.</span>
             <div class="cmd-item__body">
               <span class="cmd-item__label">Formação Acadêmica</span>
               <span class="cmd-item__desc">Pós Tech FIAP, MBA e Administração</span>
             </div>
           </div>
           <div class="cmd-item" data-action="scroll-to" data-target="#experiencia" data-keywords="experiencia empregos empresas help desk crescer fluxo sandimas">
-            <span class="cmd-item__mono-num">05.</span>
+            <span class="cmd-item__mono-num">06.</span>
             <div class="cmd-item__body">
               <span class="cmd-item__label">Trajetória Profissional</span>
               <span class="cmd-item__desc">Histórico e vivência prática operacional</span>
             </div>
           </div>
           <div class="cmd-item" data-action="scroll-to" data-target="#contato" data-keywords="contato email whatsapp redes linkedin github mensagem">
-            <span class="cmd-item__mono-num">06.</span>
+            <span class="cmd-item__mono-num">07.</span>
             <div class="cmd-item__body">
               <span class="cmd-item__label">Contato &amp; Parcerias</span>
               <span class="cmd-item__desc">Canais de comunicação direta</span>
@@ -836,7 +948,7 @@
   <script src="js/command-palette.js?v=2"></script>
   <!-- Script Principal -->
 
-  <script src="js/main.js?v=41"></script>
+  <script src="js/main.js?v=42"></script>
 
 </body>
 </html>
