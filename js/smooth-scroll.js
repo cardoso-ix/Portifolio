@@ -60,26 +60,5 @@
     requestAnimationFrame(raf);
   }
 
-  // Interceptar âncoras internas para rolagem suave via Lenis
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId && targetId !== '#' && targetId.length > 1) {
-          const targetEl = document.querySelector(targetId);
-          if (targetEl) {
-            e.preventDefault();
-            const header = document.getElementById('header');
-            const offset = header ? -header.offsetHeight - 16 : -70;
-
-            lenis.scrollTo(targetEl, {
-              offset: offset,
-              duration: 1.2,
-              easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            });
-          }
-        }
-      });
-    });
-  });
+  // Âncoras internas são tratadas em main.js (usa window.lenis quando disponível)
 })();

@@ -9,7 +9,7 @@
   <meta name="author" content="Eduardo Cardoso">
   <meta name="theme-color" content="#090a09">
   <!-- Content Security Policy (CSP) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self';">
   <link rel="canonical" href="https://cardoso-ix.github.io/Portifolio/">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -34,12 +34,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=37">
-  <link rel="stylesheet" href="css/creative.css?v=5">
+  <!-- Fontes self-hosted (woff2 variável, subset latin) -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrains-mono-latin.woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="assets/images/foto-800.webp" imagesrcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" imagesizes="(max-width: 768px) 70vw, 400px" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css?v=39">
+  <link rel="stylesheet" href="css/creative.css?v=6">
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
@@ -212,7 +212,10 @@
             <div class="hero__avatar-glow" aria-hidden="true"></div>
             <div class="hero__avatar">
               <div class="hero__avatar-reticle" aria-hidden="true"></div>
-              <img src="assets/images/foto.png?v=5" alt="Foto de perfil de Eduardo Cardoso" class="hero__photo" width="400" height="400" fetchpriority="high" decoding="async">
+              <picture>
+                <source type="image/webp" srcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" sizes="(max-width: 768px) 70vw, 400px">
+                <img src="assets/images/foto.png?v=5" alt="Foto de perfil de Eduardo Cardoso" class="hero__photo" width="400" height="400" fetchpriority="high" decoding="async">
+              </picture>
               <div class="hero__avatar-hud">
                 <span class="hero__avatar-hud-id">SYS_AGENT // EC-95</span>
                 <span class="hero__avatar-hud-ping"><span class="ping-dot" aria-hidden="true"></span> ONLINE</span>
@@ -262,7 +265,10 @@
           <!-- Projeto em destaque: LP Soluções -->
           <article class="project-card project-card--featured fade-in">
             <div class="project-card__image">
-              <img src="assets/images/lp-solucoes-preview.png" alt="Preview do site institucional LP Soluções" class="project-card__thumb" width="640" height="360" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/images/lp-solucoes-preview-640.webp 640w, assets/images/lp-solucoes-preview-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 640px">
+                <img src="assets/images/lp-solucoes-preview.png" alt="Preview do site institucional LP Soluções" class="project-card__thumb" width="640" height="360" loading="lazy" decoding="async">
+              </picture>
               <span class="project-card__badge">Web Platform &amp; Agendamento</span>
             </div>
             <div class="project-card__body">
@@ -776,21 +782,21 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js" integrity="sha384-+REtFDoDRWvUt5Grd8QIjcEBMl/i1THNyfNjKs6QdHxRoyUyner8zmxoiK0jgloK" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Módulos Criativos e Interativos -->
 
-  <script src="js/smooth-scroll.js"></script>
+  <script src="js/smooth-scroll.js?v=3"></script>
 
-  <script src="js/webgl-scene.js?v=2"></script>
+  <script src="js/webgl-scene.js?v=3"></script>
 
-  <script src="js/cursor.js"></script>
+  <script src="js/cursor.js?v=2"></script>
 
-  <script src="js/animations.js?v=3"></script>
+  <script src="js/animations.js?v=4"></script>
 
   <script src="js/command-palette.js?v=1"></script>
   <!-- Script Principal -->
 
-  <script src="js/main.js?v=37"></script>
+  <script src="js/main.js?v=39"></script>
 
 </body>
 </html>

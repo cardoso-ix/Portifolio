@@ -37,8 +37,8 @@ O design visual segue a diretriz **Quiet Graphite Olive** com inspiração em te
 
 ### Tipografia
 
-- **UI & Leitura:** `Inter` (Google Fonts), com fallback para o sistema operacional (`system-ui, -apple-system, sans-serif`).
-- **Terminal & Dados Técnicos:** `JetBrains Mono` (Google Fonts), usado em tags, badges, números de seção e variáveis de status (`status.json`).
+- **UI & Leitura:** `Inter` (variável, self-hosted em `assets/fonts/`, subset latin), com fallback para o sistema operacional (`system-ui, -apple-system, sans-serif`).
+- **Terminal & Dados Técnicos:** `JetBrains Mono` (variável, self-hosted em `assets/fonts/`, subset latin), usado em tags, badges, números de seção e variáveis de status (`status.json`).
 
 ---
 
@@ -105,9 +105,10 @@ Cada script é encapsulado em IIFE com `'use strict'`, mantendo isolamento de es
    - **Revelações GSAP ScrollTrigger:** Entrada suave dos cards e seções com verificação de `prefers-reduced-motion`.
 
 4. **`js/webgl-scene.js` (Cena 3D Three.js & Cyber Dust):**
-   - Canvas 3D renderizado em segundo plano com Torus Knots em wireframe e materiais emissivos.
+   - Canvas 3D em segundo plano com icosaedro orgânico: a deformação por onda roda no *vertex shader* (`onBeforeCompile` sobre `MeshStandardMaterial`), com normais analíticas. Não há laço de vértices nem `computeVertexNormals()` no JS.
    - Matriz de 180 partículas de poeira cibernética (*cyber dust*) em rotação orbital suave.
-   - Pausa automática do loop de renderização quando a aba perde visibilidade (`visibilitychange`) para economia de GPU/bateria.
+   - Mobile: DPR limitado a 1.25, sem antialias, menos subdivisões e partículas.
+   - Loop pausado com a aba oculta (`visibilitychange`), sem rAF duplicado ao voltar; `prefers-reduced-motion` renderiza um frame estático; trata `webglcontextlost`/`restored`; resize com debounce.
 
 ---
 

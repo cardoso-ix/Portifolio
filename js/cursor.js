@@ -47,6 +47,8 @@
       isVisible = true;
       cursor.classList.add('visible');
     }
+
+    startCursorLoop();
   }, { passive: true });
 
   // Ocultar quando o mouse sai da janela
@@ -62,20 +64,27 @@
     cursor.classList.add('visible');
   });
 
-  // Loop contínuo com requestAnimationFrame para interpolação linear fluida
+  // Loop sob demanda: roda só enquanto o cursor ainda não alcançou o alvo
+  const EPSILON = 0.1;
+  let rafId = null;
+
   function renderCursor() {
-    if (isVisible) {
-      currentX += (targetX - currentX) * LERP_FACTOR;
-      currentY += (targetY - currentY) * LERP_FACTOR;
+    currentX += (targetX - currentX) * LERP_FACTOR;
+    currentY += (targetY - currentY) * LERP_FACTOR;
 
-      // translate3d com translate(-50%, -50%) para manter o centro do círculo alinhado à ponta da seta
-      cursor.style.transform = `translate3d(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px, 0) translate(-50%, -50%)`;
+    // translate3d com translate(-50%, -50%) para manter o centro do círculo alinhado à ponta da seta
+    cursor.style.transform = `translate3d(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px, 0) translate(-50%, -50%)`;
+
+    if (isVisible && (Math.abs(targetX - currentX) > EPSILON || Math.abs(targetY - currentY) > EPSILON)) {
+      rafId = requestAnimationFrame(renderCursor);
+    } else {
+      rafId = null;
     }
-
-    requestAnimationFrame(renderCursor);
   }
 
-  requestAnimationFrame(renderCursor);
+  function startCursorLoop() {
+    if (rafId === null && isVisible) rafId = requestAnimationFrame(renderCursor);
+  }
 
   // ===== Listeners para tags <a>, <button> e <article> =====
   const INTERACTIVE_SELECTOR = 'a, button, article, [role="button"]';
