@@ -24,9 +24,44 @@
       kbd.textContent = isMac ? '⌘K' : 'Ctrl K';
     });
 
+    const statusEl = document.getElementById('cmd-status');
+
     let isOpen = false;
     let selectedIndex = 0;
     let previousActiveElement = null;
+    let inertedElements = [];
+
+    // Padrão combobox + listbox: o foco fica no input e o item ativo é anunciado via aria-activedescendant
+    resultsContainer.querySelectorAll('.cmd-group').forEach((group, gi) => {
+      const title = group.querySelector('.cmd-group__title');
+      group.setAttribute('role', 'group');
+      if (title) {
+        title.id = 'cmd-group-title-' + gi;
+        group.setAttribute('aria-labelledby', title.id);
+      }
+    });
+    resultsContainer.querySelectorAll('.cmd-item').forEach((item, i) => {
+      item.id = 'cmd-opt-' + i;
+      item.setAttribute('role', 'option');
+      item.setAttribute('aria-selected', 'false');
+    });
+
+    // Deixa a página atrás do diálogo inerte (foco e leitor de tela)
+    function setBackgroundInert(inert) {
+      if (inert) {
+        inertedElements = Array.from(document.body.children).filter((el) => {
+          return el !== overlay && !['SCRIPT', 'CANVAS'].includes(el.tagName) && !el.hasAttribute('inert');
+        });
+        inertedElements.forEach((el) => el.setAttribute('inert', ''));
+      } else {
+        inertedElements.forEach((el) => el.removeAttribute('inert'));
+        inertedElements = [];
+      }
+    }
+
+    function announce(message) {
+      if (statusEl) statusEl.textContent = message;
+    }
 
     function getVisibleItems() {
       return Array.from(resultsContainer.querySelectorAll('.cmd-item:not([style*="display: none"])'));
@@ -38,18 +73,24 @@
         item.classList.toggle('is-selected', isSelected);
         item.setAttribute('aria-selected', isSelected ? 'true' : 'false');
         if (isSelected) {
+          input.setAttribute('aria-activedescendant', item.id);
           item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         }
       });
+      if (items.length === 0) input.removeAttribute('aria-activedescendant');
     }
 
     function openPalette() {
       if (isOpen) return;
       isOpen = true;
       previousActiveElement = document.activeElement;
+      overlay.removeAttribute('inert');
       overlay.classList.add('is-open');
       overlay.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      setBackgroundInert(true);
+      if (window.lenis) window.lenis.stop();
+      trigger.setAttribute('aria-expanded', 'true');
       input.value = '';
       filterItems('');
       setTimeout(() => {
@@ -62,7 +103,11 @@
       isOpen = false;
       overlay.classList.remove('is-open');
       overlay.setAttribute('aria-hidden', 'true');
+      overlay.setAttribute('inert', '');
       document.body.style.overflow = '';
+      setBackgroundInert(false);
+      if (window.lenis) window.lenis.start();
+      trigger.setAttribute('aria-expanded', 'false');
       if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
         previousActiveElement.focus();
       }
@@ -104,14 +149,14 @@
           emptyMsg = document.createElement('div');
           emptyMsg.id = 'cmd-empty';
           emptyMsg.className = 'cmd-palette__empty';
-          emptyMsg.textContent = `Nenhum comando encontrado para "${query}"`;
           resultsContainer.appendChild(emptyMsg);
-        } else {
-          emptyMsg.textContent = `Nenhum comando encontrado para "${query}"`;
-          emptyMsg.style.display = 'block';
         }
-      } else if (emptyMsg) {
-        emptyMsg.style.display = 'none';
+        emptyMsg.textContent = `Nenhum comando encontrado para "${query}"`;
+        emptyMsg.style.display = 'block';
+        announce(`Nenhum resultado para ${query}`);
+      } else {
+        if (emptyMsg) emptyMsg.style.display = 'none';
+        announce(q ? `${totalVisible} resultado${totalVisible > 1 ? 's' : ''}` : '');
       }
 
       selectedIndex = 0;
@@ -124,10 +169,10 @@
 
       switch (action) {
         case 'copy-email': {
-          const email = 'eduardoocardosoo@gmail.com';
+          const email = SITE.email;
           if (navigator.clipboard && window.isSecureContext) {
             navigator.clipboard.writeText(email).then(() => {
-              triggerToast('E-mail institucional copiado com sucesso!');
+              SITE.toast('E-mail institucional copiado com sucesso!');
             }).catch(() => {
               window.location.href = 'mailto:' + email;
             });
@@ -139,20 +184,16 @@
 
         case 'download-cv': {
           const cvLink = document.createElement('a');
-          cvLink.href = 'assets/cv_eduardo_cardoso.pdf?v=14';
+          cvLink.href = SITE.cvUrl;
           cvLink.target = '_blank';
           cvLink.rel = 'noopener noreferrer';
           cvLink.click();
-          triggerToast('Download do Currículo PDF iniciado!');
+          SITE.toast('Download do Currículo PDF iniciado!');
           break;
         }
 
         case 'open-whatsapp': {
-          window.open(
-            'https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar',
-            '_blank',
-            'noopener,noreferrer'
-          );
+          window.open(SITE.whatsappUrl, '_blank', 'noopener,noreferrer');
           break;
         }
 
@@ -161,7 +202,7 @@
           if (themeToggle) {
             themeToggle.click();
             const current = document.documentElement.getAttribute('data-theme') || 'dark';
-            triggerToast(`Tema alterado para: ${current === 'light' ? 'Modo Claro' : 'Modo Escuro'}`);
+            SITE.toast(`Tema alterado para: ${current === 'light' ? 'Modo Claro' : 'Modo Escuro'}`);
           }
           break;
         }
@@ -180,7 +221,7 @@
             const targetEl = document.querySelector(targetId);
             if (targetEl) {
               closePalette();
-              targetEl.scrollIntoView({ behavior: 'smooth' });
+              SITE.scrollTo(targetEl);
               history.pushState(null, '', targetId);
               return;
             }
@@ -190,28 +231,6 @@
       }
 
       closePalette();
-    }
-
-    function triggerToast(message) {
-      const existingToast = document.getElementById('email-toast');
-      if (existingToast) existingToast.remove();
-
-      const toast = document.createElement('div');
-      toast.id = 'email-toast';
-      toast.className = 'contact-toast is-visible';
-      toast.setAttribute('role', 'status');
-      toast.innerHTML = `
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-        <span>${message}</span>
-      `;
-      document.body.appendChild(toast);
-
-      setTimeout(() => {
-        toast.classList.remove('is-visible');
-        setTimeout(() => toast.remove(), 300);
-      }, 2600);
     }
 
     // Event Listeners
@@ -245,6 +264,18 @@
       if (e.key === 'Escape') {
         e.preventDefault();
         closePalette();
+        return;
+      }
+
+      // Focus trap: os únicos focáveis do diálogo são o input e o botão ESC
+      if (e.key === 'Tab') {
+        const focusables = [input, closeBtn].filter(Boolean);
+        const idx = focusables.indexOf(document.activeElement);
+        e.preventDefault();
+        const next = e.shiftKey
+          ? focusables[(idx - 1 + focusables.length) % focusables.length]
+          : focusables[(idx + 1) % focusables.length];
+        next.focus();
         return;
       }
 

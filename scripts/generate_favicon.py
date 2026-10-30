@@ -57,14 +57,25 @@ def main():
         "favicon-32.png": 32,
         "favicon-48.png": 48,
         "apple-touch-icon.png": 180,
+        "icon-192.png": 192,
+        "icon-512.png": 512,
     }
 
     icons = []
     for name, size in sizes.items():
         icon = draw_icon(size)
         icon.save(ASSETS / name)
-        icons.append(icon)
+        if size <= 48:
+            icons.append(icon)
         print(f"Gerado: {ASSETS / name}")
+
+    # Ícone maskable (PWA): fundo sangrando até a borda e conteúdo na zona segura (~72%)
+    maskable = Image.new("RGBA", (512, 512), BG_INNER)
+    inner = draw_icon(int(512 * 0.72))
+    offset = (512 - inner.width) // 2
+    maskable.alpha_composite(inner, (offset, offset))
+    maskable.save(ASSETS / "icon-maskable-512.png")
+    print(f"Gerado: {ASSETS / 'icon-maskable-512.png'}")
 
     ico_path = ROOT / "favicon.ico"
     icons[1].save(

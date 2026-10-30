@@ -56,7 +56,6 @@
         'aria-label',
         theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'
       );
-      themeToggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
     }
 
     try {
@@ -69,7 +68,7 @@
   if (themeToggle) {
     // Inicializar estado do botão
     const initialTheme = getCurrentTheme();
-    themeToggle.setAttribute('aria-pressed', initialTheme === 'light' ? 'true' : 'false');
+    themeToggle.setAttribute('aria-label', initialTheme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro');
 
     themeToggle.addEventListener('click', function () {
       const nextTheme = getCurrentTheme() === 'light' ? 'dark' : 'light';
@@ -85,6 +84,10 @@
     navToggle.setAttribute('aria-expanded', 'true');
     navToggle.setAttribute('aria-label', 'Fechar menu de navegação');
     document.body.style.overflow = 'hidden';
+    // Lenis intercepta o wheel/touch: pausa para o scroll da página não vazar por trás do menu
+    if (window.lenis) window.lenis.stop();
+    const firstLink = navMenu.querySelector('a, button');
+    if (firstLink) firstLink.focus();
   }
 
   function closeMobileMenu() {
@@ -94,6 +97,7 @@
     navToggle.setAttribute('aria-expanded', 'false');
     navToggle.setAttribute('aria-label', 'Abrir menu de navegação');
     document.body.style.overflow = '';
+    if (window.lenis) window.lenis.start();
   }
 
   if (navToggle && navMenu) {
@@ -116,11 +120,27 @@
       }
     });
 
-    // Fechar via tecla Escape
+    // Fechar via tecla Escape e prender o foco (Tab) dentro do menu aberto
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+      if (!navMenu.classList.contains('open')) return;
+
+      if (e.key === 'Escape') {
         closeMobileMenu();
         navToggle.focus();
+        return;
+      }
+
+      if (e.key === 'Tab') {
+        const focusables = Array.from(navMenu.querySelectorAll('a[href], button:not([disabled])')).concat(navToggle);
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     });
 
@@ -144,18 +164,7 @@
       e.preventDefault();
       closeMobileMenu();
 
-      const headerHeight = header ? header.offsetHeight : 68;
-      const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
-
-      // Lenis (quando ativo) conduz a rolagem; senão, scroll suave nativo
-      if (window.lenis) {
-        window.lenis.scrollTo(Math.max(0, targetTop), { duration: 1.2 });
-      } else {
-        window.scrollTo({
-          top: Math.max(0, targetTop),
-          behavior: prefersReducedMotion ? 'auto' : 'smooth'
-        });
-      }
+      SITE.scrollTo(target);
 
       // Acessibilidade: mover foco para o destino
       target.setAttribute('tabindex', '-1');
@@ -302,34 +311,6 @@
     const originalText = contactEmailBtn.querySelector('.contact__chip-text')?.textContent || 'Copiar E-mail';
     let copyTimeout = null;
 
-    function showEmailToast(message) {
-      const existingToast = document.getElementById('email-toast');
-      if (existingToast) existingToast.remove();
-
-      const toast = document.createElement('div');
-      toast.id = 'email-toast';
-      toast.className = 'contact-toast';
-      toast.setAttribute('role', 'status');
-      toast.innerHTML = `
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-        <span>${message}</span>
-      `;
-      document.body.appendChild(toast);
-
-      requestAnimationFrame(function () {
-        toast.classList.add('is-visible');
-      });
-
-      setTimeout(function () {
-        toast.classList.remove('is-visible');
-        setTimeout(function () {
-          toast.remove();
-        }, 300);
-      }, 2800);
-    }
-
     contactEmailBtn.addEventListener('click', function () {
       const email = contactEmailBtn.getAttribute('data-email');
       if (!email) return;
@@ -340,7 +321,7 @@
           contactEmailBtn.classList.add('contact__chip--copied');
           if (textSpan) textSpan.textContent = '✓ E-mail Copiado!';
 
-          showEmailToast('E-mail copiado para a área de transferência!');
+          SITE.toast('E-mail copiado para a área de transferência!');
 
           clearTimeout(copyTimeout);
           copyTimeout = setTimeout(function () {
