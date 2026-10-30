@@ -22,7 +22,7 @@
 
   // Constants
   const THEME_KEY = 'portfolio-theme';
-  const THEME_COLORS = { dark: '#0e0f0e', light: '#f6f7f3' };
+  const THEME_COLORS = { dark: '#090a09', light: '#f7f8f4' };
 
   const TYPING_PHRASES = [
     'Suporte técnico e automações',
