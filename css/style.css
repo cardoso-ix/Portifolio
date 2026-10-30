@@ -4,6 +4,12 @@
    Stack: HTML5, CSS3, JavaScript Vanilla
    ========================================================================== */
 
+/* Ordem das camadas: creative.css (efeitos HUD) sobrepõe base sem precisar de !important */
+@layer base, creative;
+
+@layer base {
+
+
 /* ===== Fontes self-hosted (variáveis, subset latin cobre pt-BR) ===== */
 @font-face {
   font-family: 'Inter';
@@ -1979,4 +1985,5 @@ section[id] {
     display: flex;
     visibility: visible;
   }
+}
 }

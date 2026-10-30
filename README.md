@@ -3,12 +3,11 @@
 <p align="left">
   <a href="https://cardoso-ix.github.io/Portifolio/"><img src="https://img.shields.io/badge/Live%20Demo-cardoso--ix.github.io-a8b87a?style=flat-square&logo=github" alt="Live Demo"></a>
   <img src="https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS%20Vanilla-1a1c1a?style=flat-square&logo=javascript" alt="Stack">
-  <img src="https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-68b068?style=flat-square" alt="WCAG AA Compliant">
   <img src="https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=flat-square&logo=github-pages" alt="GitHub Pages">
   <img src="https://img.shields.io/badge/License-Uso%20Livre-lightgrey?style=flat-square" alt="License">
 </p>
 
-Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnologias web fundamentais (HTML5, CSS3 e JavaScript Vanilla), priorizando performance instantânea, acessibilidade (WCAG 2.1 AA) e design contemporâneo elevado.
+Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnologias web fundamentais (HTML5, CSS3 e JavaScript Vanilla), priorizando performance, acessibilidade (orientada à WCAG 2.1 AA) e design contemporâneo elevado.
 
 - **Posicionamento:** Perfil técnico com atuação na fronteira entre **suporte técnico** (atendimento N1/N2, diagnóstico de incidentes, help desk) e **automações inteligentes com IA** (n8n, OpenAI, APIs REST, webhooks e orquestração).
 - **Ambiente de Produção:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)

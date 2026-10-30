@@ -9,12 +9,13 @@ Documento de especificação técnica e decisões de arquitetura para o portfól
 O projeto foi concebido para máxima **performance**, **acessibilidade** e **independência de dependências pesadas**:
 
 - **Stack Base:** HTML5 semântico, CSS3 moderno (Custom Properties / Design Tokens) e JavaScript vanilla (ES6+ modular).
-- **Sem Frameworks no Site Principal:** Ausência de React, Vue, jQuery ou Tailwind no envelope principal — garantindo carregamento instantâneo (Time to Interactive < 0.4s) e pontuação de performance próxima a 100 no Lighthouse.
-- **Acessibilidade (A11y):** Conformidade estrita com as diretrizes **WCAG 2.1 nível AA**:
+- **Sem Frameworks no Site Principal:** Ausência de React, Vue, jQuery ou Tailwind no envelope principal — mantendo o carregamento enxuto. As métricas reais de Lighthouse serão registradas em `docs/PERFORMANCE.md` após a medição.
+- **Acessibilidade (A11y):** Orientada às diretrizes **WCAG 2.1 nível AA** (auditoria formal ainda pendente):
   - Contraste de cores testado e validado em ambos os temas (escuro e claro).
   - Ancoragem suave universal com `scroll-margin-top` nas seções para evitar sobreposição do header fixo.
   - Efeito de digitação com texto estático para leitores de tela (`.sr-only` e `aria-hidden="true"`).
-  - Suporte completo a navegação por teclado (foco visível, `Escape` para fechar o menu mobile).
+  - Navegação por teclado: foco visível, focus trap no menu mobile e na paleta, `Escape` para fechar ambos.
+  - Paleta de comandos como combobox/listbox (`aria-activedescendant`, `aria-live` para resultados) com a página atrás marcada `inert`.
   - Respeito total à preferência `prefers-reduced-motion: reduce`.
 
 ---
@@ -52,9 +53,11 @@ Portifolio/
 ├── sitemap.xml                 # Mapeamento do site para indexação
 ├── site.webmanifest            # Metadados de PWA e ícones móveis
 ├── css/
-│   ├── style.css               # Design system unificado sem dependências (Quiet Olive)
-│   └── creative.css            # Camada visual avançada (HUD, scanner, spotlight, command palette)
+│   ├── style.css               # Design system (Quiet Olive), em `@layer base`
+│   └── creative.css            # Camada HUD (scanner, spotlight, paleta), em `@layer creative`: sobrepõe a base sem `!important`
 ├── js/
+│   ├── theme-init.js           # Tema salvo e classe js-reveal antes da primeira pintura (sem script inline)
+│   ├── config.js               # window.SITE: contatos, scrollTo e toast compartilhados
 │   ├── main.js                 # Lógica de tema, navegação, scroll e clipboard
 │   ├── animations.js           # Orquestração GSAP, spotlight reativo ao cursor e Matrix Decrypt
 │   ├── webgl-scene.js          # Cena 3D Three.js com geometrias flutuantes e cyber dust
@@ -62,8 +65,10 @@ Portifolio/
 ├── assets/
 │   ├── cv_eduardo_cardoso.pdf  # Currículo canônico atualizado
 │   ├── favicon-*.png / .svg    # Favicons em múltiplas resoluções
+│   ├── icon-192/512/maskable   # Ícones do manifest PWA
+│   ├── fonts/                  # Inter e JetBrains Mono (woff2 variável, subset latin)
 │   └── images/
-│       ├── foto.png            # Foto de perfil de alta qualidade
+│       ├── foto.png            # Foto de perfil (fallback) + variantes .webp responsivas
 │       ├── og-image.png        # Imagem para compartilhamento social (1200x630)
 │       └── *-preview.*         # Capturas e prévias dos projetos
 ├── docs/                       # Documentação técnica e de posicionamento
@@ -123,8 +128,9 @@ Cada script é encapsulado em IIFE com `'use strict'`, mantendo isolamento de es
 ## 5. Práticas de SEO, A11y e Performance
 
 - **Metadados Sociais:** Tags completas Open Graph e Twitter Cards com imagem de 1200×630.
-- **Marcação Semântica Estruturada:** Dados em formato JSON-LD do tipo `Person` (schema.org) no cabeçalho do HTML.
+- **Marcação Semântica Estruturada:** JSON-LD em `@graph` com `WebSite`, `ProfilePage` e `Person` (schema.org), mais `referrer`, `color-scheme` e ícones 192/512/maskable no manifest.
+- **CSP (via `<meta>`):** `script-src 'self'` e CDNs com SRI, sem `unsafe-inline` em scripts (o init do tema é `js/theme-init.js`); `img-src 'self' data:`; `object-src 'none'`; `form-action 'self'`; `upgrade-insecure-requests`. `style-src` ainda aceita `unsafe-inline` por causa de atributos `style`. GitHub Pages não permite headers HTTP, então `frame-ancestors` não é aplicável.
 - **Cache-Busting:** Inclusão de sufixos de versão (`?v=XX`) nos recursos estáticos (CSS, JS, PDF e imagens) para atualização imediata nos navegadores dos visitantes.
-- **Carregamento Otimizado:** Imagens abaixo da dobra com `loading="lazy"` e `decoding="async"`. Foto principal do hero com `fetchpriority="high"`.
+- **Carregamento Otimizado:** Imagens em WebP responsivo (`<picture>`/`srcset`), abaixo da dobra com `loading="lazy"`. Foto do hero com preload e `fetchpriority="high"`. Fontes self-hosted.
 - **Validação Automatizada:** CI com `html-validate` (garantindo 0 erros de conformidade HTML5 e ARIA) e `lychee` para checagem de links ativos.
 
