@@ -60,7 +60,8 @@ Portifolio/
 │   ├── config.js               # window.SITE: contatos, scrollTo e toast compartilhados
 │   ├── main.js                 # Lógica de tema, navegação, scroll e clipboard
 │   ├── animations.js           # Orquestração GSAP, spotlight reativo ao cursor e Matrix Decrypt
-│   ├── webgl-scene.js          # Cena 3D Three.js com geometrias flutuantes e cyber dust
+│   ├── webgl-loader.js         # Carrega Three.js (SRI) e a cena só após o load, em tempo ocioso
+│   ├── webgl-scene.js          # Cena 3D Three.js: icosaedro com deformação em shader e cyber dust
 │   └── command-palette.js      # Central de Comandos HUD (Ctrl+K / ⌘K estilo Raycast)
 ├── assets/
 │   ├── cv_eduardo_cardoso.pdf  # Currículo canônico atualizado
@@ -73,6 +74,7 @@ Portifolio/
 │       └── *-preview.*         # Capturas e prévias dos projetos
 ├── docs/                       # Documentação técnica e de posicionamento
 │   ├── ARCHITECTURE.md         # Este documento
+│   ├── PERFORMANCE.md          # Medições Lighthouse antes/depois e pendências
 │   ├── PROJETOS-GITHUB.md      # Inventário dos repositórios e demos
 │   ├── LINKEDIN-PERFIL.md      # Textos e kit para o perfil no LinkedIn
 │   └── AVALIACAO-PERFIL.md     # Análise estratégica de carreira
@@ -111,7 +113,8 @@ Cada script é encapsulado em IIFE com `'use strict'`, mantendo isolamento de es
    - **Tilt dos cards:** `gsap.quickTo` em `rotationX/Y` (máx. 4°), só em dispositivos com hover real.
    - **Hero:** o card `perfil.json` é estático (não há telemetria simulada).
 
-4. **`js/webgl-scene.js` (Cena 3D Three.js & Cyber Dust):**
+4. **`js/webgl-loader.js` + `js/webgl-scene.js` (Cena 3D Three.js & Cyber Dust):**
+   - O loader injeta Three.js (com SRI) e a cena só depois do `load`, via `requestIdleCallback`; não carrega com `prefers-reduced-motion` nem `saveData`.
    - Canvas 3D em segundo plano com icosaedro orgânico: a deformação por onda roda no *vertex shader* (`onBeforeCompile` sobre `MeshStandardMaterial`), com normais analíticas. Não há laço de vértices nem `computeVertexNormals()` no JS.
    - Matriz de 180 partículas de poeira cibernética (*cyber dust*) em rotação orbital suave.
    - Mobile: DPR limitado a 1.25, sem antialias, menos subdivisões e partículas.
