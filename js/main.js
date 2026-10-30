@@ -312,7 +312,7 @@
     let copyTimeout = null;
 
     contactEmailBtn.addEventListener('click', function () {
-      const email = contactEmailBtn.getAttribute('data-email');
+      const email = SITE.email;
       if (!email) return;
 
       if (navigator.clipboard && window.isSecureContext) {
