@@ -237,7 +237,7 @@ button, input, select, textarea {
   border-radius: var(--radius-md);
   background: var(--color-accent);
   color: var(--color-accent-contrast);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 600;
   box-shadow: var(--shadow-md);
@@ -334,16 +334,10 @@ section[id] {
   50% { opacity: 0; }
 }
 
-/* Fade in animations */
-.fade-in {
+/* Reveal ao rolar: o estado inicial é aplicado só quando o JS está ativo (.js-reveal);
+   sem JS ou sem GSAP o conteúdo continua visível. A animação é do GSAP (animations.js). */
+.js-reveal .fade-in {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity var(--duration-slow) var(--ease-spring), transform var(--duration-slow) var(--ease-spring);
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* ===== Buttons ===== */
@@ -353,7 +347,7 @@ section[id] {
   justify-content: center;
   gap: 0.55rem;
   padding: 0.75rem 1.5rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -535,7 +529,7 @@ section[id] {
 }
 
 .header__link {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text-secondary);
@@ -1261,7 +1255,7 @@ section[id] {
 
 .about__highlight-badge {
   align-self: flex-start;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -1511,7 +1505,7 @@ section[id] {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8125rem;
   color: var(--color-accent);
   font-weight: 600;
@@ -1626,7 +1620,7 @@ section[id] {
   align-items: center;
   gap: 0.65rem;
   padding: 0.85rem 1.45rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: var(--radius-pill);
@@ -1683,7 +1677,7 @@ section[id] {
   align-items: center;
   gap: 0.55rem;
   padding: 0.75rem 1.35rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text);
@@ -1720,7 +1714,7 @@ section[id] {
 }
 
 .footer__copy {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8125rem;
   color: var(--color-text-muted);
 }
@@ -1734,7 +1728,7 @@ section[id] {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8125rem;
   color: var(--color-accent);
   transition: color var(--transition);

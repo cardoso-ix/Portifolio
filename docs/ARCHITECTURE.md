@@ -101,14 +101,22 @@ Cada script é encapsulado em IIFE com `'use strict'`, mantendo isolamento de es
 
 3. **`js/animations.js` (Micro-interações e GSAP):**
    - **Spotlight Reativo:** Calcula coordenadas do cursor nos cards via `pointermove` e injeta variáveis CSS `--mouse-x` e `--mouse-y` para gradiente radial suave.
-   - **Text Scramble / Matrix Decrypt:** Decodifica caracteres cibernéticos aleatórios nos títulos das seções ao passar o cursor ou acionar via teclado.
-   - **Revelações GSAP ScrollTrigger:** Entrada suave dos cards e seções com verificação de `prefers-reduced-motion`.
+   - **Text Scramble / Matrix Decrypt:** Decodifica glifos nos títulos das seções (`.section__title`) uma única vez ao entrar na viewport; o h1 não é afetado e o `aria-label` guarda o texto final.
+   - **Revelações GSAP ScrollTrigger (sistema único):** todo elemento `.fade-in` é revelado por `ScrollTrigger.batch` com escalonamento. O CSS só esconde `.fade-in` sob `html.js-reveal`, classe adicionada por um script inline no `<head>` (apenas sem `prefers-reduced-motion`) e removida por `main.js` se GSAP/ScrollTrigger não carregarem. Sem JS o conteúdo permanece visível.
+   - **Tilt dos cards:** `gsap.quickTo` em `rotationX/Y` (máx. 4°), só em dispositivos com hover real.
+   - **Hero:** o card `perfil.json` é estático (não há telemetria simulada).
 
 4. **`js/webgl-scene.js` (Cena 3D Three.js & Cyber Dust):**
    - Canvas 3D em segundo plano com icosaedro orgânico: a deformação por onda roda no *vertex shader* (`onBeforeCompile` sobre `MeshStandardMaterial`), com normais analíticas. Não há laço de vértices nem `computeVertexNormals()` no JS.
    - Matriz de 180 partículas de poeira cibernética (*cyber dust*) em rotação orbital suave.
    - Mobile: DPR limitado a 1.25, sem antialias, menos subdivisões e partículas.
    - Loop pausado com a aba oculta (`visibilitychange`), sem rAF duplicado ao voltar; `prefers-reduced-motion` renderiza um frame estático; trata `webglcontextlost`/`restored`; resize com debounce.
+
+---
+
+### Tokens do acento neon
+
+`css/creative.css` define `--neon` e `--neon-rgb` (ciano `#00f5ff` no dark, `#0891b2` no light). Use `var(--neon)` e `rgba(var(--neon-rgb), α)` em vez de cores literais.
 
 ---
 
