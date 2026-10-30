@@ -21,7 +21,7 @@ Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnol
 |---|---|
 | **Página Principal** | HTML5 semântico, CSS3 moderno (Custom Properties / Design Tokens), JavaScript ES6+ Vanilla |
 | **Experiência 3D & Animações** | **Three.js** (WebGL 3D Background & Cyber Dust), **GSAP** + **ScrollTrigger** (revelações e micro-interações) |
-| **Recursos HUD & Interatividade** | Central de Comandos (`Ctrl+K` / `⌘K`), Telemetria em tempo real, Text Scramble (Matrix Decrypt), Spotlight reativo |
+| **Recursos HUD & Interatividade** | Central de Comandos (`Ctrl+K` / `⌘K`), card de perfil HUD, Text Scramble (Matrix Decrypt), Spotlight reativo |
 | **Tipografia** | Inter (leitura e UI) + JetBrains Mono (código, terminal e metadados) |
 | **Design System** | *Quiet Graphite Olive + Cyber HUD* — superfícies graphite (`#0e0f0e`), acento oliva suave (`#a8b87a`), ciano neon (`#00f5ff`), glassmorphism e dark/light mode nativo |
 | **Integrações & Demos** | Deploy em nuvem (Railway 24/7, Vercel, Hugging Face Spaces) e repositórios oficiais |
@@ -39,12 +39,12 @@ O portfólio combina estética de engenharia moderna, inspiração em interfaces
    - Atalho global de teclado e botão flutuante para navegação instantânea.
    - Busca em tempo real com filtro preditivo para projetos, ações rápidas e seções.
    - Ações integradas: cópia de e-mail institucional com toast, download de CV em PDF, alternância de tema e chat no WhatsApp.
-2. **Telemetria de Sistema no Hero**:
-   - Card HUD com indicador de conectividade em tempo real, jitter dinâmico de latência de rede e status operacional.
+2. **Card de Perfil HUD no Hero**:
+   - Card estático com local, foco, stack e disponibilidade. Sem métricas simuladas: só dados reais.
 3. **Scanner Laser Holográfico & Retículo no Avatar**:
    - Feixe de varredura luminoso contínuo sobre a foto de perfil com retículo cibernético HUD e micro-badge de status.
 4. **Text Scramble / Matrix Decrypt Engine**:
-   - Efeito visual de decodificação de glifos cibernéticos ao passar o cursor pelos títulos das seções.
+   - Decodificação de glifos nos títulos das seções, uma vez ao entrar na viewport. O nome no hero fica sempre legível e leitores de tela recebem o texto final via `aria-label`.
 5. **Spotlight Reativo & WebGL 3D Scene**:
    - Gradiente de iluminação radial suave que rastreia dinamicamente a posição do cursor nos cards.
    - Icosaedro orgânico renderizado via Three.js no fundo, com deformação calculada no *vertex shader* (GPU) e matriz de 180 partículas de *cyber dust* em rotação orbital.

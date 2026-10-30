@@ -272,29 +272,11 @@
     }
   }
 
-  /* ===== 7. Intersection Observer (Fade-In) ===== */
-  const fadeElements = document.querySelectorAll('.fade-in');
-
-  if ('IntersectionObserver' in window && !prefersReducedMotion) {
-    const fadeObserver = new IntersectionObserver(
-      function (entries, observer) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
-    );
-
-    fadeElements.forEach(function (el) {
-      fadeObserver.observe(el);
-    });
-  } else {
-    fadeElements.forEach(function (el) {
-      el.classList.add('visible');
-    });
+  /* ===== 7. Fallback do reveal ===== */
+  // O reveal é feito pelo GSAP (animations.js). Se a lib não carregar,
+  // remove a classe que esconde `.fade-in` para o conteúdo não ficar invisível.
+  if (typeof window.gsap === 'undefined' || typeof window.ScrollTrigger === 'undefined' || prefersReducedMotion) {
+    document.documentElement.classList.remove('js-reveal');
   }
 
   /* ===== 8. Histórico Profissional (Timeline Accordion) ===== */

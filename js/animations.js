@@ -70,104 +70,23 @@
     });
 
     // ===== 2. Revelação Cinemática com GSAP ScrollTrigger =====
+    // Único sistema de reveal da página: o CSS só esconde `.fade-in` sob `.js-reveal`
     if (typeof ScrollTrigger !== 'undefined') {
-      // (a) Títulos de Seção (<h2>)
-      const sectionTitles = document.querySelectorAll('section h2, .section__title');
-      sectionTitles.forEach((title) => {
-        title.classList.add('gsap-reveal');
-        gsap.fromTo(
-          title,
-          {
-            opacity: 0,
-            y: 35,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.9,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: title,
-              start: 'top 88%',
-              toggleActions: 'play none none none',
-            },
-          }
-        );
-      });
+      const revealTargets = gsap.utils.toArray('.fade-in');
+      gsap.set(revealTargets, { y: 28 });
 
-      // (b) Seção de Skills (Grupos com revelação escalonada)
-      const skillsSection = document.getElementById('skills');
-      const skillGroups = document.querySelectorAll('.skills__group');
-      if (skillGroups.length > 0) {
-        skillGroups.forEach((group) => group.classList.add('gsap-reveal'));
-        gsap.fromTo(
-          skillGroups,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.12,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: skillsSection || '.skills',
-              start: 'top 82%',
-              toggleActions: 'play none none none',
-            },
-          }
-        );
-      }
-
-      // (c) Blocos de Formação Acadêmica e Experiência Profissional
-      const timelineBlocks = document.querySelectorAll(
-        '#formacao .timeline__item, #experiencia .timeline__item, .timeline__item'
-      );
-      timelineBlocks.forEach((item) => {
-        item.classList.add('gsap-reveal');
-        gsap.fromTo(
-          item,
-          {
-            opacity: 0,
-            y: 35,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: item,
-              start: 'top 88%',
-              toggleActions: 'play none none none',
-            },
-          }
-        );
-      });
-
-      // (d) Revelação suave dos cards de projetos na entrada da viewport
-      projectCards.forEach((card) => {
-        card.classList.add('gsap-reveal');
-        gsap.fromTo(
-          card,
-          {
-            opacity: 0,
-            y: 30,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.85,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 88%',
-              toggleActions: 'play none none none',
-            },
-          }
-        );
+      // batch agrupa elementos que entram juntos e aplica o escalonamento
+      ScrollTrigger.batch(revealTargets, {
+        start: 'top 88%',
+        once: true,
+        onEnter: (batch) => gsap.to(batch, {
+          opacity: 1,
+          y: 0,
+          duration: 0.85,
+          stagger: 0.1,
+          ease: 'power3.out',
+          overwrite: 'auto',
+        }),
       });
 
       // Atualizar cálculos do ScrollTrigger caso o histórico profissional seja expandido
@@ -316,20 +235,11 @@
     }
 
     if (!prefersReducedMotion) {
-      // (a) Hero Title Decrypt
-      const heroTitle = document.getElementById('hero-title');
-      if (heroTitle) {
-        const heroScrambler = new TextScramble(heroTitle);
-        setTimeout(() => {
-          heroScrambler.setText();
-        }, 200);
-        heroTitle.addEventListener('mouseenter', () => {
-          heroScrambler.setText();
-        });
-      }
-
-      // (b) Section Titles Decrypt (ScrollTrigger + Hover)
+      // Decrypt só nos títulos de seção, uma vez ao entrar na viewport.
+      // O h1 (nome) permanece legível desde o primeiro frame.
       document.querySelectorAll('.section__title').forEach((title) => {
+        // Leitores de tela recebem o texto final, não os glifos intermediários
+        title.setAttribute('aria-label', title.textContent.replace(/\s+/g, ' ').trim());
         const scrambler = new TextScramble(title);
 
         if (typeof ScrollTrigger !== 'undefined') {
@@ -340,25 +250,8 @@
             onEnter: () => scrambler.setText(),
           });
         }
-
-        title.addEventListener('mouseenter', () => {
-          scrambler.setText();
-        });
       });
 
-      // ===== 6. Telemetria em Tempo Real (Live Ping Jitter) =====
-      const pingEl = document.getElementById('telemetry-ping');
-      if (pingEl) {
-        const pings = [14, 16, 18, 15, 19, 17, 22, 15, 18];
-        let pingIndex = 0;
-        setInterval(() => {
-          pingIndex = (pingIndex + 1) % pings.length;
-          const currentPing = pings[pingIndex];
-          const jitter = Math.floor(Math.random() * 3) - 1;
-          const val = Math.max(12, currentPing + jitter);
-          pingEl.textContent = `${val}ms`;
-        }, 2600);
-      }
     }
   });
 })();

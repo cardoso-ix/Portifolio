@@ -38,8 +38,8 @@
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrains-mono-latin.woff2" crossorigin>
   <link rel="preload" as="image" type="image/webp" href="assets/images/foto-800.webp" imagesrcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" imagesizes="(max-width: 768px) 70vw, 400px" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=39">
-  <link rel="stylesheet" href="css/creative.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=41">
+  <link rel="stylesheet" href="css/creative.css?v=9">
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
@@ -74,6 +74,10 @@
 
   <script>
     (function () {
+      // Habilita o estado inicial do reveal (GSAP) só com JS e sem movimento reduzido
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('js-reveal');
+      }
       try {
         var saved = localStorage.getItem('portfolio-theme');
         if (saved === 'light' || saved === 'dark') {
@@ -152,7 +156,6 @@
               <span class="hero__badge hero__badge--live">
                 <span class="hero__badge-dot"></span> Chapecó, SC
               </span>
-              <span class="hero__badge">Suporte Técnico · Automação · IA</span>
               <span class="hero__badge">Pós Tech FIAP</span>
             </div>
             <p class="hero__greeting"><span class="prompt" aria-hidden="true">&gt;</span> Olá, eu sou</p>
@@ -167,10 +170,6 @@
               <li class="hero__fact">
                 <span class="hero__fact-label">Atuação</span>
                 <span>Diagnóstico, suporte N1/N2 e implementação de automações</span>
-              </li>
-              <li class="hero__fact">
-                <span class="hero__fact-label">Stack</span>
-                <span>n8n · OpenAI · APIs REST · Webhooks · Python</span>
               </li>
               <li class="hero__fact">
                 <span class="hero__fact-label">Estudo</span>
@@ -189,7 +188,7 @@
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </a>
-              <a href="assets/cv_eduardo_cardoso.pdf?v=14" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer">
+              <a href="assets/cv_eduardo_cardoso.pdf?v=14" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
                 <span>Currículo PDF</span>
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -198,7 +197,7 @@
                   <line x1="16" y1="17" x2="8" y2="17"></line>
                 </svg>
               </a>
-              <a href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" class="btn btn--outline btn--lg" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
                 <span>WhatsApp</span>
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
@@ -226,25 +225,20 @@
             <div class="telemetry__header">
               <div class="telemetry__title-wrap">
                 <span class="telemetry__pulse-dot" aria-hidden="true"></span>
-                <p class="hero__profile-header">telemetry.live // SYS_ACTIVE</p>
+                <p class="hero__profile-header">perfil.json</p>
               </div>
-              <span class="telemetry__badge">v2.6 SECURE</span>
             </div>
             <div class="hero__profile-row">
-              <span class="hero__profile-key">ping</span>
-              <span class="hero__profile-val hero__profile-val--live"><span id="telemetry-ping">18ms</span> <span class="telemetry__subtext">(opt-edge)</span></span>
+              <span class="hero__profile-key">local</span>
+              <span class="hero__profile-val">Chapecó, SC <span class="telemetry__subtext">(27.09°S · 52.61°W)</span></span>
             </div>
             <div class="hero__profile-row">
-              <span class="hero__profile-key">geo_node</span>
-              <span class="hero__profile-val">27.09°S · 52.61°W <span class="telemetry__subtext">(Chapecó)</span></span>
+              <span class="hero__profile-key">foco</span>
+              <span class="hero__profile-val hero__profile-val--accent">Automação &amp; IA aplicada</span>
             </div>
             <div class="hero__profile-row">
-              <span class="hero__profile-key">infra_cloud</span>
-              <span class="hero__profile-val hero__profile-val--accent">Railway · Vercel · HF (4/4 UP)</span>
-            </div>
-            <div class="hero__profile-row">
-              <span class="hero__profile-key">ai_engine</span>
-              <span class="hero__profile-val hero__profile-val--cyan">DeepSeek · OpenAI · CrewAI</span>
+              <span class="hero__profile-key">stack</span>
+              <span class="hero__profile-val hero__profile-val--cyan">n8n · OpenAI · Python · APIs REST</span>
             </div>
             <div class="hero__profile-row">
               <span class="hero__profile-key">status</span>
@@ -791,12 +785,12 @@
 
   <script src="js/cursor.js?v=3"></script>
 
-  <script src="js/animations.js?v=4"></script>
+  <script src="js/animations.js?v=5"></script>
 
   <script src="js/command-palette.js?v=1"></script>
   <!-- Script Principal -->
 
-  <script src="js/main.js?v=39"></script>
+  <script src="js/main.js?v=40"></script>
 
 </body>
 </html>
