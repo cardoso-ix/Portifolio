@@ -147,10 +147,15 @@
       const headerHeight = header ? header.offsetHeight : 68;
       const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
 
-      window.scrollTo({
-        top: Math.max(0, targetTop),
-        behavior: prefersReducedMotion ? 'auto' : 'smooth'
-      });
+      // Lenis (quando ativo) conduz a rolagem; senão, scroll suave nativo
+      if (window.lenis) {
+        window.lenis.scrollTo(Math.max(0, targetTop), { duration: 1.2 });
+      } else {
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior: prefersReducedMotion ? 'auto' : 'smooth'
+        });
+      }
 
       // Acessibilidade: mover foco para o destino
       target.setAttribute('tabindex', '-1');
@@ -161,47 +166,61 @@
   /* ===== 5. ScrollSpy e Efeito no Header ===== */
   const trackedSections = document.querySelectorAll('section[id]');
   let scrollTicking = false;
+  let currentSectionId = '';
 
+  function setActiveLink(id) {
+    if (id === currentSectionId) return;
+    currentSectionId = id;
+    navLinks.forEach(function (link) {
+      const isActive = link.getAttribute('href') === '#' + id;
+      link.classList.toggle('active', isActive);
+      if (isActive) {
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
+
+  // Seção ativa via IntersectionObserver: sem leituras de layout por frame de scroll.
+  // A faixa de detecção fica logo abaixo do header, na parte superior da viewport.
+  if ('IntersectionObserver' in window && trackedSections.length) {
+    const headerOffset = (header ? header.offsetHeight : 68) + 80;
+    const visibleIds = new Set();
+    const spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        const id = entry.target.getAttribute('id');
+        if (entry.isIntersecting) {
+          visibleIds.add(id);
+        } else {
+          visibleIds.delete(id);
+        }
+      });
+      // Última seção (em ordem de documento) que cruza a faixa de detecção
+      let activeId = '';
+      trackedSections.forEach(function (section) {
+        if (visibleIds.has(section.getAttribute('id'))) {
+          activeId = section.getAttribute('id');
+        }
+      });
+      setActiveLink(activeId);
+    }, { rootMargin: '-' + headerOffset + 'px 0px -55% 0px', threshold: 0 });
+
+    trackedSections.forEach(function (section) { spy.observe(section); });
+  }
+
+  // Header com sombra e fim da página (contato é curto demais para cruzar a faixa)
   function updateScrollState() {
     const scrollY = window.scrollY;
 
-    // Header scrolled shadow
     if (header) {
-      if (scrollY > 40) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
+      header.classList.toggle('scrolled', scrollY > 40);
     }
 
-    // Identificar seção ativa
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    const isAtBottom = scrollY + windowHeight >= documentHeight - 50;
-
-    let currentSectionId = '';
-
+    const isAtBottom = scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50;
     if (isAtBottom && trackedSections.length > 0) {
-      currentSectionId = trackedSections[trackedSections.length - 1].getAttribute('id');
-    } else {
-      const headerOffset = (header ? header.offsetHeight : 68) + 80;
-      trackedSections.forEach(function (section) {
-        const top = section.getBoundingClientRect().top + scrollY - headerOffset;
-        const height = section.offsetHeight;
-        if (scrollY >= top && scrollY < top + height) {
-          currentSectionId = section.getAttribute('id');
-        }
-      });
+      setActiveLink(trackedSections[trackedSections.length - 1].getAttribute('id'));
     }
-
-    navLinks.forEach(function (link) {
-      const linkHref = link.getAttribute('href');
-      if (linkHref === '#' + currentSectionId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
 
     scrollTicking = false;
   }

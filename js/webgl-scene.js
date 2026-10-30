@@ -3,6 +3,8 @@
  * WEBGL BACKGROUND SCENE — THREE.JS DYNAMIC ORGANIC MESH
  * Translucent organic icosahedron mesh with dual cyan & violet lighting,
  * idle floating physics, and smooth mouse coordinates interaction.
+ * A deformação orgânica roda no vertex shader (GPU): sem laço de vértices
+ * nem computeVertexNormals() por frame no JS.
  * ==========================================================================
  */
 
@@ -35,44 +37,88 @@
   );
   camera.position.z = 24;
 
+  const isMobile = () => window.innerWidth < 768;
+  const maxPixelRatio = () => (isMobile() ? 1.25 : 2);
+
   const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     alpha: true,
-    antialias: true,
+    antialias: !isMobile(),
     powerPreference: 'high-performance',
   });
 
   // Otimização estrita de resolução e tamanho
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio()));
 
   // Grupo principal para controle de rotação e translação
   const meshGroup = new THREE.Group();
   scene.add(meshGroup);
 
   // ===== 2. Malha Orgânica com IcosahedronGeometry =====
-  // Raio 7.5 com 24 subdivisões para ondulações de alta fidelidade e leveza
-  const detailLevel = window.innerWidth < 768 ? 16 : 24;
+  // Deformação feita no vertex shader: menos subdivisões bastam e o custo de CPU é zero
+  const detailLevel = isMobile() ? 10 : 18;
   const geometry = new THREE.IcosahedronGeometry(7.5, detailLevel);
 
-  // Armazenar posições originais dos vértices para cálculo da distorção
-  const originalPositions = geometry.attributes.position.array.slice();
+  // Uniform compartilhado entre malha e wireframe
+  const uTime = { value: 0 };
 
-  // Material translúcido orgânico com reflexos físicos
-  const material = new THREE.MeshPhysicalMaterial({
+  // Mesma função de onda 3D que antes rodava no JS, agora em GLSL
+  const WAVE_GLSL = `
+    uniform float uTime;
+    float waveField(vec3 p) {
+      return sin(p.x * 0.35 + uTime * 1.2) *
+             cos(p.y * 0.35 + uTime * 1.0) *
+             sin(p.z * 0.35 + uTime * 0.8);
+    }
+    vec3 displaceOrganic(vec3 p) {
+      return p * (1.0 + waveField(p) * 0.16);
+    }
+  `;
+
+  function applyOrganicDisplacement(mat, withNormals) {
+    mat.onBeforeCompile = (shader) => {
+      shader.uniforms.uTime = uTime;
+      shader.vertexShader = WAVE_GLSL + shader.vertexShader;
+
+      if (withNormals) {
+        // Normal analítica por diferenças finitas sobre a base tangente da esfera
+        shader.vertexShader = shader.vertexShader.replace(
+          '#include <beginnormal_vertex>',
+          `
+          vec3 sphN = normalize(position);
+          vec3 sphT = normalize(cross(sphN, abs(sphN.y) < 0.99 ? vec3(0.0, 1.0, 0.0) : vec3(1.0, 0.0, 0.0)));
+          vec3 sphB = cross(sphN, sphT);
+          vec3 dP0 = displaceOrganic(position);
+          vec3 dPT = displaceOrganic(normalize(position + sphT * 0.05) * 7.5) - dP0;
+          vec3 dPB = displaceOrganic(normalize(position + sphB * 0.05) * 7.5) - dP0;
+          vec3 objectNormal = normalize(cross(dPT, dPB));
+          if (dot(objectNormal, sphN) < 0.0) objectNormal = -objectNormal;
+          #ifdef USE_TANGENT
+            vec3 objectTangent = vec3(tangent.xyz);
+          #endif
+          `
+        );
+      }
+
+      shader.vertexShader = shader.vertexShader.replace(
+        '#include <begin_vertex>',
+        'vec3 transformed = displaceOrganic(position);'
+      );
+    };
+  }
+
+  // Material translúcido orgânico (sem transmission: evita render pass extra)
+  const material = new THREE.MeshStandardMaterial({
     color: 0x07111a,
     emissive: 0x02070d,
     roughness: 0.18,
     metalness: 0.12,
-    transmission: 0.7,
-    ior: 1.35,
     transparent: true,
     opacity: 0.72,
-    reflectivity: 0.6,
-    clearcoat: 0.7,
-    clearcoatRoughness: 0.15,
     flatShading: false,
   });
+  applyOrganicDisplacement(material, true);
 
   const mesh = new THREE.Mesh(geometry, material);
   meshGroup.add(mesh);
@@ -84,11 +130,12 @@
     transparent: true,
     opacity: 0.08,
   });
+  applyOrganicDisplacement(wireframeMaterial, false);
   const wireframeMesh = new THREE.Mesh(geometry, wireframeMaterial);
   meshGroup.add(wireframeMesh);
 
   // ===== Partículas de Dados Flutuantes (Cyber Dust Matrix) =====
-  const particleCount = window.innerWidth < 768 ? 90 : 180;
+  const particleCount = isMobile() ? 90 : 180;
   const particleGeometry = new THREE.BufferGeometry();
   const particlePositions = new Float32Array(particleCount * 3);
   for (let i = 0; i < particleCount * 3; i += 3) {
@@ -144,8 +191,9 @@
     targetMouseY = -(e.clientY / window.innerHeight - 0.5) * 2;
   }, { passive: true });
 
-  // Redimensionamento automático com atualização de câmera e renderer
-  window.addEventListener('resize', () => {
+  // Redimensionamento automático (debounce) com atualização de câmera e renderer
+  let resizeTimer = null;
+  function handleResize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
 
@@ -153,7 +201,7 @@
     camera.updateProjectionMatrix();
 
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio()));
 
     // Ajuste responsivo de posicionamento do mesh
     if (width < 768) {
@@ -163,97 +211,103 @@
       meshGroup.position.set(4, 0, 0);
       meshGroup.scale.set(1, 1, 1);
     }
+
+    // Em movimento reduzido não há loop: redesenha o frame estático
+    if (prefersReducedMotion) renderer.render(scene, camera);
+  }
+
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleResize, 150);
   });
 
   // Ajuste inicial para telas menores
-  if (window.innerWidth < 768) {
+  if (isMobile()) {
     meshGroup.position.set(0, 2, 0);
     meshGroup.scale.set(0.75, 0.75, 0.75);
   }
 
-  // ===== 5. Loop de Animação e Física Ondulatória com Gestão de Bateria =====
+  // ===== 5. Loop de Animação com Gestão de Bateria =====
   const clock = new THREE.Clock();
   let animationFrameId = null;
-  let isPageVisible = !document.hidden;
+  let contextLost = false;
 
-  // Pausar o loop WebGL quando a aba estiver em segundo plano para economizar 100% de GPU/CPU
-  document.addEventListener('visibilitychange', () => {
-    isPageVisible = !document.hidden;
-    if (isPageVisible) {
-      clock.start();
-      animate();
-    } else if (animationFrameId) {
+  function startLoop() {
+    // Evita rAF duplicado ao voltar para a aba
+    if (animationFrameId !== null || document.hidden || contextLost || prefersReducedMotion) return;
+    clock.start();
+    animationFrameId = requestAnimationFrame(animate);
+  }
+
+  function stopLoop() {
+    if (animationFrameId !== null) {
       cancelAnimationFrame(animationFrameId);
       animationFrameId = null;
     }
+  }
+
+  // Pausar o loop WebGL quando a aba estiver em segundo plano
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopLoop();
+    else startLoop();
+  });
+
+  // Perda/restauração de contexto GPU (troca de GPU, driver, pressão de memória)
+  canvas.addEventListener('webglcontextlost', (e) => {
+    e.preventDefault();
+    contextLost = true;
+    stopLoop();
+  });
+  canvas.addEventListener('webglcontextrestored', () => {
+    contextLost = false;
+    if (prefersReducedMotion) renderer.render(scene, camera);
+    else startLoop();
   });
 
   function animate() {
-    if (!isPageVisible) return;
     animationFrameId = requestAnimationFrame(animate);
 
     const time = clock.getElapsedTime();
+    uTime.value = time;
 
     // Suavização do movimento do mouse (inércia linear)
     currentMouseX += (targetMouseX - currentMouseX) * 0.045;
     currentMouseY += (targetMouseY - currentMouseY) * 0.045;
 
-    if (!prefersReducedMotion) {
-      // Flutuação em idle (oscilação orgânica no eixo Y e Z)
-      const baseIdleY = window.innerWidth < 768 ? 2 : 0;
-      meshGroup.position.y = baseIdleY + Math.sin(time * 0.8) * 0.9 + currentMouseY * 1.8;
-      meshGroup.position.x = (window.innerWidth < 768 ? 0 : 4) + currentMouseX * 2.2;
+    // Flutuação em idle (oscilação orgânica no eixo Y e Z)
+    const mobile = isMobile();
+    meshGroup.position.y = (mobile ? 2 : 0) + Math.sin(time * 0.8) * 0.9 + currentMouseY * 1.8;
+    meshGroup.position.x = (mobile ? 0 : 4) + currentMouseX * 2.2;
 
-      // Rotação suave idle combinada com coordenadas do mouse
-      meshGroup.rotation.y = time * 0.12 + currentMouseX * 0.55;
-      meshGroup.rotation.x = Math.cos(time * 0.6) * 0.1 - currentMouseY * 0.45;
-      meshGroup.rotation.z = Math.sin(time * 0.4) * 0.08;
+    // Rotação suave idle combinada com coordenadas do mouse
+    meshGroup.rotation.y = time * 0.12 + currentMouseX * 0.55;
+    meshGroup.rotation.x = Math.cos(time * 0.6) * 0.1 - currentMouseY * 0.45;
+    meshGroup.rotation.z = Math.sin(time * 0.4) * 0.08;
 
-      // Deslocamento dinâmico das fontes de luz para reflexos especulares vivos
-      cyanLight.position.x = 16 + currentMouseX * 12;
-      cyanLight.position.y = 12 + currentMouseY * 10;
+    // Deslocamento dinâmico das fontes de luz para reflexos especulares vivos
+    cyanLight.position.x = 16 + currentMouseX * 12;
+    cyanLight.position.y = 12 + currentMouseY * 10;
 
-      violetLight.position.x = -16 - currentMouseX * 10;
-      violetLight.position.y = -12 - currentMouseY * 12;
-
-      // Deformação da malha geométrica (Distorção Orgânica de Vértices)
-      const positionAttr = geometry.attributes.position;
-      const count = positionAttr.count;
-
-      for (let i = 0; i < count; i++) {
-        const ox = originalPositions[i * 3];
-        const oy = originalPositions[i * 3 + 1];
-        const oz = originalPositions[i * 3 + 2];
-
-        // Função de onda tridimensional contínua
-        const wave =
-          Math.sin(ox * 0.35 + time * 1.2) *
-          Math.cos(oy * 0.35 + time * 1.0) *
-          Math.sin(oz * 0.35 + time * 0.8);
-
-        const displacement = 1 + wave * 0.16;
-
-        positionAttr.setXYZ(i, ox * displacement, oy * displacement, oz * displacement);
-      }
-
-      positionAttr.needsUpdate = true;
-      geometry.computeVertexNormals();
-    }
+    violetLight.position.x = -16 - currentMouseX * 10;
+    violetLight.position.y = -12 - currentMouseY * 12;
 
     // Integração sutil com Lenis Scroll
-    if (window.lenis && !prefersReducedMotion) {
+    if (window.lenis) {
       const scrollOffset = (window.lenis.scroll || 0) * 0.003;
       meshGroup.rotation.y += scrollOffset * 0.05;
     }
 
     // Rotação suave das partículas de dados em órbita
-    if (particles && !prefersReducedMotion) {
-      particles.rotation.y = time * 0.035;
-      particles.rotation.x = Math.sin(time * 0.02) * 0.05;
-    }
+    particles.rotation.y = time * 0.035;
+    particles.rotation.x = Math.sin(time * 0.02) * 0.05;
 
     renderer.render(scene, camera);
   }
 
-  animate();
+  if (prefersReducedMotion) {
+    // Frame estático único: sem loop contínuo
+    renderer.render(scene, camera);
+  } else {
+    startLoop();
+  }
 })();

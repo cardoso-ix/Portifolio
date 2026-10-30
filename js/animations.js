@@ -34,39 +34,38 @@
     }
 
     // ===== 1. Tilt 3D nos Cards de Projetos (<article>) =====
-    const projectCards = document.querySelectorAll('#projetos article, .project-card');
+    // Só em dispositivos com hover real; quickTo evita criar tween a cada mousemove
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const projectCards = canHover ? document.querySelectorAll('#projetos article, .project-card') : [];
 
     projectCards.forEach((card) => {
+      gsap.set(card, { transformPerspective: 1000 });
+      const rotX = gsap.quickTo(card, 'rotationX', { duration: 0.35, ease: 'power2.out' });
+      const rotY = gsap.quickTo(card, 'rotationY', { duration: 0.35, ease: 'power2.out' });
+      let rect = null;
+
+      // Ângulo máximo discreto (graus): não atrapalha a leitura de cards com texto
+      const maxTilt = 4;
+
+      card.addEventListener('mouseenter', () => {
+        rect = card.getBoundingClientRect();
+      }, { passive: true });
+
       card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        if (rect.width === 0 || rect.height === 0) return;
+        if (!rect || rect.width === 0 || rect.height === 0) return;
 
         // Posição relativa do cursor dentro do card (-0.5 a 0.5)
         const x = (e.clientX - rect.left) / rect.width - 0.5;
         const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-        // Ângulo máximo de inclinação suave (graus)
-        const maxTilt = 10;
-        const rotateX = (-y * maxTilt).toFixed(2);
-        const rotateY = (x * maxTilt).toFixed(2);
-
-        // Aplicação da matriz tridimensional cinematográfica
-        gsap.to(card, {
-          transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`,
-          duration: 0.25,
-          ease: 'power1.out',
-          overwrite: 'auto',
-        });
+        rotX(-y * maxTilt);
+        rotY(x * maxTilt);
       }, { passive: true });
 
       card.addEventListener('mouseleave', () => {
-        // Restauração suave do estado plano original
-        gsap.to(card, {
-          transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
-          duration: 0.6,
-          ease: 'power3.out',
-          overwrite: 'auto',
-        });
+        rect = null;
+        rotX(0);
+        rotY(0);
       });
     });
 
@@ -183,29 +182,39 @@
     }
 
     // ===== 3. Flutuação Suave Contínua em Loop no Hero =====
+    // Pausa quando o hero sai da viewport para não gastar frames à toa
+    const floatTweens = [];
+
     // Terminal do Hero
     const heroTerminal = document.querySelector('.hero__content');
     if (heroTerminal) {
-      gsap.to(heroTerminal, {
+      floatTweens.push(gsap.to(heroTerminal, {
         y: -9,
         duration: 3.6,
         ease: 'sine.inOut',
         repeat: -1,
         yoyo: true,
-      });
+      }));
     }
 
     // Contêiner da Foto de Perfil (Avatar Wrap)
     const heroAvatarWrap = document.querySelector('.hero__avatar-wrap');
     if (heroAvatarWrap) {
-      gsap.to(heroAvatarWrap, {
+      floatTweens.push(gsap.to(heroAvatarWrap, {
         y: -11,
         duration: 4.2,
         ease: 'sine.inOut',
         repeat: -1,
         yoyo: true,
         delay: 0.5,
-      });
+      }));
+    }
+
+    const heroSection = document.getElementById('inicio');
+    if (heroSection && floatTweens.length && 'IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        floatTweens.forEach((t) => (entry.isIntersecting ? t.resume() : t.pause()));
+      }).observe(heroSection);
     }
 
     // ===== 4. Spotlight Reativo ao Cursor nos Cards =====
@@ -214,16 +223,33 @@
     );
 
     spotlightCards.forEach((card) => {
+      let rect = null;
+      let rafPending = false;
+      let lastX = 0;
+      let lastY = 0;
+
+      card.addEventListener('pointerenter', () => {
+        rect = card.getBoundingClientRect();
+      }, { passive: true });
+
       card.addEventListener('pointermove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
-        card.style.setProperty('--spotlight-opacity', '1');
+        if (!rect) rect = card.getBoundingClientRect();
+        lastX = e.clientX - rect.left;
+        lastY = e.clientY - rect.top;
+
+        // Uma escrita de estilo por frame, independente da taxa de eventos
+        if (rafPending) return;
+        rafPending = true;
+        requestAnimationFrame(() => {
+          rafPending = false;
+          card.style.setProperty('--mouse-x', `${lastX}px`);
+          card.style.setProperty('--mouse-y', `${lastY}px`);
+          card.style.setProperty('--spotlight-opacity', '1');
+        });
       }, { passive: true });
 
       card.addEventListener('pointerleave', () => {
+        rect = null;
         card.style.setProperty('--spotlight-opacity', '0');
       });
     });

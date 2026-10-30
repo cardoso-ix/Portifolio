@@ -47,7 +47,7 @@ O portfólio combina estética de engenharia moderna, inspiração em interfaces
    - Efeito visual de decodificação de glifos cibernéticos ao passar o cursor pelos títulos das seções.
 5. **Spotlight Reativo & WebGL 3D Scene**:
    - Gradiente de iluminação radial suave que rastreia dinamicamente a posição do cursor nos cards.
-   - Geometrias 3D (Torus Knot) renderizadas via Three.js no fundo com matriz de 180 partículas de *cyber dust* em rotação orbital.
+   - Icosaedro orgânico renderizado via Three.js no fundo, com deformação calculada no *vertex shader* (GPU) e matriz de 180 partículas de *cyber dust* em rotação orbital.
 
 ---
 
@@ -82,7 +82,8 @@ Portifolio/
 │   ├── cv_eduardo_cardoso.pdf  # Currículo canônico em formato PDF
 │   ├── favicon-*.png / .svg    # Conjunto de ícones para navegadores e dispositivos
 │   └── images/
-│       ├── foto.png            # Foto de perfil utilizada no hero e OpenGraph
+│       ├── foto.png            # Foto de perfil (fallback, JSON-LD e CV)
+│       ├── *-400/800/640/1280.webp # Variantes responsivas geradas por scripts/optimize_images.py
 │       ├── og-image.png        # Imagem de compartilhamento social (1200×630)
 │       ├── linkedin-banner.png # Banner personalizado para o LinkedIn
 │       └── *-preview.*         # Capturas e ilustrações dos projetos
@@ -133,6 +134,7 @@ python scripts/generate_favicon.py         # Gera os ícones e favicons
 python scripts/generate_og_image.py        # Gera assets/images/og-image.png
 python scripts/generate_linkedin_banner.py # Gera assets/images/linkedin-banner.png
 python scripts/format_html.py              # Formata e organiza o index.html
+python scripts/optimize_images.py          # Gera as variantes WebP responsivas (foto e preview)
 ```
 
 ---

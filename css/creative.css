@@ -29,15 +29,14 @@
   pointer-events: none;
   z-index: 99999;
   transform: translate(-50%, -50%);
-  transition: width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-              height 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: scale 0.28s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.25s ease,
               border-color 0.25s ease,
               box-shadow 0.25s ease,
               opacity 0.2s ease;
   box-shadow: 0 0 14px rgba(0, 245, 255, 0.35),
               inset 0 0 6px rgba(0, 245, 255, 0.15);
-  will-change: transform, width, height;
+  will-change: transform;
   opacity: 0;
 }
 
@@ -46,8 +45,7 @@
 }
 
 #custom-cursor.active {
-  width: 52px;
-  height: 52px;
+  scale: 2;
   background-color: rgba(0, 245, 255, 0.12);
   border-color: #00f5ff;
   box-shadow: 0 0 26px rgba(0, 245, 255, 0.55),
@@ -83,8 +81,6 @@ article,
 .terminal-window,
 .timeline__item {
   position: relative;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   background: rgba(13, 16, 13, 0.72) !important;
   border: 1px solid rgba(0, 245, 255, 0.12) !important;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
@@ -99,6 +95,13 @@ article,
 .project-card,
 .terminal-window {
   overflow: hidden;
+}
+
+/* Blur só onde há destaque real: blur em todo article custava ~13 camadas sobre o canvas WebGL */
+.project-card,
+.terminal-window {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .project-card {
@@ -370,7 +373,7 @@ article:hover,
   height: 16px;
   border-color: rgba(0, 245, 255, 0.65);
   pointer-events: none;
-  transition: all 0.35s ease;
+  transition: width 0.35s ease, height 0.35s ease, border-color 0.35s ease;
 }
 
 .hero__avatar-reticle::before {
