@@ -25,6 +25,11 @@
   let targetY = -100;
   let currentX = -100;
   let currentY = -100;
+  // Escala do estado "ativo" (hover em interativos), interpolada junto com a posição.
+  // Fica dentro do transform: a propriedade CSS `scale` multiplicaria a translação.
+  let targetScale = 1;
+  let currentScale = 1;
+  const ACTIVE_SCALE = 2;
   let isVisible = false;
   let hasInitialized = false;
 
@@ -40,7 +45,7 @@
       currentX = targetX;
       currentY = targetY;
       hasInitialized = true;
-      cursor.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%)`;
+      applyTransform();
     }
 
     if (!isVisible) {
@@ -56,6 +61,7 @@
     isVisible = false;
     cursor.classList.remove('visible');
     cursor.classList.remove('active');
+    targetScale = 1;
   });
 
   // Reexibir ao retornar à janela
@@ -68,14 +74,22 @@
   const EPSILON = 0.1;
   let rafId = null;
 
+  function applyTransform() {
+    // translate3d com translate(-50%, -50%) para manter o centro do círculo alinhado à ponta da seta
+    cursor.style.transform = `translate3d(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px, 0) translate(-50%, -50%) scale(${currentScale.toFixed(3)})`;
+  }
+
   function renderCursor() {
     currentX += (targetX - currentX) * LERP_FACTOR;
     currentY += (targetY - currentY) * LERP_FACTOR;
+    currentScale += (targetScale - currentScale) * 0.2;
+    applyTransform();
 
-    // translate3d com translate(-50%, -50%) para manter o centro do círculo alinhado à ponta da seta
-    cursor.style.transform = `translate3d(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px, 0) translate(-50%, -50%)`;
-
-    if (isVisible && (Math.abs(targetX - currentX) > EPSILON || Math.abs(targetY - currentY) > EPSILON)) {
+    if (isVisible && (
+      Math.abs(targetX - currentX) > EPSILON ||
+      Math.abs(targetY - currentY) > EPSILON ||
+      Math.abs(targetScale - currentScale) > 0.01
+    )) {
       rafId = requestAnimationFrame(renderCursor);
     } else {
       rafId = null;
@@ -93,6 +107,8 @@
     const interactiveEl = e.target.closest(INTERACTIVE_SELECTOR);
     if (interactiveEl) {
       cursor.classList.add('active');
+      targetScale = ACTIVE_SCALE;
+      startCursorLoop();
     }
   }, { passive: true });
 
@@ -103,6 +119,8 @@
       const nextInteractiveEl = e.relatedTarget && e.relatedTarget.closest ? e.relatedTarget.closest(INTERACTIVE_SELECTOR) : null;
       if (!nextInteractiveEl) {
         cursor.classList.remove('active');
+        targetScale = 1;
+        startCursorLoop();
       }
     }
   }, { passive: true });
