@@ -31,7 +31,6 @@ def _desktop_cv_path() -> Path:
 
 OUTPUT_PATHS = [
     ROOT / "assets" / "cv_eduardo_cardoso.pdf",
-    _desktop_cv_path(),
 ]
 
 PAGE_W, PAGE_H = A4
@@ -54,27 +53,49 @@ RULE_COLOR = colors.HexColor("#E2E8F0")
 CONTACT = [
     ("Telefone", "(49) 99809-5955"),
     ("E-mail", "eduardoocardosoo@gmail.com"),
-    ("Endereço", "Chapecó, SC"),
-    ("Nascimento", "(removido)"),
-    ("Nacionalidade", "Brasileiro"),
+    ("Local", "Chapecó, SC · aberto a remoto"),
     ("Portfólio", "cardoso-ix.github.io/Portifolio/"),
+    ("GitHub", "github.com/cardoso-ix"),
     ("LinkedIn", "linkedin.com/in/eduardo-cardoso-213a02267"),
 ]
 
 SKILLS = [
-    "Suporte técnico e Help Desk",
-    "Implementação de automações (n8n)",
-    "OpenAI · Prompt Engineering",
-    "APIs, Webhooks e integrações",
-    "LLMs · RAG · agentes (em formação)",
+    "Suporte técnico e Help Desk N1/N2",
+    "Automação de processos com n8n",
+    "APIs REST, webhooks e integrações",
+    "Python · TypeScript · Node.js",
+    "LLMs, RAG e agentes (CrewAI)",
+    "Docker · Git · Linux",
+    "Metrologia e ISO/IEC 17025",
+]
+
+LANGUAGES = [
+    ("Português", "nativo"),
+    ("Inglês", "básico"),
+]
+
+HEADLINE = "Analista de Suporte e Automação com IA"
+
+PROJECTS = [
+    ("Copiloto de LinkedIn em n8n",
+     "Posts gerados com IA e publicados pela API oficial só após aprovação no Telegram; "
+     "radar de vagas com nota por IA. n8n, Postgres, Docker, Coolify."),
+    ("Mentor de Gestão Industrial",
+     "Multiagente com CrewAI e RAG (ChromaDB) que apoia supervisores de manutenção; "
+     "demo pública no Hugging Face."),
+    ("Replicador de promoções 24/7",
+     "Serviço Node.js/TypeScript que replica promoções num grupo de WhatsApp, com painel "
+     "próprio, rodando numa VPS."),
+    ("LP Soluções (cliente real)",
+     "Site com agendamento de visita técnica no Google Calendar e aviso no WhatsApp. "
+     "Next.js, Vercel."),
 ]
 
 SUMMARY = (
-    "Perfil na interseção de suporte técnico e automações com IA: diagnóstico, "
-    "atendimento e implementação de fluxos. Experiência em Help Desk (Crescer "
-    "Sistemas), prática com n8n, OpenAI, APIs e webhooks, e Pós Tech em Agentes "
-    "de IA (FIAP + Alura, em andamento). Foco em apoiar usuários, integrar "
-    "ferramentas e manter soluções estáveis."
+    "Resolvo o chamado e, quando faz sentido, automatizo para ele não voltar. "
+    "Help Desk N1/N2 na Crescer Sistemas, seis anos de metrologia (rastreabilidade, "
+    "validação e documentação para auditoria) e projetos próprios com n8n, APIs, "
+    "Python e LLMs. Cursando a Pós Tech em Agentes de IA (FIAP + Alura)."
 )
 
 EXPERIENCE = [
@@ -83,9 +104,8 @@ EXPERIENCE = [
         "company": "Fluxo Metrologia, Chapecó",
         "period": "Julho 2025 — Atual",
         "description": (
-            "Técnico responsável pela calibração de instrumentos de medição, emissão "
-            "de certificados, gestão de padrões de referência e conformidade "
-            "documental conforme normas de qualidade."
+            "Calibração de instrumentos de medição, emissão de certificados, gestão "
+            "de padrões de referência e conformidade documental."
         ),
     },
     {
@@ -93,19 +113,17 @@ EXPERIENCE = [
         "company": "Sandimas, Chapecó, SC",
         "period": "Maio 2023 — Fevereiro 2025",
         "description": (
-            "Responsável por planejar, coordenar e controlar as operações logísticas "
-            "da empresa, incluindo gestão de transporte, armazenagem, distribuição e "
-            "controle de estoque, garantindo eficiência nos processos, cumprimento de "
-            "prazos e redução de custos operacionais."
+            "Gestão de suprimentos, roteirização e distribuição, com acompanhamento "
+            "de indicadores de eficiência e prazos."
         ),
     },
     {
-        "title": "Suporte Técnico Help Desk",
+        "title": "Suporte Técnico Help Desk (N1/N2)",
         "company": "Crescer Sistemas, Chapecó, SC",
         "period": "Fevereiro 2022 — Maio 2023",
         "description": (
-            "Atendimento a chamados técnicos (N1/N2): diagnóstico e resolução de "
-            "problemas de software e hardware, suporte remoto e presencial aos usuários."
+            "Chamados N1/N2: diagnóstico e resolução de incidentes de software e "
+            "hardware, suporte remoto e presencial e treinamento de usuários."
         ),
     },
     {
@@ -113,19 +131,16 @@ EXPERIENCE = [
         "company": "MR Indústria Gráfica, Concórdia, SC",
         "period": "Outubro 2020 — Junho 2021",
         "description": (
-            "Responsável por analisar solicitações de clientes e elaborar orçamentos "
-            "de produtos gráficos, considerando custos de materiais, processos de "
-            "impressão, acabamentos e prazos de produção."
+            "Análise técnica de projetos e composição de orçamentos de produção."
         ),
     },
     {
         "title": "Metrologista",
-        "company": "JBS Foods, Jacarezinho, PR",
+        "company": "JBS, Jacarezinho, PR",
         "period": "Dezembro 2014 — Dezembro 2019",
         "description": (
-            "Responsável por garantir a confiabilidade dos processos de medição "
-            "da empresa, executando calibrações, gerenciando padrões de referência, "
-            "mantendo a rastreabilidade metrológica."
+            "Calibrações, gestão de padrões de referência e rastreabilidade "
+            "metrológica dos processos industriais."
         ),
     },
 ]
@@ -152,7 +167,7 @@ EDUCATION = [
         "period": "2014",
     },
     {
-        "title": "Automação Industrial",
+        "title": "Técnico em Automação Industrial",
         "institution": "Senai, Santo Antônio da Platina",
         "period": "2010 — 2012",
     },
@@ -324,6 +339,38 @@ def draw_sidebar(c, image_reader):
             y -= 3.8 * mm
         y -= 1.4 * mm
 
+    y -= 3 * mm
+    c.setFillColor(SIDEBAR_TEXT)
+    c.setFont("CV-Bold", 8.8)
+    c.drawString(x, y, "IDIOMAS")
+    y -= 5.5 * mm
+    for lang, level in LANGUAGES:
+        c.setFillColor(SIDEBAR_TEXT)
+        c.setFont("CV-Regular", 7.8)
+        c.drawString(x, y, lang)
+        c.setFillColor(SIDEBAR_MUTED)
+        c.drawRightString(x + text_w, y, level)
+        y -= 4.6 * mm
+
+    y -= 3 * mm
+    c.setFillColor(SIDEBAR_TEXT)
+    c.setFont("CV-Bold", 8.8)
+    c.drawString(x, y, "FORMAÇÃO")
+    y -= 5.5 * mm
+    for item in EDUCATION:
+        c.setFillColor(SIDEBAR_TEXT)
+        c.setFont("CV-Bold", 7.8)
+        for line in wrap_sidebar_text(item["title"], "CV-Bold", 7.8, text_w, c):
+            c.drawString(x, y, line)
+            y -= 3.6 * mm
+        c.setFillColor(SIDEBAR_MUTED)
+        c.setFont("CV-Regular", 7.2)
+        for line in wrap_sidebar_text(f'{item["institution"]} · {item["period"]}', "CV-Regular", 7.2, text_w, c):
+            c.drawString(x, y, line)
+            y -= 3.4 * mm
+        y -= 2 * mm
+    print(f"sidebar livre: {y / mm:.1f} mm")
+
 
 def draw_section_title(c, x, y, title):
     c.setFillColor(TEXT_DARK)
@@ -398,7 +445,11 @@ def build_pdf(path: Path):
     c.setFillColor(TEXT_DARK)
     c.setFont("CV-Bold", 20)
     c.drawString(x, y - 2 * mm, "Eduardo Cardoso")
-    y -= 11 * mm
+    y -= 8.5 * mm
+    c.setFillColor(ACCENT_COLOR)
+    c.setFont("CV-Bold", 10.5)
+    c.drawString(x, y, HEADLINE)
+    y -= 5 * mm
 
     c.setStrokeColor(RULE_COLOR)
     c.setLineWidth(0.6)
@@ -414,10 +465,18 @@ def build_pdf(path: Path):
         y = draw_experience_item(c, x, y, item, width, styles)
 
     y -= 1 * mm
-    y = draw_section_title(c, x, y, "Educação")
-    for item in EDUCATION:
-        y = draw_education_item(c, x, y, item, width)
+    y = draw_section_title(c, x, y, "Projetos")
+    for name, desc in PROJECTS:
+        c.setFillColor(TEXT_DARK)
+        c.setFont("CV-Bold", 9.3)
+        c.drawString(x, y, name)
+        y -= 5 * mm
+        h = measure_paragraph_height(desc, width, styles["body"])
+        draw_flow_text(c, desc, x, y - h, width, h + 2 * mm, styles["body"])
+        y -= h + 4 * mm
 
+
+    print(f"espaco livre no fim: {y / mm:.1f} mm")
     c.showPage()
     c.save()
 
