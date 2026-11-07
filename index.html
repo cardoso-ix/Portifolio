@@ -1,49 +1,42 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eduardo Cardoso — Suporte técnico e automações com IA: n8n, OpenAI, APIs REST, Help Desk e implementação de fluxos. Chapecó, SC.">
+  <title>Eduardo Cardoso | Suporte técnico e automação com IA</title>
+  <meta name="description" content="Eduardo Cardoso: suporte técnico N1/N2 e automação com IA. n8n, APIs e webhooks, Python, LLMs e RAG. Projetos reais e Pós em Agentes de IA (FIAP). Chapecó, SC, aberto a remoto.">
   <meta name="author" content="Eduardo Cardoso">
-  <meta name="theme-color" content="#090a09">
+  <meta name="theme-color" content="#0b1222">
   <meta name="color-scheme" content="dark light">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <!-- Content Security Policy (CSP) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
   <link rel="canonical" href="https://cardoso-ix.github.io/Portifolio/">
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Eduardo Cardoso — Portfólio">
-  <meta property="og:title" content="Eduardo Cardoso | Suporte técnico e automações com IA">
-  <meta property="og:description" content="Suporte técnico, atendimento N1/N2, implementação e automações com IA: n8n, OpenAI, APIs e Help Desk. Chapecó, SC.">
+  <meta property="og:site_name" content="Eduardo Cardoso | Portfólio">
+  <meta property="og:title" content="Eduardo Cardoso | Suporte técnico e automação com IA">
+  <meta property="og:description" content="Resolvo o chamado e, quando faz sentido, automatizo para ele não voltar. Help Desk N1/N2, n8n, APIs, Python e LLMs.">
   <meta property="og:url" content="https://cardoso-ix.github.io/Portifolio/">
   <meta property="og:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Eduardo Cardoso — Suporte técnico e automações com IA">
-  <!-- Twitter Card -->
+  <meta property="og:image:alt" content="Eduardo Cardoso, suporte técnico e automação com IA">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eduardo Cardoso | Suporte técnico e automações com IA">
-  <meta name="twitter:description" content="Suporte técnico, atendimento N1/N2, implementação e automações com IA: n8n, OpenAI, APIs e Help Desk.">
+  <meta name="twitter:title" content="Eduardo Cardoso | Suporte técnico e automação com IA">
+  <meta name="twitter:description" content="Help Desk N1/N2, n8n, APIs, Python e LLMs. Projetos reais e Pós em Agentes de IA (FIAP).">
   <meta name="twitter:image" content="https://cardoso-ix.github.io/Portifolio/assets/images/og-image.png">
-  <title>Eduardo Cardoso | Suporte técnico e automações com IA</title>
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <!-- Fontes self-hosted (woff2 variável, subset latin) -->
+
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrains-mono-latin.woff2" crossorigin>
-  <link rel="preload" as="image" type="image/webp" href="assets/images/foto-800.webp" imagesrcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" imagesizes="(max-width: 768px) 70vw, 400px" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=43">
-  <link rel="stylesheet" href="css/creative.css?v=13">
-  <!-- Schema.org JSON-LD -->
+  <link rel="preload" as="image" type="image/webp" href="assets/images/foto-400.webp" imagesrcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" imagesizes="(max-width: 900px) 200px, 360px" fetchpriority="high">
+  <link rel="stylesheet" href="css/site.css?v=1">
+  <script src="js/theme-init.js?v=2"></script>
 
   <script type="application/ld+json">
   {
@@ -53,900 +46,381 @@
         "@type": "WebSite",
         "@id": "https://cardoso-ix.github.io/Portifolio/#website",
         "url": "https://cardoso-ix.github.io/Portifolio/",
-        "name": "Eduardo Cardoso — Portfólio",
+        "name": "Eduardo Cardoso | Portfólio",
         "inLanguage": "pt-BR",
-        "publisher": {
-          "@id": "https://cardoso-ix.github.io/Portifolio/#person"
-        }
+        "publisher": { "@id": "https://cardoso-ix.github.io/Portifolio/#person" }
       },
       {
         "@type": "ProfilePage",
         "@id": "https://cardoso-ix.github.io/Portifolio/#profile",
         "url": "https://cardoso-ix.github.io/Portifolio/",
-        "name": "Eduardo Cardoso | Suporte técnico e automações com IA",
-        "isPartOf": {
-          "@id": "https://cardoso-ix.github.io/Portifolio/#website"
-        },
-        "about": {
-          "@id": "https://cardoso-ix.github.io/Portifolio/#person"
-        },
-        "mainEntity": {
-          "@id": "https://cardoso-ix.github.io/Portifolio/#person"
-        },
+        "name": "Eduardo Cardoso | Suporte técnico e automação com IA",
+        "isPartOf": { "@id": "https://cardoso-ix.github.io/Portifolio/#website" },
+        "mainEntity": { "@id": "https://cardoso-ix.github.io/Portifolio/#person" },
         "inLanguage": "pt-BR",
-        "dateModified": "2026-10-30"
+        "dateModified": "2026-11-07"
       },
       {
         "@type": "Person",
         "@id": "https://cardoso-ix.github.io/Portifolio/#person",
         "name": "Eduardo Cardoso",
         "url": "https://cardoso-ix.github.io/Portifolio/",
-        "image": "https://cardoso-ix.github.io/Portifolio/assets/images/foto.png",
-        "jobTitle": "Suporte técnico e automações com IA",
+        "image": "https://cardoso-ix.github.io/Portifolio/assets/images/foto-800.webp",
+        "jobTitle": "Analista de Suporte e Automação com IA",
         "alumniOf": [
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Universidade de Franca"
-          },
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Universidade Cruzeiro do Sul"
-          },
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "FIAP"
-          },
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "SENAI"
-          }
+          { "@type": "CollegeOrUniversity", "name": "FIAP" },
+          { "@type": "CollegeOrUniversity", "name": "Universidade Cruzeiro do Sul" },
+          { "@type": "CollegeOrUniversity", "name": "Universidade de Franca" },
+          { "@type": "CollegeOrUniversity", "name": "SENAI" }
         ],
-        "knowsAbout": [
-          "n8n",
-          "OpenAI",
-          "Suporte técnico",
-          "Help Desk",
-          "Automações",
-          "APIs REST",
-          "Webhooks",
-          "Prompt Engineering",
-          "LLMs",
-          "Python",
-          "Metrologia",
-          "Calibração de instrumentos"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Chapecó",
-          "addressRegion": "SC",
-          "addressCountry": "BR"
-        },
-        "sameAs": [
-          "https://github.com/cardoso-ix",
-          "https://www.linkedin.com/in/eduardo-cardoso-213a02267"
-        ]
+        "knowsAbout": ["Suporte técnico", "Help Desk", "n8n", "Automação de processos", "APIs REST", "Webhooks", "Python", "TypeScript", "Docker", "LLMs", "RAG", "CrewAI", "Metrologia", "ISO/IEC 17025"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Chapecó", "addressRegion": "SC", "addressCountry": "BR" },
+        "sameAs": ["https://github.com/cardoso-ix", "https://www.linkedin.com/in/eduardo-cardoso-213a02267"]
       }
     ]
   }
   </script>
-  <!-- Preload Theme Preference to prevent FOUC -->
-
-  <script src="js/theme-init.js?v=1"></script>
-
 </head>
 
 <body>
-  <canvas id="webgl-bg"></canvas>
-  <div id="custom-cursor"></div>
-  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
-  <!-- Header & Navigation -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="header" id="header">
+  <header class="header">
     <div class="container header__inner">
-      <a href="#inicio" class="header__logo" aria-label="EduCardoso — Eduardo Cardoso, início">
-        <span class="header__logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </svg>
-        </span>
-        <span class="header__logo-text">&lt;EduCardoso /&gt;</span>
+      <a href="#inicio" class="brand" aria-label="Eduardo Cardoso, voltar ao início">
+        <span class="brand__mark" aria-hidden="true">EC</span>
+        <span>Eduardo Cardoso</span>
       </a>
-      <div class="header__controls">
-        <nav class="header__nav" id="nav-menu" aria-label="Navegação principal">
-          <ul class="header__list">
-            <li><a href="#inicio" class="header__link">Início</a></li>
-            <li><a href="#projetos" class="header__link">Projetos</a></li>
-            <li><a href="#sobre" class="header__link">Sobre</a></li>
-            <li><a href="#metodo" class="header__link">Método</a></li>
-            <li><a href="#skills" class="header__link">Skills</a></li>
-            <li><a href="#formacao" class="header__link">Formação</a></li>
-            <li><a href="#experiencia" class="header__link">Experiência</a></li>
-            <li><a href="#contato" class="header__link">Contato</a></li>
-          </ul>
-        </nav>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
-          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-          </svg>
-          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-        <button class="header__toggle" id="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#projetos">Projetos</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#trajetoria">Trajetória</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--sm header__cv" href="assets/cv_eduardo_cardoso.pdf?v=15" target="_blank" rel="noopener">Currículo</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro e escuro">
+        <svg class="theme-icon--moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="theme-icon--sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
     </div>
-
   </header>
 
-  <main id="conteudo-principal">
-    <!-- Hero Section -->
-
-    <section class="hero section" id="inicio" aria-labelledby="hero-title">
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="container hero__inner">
-        <div class="hero__content">
-          <div class="terminal-bar">
-            <span class="terminal-dot terminal-dot--red"></span>
-            <span class="terminal-dot terminal-dot--yellow"></span>
-            <span class="terminal-dot terminal-dot--green"></span>
-            <span class="terminal-bar__title">~/eduardo-cardoso — perfil.md</span>
-            <span class="terminal-bar__coords" aria-hidden="true">SYS_NODE · LAT 27.09°S</span>
+        <div>
+          <span class="hero__status"><span class="dot" aria-hidden="true"></span>Aberto a vagas remotas · Chapecó, SC</span>
+          <h1 class="hero__title" id="hero-title">Eduardo Cardoso</h1>
+          <p class="hero__role">Analista de Suporte e Automação com IA</p>
+          <p class="hero__pitch"><strong>Resolvo o chamado e, quando faz sentido, automatizo para ele não voltar.</strong> Help Desk N1/N2, seis anos de metrologia e projetos próprios com n8n, APIs, Python e LLMs.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projetos">
+              Ver projetos
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="btn" href="assets/cv_eduardo_cardoso.pdf?v=15" target="_blank" rel="noopener">Baixar currículo</a>
+            <a class="btn" href="https://www.linkedin.com/in/eduardo-cardoso-213a02267" target="_blank" rel="noopener">LinkedIn</a>
           </div>
-          <div class="hero__content-body">
-            <div class="hero__badges">
-              <span class="hero__badge hero__badge--live">
-                <span class="hero__badge-dot"></span> Chapecó, SC
-              </span>
-              <span class="hero__badge">Pós Tech FIAP</span>
-            </div>
-            <p class="hero__greeting"><span class="prompt" aria-hidden="true">&gt;</span> Olá, eu sou</p>
-            <h1 class="hero__title" id="hero-title">Eduardo Cardoso</h1>
-            <p class="hero__role">Suporte Técnico &amp; Automações com IA</p>
-            <p class="hero__subtitle">
-              <span class="sr-only">Especialista em suporte técnico, implementação com n8n e OpenAI, APIs e integrações.</span>
-              <span class="prompt" aria-hidden="true">&gt;</span>
-              <span id="typing-text" aria-hidden="true"></span><span class="cursor-blink" aria-hidden="true">|</span>
-            </p>
-            <ul class="hero__facts">
-              <li class="hero__fact">
-                <span class="hero__fact-label">Atuação</span>
-                <span>Diagnóstico, suporte N1/N2 e implementação de automações</span>
-              </li>
-              <li class="hero__fact">
-                <span class="hero__fact-label">Estudo</span>
-                <span>Pós Tech em Agentes de IA (FIAP + Alura) · MBA · Adm</span>
-              </li>
-            </ul>
-            <p class="hero__description">
-              Atuo na conexão estratégica entre suporte técnico e automação inteligente: compreender a dor real do usuário, construir fluxos eficientes com n8n e IA, e manter integrações estáveis no dia a dia com comunicação clara.
-              <span class="hero__description-accent">Veja abaixo o projeto entregue a cliente e como eu trabalho.</span>
-            </p>
-            <div class="hero__actions">
-              <a href="#projetos" class="btn btn--primary btn--lg">
-                <span>Ver projetos</span>
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
-              <a href="assets/cv_eduardo_cardoso.pdf?v=14" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
-                <span>Currículo PDF</span>
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                </svg>
-              </a>
-              <a href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
-                <span>WhatsApp</span>
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+          <ul class="hero__facts">
+            <li class="fact"><span class="fact__value">N1/N2</span><span class="fact__label">Help Desk na Crescer Sistemas</span></li>
+            <li class="fact"><span class="fact__value">6 anos</span><span class="fact__label">de metrologia: padrão, rastreio e auditoria</span></li>
+            <li class="fact"><span class="fact__value">Pós Tech</span><span class="fact__label">Agentes de IA, FIAP + Alura</span></li>
+          </ul>
         </div>
-        <div class="hero__visual">
-          <div class="hero__avatar-wrap">
-            <div class="hero__avatar-glow" aria-hidden="true"></div>
-            <div class="hero__avatar">
-              <div class="hero__avatar-reticle" aria-hidden="true"></div>
-              <picture>
-                <source type="image/webp" srcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" sizes="(max-width: 768px) 70vw, 400px">
-                <img src="assets/images/foto.png?v=5" alt="Foto de perfil de Eduardo Cardoso" class="hero__photo" width="400" height="400" fetchpriority="high" decoding="async">
-              </picture>
-              <div class="hero__avatar-hud">
-                <span class="hero__avatar-hud-id">SYS_AGENT // EC-95</span>
-                <span class="hero__avatar-hud-ping"><span class="ping-dot" aria-hidden="true"></span> ONLINE</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero__profile-card telemetry-card">
-            <div class="telemetry__header">
-              <div class="telemetry__title-wrap">
-                <span class="telemetry__pulse-dot" aria-hidden="true"></span>
-                <p class="hero__profile-header">perfil.json</p>
-              </div>
-            </div>
-            <div class="hero__profile-row">
-              <span class="hero__profile-key">local</span>
-              <span class="hero__profile-val">Chapecó, SC <span class="telemetry__subtext">(27.09°S · 52.61°W)</span></span>
-            </div>
-            <div class="hero__profile-row">
-              <span class="hero__profile-key">foco</span>
-              <span class="hero__profile-val hero__profile-val--accent">Automação &amp; IA aplicada</span>
-            </div>
-            <div class="hero__profile-row">
-              <span class="hero__profile-key">stack</span>
-              <span class="hero__profile-val hero__profile-val--cyan">n8n · OpenAI · Python · APIs REST</span>
-            </div>
-            <div class="hero__profile-row">
-              <span class="hero__profile-key">status</span>
-              <span class="hero__profile-val hero__profile-val--live">● Disponível (Remoto/Híbrido)</span>
-            </div>
-          </div>
+        <div class="hero__photo-wrap">
+          <picture>
+            <source type="image/webp" srcset="assets/images/foto-400.webp 400w, assets/images/foto-800.webp 800w" sizes="(max-width: 900px) 200px, 360px">
+            <img class="hero__photo" src="assets/images/foto.png" alt="Eduardo Cardoso" width="400" height="400" fetchpriority="high" decoding="async">
+          </picture>
+          <ul class="tags hero__stack" aria-label="Ferramentas principais">
+            <li class="tag">n8n</li>
+            <li class="tag">APIs/Webhooks</li>
+            <li class="tag">Python</li>
+            <li class="tag">LLMs/RAG</li>
+            <li class="tag">Docker</li>
+          </ul>
         </div>
       </div>
-
     </section>
-    <!-- Projects Section -->
 
-    <section class="section" id="projetos" aria-labelledby="projetos-title">
+    <section class="section section--alt" id="projetos" aria-labelledby="projetos-title">
       <div class="container">
-        <h2 class="section__title fade-in" id="projetos-title"><span class="section__number">01.</span> Projetos em Destaque</h2>
-        <p class="section__intro fade-in">Um projeto entregue a cliente real, com arquitetura e decisões documentadas. Novos projetos de agentes de IA estão em construção durante a Pós Tech.</p>
+        <div class="section__head">
+          <p class="section__eyebrow">Projetos</p>
+          <h2 class="section__title" id="projetos-title">O que eu construí</h2>
+          <p class="section__lead">Projetos reais, em produção ou com demo pública. Cada um resolve um problema concreto com o menor número de peças possível.</p>
+        </div>
+
         <div class="projects">
-          <!-- Projeto em destaque: LP Soluções -->
-          <article class="project-card project-card--featured fade-in">
-            <div class="project-card__image">
+          <article class="project project--featured">
+            <div class="project__media">
               <picture>
-                <source type="image/webp" srcset="assets/images/lp-solucoes-preview-640.webp 640w, assets/images/lp-solucoes-preview-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 640px">
-                <img src="assets/images/lp-solucoes-preview.png" alt="Preview do site institucional LP Soluções" class="project-card__thumb" width="640" height="360" loading="lazy" decoding="async">
+                <source type="image/webp" srcset="assets/images/lp-solucoes-preview-640.webp 640w, assets/images/lp-solucoes-preview-1280.webp 1280w" sizes="(max-width: 860px) 100vw, 560px">
+                <img src="assets/images/lp-solucoes-preview.png" alt="Página inicial do site da LP Soluções" width="640" height="360" loading="lazy" decoding="async">
               </picture>
-              <span class="project-card__badge">Web Platform &amp; Agendamento</span>
             </div>
-            <div class="project-card__body">
-              <div class="project-card__header">
-                <h3 class="project-card__title">LP Soluções — Site &amp; Agendamento</h3>
-                <p class="project-card__lead">Site institucional para serviços elétricos com agendamento online inteligente direto no Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital.</p>
-                <div class="project-card__tags">
-                  <span class="project-tag">Next.js 16</span>
-                  <span class="project-tag">React 19</span>
-                  <span class="project-tag">TypeScript</span>
-                  <span class="project-tag">Tailwind CSS</span>
-                  <span class="project-tag">Google Calendar</span>
-                  <span class="project-tag">Vercel</span>
-                </div>
-              </div>
-              <div class="project-card__links">
-                <a href="https://lp-solucoes.vercel.app" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
-                  <span>Demo Online</span>
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
+            <div class="project__body">
+              <p class="project__kicker">Web + agendamento <span class="badge badge--client">Cliente real</span></p>
+              <h3 class="project__title">LP Soluções: site com agendamento no Google Calendar</h3>
+              <p class="project__text">Empresa de serviços elétricos precisava agendar visitas técnicas sem troca manual de mensagens. O visitante escolhe o horário, o agendamento cai direto no Google Calendar, a equipe recebe aviso no WhatsApp e o cliente segue por e-mail, com contrato digital.</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">Google Calendar API</li><li class="tag">Vercel</li>
+              </ul>
+              <div class="project__links">
+                <a class="btn btn--primary btn--sm" href="https://lp-solucoes.vercel.app" target="_blank" rel="noopener">Ver site no ar</a>
               </div>
             </div>
           </article>
-          <!-- Estudo de caso: LP Soluções -->
-          <div class="case-study fade-in" id="case-lp">
-            <div class="case-study__head">
-              <span class="case-study__tag">Estudo de caso</span>
-              <h3 class="case-study__title">LP Soluções: do problema à arquitetura</h3>
-            </div>
-            <div class="case-study__grid">
-              <div class="case-study__block">
-                <h4 class="case-study__label">Problema</h4>
-                <p>Uma empresa de engenharia e serviços elétricos precisava de presença online profissional e de uma forma de agendar visitas técnicas pela internet, sem depender de troca manual de mensagens.</p>
-              </div>
-              <div class="case-study__block">
-                <h4 class="case-study__label">Solução</h4>
-                <p>Site institucional com fluxo de agendamento que grava direto no Google Calendar, notificações por WhatsApp e e-mail e contrato digital.</p>
-              </div>
-              <div class="case-study__block">
-                <h4 class="case-study__label">Decisões</h4>
-                <ul class="case-study__list">
-                  <li>Next.js (App Router) na Vercel, sem VPS e sem orquestrador no meio.</li>
-                  <li>Google Calendar API chamada pelo servidor do próprio Next.js.</li>
-                  <li>TypeScript para tipar os dados do agendamento.</li>
-                </ul>
-              </div>
-              <div class="case-study__block">
-                <h4 class="case-study__label">Aprendizado</h4>
-                <p>Menos peças móveis significam menos pontos de falha: dispensar servidor dedicado e orquestrador reduziu custo e manutenção.</p>
+
+          <article class="project">
+            <div class="project__body">
+              <p class="project__kicker">n8n + IA <span class="badge badge--live">Em produção</span></p>
+              <h3 class="project__title">Copiloto de LinkedIn</h3>
+              <p class="project__text">Gera posts com IA e só publica pela API oficial do LinkedIn depois de aprovação no Telegram. Roda um radar de vagas remotas com nota por IA.</p>
+              <ul class="project__points">
+                <li>Nada de automação de navegador: API oficial e humano aprovando cada post.</li>
+                <li>Deploy que preserva o estado do workflow, depois de um bug real que apagava a conexão.</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologias">
+                <li class="tag">n8n</li><li class="tag">Postgres</li><li class="tag">DeepSeek</li><li class="tag">Docker</li><li class="tag">Coolify</li>
+              </ul>
+              <div class="project__links">
+                <a class="btn btn--sm" href="https://github.com/cardoso-ix/linkedin-copiloto" target="_blank" rel="noopener">Código e estudo de caso</a>
               </div>
             </div>
-            <figure class="case-study__figure">
-              <svg class="diagram" viewBox="0 0 760 230" role="img" aria-labelledby="diagram-title diagram-desc">
-                <title id="diagram-title">Arquitetura do LP Soluções</title>
-                <desc id="diagram-desc">O visitante acessa o site em Next.js na Vercel. O servidor grava o agendamento na Google Calendar API e dispara notificações por WhatsApp ou e-mail e o contrato digital.</desc>
-                <defs>
-                  <marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                    <path d="M0 0 L10 5 L0 10 z" class="diagram__arrow-head"></path>
-                  </marker>
-                </defs>
-                <rect class="diagram__node" x="10" y="45" width="150" height="70" rx="6"></rect>
-                <text class="diagram__text diagram__text--title" x="85" y="76" text-anchor="middle">Visitante</text>
-                <text class="diagram__text" x="85" y="96" text-anchor="middle">navegador</text>
+          </article>
 
-                <rect class="diagram__node diagram__node--core" x="240" y="45" width="230" height="70" rx="6"></rect>
-                <text class="diagram__text diagram__text--title" x="355" y="76" text-anchor="middle">Next.js 16 · Vercel</text>
-                <text class="diagram__text" x="355" y="96" text-anchor="middle">site + rotas de servidor</text>
+          <article class="project">
+            <div class="project__body">
+              <p class="project__kicker">Agentes de IA <span class="badge badge--live">Demo pública</span></p>
+              <h3 class="project__title">Mentor de Gestão Industrial</h3>
+              <p class="project__text">Multiagente que apoia supervisores de manutenção em casos de liderança, segurança e processo. Um analista classifica o caso e aciona especialistas; RAG consulta normas NR e PCM; um editor fecha o parecer com plano de ação em PDF.</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li class="tag">Python</li><li class="tag">CrewAI</li><li class="tag">ChromaDB</li><li class="tag">Streamlit</li>
+              </ul>
+              <div class="project__links">
+                <a class="btn btn--primary btn--sm" href="https://huggingface.co/spaces/duzinxd/mentor-gestao-industrial" target="_blank" rel="noopener">Abrir demo</a>
+                <a class="btn btn--sm" href="https://github.com/cardoso-ix/mentor-gestao-industrial" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
 
-                <rect class="diagram__node" x="550" y="45" width="200" height="70" rx="6"></rect>
-                <text class="diagram__text diagram__text--title" x="650" y="76" text-anchor="middle">Google Calendar API</text>
-                <text class="diagram__text" x="650" y="96" text-anchor="middle">agenda de visitas</text>
+          <article class="project">
+            <div class="project__body">
+              <p class="project__kicker">Serviço 24/7 <span class="badge badge--live">Em produção</span></p>
+              <h3 class="project__title">Replicador de promoções</h3>
+              <p class="project__text">Serviço autônomo que capta promoções de Pokémon TCG e replica num grupo de WhatsApp, com painel próprio para acompanhar e controlar o envio. Roda 24/7 numa VPS.</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li class="tag">Node.js</li><li class="tag">TypeScript</li><li class="tag">Docker</li><li class="tag">Coolify</li>
+              </ul>
+              <p class="project__note">Código privado.</p>
+            </div>
+          </article>
 
-                <rect class="diagram__node" x="170" y="160" width="190" height="60" rx="6"></rect>
-                <text class="diagram__text diagram__text--title" x="265" y="186" text-anchor="middle">Notificações</text>
-                <text class="diagram__text" x="265" y="204" text-anchor="middle">WhatsApp · E-mail</text>
+          <article class="project">
+            <div class="project__body">
+              <p class="project__kicker">Ferramentas</p>
+              <h3 class="project__title">PC Dashboard e Conversor de Unidades</h3>
+              <p class="project__text">Painel desktop para Windows com automações e remoção de programas (Tauri). Conversor com 49 categorias de unidades, histórico e tema claro/escuro (React).</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li class="tag">Tauri</li><li class="tag">Rust</li><li class="tag">React</li><li class="tag">TypeScript</li>
+              </ul>
+              <div class="project__links">
+                <a class="btn btn--primary btn--sm" href="conversor-unidades/">Abrir conversor</a>
+                <a class="btn btn--sm" href="https://github.com/cardoso-ix/pc-dashboard" target="_blank" rel="noopener">PC Dashboard</a>
+              </div>
+            </div>
+          </article>
 
-                <rect class="diagram__node" x="380" y="160" width="190" height="60" rx="6"></rect>
-                <text class="diagram__text diagram__text--title" x="475" y="186" text-anchor="middle">Contrato digital</text>
-                <text class="diagram__text" x="475" y="204" text-anchor="middle">geração e envio</text>
-
-                <line class="diagram__link" x1="160" y1="80" x2="238" y2="80" marker-end="url(#diagram-arrow)"></line>
-                <line class="diagram__link" x1="470" y1="80" x2="548" y2="80" marker-end="url(#diagram-arrow)"></line>
-                <line class="diagram__link" x1="320" y1="115" x2="280" y2="158" marker-end="url(#diagram-arrow)"></line>
-                <line class="diagram__link" x1="390" y1="115" x2="450" y2="158" marker-end="url(#diagram-arrow)"></line>
-              </svg>
-              <figcaption class="case-study__caption">Fluxo do agendamento: o servidor do Next.js é o único elo entre o visitante, a agenda e as notificações.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- About Section -->
-
-    <section class="section section--alt" id="sobre" aria-labelledby="sobre-title">
-      <div class="container">
-        <h2 class="section__title fade-in" id="sobre-title"><span class="section__number">02.</span> Sobre mim</h2>
-        <p class="section__intro fade-in">Conheça minha trajetória, visão profissional e combinação de competências técnicas.</p>
-        <div class="about terminal-window fade-in">
-          <div class="terminal-bar">
-            <span class="terminal-dot terminal-dot--red"></span>
-            <span class="terminal-dot terminal-dot--yellow"></span>
-            <span class="terminal-dot terminal-dot--green"></span>
-            <span class="terminal-bar__title">about_eduardo.md</span>
-          </div>
-          <div class="about__body">
-            <div class="about__grid">
-              <div class="about__main">
-                <p class="about__lead">
-                  Resido em Chapecó, SC. Combino mais de uma década de carreira técnica, com base em <strong>metrologia e calibração</strong>, com <strong>suporte técnico N1/N2</strong> e <strong>automações com IA</strong> (n8n, OpenAI e integrações via API).
-                </p>
-                <div class="about__block">
-                  <p class="about__label">Como atuo no dia a dia</p>
-                  <p class="about__text">
-                    Entendo a necessidade real do usuário ou da operação, mapeio fluxos, construo ou corrijo integrações estáveis e garanto que a tecnologia gere produtividade imediata — sempre mantendo uma comunicação clara, empática e orientada a resultados.
-                  </p>
+          <details class="case">
+            <summary>Estudo de caso: LP Soluções, do problema à arquitetura</summary>
+            <div class="case__body">
+              <div class="case__grid">
+                <div>
+                  <p class="case__label">Problema</p>
+                  <p>Presença online profissional e agendamento de visitas técnicas pela internet, sem depender de troca manual de mensagens.</p>
                 </div>
-                <div class="about__block">
-                  <p class="about__label">Fundamentos e Prática</p>
-                  <p class="about__text">
-                    Experiência prática em Help Desk na Crescer Sistemas gerenciando chamados N1/N2, suporte presencial e remoto, e manutenção de estações. Atualmente cursando a Pós Tech em Agentes de IA (FIAP + Alura), com sólida base acadêmica em Administração (UNIFRAN), MBA em Controladoria (Cruzeiro do Sul) e formação técnica em Automação Industrial (SENAI).
-                  </p>
+                <div>
+                  <p class="case__label">Solução</p>
+                  <p>Site institucional com agendamento gravado direto no Google Calendar, avisos por WhatsApp e e-mail e contrato digital.</p>
                 </div>
-                <!-- Stats Grid -->
-                <div class="about__stats">
-                  <div class="about__stat-card">
-                    <span class="about__stat-number">11+ anos</span>
-                    <span class="about__stat-label">De carreira técnica, desde dez/2014</span>
-                  </div>
-                  <div class="about__stat-card">
-                    <span class="about__stat-number">6+ anos</span>
-                    <span class="about__stat-label">Em metrologia e calibração (JBS Foods e Fluxo Metrologia)</span>
-                  </div>
-                  <div class="about__stat-card">
-                    <span class="about__stat-number">N1/N2</span>
-                    <span class="about__stat-label">Help Desk na Crescer Sistemas, 2022 a 2023</span>
-                  </div>
-                  <div class="about__stat-card">
-                    <span class="about__stat-number">Pós Tech</span>
-                    <span class="about__stat-label">Agentes de IA, FIAP + Alura (em andamento)</span>
-                  </div>
+                <div>
+                  <p class="case__label">Decisões</p>
+                  <ul>
+                    <li>Next.js na Vercel, sem VPS e sem orquestrador no meio.</li>
+                    <li>Google Calendar API chamada pelo servidor do próprio Next.js.</li>
+                    <li>TypeScript para tipar os dados do agendamento.</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="case__label">Aprendizado</p>
+                  <p>Menos peças móveis, menos pontos de falha: dispensar servidor dedicado e orquestrador reduziu custo e manutenção.</p>
                 </div>
               </div>
-              <aside class="about__highlight">
-                <span class="about__highlight-badge">Perfil Profissional</span>
-                <p class="about__highlight-title">Suporte &amp; Automação com IA</p>
-                <p class="about__highlight-meta">n8n · OpenAI · APIs · Help Desk</p>
-                <ul class="about__highlight-list">
-                  <li>Atendimento ao usuário e chamados N1/N2</li>
-                  <li>Diagnóstico e resolução de incidentes</li>
-                  <li>Criação de fluxos e webhooks no n8n</li>
-                  <li>Integração de LLMs e APIs em processos</li>
-                  <li>Comunicação transparente e documentação</li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- Method Section -->
-
-    <section class="section" id="metodo" aria-labelledby="metodo-title">
-      <div class="container">
-        <h2 class="section__title fade-in" id="metodo-title"><span class="section__number">03.</span> Como eu trabalho</h2>
-        <p class="section__intro fade-in">Vindo da metrologia, trato automação e IA como um instrumento de medição: precisa de padrão, rastreabilidade e verificação.</p>
-        <ol class="method">
-          <li class="method__step fade-in">
-            <span class="method__num" aria-hidden="true">01</span>
-            <h3 class="method__title">Mapear</h3>
-            <p class="method__text">Entender a dor real e o fluxo atual antes de automatizar qualquer coisa.</p>
-          </li>
-          <li class="method__step fade-in">
-            <span class="method__num" aria-hidden="true">02</span>
-            <h3 class="method__title">Construir simples</h3>
-            <p class="method__text">n8n, APIs e webhooks com o menor número de peças possível, para ter menos pontos de falha.</p>
-          </li>
-          <li class="method__step fade-in">
-            <span class="method__num" aria-hidden="true">03</span>
-            <h3 class="method__title">Validar</h3>
-            <p class="method__text">Critério de aceitação definido antes de entregar, inclusive para respostas de modelos de linguagem.</p>
-          </li>
-          <li class="method__step fade-in">
-            <span class="method__num" aria-hidden="true">04</span>
-            <h3 class="method__title">Rastrear</h3>
-            <p class="method__text">Registro do que foi feito e por quê, como na rastreabilidade metrológica: toda decisão tem origem.</p>
-          </li>
-          <li class="method__step fade-in">
-            <span class="method__num" aria-hidden="true">05</span>
-            <h3 class="method__title">Documentar e operar</h3>
-            <p class="method__text">Comunicação clara com quem usa e manutenção para a solução continuar estável.</p>
-          </li>
-        </ol>
-      </div>
-
-    </section>
-    <!-- Skills Section -->
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-        <h2 class="section__title fade-in" id="skills-title"><span class="section__number">04.</span> Skills &amp; Tecnologias</h2>
-        <p class="section__intro fade-in">Competências em suporte, automação e metrologia, mais o que estou estudando na Pós Tech.</p>
-        <div class="skills">
-          <div class="skills__group skills__group--primary fade-in">
-            <h3 class="skills__category">Em Uso Hoje</h3>
-            <ul class="skills__list">
-              <li class="skill-tag skill-tag--primary">Suporte Técnico</li>
-              <li class="skill-tag skill-tag--primary">n8n</li>
-              <li class="skill-tag skill-tag--primary">OpenAI API</li>
-              <li class="skill-tag skill-tag--primary">APIs REST</li>
-              <li class="skill-tag skill-tag--primary">Webhooks</li>
-              <li class="skill-tag skill-tag--primary">Prompt Engineering</li>
-            </ul>
-          </div>
-          <div class="skills__group fade-in">
-            <h3 class="skills__category">Suporte &amp; Ops</h3>
-            <ul class="skills__list">
-              <li class="skill-tag">Help Desk N1/N2</li>
-              <li class="skill-tag">Python</li>
-              <li class="skill-tag">Diagnóstico de Incidentes</li>
-              <li class="skill-tag">Redes &amp; Hardware</li>
-              <li class="skill-tag">Windows / Linux</li>
-              <li class="skill-tag">Google Sheets / Excel</li>
-            </ul>
-          </div>
-          <div class="skills__group fade-in">
-            <h3 class="skills__category">Em estudo (Pós Tech)</h3>
-            <ul class="skills__list">
-              <li class="skill-tag skill-tag--study">LLMs &amp; Embeddings</li>
-              <li class="skill-tag skill-tag--study">RAG Architecture</li>
-              <li class="skill-tag skill-tag--study">CrewAI</li>
-              <li class="skill-tag skill-tag--study">Orquestração Multi-Agente</li>
-              <li class="skill-tag skill-tag--study">ChromaDB</li>
-            </ul>
-          </div>
-          <div class="skills__group fade-in">
-            <h3 class="skills__category">Metrologia &amp; Qualidade</h3>
-            <ul class="skills__list">
-              <li class="skill-tag">Calibração de instrumentos</li>
-              <li class="skill-tag">Rastreabilidade metrológica</li>
-              <li class="skill-tag">Padrões de referência</li>
-              <li class="skill-tag">Certificados técnicos</li>
-              <li class="skill-tag">Normas de qualidade</li>
-              <li class="skill-tag">Orçamentos técnicos</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- Education Section -->
-
-    <section class="section section--alt" id="formacao" aria-labelledby="formacao-title">
-      <div class="container">
-        <h2 class="section__title fade-in" id="formacao-title"><span class="section__number">05.</span> Formação Acadêmica</h2>
-        <p class="section__intro fade-in">Trajetória acadêmica com foco contínuo em tecnologia, gestão e inteligência artificial.</p>
-        <div class="timeline">
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--active">Em andamento</span>
-              <h3 class="timeline__title">Pós Tech em Agentes de IA</h3>
-              <p class="timeline__institution">FIAP + Alura — 360h · 10 meses</p>
-              <p class="timeline__period">Jun, 2026 — Em andamento</p>
-              <p class="timeline__description">LLMs, sistemas RAG, orquestração de agentes, engenharia de prompts, consumo de APIs e governança de soluções de IA.</p>
-              <a href="https://postech.fiap.com.br/curso/agentes-de-ia/" class="timeline__link" target="_blank" rel="noopener noreferrer">
-                <span>Ver programa oficial na FIAP</span>
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+              <figure class="diagram">
+                <svg viewBox="0 0 760 230" role="img" aria-labelledby="diagram-title diagram-desc">
+                  <title id="diagram-title">Arquitetura do LP Soluções</title>
+                  <desc id="diagram-desc">O visitante acessa o site em Next.js na Vercel. O servidor grava o agendamento na Google Calendar API e dispara notificações por WhatsApp ou e-mail e o contrato digital.</desc>
+                  <defs>
+                    <marker id="diagram-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="diagram__arrow" d="M0 0 L10 5 L0 10 z"></path></marker>
+                  </defs>
+                  <rect class="diagram__node" x="10" y="45" width="150" height="70" rx="8"></rect>
+                  <text class="diagram__title" x="85" y="76" text-anchor="middle">Visitante</text>
+                  <text class="diagram__text" x="85" y="96" text-anchor="middle">navegador</text>
+                  <rect class="diagram__node diagram__node--core" x="240" y="45" width="230" height="70" rx="8"></rect>
+                  <text class="diagram__title" x="355" y="76" text-anchor="middle">Next.js · Vercel</text>
+                  <text class="diagram__text" x="355" y="96" text-anchor="middle">site + rotas de servidor</text>
+                  <rect class="diagram__node" x="550" y="45" width="200" height="70" rx="8"></rect>
+                  <text class="diagram__title" x="650" y="76" text-anchor="middle">Google Calendar API</text>
+                  <text class="diagram__text" x="650" y="96" text-anchor="middle">agenda de visitas</text>
+                  <rect class="diagram__node" x="170" y="160" width="190" height="60" rx="8"></rect>
+                  <text class="diagram__title" x="265" y="186" text-anchor="middle">Notificações</text>
+                  <text class="diagram__text" x="265" y="204" text-anchor="middle">WhatsApp · E-mail</text>
+                  <rect class="diagram__node" x="380" y="160" width="190" height="60" rx="8"></rect>
+                  <text class="diagram__title" x="475" y="186" text-anchor="middle">Contrato digital</text>
+                  <text class="diagram__text" x="475" y="204" text-anchor="middle">geração e envio</text>
+                  <line class="diagram__link" x1="160" y1="80" x2="238" y2="80" marker-end="url(#diagram-arrow)"></line>
+                  <line class="diagram__link" x1="470" y1="80" x2="548" y2="80" marker-end="url(#diagram-arrow)"></line>
+                  <line class="diagram__link" x1="320" y1="115" x2="280" y2="158" marker-end="url(#diagram-arrow)"></line>
+                  <line class="diagram__link" x1="390" y1="115" x2="450" y2="158" marker-end="url(#diagram-arrow)"></line>
                 </svg>
-              </a>
+                <figcaption>O servidor do Next.js é o único elo entre o visitante, a agenda e as notificações.</figcaption>
+              </figure>
             </div>
-          </article>
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--done">Concluído</span>
-              <h3 class="timeline__title">MBA em Controladoria e Finanças</h3>
-              <p class="timeline__institution">Universidade Cruzeiro do Sul</p>
-              <p class="timeline__period">2022</p>
-              <p class="timeline__description">Planejamento financeiro estratégico, análise de indicadores, governança e conformidade operacional.</p>
-            </div>
-          </article>
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--done">Concluído</span>
-              <h3 class="timeline__title">Graduação em Administração</h3>
-              <p class="timeline__institution">Universidade de Franca (UNIFRAN)</p>
-              <p class="timeline__period">2016 — 2020</p>
-              <p class="timeline__description">Gestão de processos organizacionais, tomada de decisão baseada em dados, liderança e operações integradas.</p>
-            </div>
-          </article>
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--done">Concluído</span>
-              <h3 class="timeline__title">Indicadores de Pesagem e Normalização</h3>
-              <p class="timeline__institution">INMETRO</p>
-              <p class="timeline__period">2014</p>
-            </div>
-          </article>
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--done">Concluído</span>
-              <h3 class="timeline__title">Técnico em Automação Industrial</h3>
-              <p class="timeline__institution">SENAI — Santo Antônio da Platina</p>
-              <p class="timeline__period">2010 — 2012</p>
-              <p class="timeline__description">Fundamentos de eletrônica, controle de processos, instrumentação e lógica de programação.</p>
-            </div>
-          </article>
+          </details>
         </div>
       </div>
-
     </section>
-    <!-- Experience Section -->
 
-    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about">
+        <div class="about__text">
+          <p class="section__eyebrow">Sobre</p>
+          <h2 class="section__title" id="sobre-title">Da metrologia para a automação</h2>
+          <p class="section__lead">Mais de 11 anos de carreira técnica, sempre perto de quem usa a ferramenta.</p>
+          <p class="about__first">Passei <strong>seis anos em metrologia</strong> (JBS e Fluxo Metrologia), onde tudo precisa de padrão, rastreabilidade e documentação para auditoria. Depois, um ano e meio em <strong>Help Desk N1/N2</strong> na Crescer Sistemas: diagnóstico de software e hardware, atendimento remoto e presencial e treinamento de usuários.</p>
+          <p>Hoje junto as duas coisas. Entendo o problema de quem abre o chamado, resolvo, e quando ele se repete, automatizo com <strong>n8n, APIs e LLMs</strong>. Estou cursando a <strong>Pós Tech em Agentes de IA</strong> (FIAP + Alura).</p>
+        </div>
+        <div>
+          <h3 class="career__title">Como eu trabalho</h3>
+          <ol class="steps">
+            <li class="step"><h4 class="step__title">Mapear</h4><p class="step__text">Entender a dor real e o fluxo atual antes de automatizar qualquer coisa.</p></li>
+            <li class="step"><h4 class="step__title">Construir simples</h4><p class="step__text">n8n, APIs e webhooks com o menor número de peças possível.</p></li>
+            <li class="step"><h4 class="step__title">Validar</h4><p class="step__text">Critério de aceite definido antes de entregar, inclusive para respostas de IA.</p></li>
+            <li class="step"><h4 class="step__title">Documentar e operar</h4><p class="step__text">Registro de cada decisão e comunicação clara com quem usa.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <h2 class="section__title fade-in" id="experiencia-title"><span class="section__number">06.</span> Experiência Profissional</h2>
-        <p class="section__intro fade-in">Histórico real de atuação em suporte técnico, operações e instrumentação.</p>
-        <div class="timeline">
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--active">Atual</span>
-              <h3 class="timeline__title">Técnico de Laboratório de Calibração</h3>
-              <p class="timeline__institution">Fluxo Metrologia</p>
-              <p class="timeline__period">Jul, 2025 — Presente</p>
-              <p class="timeline__description">Calibração de instrumentos de precisão, emissão de laudos e certificados técnicos, controle de padrões e rigor documental metrológico.</p>
-            </div>
-          </article>
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--done">Concluído</span>
-              <h3 class="timeline__title">Coordenador de Logística</h3>
-              <p class="timeline__institution">Sandimas — Chapecó, SC</p>
-              <p class="timeline__period">Mai, 2023 — Fev, 2025</p>
-              <p class="timeline__description">Gestão e controle operacional de suprimentos, roteirização, distribuição e acompanhamento de indicadores de eficiência e prazos.</p>
-            </div>
-          </article>
-          <article class="timeline__item fade-in">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <span class="timeline__status timeline__status--done">Concluído</span>
-              <h3 class="timeline__title">Suporte Técnico Help Desk</h3>
-              <p class="timeline__institution">Crescer Sistemas — Chapecó, SC</p>
-              <p class="timeline__period">Fev, 2022 — Mai, 2023</p>
-              <p class="timeline__description">Atendimento a chamados N1/N2: diagnóstico e resolução de incidentes de software e hardware, suporte remoto e presencial aos clientes e treinamento de usuários.</p>
-            </div>
-          </article>
-          <!-- Accordion Archive -->
-          <div class="timeline__archive" id="timeline-archive" aria-hidden="true">
-            <div class="timeline__archive-inner">
-              <article class="timeline__item">
-                <div class="timeline__marker" aria-hidden="true"></div>
-                <div class="timeline__content">
-                  <span class="timeline__status timeline__status--done">Concluído</span>
-                  <h3 class="timeline__title">Orçamentista</h3>
-                  <p class="timeline__institution">MR Indústria Gráfica — Concórdia, SC</p>
-                  <p class="timeline__period">Out, 2020 — Jun, 2021</p>
-                  <p class="timeline__description">Análise técnica de projetos, levantamento de custos de insumos e composição de orçamentos técnicos de produção.</p>
-                </div>
-              </article>
-              <article class="timeline__item">
-                <div class="timeline__marker" aria-hidden="true"></div>
-                <div class="timeline__content">
-                  <span class="timeline__status timeline__status--done">Concluído</span>
-                  <h3 class="timeline__title">Metrologista</h3>
-                  <p class="timeline__institution">JBS Foods — Jacarezinho, PR</p>
-                  <p class="timeline__period">Dez, 2014 — Dez, 2019</p>
-                  <p class="timeline__description">Garantia metrológica de processos industriais, aferição de instrumentos, calibrações e conformidade de normas de qualidade.</p>
-                </div>
-              </article>
-            </div>
+        <div class="section__head">
+          <p class="section__eyebrow">Competências</p>
+          <h2 class="section__title" id="skills-title">Ferramentas e conhecimentos</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Suporte</h3>
+            <ul class="tags"><li class="tag">Help Desk N1/N2</li><li class="tag">Diagnóstico de incidentes</li><li class="tag">Atendimento remoto</li><li class="tag">Windows</li><li class="tag">Linux</li><li class="tag">Redes e hardware</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Automação</h3>
+            <ul class="tags"><li class="tag">n8n</li><li class="tag">APIs REST</li><li class="tag">Webhooks</li><li class="tag">Python</li><li class="tag">TypeScript</li><li class="tag">Node.js</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">IA</h3>
+            <ul class="tags"><li class="tag">LLMs</li><li class="tag">RAG</li><li class="tag">CrewAI</li><li class="tag">ChromaDB</li><li class="tag">Prompt engineering</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Infra e qualidade</h3>
+            <ul class="tags"><li class="tag">Docker</li><li class="tag">Git</li><li class="tag">Coolify</li><li class="tag">Metrologia</li><li class="tag">ISO/IEC 17025</li></ul>
           </div>
         </div>
-        <button class="btn btn--outline timeline__toggle" id="timeline-toggle" type="button" aria-expanded="false" aria-controls="timeline-archive">
-          <span class="timeline__toggle-label">Ver histórico completo</span>
-          <svg class="timeline__toggle-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
       </div>
-
     </section>
-    <!-- Contact Section -->
+
+    <section class="section" id="trajetoria" aria-labelledby="trajetoria-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">Trajetória</p>
+          <h2 class="section__title" id="trajetoria-title">Experiência e formação</h2>
+        </div>
+        <div class="career">
+          <div>
+            <h3 class="career__title">Experiência</h3>
+            <ol class="timeline">
+              <li class="timeline__item timeline__item--current">
+                <h4 class="timeline__role">Técnico de Laboratório de Calibração</h4>
+                <p class="timeline__meta">Fluxo Metrologia · jul/2025 até hoje</p>
+                <p class="timeline__text">Calibração de instrumentos, emissão de certificados, gestão de padrões e conformidade documental.</p>
+              </li>
+              <li class="timeline__item">
+                <h4 class="timeline__role">Coordenador de Logística</h4>
+                <p class="timeline__meta">Sandimas · mai/2023 a fev/2025</p>
+                <p class="timeline__text">Suprimentos, roteirização e distribuição, com indicadores de eficiência e prazos.</p>
+              </li>
+              <li class="timeline__item">
+                <h4 class="timeline__role">Suporte Técnico Help Desk (N1/N2)</h4>
+                <p class="timeline__meta">Crescer Sistemas · fev/2022 a mai/2023</p>
+                <p class="timeline__text">Chamados N1/N2: incidentes de software e hardware, suporte remoto e presencial e treinamento de usuários.</p>
+              </li>
+              <li class="timeline__item">
+                <h4 class="timeline__role">Orçamentista</h4>
+                <p class="timeline__meta">MR Indústria Gráfica · out/2020 a jun/2021</p>
+              </li>
+              <li class="timeline__item">
+                <h4 class="timeline__role">Metrologista</h4>
+                <p class="timeline__meta">JBS · dez/2014 a dez/2019</p>
+                <p class="timeline__text">Calibrações, padrões de referência e rastreabilidade metrológica em processos industriais.</p>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="career__title">Formação</h3>
+            <ul class="edu">
+              <li class="edu__item edu__item--current"><span class="edu__name">Pós Tech em Agentes de IA</span><span class="edu__meta">FIAP + Alura · em andamento</span></li>
+              <li class="edu__item"><span class="edu__name">MBA em Controladoria e Finanças</span><span class="edu__meta">Cruzeiro do Sul · 2022</span></li>
+              <li class="edu__item"><span class="edu__name">Administração</span><span class="edu__meta">UNIFRAN · 2016 a 2020</span></li>
+              <li class="edu__item"><span class="edu__name">Indicadores de Pesagem e Normalização</span><span class="edu__meta">INMETRO · 2014</span></li>
+              <li class="edu__item"><span class="edu__name">Técnico em Automação Industrial</span><span class="edu__meta">SENAI · 2010 a 2012</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="contato" aria-labelledby="contato-title">
-      <div class="container container--narrow">
-        <div class="contact-card fade-in">
-          <span class="contact-card__badge-number" aria-hidden="true">07. Contato</span>
-          <h2 class="contact-card__heading" id="contato-title">Vamos conversar?</h2>
-          <p class="contact-card__lead">
-            Disponível para oportunidades em suporte técnico, implementação de fluxos e automações com IA. Fique à vontade para mandar uma mensagem direta ou conectar nas redes.
-          </p>
-          <div class="contact__chips">
-            <a href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" class="contact__chip contact__chip--whatsapp" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-              </svg>
-              <span>WhatsApp</span>
-            </a>
-            <button class="contact__chip contact__chip--copy" id="contact-email" type="button" aria-label="Copiar endereço de e-mail eduardoocardosoo@gmail.com">
-              <svg class="contact__chip-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span class="contact__chip-text">Copiar E-mail</span>
-            </button>
-            <a href="https://www.linkedin.com/in/eduardo-cardoso-213a02267" class="contact__chip" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/cardoso-ix" class="contact__chip" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-              <span>GitHub</span>
-            </a>
-            <a href="assets/cv_eduardo_cardoso.pdf?v=14" class="contact__chip" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-              <span>Currículo</span>
-            </a>
+      <div class="container">
+        <div class="contact">
+          <p class="section__eyebrow">Contato</p>
+          <h2 class="section__title" id="contato-title">Vamos conversar?</h2>
+          <p class="section__lead">Aberto a vagas remotas de suporte técnico, suporte a produto de IA e automação de processos.</p>
+          <div class="contact__actions">
+            <button class="btn btn--primary" id="copy-email" type="button" data-email="eduardoocardosoo@gmail.com">Copiar e-mail</button>
+            <a class="btn" href="https://wa.me/5549998095955?text=Oi%20Eduardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" href="https://www.linkedin.com/in/eduardo-cardoso-213a02267" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/cardoso-ix" target="_blank" rel="noopener">GitHub</a>
           </div>
+          <p class="contact__email">eduardoocardosoo@gmail.com</p>
         </div>
       </div>
-
     </section>
-
   </main>
-  <!-- Footer -->
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="footer__copy">&copy; <span id="year"></span> Eduardo Cardoso. Chapecó, SC. Todos os direitos reservados.</p>
-      <a href="#inicio" class="footer__back-to-top">
-        <span>Voltar ao topo</span>
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="12" y1="19" x2="12" y2="5"></line>
-          <polyline points="5 12 12 5 19 12"></polyline>
-        </svg>
-      </a>
+      <p>© <span id="year">2026</span> Eduardo Cardoso · Chapecó, SC</p>
+      <a href="#inicio">Voltar ao topo</a>
     </div>
-
   </footer>
-  <!-- Botão Flutuante da Central de Comandos (Ctrl+K) -->
-  <button class="cmd-palette-trigger" id="cmd-trigger" type="button" aria-label="Comandos: abrir central de comandos (Ctrl+K)" aria-haspopup="dialog" aria-expanded="false">
-    <span class="cmd-trigger__icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-      </svg>
-    </span>
-    <span class="cmd-trigger__text">Comandos</span>
-    <kbd class="cmd-trigger__kbd">Ctrl K</kbd>
-  </button>
-  <!-- Modal da Central de Comandos HUD -->
-  <div class="cmd-palette-overlay" id="cmd-overlay" aria-hidden="true" inert>
-    <div class="cmd-palette-dialog" role="dialog" aria-modal="true" aria-label="Central de Comandos e Navegação">
-      <div class="cmd-palette__search-bar">
-        <svg class="cmd-palette__search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-        <input type="text" class="cmd-palette__input" id="cmd-input" placeholder="Digite um comando, projeto ou seção..." autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="cmd-results" aria-autocomplete="list" aria-label="Buscar comandos e projetos">
-        <button type="button" class="cmd-palette__esc-badge" id="cmd-close-btn" aria-label="Fechar central de comandos">ESC</button>
-      </div>
-      <div class="cmd-palette__results" id="cmd-results" role="listbox" aria-label="Resultados">
-        <!-- Grupo 1: Ações Rápidas -->
-        <div class="cmd-group" data-group="actions">
-          <div class="cmd-group__title">Ações Rápidas</div>
-          <div class="cmd-item" data-action="copy-email" data-keywords="email contato mensagem institucional copiar">
-            <div class="cmd-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            </div>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Copiar E-mail Institucional</span>
-              <span class="cmd-item__desc">Copiar o endereço para a área de transferência</span>
-            </div>
-            <span class="cmd-item__badge">Copiar</span>
-          </div>
-          <div class="cmd-item" data-action="download-cv" data-keywords="cv curriculo pdf download baixar">
-            <div class="cmd-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            </div>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Baixar Currículo em PDF</span>
-              <span class="cmd-item__desc">Versão canônica atualizada</span>
-            </div>
-            <span class="cmd-item__badge">PDF</span>
-          </div>
-          <div class="cmd-item" data-action="open-whatsapp" data-keywords="whatsapp mensagem contato chat conversar">
-            <div class="cmd-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            </div>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Conversar no WhatsApp</span>
-              <span class="cmd-item__desc">+55 (49) 99809-5955</span>
-            </div>
-            <span class="cmd-item__badge">Chat</span>
-          </div>
-          <div class="cmd-item" data-action="toggle-theme" data-keywords="tema modo claro escuro dark light theme">
-            <div class="cmd-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            </div>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Alternar Tema Visual</span>
-              <span class="cmd-item__desc">Modo Escuro / Modo Claro</span>
-            </div>
-            <span class="cmd-item__badge">Tema</span>
-          </div>
-        </div>
-        <!-- Grupo 2: Projetos -->
-        <div class="cmd-group" data-group="projects">
-          <div class="cmd-group__title">Projetos em Destaque</div>
-          <div class="cmd-item" data-action="open-url" data-url="https://lp-solucoes.vercel.app" data-keywords="lp solucoes eletrica agendamento nextjs google calendar vercel">
-            <div class="cmd-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            </div>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">LP Soluções — Site &amp; Agendamento</span>
-              <span class="cmd-item__desc">Next.js 16 · Google Calendar API · Vercel</span>
-            </div>
-            <span class="cmd-item__badge">Demo Online</span>
-          </div>
-        </div>
-        <!-- Grupo 3: Navegação -->
-        <div class="cmd-group" data-group="navigation">
-          <div class="cmd-group__title">Navegação Rápida</div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#inicio" data-keywords="inicio home topo perfil eduardo">
-            <span class="cmd-item__mono-num">~</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Início</span>
-              <span class="cmd-item__desc">Topo da página e apresentação</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#projetos" data-keywords="projetos destaque portfolio cases vitrine">
-            <span class="cmd-item__mono-num">01.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Projetos em Destaque</span>
-              <span class="cmd-item__desc">LP Soluções e estudo de caso</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#sobre" data-keywords="sobre bio trajeto historia perfil mim">
-            <span class="cmd-item__mono-num">02.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Sobre mim</span>
-              <span class="cmd-item__desc">Trajetória e atuação no dia a dia</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#metodo" data-keywords="metodo como trabalho processo metrologia rastreabilidade validacao">
-            <span class="cmd-item__mono-num">03.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Como eu trabalho</span>
-              <span class="cmd-item__desc">Método: mapear, validar, rastrear</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#skills" data-keywords="skills habilidades tecnologias ferramentas n8n openai python help desk">
-            <span class="cmd-item__mono-num">04.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Especialização &amp; Ferramentas</span>
-              <span class="cmd-item__desc">Stack técnica, suporte e IA</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#formacao" data-keywords="formacao estudos fiap pos mba faculdade unifran">
-            <span class="cmd-item__mono-num">05.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Formação Acadêmica</span>
-              <span class="cmd-item__desc">Pós Tech FIAP, MBA e Administração</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#experiencia" data-keywords="experiencia empregos empresas help desk crescer fluxo sandimas">
-            <span class="cmd-item__mono-num">06.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Trajetória Profissional</span>
-              <span class="cmd-item__desc">Histórico e vivência prática operacional</span>
-            </div>
-          </div>
-          <div class="cmd-item" data-action="scroll-to" data-target="#contato" data-keywords="contato email whatsapp redes linkedin github mensagem">
-            <span class="cmd-item__mono-num">07.</span>
-            <div class="cmd-item__body">
-              <span class="cmd-item__label">Contato &amp; Parcerias</span>
-              <span class="cmd-item__desc">Canais de comunicação direta</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sr-only" id="cmd-status" role="status" aria-live="polite"></div>
-      <div class="cmd-palette__footer">
-        <div class="cmd-palette__footer-tips">
-          <span><kbd>↑</kbd><kbd>↓</kbd> Navegar</span>
-          <span><kbd>↵</kbd> Executar</span>
-          <span><kbd>ESC</kbd> Fechar</span>
-        </div>
-        <span class="cmd-palette__footer-tag">EC // TERMINAL_PALETTE</span>
-      </div>
-    </div>
-  </div>
-  <!-- Bibliotecas Externas (CDNs com Subresource Integrity - SRI) -->
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Módulos Criativos e Interativos -->
-
-  <script src="js/config.js"></script>
-  <script src="js/smooth-scroll.js?v=3"></script>
-
-  <script src="js/webgl-loader.js?v=1"></script>
-
-  <script src="js/cursor.js?v=3"></script>
-
-  <script src="js/animations.js?v=5"></script>
-
-  <script src="js/command-palette.js?v=2"></script>
-  <!-- Script Principal -->
-
-  <script src="js/main.js?v=42"></script>
-
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/site.js?v=1" defer></script>
 </body>
 </html>

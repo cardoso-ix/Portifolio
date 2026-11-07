@@ -1,164 +1,40 @@
-# Portfólio — Eduardo Cardoso
+# Portfólio · Eduardo Cardoso
 
-<p align="left">
-  <a href="https://cardoso-ix.github.io/Portifolio/"><img src="https://img.shields.io/badge/Live%20Demo-cardoso--ix.github.io-a8b87a?style=flat-square&logo=github" alt="Live Demo"></a>
-  <img src="https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS%20Vanilla-1a1c1a?style=flat-square&logo=javascript" alt="Stack">
-  <img src="https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=flat-square&logo=github-pages" alt="GitHub Pages">
-  <img src="https://img.shields.io/badge/License-Uso%20Livre-lightgrey?style=flat-square" alt="License">
-</p>
+Site pessoal: suporte técnico e automação com IA.
 
-Portfólio pessoal e profissional de **Eduardo Cardoso**, construído com tecnologias web fundamentais (HTML5, CSS3 e JavaScript Vanilla), priorizando performance, acessibilidade (orientada à WCAG 2.1 AA) e design contemporâneo elevado.
+**No ar:** https://cardoso-ix.github.io/Portifolio/
 
-- **Posicionamento:** Perfil técnico com atuação na fronteira entre **suporte técnico** (atendimento N1/N2, diagnóstico de incidentes, help desk) e **automações inteligentes com IA** (n8n, OpenAI, APIs REST, webhooks e orquestração).
-- **Ambiente de Produção:** [cardoso-ix.github.io/Portifolio](https://cardoso-ix.github.io/Portifolio/)
+## Decisões
 
----
+- **Sem bibliotecas.** HTML, um CSS e um JS pequeno. A versão anterior carregava Three.js, GSAP, Lenis e cursor customizado; o carregamento era bom, mas a rolagem e a cena 3D deixavam o site pesado no uso. Tudo isso saiu.
+- **Conteúdo primeiro.** Quem visita é recrutador: em 10 segundos precisa ver quem sou, o que faço e projetos com link. Seções: Projetos, Sobre e método, Competências, Trajetória, Contato.
+- **Tema escuro por padrão**, com tema claro (segue o sistema e lembra a escolha). Cores iguais às da capa do LinkedIn.
+- **CSP restrito** (`script-src 'self'`, `style-src 'self'`): nenhum script ou estilo de terceiros.
+- **Acessível:** link para pular ao conteúdo, foco visível, menu com `aria-expanded`, respeita `prefers-reduced-motion`.
 
-## 🛠️ Stack Tecnológica
-
-| Camada | Tecnologias |
-|---|---|
-| **Página Principal** | HTML5 semântico, CSS3 moderno (Custom Properties / Design Tokens), JavaScript ES6+ Vanilla |
-| **Experiência 3D & Animações** | **Three.js** (WebGL 3D Background & Cyber Dust), **GSAP** + **ScrollTrigger** (revelações e micro-interações) |
-| **Recursos HUD & Interatividade** | Central de Comandos (`Ctrl+K` / `⌘K`), card de perfil HUD, Text Scramble nos títulos, Spotlight reativo, grade técnica de fundo |
-| **Tipografia** | Inter (leitura e UI) + JetBrains Mono (código, terminal e metadados) |
-| **Design System** | *Quiet Graphite Olive + Cyber HUD* — superfícies graphite (`#0e0f0e`), acento oliva suave (`#a8b87a`), ciano neon (`#00f5ff`), glassmorphism e dark/light mode nativo |
-| **Conteúdo** | Estudo de caso com diagrama de arquitetura (SVG inline), seção de método, dados conferidos com o currículo |
-| **Integrações & Demos** | Demo do LP Soluções na Vercel |
-| **Scripts de Automação** | Python 3 (Pillow, ReportLab) para geração programática do CV em PDF e favicons |
-| **CI / CD** | GitHub Actions (validação HTML com `html-validate` e verificação de links com `lychee`) |
-| **Hospedagem** | GitHub Pages com deploy automático a partir da branch `main` |
-
----
-
-## ⚡ Recursos Interativos & Experiência Visual
-
-O portfólio combina estética de engenharia moderna, inspiração em interfaces HUD/Cyber e performance instantânea:
-
-1. **Central de Comandos HUD (`Ctrl + K` / `⌘K`)**:
-   - Atalho global de teclado e botão flutuante para navegação instantânea.
-   - Busca em tempo real com filtro preditivo para projetos, ações rápidas e seções.
-   - Ações integradas: cópia de e-mail institucional com toast, download de CV em PDF, alternância de tema e chat no WhatsApp.
-2. **Card de Perfil HUD no Hero**:
-   - Card estático com local, foco, stack e disponibilidade. Sem métricas simuladas: só dados reais.
-3. **Scanner Laser Holográfico & Retículo no Avatar**:
-   - Feixe de varredura luminoso contínuo sobre a foto de perfil com retículo cibernético HUD e micro-badge de status.
-4. **Text Scramble / Matrix Decrypt Engine**:
-   - Decodificação de glifos nos títulos das seções, uma vez ao entrar na viewport. O nome no hero fica sempre legível e leitores de tela recebem o texto final via `aria-label`.
-5. **Spotlight Reativo & WebGL 3D Scene**:
-   - Gradiente de iluminação radial suave que rastreia dinamicamente a posição do cursor nos cards.
-   - Icosaedro orgânico renderizado via Three.js no fundo, com deformação calculada no *vertex shader* (GPU) e matriz de 180 partículas de *cyber dust* em rotação orbital.
-
----
-
-## 🚀 Projetos em Destaque
-
-| Projeto | Descrição & Stack | Demonstração | Código Fonte |
-|---|---|---|---|
-| **LP Soluções — Site & Agendamento** | Site institucional para serviços elétricos com agendamento online inteligente direto no Google Calendar (Next.js 16 sem VPS), notificações via WhatsApp/E-mail e contrato digital. <br>`Next.js 16 · React 19 · TypeScript · Google Calendar · Tailwind CSS · Vercel` | [Demo Online](https://lp-solucoes.vercel.app) | — (Cliente) |
-
-*Para o inventário completo e detalhado de repositórios, consulte [docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md).*
-
----
-
-## 📁 Estrutura do Repositório
+## Estrutura
 
 ```
-Portifolio/
-├── index.html                  # Estrutura principal do portfólio com marcação semântica
-├── 404.html                    # Página 404 personalizada para GitHub Pages
-├── robots.txt                  # Diretrizes para indexadores
-├── sitemap.xml                 # Mapa do site para SEO
-├── site.webmanifest            # Manifesto PWA e ícones de atalho
-├── css/
-│   ├── style.css               # Design System base unificado (Quiet Graphite Olive)
-│   └── creative.css            # Camada visual avançada (HUD, scanner, spotlight, command palette)
-├── js/
-│   ├── main.js                 # Lógica de interatividade básica (tema, scroll, clipboard)
-│   ├── animations.js           # Orquestração GSAP, spotlight do cursor e Matrix Decrypt
-│   ├── webgl-scene.js          # Cena 3D Three.js de fundo com cyber dust
-│   └── command-palette.js      # Central de Comandos HUD (Ctrl+K / ⌘K estilo Raycast)
-├── assets/
-│   ├── cv_eduardo_cardoso.pdf  # Currículo canônico em formato PDF
-│   ├── favicon-*.png / .svg    # Conjunto de ícones para navegadores e dispositivos
-│   └── images/
-│       ├── foto.png            # Foto de perfil (fallback, JSON-LD e CV)
-│       ├── *-400/800/640/1280.webp # Variantes responsivas geradas por scripts/optimize_images.py
-│       ├── og-image.png        # Imagem de compartilhamento social (1200×630)
-│       ├── linkedin-banner.png # Banner personalizado para o LinkedIn
-│       └── *-preview.*         # Capturas e ilustrações dos projetos
-├── docs/                       # Documentação técnica e de posicionamento
-│   ├── ARCHITECTURE.md         # Detalhamento da arquitetura técnica e código
-│   ├── PROJETOS-GITHUB.md      # Inventário completo dos repositórios
-│   ├── LINKEDIN-PERFIL.md      # Kit de perfil e textos para LinkedIn
-│   └── AVALIACAO-PERFIL.md     # Análise de posicionamento profissional
-├── scripts/                    # Scripts auxiliares em Python
-│   ├── format_html.py          # Formatador e limpador do HTML
-│   ├── generate_cv.py          # Gerador do PDF do currículo
-│   ├── generate_favicon.py     # Gerador de favicons a partir do SVG
-│   ├── generate_og_image.py    # Gerador da imagem OpenGraph
-│   └── requirements.txt        # Dependências Python dos scripts
-└── .github/workflows/
-    └── check-links.yml         # Workflow de validação de links e HTML
+index.html            página única
+css/site.css          estilos (tema escuro + claro)
+js/theme-init.js      aplica o tema antes da primeira pintura
+js/site.js            menu, tema, copiar e-mail, link ativo
+assets/               fotos, fontes, CV em PDF, ícones
+conversor-unidades/   build do projeto Conversor de Unidades
+scripts/              geradores (CV em PDF, imagens, favicon)
 ```
 
----
-
-## 💻 Executando Localmente
-
-Como o projeto é construído em HTML/CSS/JS estático, você pode executá-lo com qualquer servidor HTTP local:
+## Rodar local
 
 ```bash
-# Com Python 3
-python -m http.server 8000
-
-# Ou com Node.js (via npx)
-npx --yes serve .
+python -m http.server 8765
 ```
 
-Abra seu navegador em `http://localhost:8000` para visualizar o portfólio completo com todas as seções e demos interativas.
-
----
-
-## ⚙️ Scripts Utilitários (Python)
-
-Para gerar novos artefatos visuais ou atualizar o currículo em PDF:
+## Currículo
 
 ```bash
-# 1. Instale as dependências
 pip install -r scripts/requirements.txt
-
-# 2. Execute os scripts conforme necessário
-python scripts/generate_cv.py              # Gera assets/cv_eduardo_cardoso.pdf
-python scripts/generate_favicon.py         # Gera os ícones e favicons
-python scripts/generate_og_image.py        # Gera assets/images/og-image.png
-python scripts/generate_linkedin_banner.py # Gera assets/images/linkedin-banner.png
-python scripts/format_html.py              # Formata e organiza o index.html
-python scripts/optimize_images.py          # Gera as variantes WebP responsivas (foto e preview)
+python scripts/generate_cv.py   # gera assets/cv_eduardo_cardoso.pdf
 ```
 
----
-
-## 📚 Documentação Adicional
-
-- 📐 **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**: Especificação detalhada da arquitetura, acessibilidade e ciclo de vida do JavaScript.
-- 📈 **[docs/PERFORMANCE.md](docs/PERFORMANCE.md)**: Medições Lighthouse (mobile 94, desktop 100) e como reproduzir.
-- 📦 **[docs/PROJETOS-GITHUB.md](docs/PROJETOS-GITHUB.md)**: Inventário completo de repositórios, dependências e status.
-- 💼 **[docs/LINKEDIN-PERFIL.md](docs/LINKEDIN-PERFIL.md)**: Textos validados para o perfil no LinkedIn.
-- 🎯 **[PRODUCT.md](PRODUCT.md)**: Declaração de propósito, usuário-alvo e princípios do portfólio.
-- 🎨 **[DESIGN.md](DESIGN.md)**: Tokens visuais do tema Quiet Graphite Olive.
-
----
-
-## 🚢 Deploy e Publicação
-
-O deploy é gerenciado automaticamente pelo **GitHub Pages**. Qualquer alteração enviada (`push`) para a branch `main` atualiza o site ao vivo em poucos segundos.
-
-> [!TIP]
-> Ao atualizar arquivos CSS, JS, PDF ou fotos, incremente o parâmetro de cache (`?v=XX`) nas tags correspondentes em `index.html` para que os visitantes recebam a versão atualizada imediatamente.
-
----
-
-## 📄 Licença
-
-Uso pessoal e livre para fins educacionais. Desenvolvido por Eduardo Cardoso.
+Ao trocar o PDF, aumente o `?v=` dos links do currículo no `index.html`.

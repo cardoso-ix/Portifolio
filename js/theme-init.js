@@ -1,16 +1,11 @@
-/**
- * Aplica o tema salvo e habilita o estado inicial do reveal antes da primeira pintura.
- * Carregado de forma síncrona no <head> para evitar flash (FOUC).
- */
+/* Aplica o tema salvo antes da primeira pintura, para não piscar. */
 (function () {
-  // Habilita o estado inicial do reveal (GSAP) só com JS e sem movimento reduzido
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.documentElement.classList.add('js-reveal');
-  }
   try {
     var saved = localStorage.getItem('portfolio-theme');
     if (saved === 'light' || saved === 'dark') {
       document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      document.documentElement.setAttribute('data-theme', 'light');
     }
-  } catch (e) {}
+  } catch (e) { /* sem storage */ }
 })();
